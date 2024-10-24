@@ -1,0 +1,2 @@
+gv_key_path = "/home/ntlpt19/Desktop/TF_release/intelligent_TF_Branch_ui_issues/TradeFinance/google_vision_key.json"
+arial_file = "/home/ntlpt19/Downloads/LAYOUT_LMV3_TESTING_STAGE1/extraction/arial.ttf"
