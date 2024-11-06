@@ -1,0 +1,43 @@
+# Device
+GPU1
+admin1@192.168.156.141
+
+# main folder
+/New_Volume/trade-finance/final_delivery/code/Trade-Finance/src/main
+
+# train test splitting of data
+python -m src.main.extraction.train_test_files_creation
+
+
+# data preparation
+python -m src.main.extraction.data_preparation_with_debug
+
+# tensorboard up code
+/home/admin1/anaconda3/envs/geolayoutlm/bin/tensorboard --logdir=/New_Volume/trade-finance/final_delivery/code/Trade-Finance/logs/ --host 0.0.0.0
+
+# training code => base model
+python -m src.main.extraction.step_3_training_based_val_loss
+
+# validating the images before running the inference code
+python -m src.main.extraction.validate_train_test_eval
+
+
+# inference code =>
+python -m src.main.extraction.inference --path train_images
+python -m src.main.extraction.inference --path test_images
+python -m src.main.extraction.inference --path eval_images
+
+
+# master data merger
+python -m src.main.extraction.master_data_merger_latest
+
+
+# final accuracy generation script
+python -m src.main.extraction.final_accuracy_gen_script
+
+
+# report generation scripts                                                                         
+python -m src.main.extraction.validation
+
+# create train, test, eval separate folder for generating the performances
+python -m src.main.extraction.train_test_separate_folder_creation

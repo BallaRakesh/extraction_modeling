@@ -1,0 +1,122 @@
+2023-11-07 10:39:43.523237: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-11-07 10:39:43.598164: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-07 10:39:44.538625: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-07 10:39:46.632869: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2023-11-07 10:39:46.637319: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1960] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+version of the cuda
+1.12.0+cu116
+cuda available: True
+==================Trade Finance Solutions===================
+Product Code: {product_code}
+Documenry Code: {doc_code}
+folder_path: /New_Volume/trade-finance/final_delivery/po/data/V1
+['S-item_description', 'S-vat_no', 'S-total_pages', 'S-stamped', 'S-currency', 'S-taxes_condition', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_name', 'S-signature', 'S-mode_of_dispatch', 'S-tax_amount', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 'S-cst_no', 'S-original_or_copy', 'S-incoterm', 'S-delivery_terms', 'S-signed_by', 'S-issue_date', 'S-documents_required', 'S-page_no', 'S-transport_condition', 'S-total_amount_in_words', 'S-freight_and_transportation_information', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-unit_price', 'S-quotation_no', 'S-unit', 'S-discount_condition', 'S-diclaration_by', 'S-ecc_no', 'S-payment_terms', 'S-packaging_details', 'S-total_amount_in_figure', 'S-dimension', 'O', 'S-po_number', 'S-tin_no', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_name', 'S-destination', 'S-quantity']
+39
+{'S-item_description': 0, 'S-vat_no': 1, 'S-total_pages': 2, 'S-stamped': 3, 'S-currency': 4, 'S-taxes_condition': 5, 'S-drawer_exporter_seller_beneficiary_issuer_supplier_name': 6, 'S-signature': 7, 'S-mode_of_dispatch': 8, 'S-tax_amount': 9, 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address': 10, 'S-cst_no': 11, 'S-original_or_copy': 12, 'S-incoterm': 13, 'S-delivery_terms': 14, 'S-signed_by': 15, 'S-issue_date': 16, 'S-documents_required': 17, 'S-page_no': 18, 'S-transport_condition': 19, 'S-total_amount_in_words': 20, 'S-freight_and_transportation_information': 21, 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address': 22, 'S-unit_price': 23, 'S-quotation_no': 24, 'S-unit': 25, 'S-discount_condition': 26, 'S-diclaration_by': 27, 'S-ecc_no': 28, 'S-payment_terms': 29, 'S-packaging_details': 30, 'S-total_amount_in_figure': 31, 'S-dimension': 32, 'O': 33, 'S-po_number': 34, 'S-tin_no': 35, 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_name': 36, 'S-destination': 37, 'S-quantity': 38}
+{0: 'S-item_description', 1: 'S-vat_no', 2: 'S-total_pages', 3: 'S-stamped', 4: 'S-currency', 5: 'S-taxes_condition', 6: 'S-drawer_exporter_seller_beneficiary_issuer_supplier_name', 7: 'S-signature', 8: 'S-mode_of_dispatch', 9: 'S-tax_amount', 10: 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 11: 'S-cst_no', 12: 'S-original_or_copy', 13: 'S-incoterm', 14: 'S-delivery_terms', 15: 'S-signed_by', 16: 'S-issue_date', 17: 'S-documents_required', 18: 'S-page_no', 19: 'S-transport_condition', 20: 'S-total_amount_in_words', 21: 'S-freight_and_transportation_information', 22: 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 23: 'S-unit_price', 24: 'S-quotation_no', 25: 'S-unit', 26: 'S-discount_condition', 27: 'S-diclaration_by', 28: 'S-ecc_no', 29: 'S-payment_terms', 30: 'S-packaging_details', 31: 'S-total_amount_in_figure', 32: 'S-dimension', 33: 'O', 34: 'S-po_number', 35: 'S-tin_no', 36: 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_name', 37: 'S-destination', 38: 'S-quantity'}
+input_ids torch.Size([512])
+attention_mask torch.Size([512])
+bbox torch.Size([512, 4])
+labels torch.Size([512])
+pixel_values torch.Size([3, 224, 224])
+<s> Hind Aluminium Industries Ltd HINDALCO INDUSTRIES LTD. SILVASSA / MAHAN / HIRAKUD 1 Aluminium Sow Ingots - EC Discount : Included in Price Packing : Included in Price Forwarding : Included in Price Excise Duty : Included in Price VAT : Included in Price Insurance : Applicable Transport : Applicable CST No LST No PAN No ECC No : DNHJCST / 1768 - 15.12.95 : TIN : 26000001838 : AAACA - 4671 - Q : AAACA4671QXM002 ; Silvassa - V Silvassa : Silvassa - III We are pleased to place our order for the following material subject to terms and conditions and instructions specified here and overleaf. Sr. Description CAT No. Excise Range Range Address Division Division Address : Silvassa Regd. Off : B - 1, Tulsi Vihar, Commissionerate : Vapi Indent No / Dt. Works Dr A.B.Road, Worli Naka, Mumbai - 400 018. Tel : ( 022 ) 40457100 Fax : ( 022 ) 24936888 : Survey No. 1/2, Village Khutali Khanvel - Doodhani Road, Near Khanvel Dist. Silvassa - 396 230 ( UT of DNH ) Tel : 0260 2677343 AN ISO 9001 : 2000 CO PURCHASE ORDER P.O. No : HA - WR / SEPT3 / 13-14 Prepared By Payment Terms : 90 Days LC Checked By Unit Quantity Rate ( Rs ) Mts Date : 230.000 25.09.2013 1,54,793 Total ( Rs ) Delivery : CIF Amount ( Rs ) 3,56,02,390 Director / Authorised Signatory 3,56,02,390 For Hind Aluminium Industries Ltd God Page 0 -Sign</s><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad>
+['Hind', 'Aluminium', 'Industries', 'Ltd', 'HINDALCO', 'INDUSTRIES', 'LTD', '.', 'SILVASSA', '/', 'MAHAN', '/', 'HIRAKUD', '1', 'Aluminium', 'Sow', 'Ingots', '-', 'EC', 'Discount', ':', 'Included', 'in', 'Price', 'Packing', ':', 'Included', 'in', 'Price', 'Forwarding', ':', 'Included', 'in', 'Price', 'Excise', 'Duty', ':', 'Included', 'in', 'Price', 'VAT', ':', 'Included', 'in', 'Price', 'Insurance', ':', 'Applicable', 'Transport', ':', 'Applicable', 'CST', 'No', 'LST', 'No', 'PAN', 'No', 'ECC', 'No', ':', 'DNHJCST', '/', '1768', '-', '15.12.95', ':', 'TIN', ':', '26000001838', ':', 'AAACA', '-', '4671', '-', 'Q', ':', 'AAACA4671QXM002', ';', 'Silvassa', '-', 'V', 'Silvassa', ':', 'Silvassa', '-', 'III', 'We', 'are', 'pleased', 'to', 'place', 'our', 'order', 'for', 'the', 'following', 'material', 'subject', 'to', 'terms', 'and', 'conditions', 'and', 'instructions', 'specified', 'here', 'and', 'overleaf', '.', 'Sr.', 'Description', 'CAT', 'No.', 'Excise', 'Range', 'Range', 'Address', 'Division', 'Division', 'Address', ':', 'Silvassa', 'Regd', '.', 'Off', ':', 'B', '-', '1', ',', 'Tulsi', 'Vihar', ',', 'Commissionerate', ':', 'Vapi', 'Indent', 'No', '/', 'Dt', '.', 'Works', 'Dr', 'A.B.Road', ',', 'Worli', 'Naka', ',', 'Mumbai', '-', '400', '018', '.', 'Tel', ':', '(', '022', ')', '40457100', 'Fax', ':', '(', '022', ')', '24936888', ':', 'Survey', 'No.', '1/2', ',', 'Village', 'Khutali', 'Khanvel', '-', 'Doodhani', 'Road', ',', 'Near', 'Khanvel', 'Dist', '.', 'Silvassa', '-', '396', '230', '(', 'UT', 'of', 'DNH', ')', 'Tel', ':', '0260', '2677343', 'AN', 'ISO', '9001', ':', '2000', 'CO', 'PURCHASE', 'ORDER', 'P.O.', 'No', ':', 'HA', '-', 'WR', '/', 'SEPT3', '/', '13-14', 'Prepared', 'By', 'Payment', 'Terms', ':', '90', 'Days', 'LC', 'Checked', 'By', 'Unit', 'Quantity', 'Rate', '(', 'Rs', ')', 'Mts', 'Date', ':', '230.000', '25.09.2013', '1,54,793', 'Total', '(', 'Rs', ')', 'Delivery', ':', 'CIF', 'Amount', '(', 'Rs', ')', '3,56,02,390', 'Director', '/', 'Authorised', 'Signatory', '3,56,02,390', 'For', 'Hind', 'Aluminium', 'Industries', 'Ltd', 'God', 'Page', '0', '-Sign']
+Some weights of LayoutLMv3ForTokenClassification were not initialized from the model checkpoint at microsoft/layoutlmv3-base and are newly initialized: ['classifier.dense.bias', 'classifier.out_proj.bias', 'classifier.dense.weight', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+['S-drawer_exporter_seller_beneficiary_issuer_supplier_name', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_name', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_name', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_name', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_name', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_name', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_name', 'O', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 'O', 'S-item_description', 'S-item_description', 'S-item_description', 'S-item_description', 'S-item_description', 'O', 'O', 'S-discount_condition', 'S-discount_condition', 'S-discount_condition', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-freight_and_transportation_information', 'S-freight_and_transportation_information', 'S-freight_and_transportation_information', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-transport_condition', 'O', 'O', 'S-transport_condition', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-cst_no', 'S-cst_no', 'S-cst_no', 'S-cst_no', 'S-cst_no', 'O', 'O', 'O', 'S-tin_no', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-ecc_no', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-po_number', 'S-po_number', 'S-po_number', 'S-po_number', 'S-po_number', 'S-po_number', 'S-po_number', 'O', 'O', 'O', 'O', 'O', 'S-payment_terms', 'S-payment_terms', 'S-payment_terms', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-unit', 'O', 'O', 'S-quantity', 'S-issue_date', 'S-unit_price', 'O', 'O', 'S-currency', 'S-currency', 'O', 'O', 'S-delivery_terms', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-total_amount_in_figure', 'O', 'O', 'O', 'O', 'S-signature', 'S-signed_by', 'S-signature', 'O', 'O']
+['S-drawer_exporter_seller_beneficiary_issuer_supplier_name', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_name', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_name', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_name', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_name', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_name', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_name', 'O', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 'S-remitter_drawee_buyer_importer_billto_shippedto_despacthto_address', 'O', 'S-item_description', 'S-item_description', 'S-item_description', 'S-item_description', 'S-item_description', 'O', 'O', 'S-discount_condition', 'S-discount_condition', 'S-discount_condition', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-freight_and_transportation_information', 'S-freight_and_transportation_information', 'S-freight_and_transportation_information', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-transport_condition', 'O', 'O', 'S-transport_condition', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-cst_no', 'S-cst_no', 'S-cst_no', 'S-cst_no', 'S-cst_no', 'O', 'O', 'O', 'S-tin_no', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-ecc_no', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'S-drawer_exporter_seller_beneficiary_issuer_supplier_address', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-po_number', 'S-po_number', 'S-po_number', 'S-po_number', 'S-po_number', 'S-po_number', 'S-po_number', 'O', 'O', 'O', 'O', 'O', 'S-payment_terms', 'S-payment_terms', 'S-payment_terms', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-unit', 'O', 'O', 'S-quantity', 'S-issue_date', 'S-unit_price', 'O', 'O', 'S-currency', 'S-currency', 'O', 'O', 'S-delivery_terms', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-total_amount_in_figure', 'O', 'O', 'O', 'O', 'S-signature', 'S-signed_by', 'S-signature', 'O', 'O']
+<s> -100
+ Hind 6
+ Al 6
+uminium -100
+ Industries 6
+ Ltd 6
+ H 36
+IND -100
+AL -100
+CO -100
+ IND 36
+UST -100
+RI -100
+ES -100
+ LTD 36
+. 33
+ SIL 10
+V -100
+AS -100
+SA -100
+ / 10
+ MA 10
+H -100
+AN -100
+ / 10
+ HI 10
+RA -100
+K -100
+UD -100
+ 1 33
+cuda
+Epoch: 0
+  0%|          | 0/32 [00:00<?, ?it/s]
+Loss after 0 steps: 3.7298877239227295
+Loss after 31 steps: 0.510956883430481
+Evaluating:   0%|          | 0/3 [00:00<?, ?it/s]
+batch validataion loss: 1.4689605236053467
+batch validataion loss: 1.2214553356170654
+batch validataion loss: 1.5519345998764038
+precison: 0.0
+recall: 0.0
+f1: 0.0
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:1.4141168196996052
+The train loss : 0.510956883430481
+Epoch: 1
+  0%|          | 0/32 [00:00<?, ?it/s]
+Loss after 63 steps: 0.5604237914085388
+Traceback (most recent call last):
+  File "/home/admin1/anaconda3/envs/layoutlmv3_training_env/lib/python3.8/runpy.py", line 185, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/home/admin1/anaconda3/envs/layoutlmv3_training_env/lib/python3.8/runpy.py", line 111, in _get_module_details
+    __import__(pkg_name)
+  File "/New_Volume/trade-finance/final_delivery/code/lmv3-code/trade-finance-lmv3/src/main/step3_training_based_trainLOSS_validationLOSS.py", line 371, in <module>
+    tf.summary.scalar("Best val loss", val_loss.cpu(), step=epoch)
+AttributeError: 'float' object has no attribute 'cpu'
+Evaluating:   0%|          | 0/3 [00:00<?, ?it/s]
+batch validataion loss: 1.4598301649093628
+batch validataion loss: 1.1886706352233887
+batch validataion loss: 1.5621602535247803
+precison: 0.0
+recall: 0.0
+f1: 0.0
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:1.4035536845525105
+The train loss : 0.5604237914085388
+Epoch: 2
+  0%|          | 0/32 [00:00<?, ?it/s]
+Loss after 95 steps: 0.8828004002571106
+Evaluating:   0%|          | 0/3 [00:00<?, ?it/s]
+batch validataion loss: 1.392961025238037
+batch validataion loss: 1.1496365070343018
+batch validataion loss: 1.5037496089935303
+precison: 0.0
+recall: 0.0
+f1: 0.0
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:1.3487823804219563
+The train loss : 0.8828004002571106
+Epoch: 3
+  0%|          | 0/32 [00:00<?, ?it/s]
+Loss after 127 steps: 1.2904852628707886
+Evaluating:   0%|          | 0/3 [00:00<?, ?it/s]
+batch validataion loss: 1.2719290256500244
+batch validataion loss: 1.0118427276611328
+batch validataion loss: 1.4006294012069702
+precison: 0.6666666666666666
+recall: 0.003372681281618887
+f1: 0.006711409395973153
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:1.2281337181727092
+The train loss : 1.2904852628707886
+Model is 3 saving based on val loss +++++++++++++++++++++++++++++++++
