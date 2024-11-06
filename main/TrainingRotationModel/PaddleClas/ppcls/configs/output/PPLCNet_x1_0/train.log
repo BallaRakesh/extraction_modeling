@@ -1,0 +1,296 @@
+[2024/07/19 17:40:04] ppcls INFO: 
+===========================================================
+==        PaddleClas is powered by PaddlePaddle !        ==
+===========================================================
+==                                                       ==
+==   For more info please go to the following website.   ==
+==                                                       ==
+==       https://github.com/PaddlePaddle/PaddleClas      ==
+===========================================================
+
+[2024/07/19 17:40:04] ppcls INFO: Arch : 
+[2024/07/19 17:40:04] ppcls INFO:     class_num : 4
+[2024/07/19 17:40:04] ppcls INFO:     name : PPLCNet_x1_0
+[2024/07/19 17:40:04] ppcls INFO:     pretrained : True
+[2024/07/19 17:40:04] ppcls INFO:     use_ssld : True
+[2024/07/19 17:40:04] ppcls INFO: DataLoader : 
+[2024/07/19 17:40:04] ppcls INFO:     Eval : 
+[2024/07/19 17:40:04] ppcls INFO:         dataset : 
+[2024/07/19 17:40:04] ppcls INFO:             cls_label_path : /home/nt-user1/vasu/PClasTest/docs/en/PULC/dataset/text_image_orientation/test_list.txt
+[2024/07/19 17:40:04] ppcls INFO:             image_root : /home/nt-user1/vasu/PClasTest/docs/en/PULC/dataset/text_image_orientation
+[2024/07/19 17:40:04] ppcls INFO:             name : ImageNetDataset
+[2024/07/19 17:40:04] ppcls INFO:             transform_ops : 
+[2024/07/19 17:40:04] ppcls INFO:                 DecodeImage : 
+[2024/07/19 17:40:04] ppcls INFO:                     channel_first : False
+[2024/07/19 17:40:04] ppcls INFO:                     to_rgb : True
+[2024/07/19 17:40:04] ppcls INFO:                 ResizeImage : 
+[2024/07/19 17:40:04] ppcls INFO:                     resize_short : 256
+[2024/07/19 17:40:04] ppcls INFO:                 CropImage : 
+[2024/07/19 17:40:04] ppcls INFO:                     size : 224
+[2024/07/19 17:40:04] ppcls INFO:                 NormalizeImage : 
+[2024/07/19 17:40:04] ppcls INFO:                     mean : [0.485, 0.456, 0.406]
+[2024/07/19 17:40:04] ppcls INFO:                     order : 
+[2024/07/19 17:40:04] ppcls INFO:                     scale : 1.0/255.0
+[2024/07/19 17:40:04] ppcls INFO:                     std : [0.229, 0.224, 0.225]
+[2024/07/19 17:40:04] ppcls INFO:         loader : 
+[2024/07/19 17:40:04] ppcls INFO:             num_workers : 4
+[2024/07/19 17:40:04] ppcls INFO:             use_shared_memory : True
+[2024/07/19 17:40:04] ppcls INFO:         sampler : 
+[2024/07/19 17:40:04] ppcls INFO:             batch_size : 8
+[2024/07/19 17:40:04] ppcls INFO:             drop_last : False
+[2024/07/19 17:40:04] ppcls INFO:             name : DistributedBatchSampler
+[2024/07/19 17:40:04] ppcls INFO:             shuffle : False
+[2024/07/19 17:40:04] ppcls INFO:     Train : 
+[2024/07/19 17:40:04] ppcls INFO:         dataset : 
+[2024/07/19 17:40:04] ppcls INFO:             cls_label_path : /home/nt-user1/vasu/PClasTest/docs/en/PULC/dataset/text_image_orientation/train_list.txt
+[2024/07/19 17:40:04] ppcls INFO:             image_root : /home/nt-user1/vasu/PClasTest/docs/en/PULC/dataset/text_image_orientation
+[2024/07/19 17:40:04] ppcls INFO:             name : ImageNetDataset
+[2024/07/19 17:40:04] ppcls INFO:             transform_ops : 
+[2024/07/19 17:40:04] ppcls INFO:                 DecodeImage : 
+[2024/07/19 17:40:04] ppcls INFO:                     channel_first : False
+[2024/07/19 17:40:04] ppcls INFO:                     to_rgb : True
+[2024/07/19 17:40:04] ppcls INFO:                 RandCropImage : 
+[2024/07/19 17:40:04] ppcls INFO:                     size : 224
+[2024/07/19 17:40:04] ppcls INFO:                 TimmAutoAugment : 
+[2024/07/19 17:40:04] ppcls INFO:                     config_str : rand-m9-mstd0.5-inc1
+[2024/07/19 17:40:04] ppcls INFO:                     img_size : 224
+[2024/07/19 17:40:04] ppcls INFO:                     interpolation : bicubic
+[2024/07/19 17:40:04] ppcls INFO:                     prob : 0.0
+[2024/07/19 17:40:04] ppcls INFO:                 NormalizeImage : 
+[2024/07/19 17:40:04] ppcls INFO:                     mean : [0.485, 0.456, 0.406]
+[2024/07/19 17:40:04] ppcls INFO:                     order : 
+[2024/07/19 17:40:04] ppcls INFO:                     scale : 1.0/255.0
+[2024/07/19 17:40:04] ppcls INFO:                     std : [0.229, 0.224, 0.225]
+[2024/07/19 17:40:04] ppcls INFO:                 RandomErasing : 
+[2024/07/19 17:40:04] ppcls INFO:                     EPSILON : 0.0
+[2024/07/19 17:40:04] ppcls INFO: ------------------------------------------------------------
+[2024/07/19 17:40:04] ppcls INFO:                     attempt : 10
+[2024/07/19 17:40:04] ppcls INFO:                     mode : pixel
+[2024/07/19 17:40:04] ppcls INFO:                     r1 : 0.3
+[2024/07/19 17:40:04] ppcls INFO:                     sh : 1.0/3.0
+[2024/07/19 17:40:04] ppcls INFO:                     sl : 0.02
+[2024/07/19 17:40:04] ppcls INFO:                     use_log_aspect : True
+[2024/07/19 17:40:04] ppcls INFO:         loader : 
+[2024/07/19 17:40:04] ppcls INFO:             num_workers : 8
+[2024/07/19 17:40:04] ppcls INFO:             use_shared_memory : True
+[2024/07/19 17:40:04] ppcls INFO:         sampler : 
+[2024/07/19 17:40:04] ppcls INFO:             batch_size : 8
+[2024/07/19 17:40:04] ppcls INFO:             drop_last : False
+[2024/07/19 17:40:04] ppcls INFO:             name : DistributedBatchSampler
+[2024/07/19 17:40:04] ppcls INFO:             shuffle : True
+[2024/07/19 17:40:04] ppcls INFO: Global : 
+[2024/07/19 17:40:04] ppcls INFO:     checkpoints : None
+[2024/07/19 17:40:04] ppcls INFO:     device : gpu
+[2024/07/19 17:40:04] ppcls INFO:     epochs : 60
+[2024/07/19 17:40:04] ppcls INFO:     eval_during_train : True
+[2024/07/19 17:40:04] ppcls INFO:     eval_interval : 1
+[2024/07/19 17:40:04] ppcls INFO:     image_shape : [3, 224, 224]
+[2024/07/19 17:40:04] ppcls INFO:     output_dir : ./output/
+[2024/07/19 17:40:04] ppcls INFO:     pretrained_model : None
+[2024/07/19 17:40:04] ppcls INFO:     print_batch_step : 10
+[2024/07/19 17:40:04] ppcls INFO:     save_inference_dir : ./inference
+[2024/07/19 17:40:04] ppcls INFO:     save_interval : 1
+[2024/07/19 17:40:04] ppcls INFO:     use_visualdl : False
+[2024/07/19 17:40:04] ppcls INFO: Infer : 
+[2024/07/19 17:40:04] ppcls INFO:     PostProcess : 
+[2024/07/19 17:40:04] ppcls INFO:         class_id_map_file : /home/nt-user1/vasu/PClasTest/ppcls/utils/PULC_label_list/textline_orientation_label_list.txt
+[2024/07/19 17:40:04] ppcls INFO:         name : Topk
+[2024/07/19 17:40:04] ppcls INFO:         topk : 2
+[2024/07/19 17:40:04] ppcls INFO:     batch_size : 8
+[2024/07/19 17:40:04] ppcls INFO:     infer_imgs : /home/nt-user1/vasu/skewed_slip_images
+[2024/07/19 17:40:04] ppcls INFO:     transforms : 
+[2024/07/19 17:40:04] ppcls INFO:         DecodeImage : 
+[2024/07/19 17:40:04] ppcls INFO:             channel_first : False
+[2024/07/19 17:40:04] ppcls INFO:             to_rgb : True
+[2024/07/19 17:40:04] ppcls INFO:         ResizeImage : 
+[2024/07/19 17:40:04] ppcls INFO:             resize_short : 256
+[2024/07/19 17:40:04] ppcls INFO:         CropImage : 
+[2024/07/19 17:40:04] ppcls INFO:             size : 224
+[2024/07/19 17:40:04] ppcls INFO:         NormalizeImage : 
+[2024/07/19 17:40:04] ppcls INFO:             mean : [0.485, 0.456, 0.406]
+[2024/07/19 17:40:04] ppcls INFO:             order : 
+[2024/07/19 17:40:04] ppcls INFO:             scale : 1.0/255.0
+[2024/07/19 17:40:04] ppcls INFO:             std : [0.229, 0.224, 0.225]
+[2024/07/19 17:40:04] ppcls INFO:         ToCHWImage : None
+[2024/07/19 17:40:04] ppcls INFO: Loss : 
+[2024/07/19 17:40:04] ppcls INFO:     Eval : 
+[2024/07/19 17:40:04] ppcls INFO:         CELoss : 
+[2024/07/19 17:40:04] ppcls INFO:             weight : 1.0
+[2024/07/19 17:40:04] ppcls INFO:     Train : 
+[2024/07/19 17:40:04] ppcls INFO:         CELoss : 
+[2024/07/19 17:40:04] ppcls INFO:             epsilon : 0.1
+[2024/07/19 17:40:04] ppcls INFO:             weight : 1.0
+[2024/07/19 17:40:04] ppcls INFO: Metric : 
+[2024/07/19 17:40:04] ppcls INFO:     Eval : 
+[2024/07/19 17:40:04] ppcls INFO:         TopkAcc : 
+[2024/07/19 17:40:04] ppcls INFO:             topk : [1, 2]
+[2024/07/19 17:40:04] ppcls INFO:     Train : 
+[2024/07/19 17:40:04] ppcls INFO:         TopkAcc : 
+[2024/07/19 17:40:04] ppcls INFO:             topk : [1, 2]
+[2024/07/19 17:40:04] ppcls INFO: Optimizer : 
+[2024/07/19 17:40:04] ppcls INFO:     lr : 
+[2024/07/19 17:40:04] ppcls INFO:         learning_rate : 0.4
+[2024/07/19 17:40:04] ppcls INFO:         name : Cosine
+[2024/07/19 17:40:04] ppcls INFO:         warmup_epoch : 5
+[2024/07/19 17:40:04] ppcls INFO:     momentum : 0.9
+[2024/07/19 17:40:04] ppcls INFO:     name : Momentum
+[2024/07/19 17:40:04] ppcls INFO:     regularizer : 
+[2024/07/19 17:40:04] ppcls INFO:         coeff : 3e-05
+[2024/07/19 17:40:04] ppcls INFO:         name : L2
+[2024/07/19 17:40:04] ppcls INFO: profiler_options : None
+[2024/07/19 17:40:04] ppcls INFO: train with paddle 2.6.1 and device Place(gpu:0)
+[2024/07/19 17:40:08] ppcls INFO: Found /home/nt-user1/.paddleclas/weights/PPLCNet_x1_0_ssld_pretrained.pdparams
+[2024/07/19 17:40:09] ppcls WARNING: The training strategy provided by PaddleClas is based on 4 gpus. But the number of gpu is 1 in current training. Please modify the stategy (learning rate, batch size and so on) if use this config to train.
+[2024/07/19 17:40:31] ppcls INFO: [Train][Epoch 1/60][Iter: 0/349]lr(LinearWarmup): 0.00022923, top1: 0.37500, top2: 0.62500, CELoss: 1.42311, loss: 1.42311, batch_cost: 22.27519s, reader_cost: 3.37578, ips: 0.35914 samples/s, eta: 5 days, 9:34:02
+[2024/07/19 17:40:32] ppcls INFO: [Train][Epoch 1/60][Iter: 10/349]lr(LinearWarmup): 0.00252149, top1: 0.27273, top2: 0.50000, CELoss: 1.51033, loss: 1.51033, batch_cost: 0.02563s, reader_cost: 0.00016, ips: 312.10861 samples/s, eta: 0:08:56
+[2024/07/19 17:40:34] ppcls INFO: [Train][Epoch 1/60][Iter: 20/349]lr(LinearWarmup): 0.00481375, top1: 0.40476, top2: 0.67857, CELoss: 1.32392, loss: 1.32392, batch_cost: 0.15599s, reader_cost: 0.13139, ips: 51.28585 samples/s, eta: 0:54:23
+[2024/07/19 17:40:36] ppcls INFO: [Train][Epoch 1/60][Iter: 30/349]lr(LinearWarmup): 0.00710602, top1: 0.42742, top2: 0.71774, CELoss: 1.34416, loss: 1.34416, batch_cost: 0.18824s, reader_cost: 0.16381, ips: 42.49969 samples/s, eta: 1:05:36
+[2024/07/19 17:40:38] ppcls INFO: [Train][Epoch 1/60][Iter: 40/349]lr(LinearWarmup): 0.00939828, top1: 0.43902, top2: 0.74085, CELoss: 1.37579, loss: 1.37579, batch_cost: 0.18336s, reader_cost: 0.15967, ips: 43.63037 samples/s, eta: 1:03:52
+[2024/07/19 17:43:13] ppcls INFO: 
+===========================================================
+==        PaddleClas is powered by PaddlePaddle !        ==
+===========================================================
+==                                                       ==
+==   For more info please go to the following website.   ==
+==                                                       ==
+==       https://github.com/PaddlePaddle/PaddleClas      ==
+===========================================================
+
+[2024/07/19 17:43:13] ppcls INFO: Arch : 
+[2024/07/19 17:43:13] ppcls INFO:     class_num : 4
+[2024/07/19 17:43:13] ppcls INFO:     name : PPLCNet_x1_0
+[2024/07/19 17:43:13] ppcls INFO:     pretrained : True
+[2024/07/19 17:43:13] ppcls INFO:     use_ssld : True
+[2024/07/19 17:43:13] ppcls INFO: DataLoader : 
+[2024/07/19 17:43:13] ppcls INFO:     Eval : 
+[2024/07/19 17:43:13] ppcls INFO:         dataset : 
+[2024/07/19 17:43:13] ppcls INFO:             cls_label_path : /home/nt-user1/vasu/PClasTest/docs/en/PULC/dataset/text_image_orientation/test_list.txt
+[2024/07/19 17:43:13] ppcls INFO:             image_root : /home/nt-user1/vasu/PClasTest/docs/en/PULC/dataset/text_image_orientation
+[2024/07/19 17:43:13] ppcls INFO:             name : ImageNetDataset
+[2024/07/19 17:43:13] ppcls INFO:             transform_ops : 
+[2024/07/19 17:43:13] ppcls INFO:                 DecodeImage : 
+[2024/07/19 17:43:13] ppcls INFO:                     channel_first : False
+[2024/07/19 17:43:13] ppcls INFO:                     to_rgb : True
+[2024/07/19 17:43:13] ppcls INFO:                 ResizeImage : 
+[2024/07/19 17:43:13] ppcls INFO:                     resize_short : 256
+[2024/07/19 17:43:13] ppcls INFO:                 CropImage : 
+[2024/07/19 17:43:13] ppcls INFO:                     size : 224
+[2024/07/19 17:43:13] ppcls INFO:                 NormalizeImage : 
+[2024/07/19 17:43:13] ppcls INFO:                     mean : [0.485, 0.456, 0.406]
+[2024/07/19 17:43:13] ppcls INFO:                     order : 
+[2024/07/19 17:43:13] ppcls INFO:                     scale : 1.0/255.0
+[2024/07/19 17:43:13] ppcls INFO:                     std : [0.229, 0.224, 0.225]
+[2024/07/19 17:43:13] ppcls INFO:         loader : 
+[2024/07/19 17:43:13] ppcls INFO:             num_workers : 4
+[2024/07/19 17:43:13] ppcls INFO:             use_shared_memory : True
+[2024/07/19 17:43:13] ppcls INFO:         sampler : 
+[2024/07/19 17:43:13] ppcls INFO:             batch_size : 8
+[2024/07/19 17:43:13] ppcls INFO:             drop_last : False
+[2024/07/19 17:43:13] ppcls INFO:             name : DistributedBatchSampler
+[2024/07/19 17:43:13] ppcls INFO:             shuffle : False
+[2024/07/19 17:43:13] ppcls INFO:     Train : 
+[2024/07/19 17:43:13] ppcls INFO:         dataset : 
+[2024/07/19 17:43:13] ppcls INFO:             cls_label_path : /home/nt-user1/vasu/PClasTest/docs/en/PULC/dataset/text_image_orientation/train_list.txt
+[2024/07/19 17:43:13] ppcls INFO:             image_root : /home/nt-user1/vasu/PClasTest/docs/en/PULC/dataset/text_image_orientation
+[2024/07/19 17:43:13] ppcls INFO:             name : ImageNetDataset
+[2024/07/19 17:43:13] ppcls INFO:             transform_ops : 
+[2024/07/19 17:43:13] ppcls INFO:                 DecodeImage : 
+[2024/07/19 17:43:13] ppcls INFO:                     channel_first : False
+[2024/07/19 17:43:13] ppcls INFO:                     to_rgb : True
+[2024/07/19 17:43:13] ppcls INFO:                 RandCropImage : 
+[2024/07/19 17:43:13] ppcls INFO:                     size : 224
+[2024/07/19 17:43:13] ppcls INFO:                 TimmAutoAugment : 
+[2024/07/19 17:43:13] ppcls INFO:                     config_str : rand-m9-mstd0.5-inc1
+[2024/07/19 17:43:13] ppcls INFO:                     img_size : 224
+[2024/07/19 17:43:13] ppcls INFO:                     interpolation : bicubic
+[2024/07/19 17:43:13] ppcls INFO:                     prob : 0.0
+[2024/07/19 17:43:13] ppcls INFO:                 NormalizeImage : 
+[2024/07/19 17:43:13] ppcls INFO:                     mean : [0.485, 0.456, 0.406]
+[2024/07/19 17:43:13] ppcls INFO:                     order : 
+[2024/07/19 17:43:13] ppcls INFO:                     scale : 1.0/255.0
+[2024/07/19 17:43:13] ppcls INFO:                     std : [0.229, 0.224, 0.225]
+[2024/07/19 17:43:13] ppcls INFO:                 RandomErasing : 
+[2024/07/19 17:43:13] ppcls INFO:                     EPSILON : 0.0
+[2024/07/19 17:43:13] ppcls INFO: ------------------------------------------------------------
+[2024/07/19 17:43:13] ppcls INFO:                     attempt : 10
+[2024/07/19 17:43:13] ppcls INFO:                     mode : pixel
+[2024/07/19 17:43:13] ppcls INFO:                     r1 : 0.3
+[2024/07/19 17:43:13] ppcls INFO:                     sh : 1.0/3.0
+[2024/07/19 17:43:13] ppcls INFO:                     sl : 0.02
+[2024/07/19 17:43:13] ppcls INFO:                     use_log_aspect : True
+[2024/07/19 17:43:13] ppcls INFO:         loader : 
+[2024/07/19 17:43:13] ppcls INFO:             num_workers : 8
+[2024/07/19 17:43:13] ppcls INFO:             use_shared_memory : True
+[2024/07/19 17:43:13] ppcls INFO:         sampler : 
+[2024/07/19 17:43:13] ppcls INFO:             batch_size : 8
+[2024/07/19 17:43:13] ppcls INFO:             drop_last : False
+[2024/07/19 17:43:13] ppcls INFO:             name : DistributedBatchSampler
+[2024/07/19 17:43:13] ppcls INFO:             shuffle : True
+[2024/07/19 17:43:13] ppcls INFO: Global : 
+[2024/07/19 17:43:13] ppcls INFO:     checkpoints : None
+[2024/07/19 17:43:13] ppcls INFO:     device : gpu
+[2024/07/19 17:43:13] ppcls INFO:     epochs : 60
+[2024/07/19 17:43:13] ppcls INFO:     eval_during_train : True
+[2024/07/19 17:43:13] ppcls INFO:     eval_interval : 1
+[2024/07/19 17:43:13] ppcls INFO:     image_shape : [3, 224, 224]
+[2024/07/19 17:43:13] ppcls INFO:     output_dir : ./output/
+[2024/07/19 17:43:13] ppcls INFO:     pretrained_model : None
+[2024/07/19 17:43:13] ppcls INFO:     print_batch_step : 10
+[2024/07/19 17:43:13] ppcls INFO:     save_inference_dir : ./inference
+[2024/07/19 17:43:13] ppcls INFO:     save_interval : 1
+[2024/07/19 17:43:13] ppcls INFO:     use_visualdl : False
+[2024/07/19 17:43:13] ppcls INFO: Infer : 
+[2024/07/19 17:43:13] ppcls INFO:     PostProcess : 
+[2024/07/19 17:43:13] ppcls INFO:         class_id_map_file : /home/nt-user1/vasu/PClasTest/ppcls/utils/PULC_label_list/textline_orientation_label_list.txt
+[2024/07/19 17:43:13] ppcls INFO:         name : Topk
+[2024/07/19 17:43:13] ppcls INFO:         topk : 2
+[2024/07/19 17:43:13] ppcls INFO:     batch_size : 8
+[2024/07/19 17:43:13] ppcls INFO:     infer_imgs : /home/nt-user1/vasu/skewed_slip_images
+[2024/07/19 17:43:13] ppcls INFO:     transforms : 
+[2024/07/19 17:43:13] ppcls INFO:         DecodeImage : 
+[2024/07/19 17:43:13] ppcls INFO:             channel_first : False
+[2024/07/19 17:43:13] ppcls INFO:             to_rgb : True
+[2024/07/19 17:43:13] ppcls INFO:         ResizeImage : 
+[2024/07/19 17:43:13] ppcls INFO:             resize_short : 256
+[2024/07/19 17:43:13] ppcls INFO:         CropImage : 
+[2024/07/19 17:43:13] ppcls INFO:             size : 224
+[2024/07/19 17:43:13] ppcls INFO:         NormalizeImage : 
+[2024/07/19 17:43:13] ppcls INFO:             mean : [0.485, 0.456, 0.406]
+[2024/07/19 17:43:13] ppcls INFO:             order : 
+[2024/07/19 17:43:13] ppcls INFO:             scale : 1.0/255.0
+[2024/07/19 17:43:13] ppcls INFO:             std : [0.229, 0.224, 0.225]
+[2024/07/19 17:43:13] ppcls INFO:         ToCHWImage : None
+[2024/07/19 17:43:13] ppcls INFO: Loss : 
+[2024/07/19 17:43:13] ppcls INFO:     Eval : 
+[2024/07/19 17:43:13] ppcls INFO:         CELoss : 
+[2024/07/19 17:43:13] ppcls INFO:             weight : 1.0
+[2024/07/19 17:43:13] ppcls INFO:     Train : 
+[2024/07/19 17:43:13] ppcls INFO:         CELoss : 
+[2024/07/19 17:43:13] ppcls INFO:             epsilon : 0.1
+[2024/07/19 17:43:13] ppcls INFO:             weight : 1.0
+[2024/07/19 17:43:13] ppcls INFO: Metric : 
+[2024/07/19 17:43:13] ppcls INFO:     Eval : 
+[2024/07/19 17:43:13] ppcls INFO:         TopkAcc : 
+[2024/07/19 17:43:13] ppcls INFO:             topk : [1, 2]
+[2024/07/19 17:43:13] ppcls INFO:     Train : 
+[2024/07/19 17:43:13] ppcls INFO:         TopkAcc : 
+[2024/07/19 17:43:13] ppcls INFO:             topk : [1, 2]
+[2024/07/19 17:43:13] ppcls INFO: Optimizer : 
+[2024/07/19 17:43:13] ppcls INFO:     lr : 
+[2024/07/19 17:43:13] ppcls INFO:         learning_rate : 0.4
+[2024/07/19 17:43:13] ppcls INFO:         name : Cosine
+[2024/07/19 17:43:13] ppcls INFO:         warmup_epoch : 5
+[2024/07/19 17:43:13] ppcls INFO:     momentum : 0.9
+[2024/07/19 17:43:13] ppcls INFO:     name : Momentum
+[2024/07/19 17:43:13] ppcls INFO:     regularizer : 
+[2024/07/19 17:43:13] ppcls INFO:         coeff : 3e-05
+[2024/07/19 17:43:13] ppcls INFO:         name : L2
+[2024/07/19 17:43:13] ppcls INFO: profiler_options : None
+[2024/07/19 17:43:13] ppcls INFO: train with paddle 2.6.1 and device Place(gpu:0)
+[2024/07/19 17:43:16] ppcls INFO: Found /home/nt-user1/.paddleclas/weights/PPLCNet_x1_0_ssld_pretrained.pdparams
+[2024/07/19 17:43:17] ppcls WARNING: The training strategy provided by PaddleClas is based on 4 gpus. But the number of gpu is 1 in current training. Please modify the stategy (learning rate, batch size and so on) if use this config to train.
+[2024/07/19 17:43:39] ppcls INFO: [Train][Epoch 1/60][Iter: 0/349]lr(LinearWarmup): 0.00022923, top1: 0.37500, top2: 0.62500, CELoss: 1.42311, loss: 1.42311, batch_cost: 22.49186s, reader_cost: 3.27611, ips: 0.35568 samples/s, eta: 5 days, 10:49:39
+[2024/07/19 17:43:39] ppcls INFO: [Train][Epoch 1/60][Iter: 10/349]lr(LinearWarmup): 0.00252149, top1: 0.26136, top2: 0.48864, CELoss: 1.51130, loss: 1.51130, batch_cost: 0.02090s, reader_cost: 0.00013, ips: 382.71889 samples/s, eta: 0:07:17
+[2024/07/19 17:43:42] ppcls INFO: [Train][Epoch 1/60][Iter: 20/349]lr(LinearWarmup): 0.00481375, top1: 0.39881, top2: 0.67262, CELoss: 1.32435, loss: 1.32435, batch_cost: 0.15492s, reader_cost: 0.13012, ips: 51.63891 samples/s, eta: 0:54:00
+[2024/07/19 17:43:44] ppcls INFO: [Train][Epoch 1/60][Iter: 30/349]lr(LinearWarmup): 0.00710602, top1: 0.42742, top2: 0.71774, CELoss: 1.33783, loss: 1.33783, batch_cost: 0.18571s, reader_cost: 0.16207, ips: 43.07783 samples/s, eta: 1:04:43
+[2024/07/19 17:43:45] ppcls INFO: [Train][Epoch 1/60][Iter: 40/349]lr(LinearWarmup): 0.00939828, top1: 0.44207, top2: 0.74695, CELoss: 1.36871, loss: 1.36871, batch_cost: 0.17269s, reader_cost: 0.14852, ips: 46.32710 samples/s, eta: 1:00:09

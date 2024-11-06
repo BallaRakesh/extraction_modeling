@@ -1,0 +1,94 @@
+from base64 import b64encode
+from configparser import ConfigParser
+import json
+import os
+import cv2
+from google.cloud import vision
+
+def get_ocr_vision_api(image_path):
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "src/main/extraction/spheric-time-383904-f1b421d86eef.json"
+    with open(image_path, 'rb') as f:
+        ctxt = b64encode(f.read()).decode()
+    client = vision.ImageAnnotatorClient()
+    image = vision.Image(content = ctxt)
+
+    response = client.text_detection(image=image)
+
+    word_coordinates = []
+    all_text = ""
+
+    for i,text in enumerate(response.text_annotations):
+        if i != 0:
+            # print('=' * 30)
+            # print(text.description)
+            vertices = [(v.x, v.y) for v in text.bounding_poly.vertices]
+            x1 = min(v.x for v in text.bounding_poly.vertices)
+            x2 = max(v.x for v in text.bounding_poly.vertices)
+            y1 = min(v.y for v in text.bounding_poly.vertices)
+            y2 = max(v.y for v in text.bounding_poly.vertices)
+            # print('bounds: ' + str(vertices))
+            if x2 - x1 == 0:
+                x2 += 1
+            if y2 - y1 == 0:
+                y2 += 1
+            word_coordinates.append({
+                "word": text.description,
+                "left": x1,
+                "top": y1,
+                "width": x2 - x1,
+                "height": y2 - y1,
+                "x1": x1,
+                "y1": y1,
+                "x2": x2,
+                "y2": y2
+                })
+        else:
+            all_text = text.description
+
+    return word_coordinates, all_text
+
+
+
+if __name__== "__main__":
+    
+    # product config
+    configur = ConfigParser()
+    configur.read("src/main/extraction/config/config.ini")
+
+    folder_path = configur["DataSource"]
+
+    print("==================Trade Finance Solutions===================")
+    print("OCR Generation Task:")
+    print(f"folder_path: {folder_path}")
+
+    images_path = os.path.join(folder_path, "Images")
+    ocr_path = os.path.join(folder_path, "OCR")
+
+    if not os.path.exists(ocr_path):
+        os.mkdir(ocr_path)
+
+    img_files = os.listdir(images_path)
+    img_files = [x.split(".png")[0] for x in img_files]
+    annotation_data = []
+    thresh = 300  #need to change to 250
+    count= 1
+    for file in img_files:
+        print(f'file name: {file}')
+        image = cv2.imread(os.path.join(images_path, f"{file}.png"))
+        word_coordinates = []
+
+        if os.path.exists(os.path.join(ocr_path, f"{file}_text.txt")):
+            continue
+
+        word_coordinates, all_text = get_ocr_vision_api(
+            os.path.join(images_path, f"{file}.png")
+        )
+        if len(word_coordinates) == 0:
+            print(file)
+            print("Not enough text")
+        else:
+            with open(os.path.join(ocr_path, f"{file}_text.txt"), "w") as f:
+                json.dump({"word_coordinates": word_coordinates}, f)
+
+            with open(os.path.join(ocr_path, f"{file}_all_text.txt"), "w") as f:
+                json.dump(all_text, f)

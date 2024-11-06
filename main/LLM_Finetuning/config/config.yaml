@@ -1,0 +1,32 @@
+# config.yaml
+paths:
+  model_path: "/home/gpu1admin/rakesh/COO/model"
+  root_path: "/home/gpu1admin/rakesh/COO/extraction_data"
+  output_dir: "/home/gpu1admin/rakesh/COO/output"
+  base_model_path: "/home/gpu1admin/rakesh/COO/model"
+  merged_model_path: 'merged_model_coo'
+
+model:
+  model_name: "mistralai/Mistral-7B-Instruct-v0.2"
+  new_model_name: "mistralai-extraction-Instruct-Finetune-COO"
+
+training:
+  train_path: "train.json"
+  test_path: "test.json"
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 4
+  warmup_steps: 0.03
+  max_steps: 1000
+  learning_rate: 2e-4
+  logging_steps: 100
+  save_steps: 5
+  optim: "paged_adamw_8bit"
+  save_strategy: "epoch"
+  evaluation_strategy: "steps"
+
+peft:
+  r: 8
+  lora_alpha: 32
+  lora_dropout: 0.05
+  bias: "none"
+  task_type: "CAUSAL_LM"

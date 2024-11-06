@@ -1,0 +1,12 @@
+{
+  "categories": [
+    {
+      "id": "0",
+      "name": "checked"
+    },
+    {
+      "id": "1",
+      "name": "unchecked"
+    }
+  ]
+}

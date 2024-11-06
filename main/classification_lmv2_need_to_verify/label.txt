@@ -1,0 +1,1 @@
+{"BOE": 0, "LCAPPLICATION": 1, "OTHERS": 2, "CS": 3, "BGCANCELLATION": 4, "COO": 5, "CI": 6, "BGCHECKLIST": 7, "BOL": 8, "IC": 9, "PL": 10, "PI": 11, "AWB": 12, "PO": 13}

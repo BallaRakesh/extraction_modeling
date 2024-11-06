@@ -1,0 +1,5 @@
+train: /home/nt-user1/vasu/yolov8/yolo_prepare_data/images/train
+val: /home/nt-user1/vasu/yolov8/yolo_prepare_data/images/train
+
+nc: 2
+names: ['checked', 'unchecked']

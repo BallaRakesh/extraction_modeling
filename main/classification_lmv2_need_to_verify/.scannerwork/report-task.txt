@@ -1,0 +1,6 @@
+projectKey=trade_finance
+serverUrl=http://192.168.170.49:9005
+serverVersion=8.4.1.35646
+dashboardUrl=http://192.168.170.49:9005/dashboard?id=trade_finance
+ceTaskId=AYiZxOyTo319g48GgXWF
+ceTaskUrl=http://192.168.170.49:9005/api/ce/task?id=AYiZxOyTo319g48GgXWF
