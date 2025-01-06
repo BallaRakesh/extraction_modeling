@@ -167,6 +167,8 @@ n_classes = 7
 - samples result from above annotations:
 ![samples result from above annotations](main/linking_modeling_using_geo/GeoLayoutLM_infer/samples/82092117_linking.png)
 ![Description of the image](https://github.com/BallaRakesh/extraction_modeling/blob/dev/main/linking_modeling_using_geo/GeoLayoutLM_infer/samples/82092117_linking_before.png)
+testing ?????
+![Linking Example](https://raw.githubusercontent.com/BallaRakesh/extraction_modeling/dev/main/linking_modeling_using_geo/GeoLayoutLM_infer/samples/82092117_linking_before.png)
 
 
 - Currently we are Maintaining these kind of annotations , where, each word from the ocr treated as one block, the 'text' will be same as individual word
