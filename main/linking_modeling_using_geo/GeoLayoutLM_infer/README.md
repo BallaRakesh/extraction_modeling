@@ -165,7 +165,7 @@ n_classes = 7
 
 - Maintaining annotations in this format during both training and inference will likely lead to improved results.
 - samples result from above annotations:
-![Alt text for the image](GeoLayoutLM_infer/samples/82092117_linking.png)
+![Alt text for the image](main/linking_modeling_using_geo/GeoLayoutLM_infer/samples/82092117_linking.png)
 
 - Currently we are Maintaining these kind of annotations , where, each word from the ocr treated as one block, the 'text' will be same as individual word
 
