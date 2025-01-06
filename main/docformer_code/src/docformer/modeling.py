@@ -142,7 +142,17 @@ class DocFormerEmbeddings(nn.Module):
 
         y_feature[:,:,3:] = torch.clamp(y_feature[:,:,3:],-self.config["max_2d_position_embeddings"],self.config["max_2d_position_embeddings"])
         y_feature[:,:,3:]+= self.config["max_2d_position_embeddings"]
+        # print(self.x_topleft_position_embeddings_v)
+        print('$$$$$$$$$$$$$$$$$$$$$$$$$$$', x_feature[:,:,0].shape)
+        print(f"Min index >> x_feature: {x_feature[:,:,0].min().item()}, Max index: {x_feature[:,:,0].max().item()}")
+        # # Convert PyTorch tensor to a Python list
+        # x_feature_list = x_feature.tolist()
+        # # Save the list to a text file
+        # with open("x_feature.txt", "w") as f:
+        #     f.write(str(x_feature_list))
         
+        # Within valid range: The values in x_feature[:, :, 0] must fall within the range [0, max_2d_position_embeddings - 1]
+
         x_topleft_position_embeddings_v = self.x_topleft_position_embeddings_v(x_feature[:,:,0])
         x_bottomright_position_embeddings_v = self.x_bottomright_position_embeddings_v(x_feature[:,:,1])
         w_position_embeddings_v = self.w_position_embeddings_v(x_feature[:,:,2])
@@ -165,6 +175,7 @@ class DocFormerEmbeddings(nn.Module):
             ],
             dim = -1
         )
+        print(f"Min index > y_feature: {y_feature[:,:,0].min().item()}, Max index: {y_feature[:,:,0].max().item()}")
 
         y_topleft_position_embeddings_v = self.y_topleft_position_embeddings_v(y_feature[:,:,0])
         y_bottomright_position_embeddings_v = self.y_bottomright_position_embeddings_v(y_feature[:,:,1])

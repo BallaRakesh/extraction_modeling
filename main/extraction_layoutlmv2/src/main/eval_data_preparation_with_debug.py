@@ -534,7 +534,7 @@ if __name__== "__main__":
                 ocr_already_available_flag = False 
                 ####################################################################################
                 # if ocr present we will not do
-                if not os.path.exists(os.path.join(ocr_path, file + "_textAndCoordinates.txt")): #"_text.txt"
+                if not os.path.exists(os.path.join(ocr_path, file + "_text.txt")): #".txt" _textAndCoordinates
                     print(file)
                     exit('OK')
                     # word_coordinates = []
@@ -554,10 +554,10 @@ if __name__== "__main__":
                     # word_coordinates = open(os.path.join(ocr_path, file + "_textAndCoordinates.txt"), "r")
                 
                     
-                    with open(os.path.join(ocr_path, file + "_textAndCoordinates.txt"), 'r') as file1:
+                    with open(os.path.join(ocr_path, file + "_text.txt"), 'r') as file1: #_textAndCoordinates
                         content = file1.read()  # Reads the entire file content
                     # print(content)  # Display the content
-                    word_coordinates = ast.literal_eval(content)
+                    word_coordinates = ast.literal_eval(content).get('word_coordinates')
                     
                     print(word_coordinates)
                     # all_text = json.load(open(os.path.join(master_path, 

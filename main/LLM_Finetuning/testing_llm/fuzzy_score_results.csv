@@ -1,0 +1,43 @@
+image_name,field_name,gt_value,predicted_value,fuzzy_score
+BNI_Indonesian.json,nik,7105074205820001,,0
+BNI_Indonesian.json,nama,Jelty jeine kordak,John Doe,15
+BNI_Indonesian.json,tempat/tgl_lahir,"MOTOLING, 18-05-1982",1990-05-15,40
+BNI_Indonesian.json,jenis_kelamin,PEREMPUAN,,0
+BNI_Indonesian.json,gol_darah,-,,0
+BNI_Indonesian.json,alamat,JAGA VI,,0
+BNI_Indonesian.json,RT/RW,-/-,,0
+BNI_Indonesian.json,kel/desa,MOTOLING II,,0
+BNI_Indonesian.json,kecamatan,MOTOLING,,0
+BNI_Indonesian.json,agama,KRISTEN,,0
+BNI_Indonesian.json,status_perkawinan,KAWIN,,0
+BNI_Indonesian.json,pekerjaan,MENGURUS RUMAH TANGGA,,0
+BNI_Indonesian.json,kewarganegaraan,WNI,Indonesia,33
+BNI_Indonesian.json,berlaku_hingga,SEUMUR HIDUP,SEUMUR HIDUP,100
+4.json,nik,3603284407690007,3b03284407b90007,88
+4.json,nama,juliana,,0
+4.json,tempat/tgl_lahir,"JAKARTA, 04-07-1969",,0
+4.json,jenis_kelamin,PEREMPUAN,,0
+4.json,gol_darah,O-,O,67
+4.json,alamat,GADING SERPONG 7B DD-7 NO.99,GADING SERPONG 78 DD.7 NO.29,89
+4.json,rt/rw,004/003,004/003,100
+4.json,kel/desa,KELAPA SANGERENG,,0
+4.json,kecamatan,KELAPA DUA,KELAPADUA,95
+4.json,agama,KRISTEN,KRISTEN,100
+4.json,status_perkawinan,KAWIN,KAWIN,100
+4.json,pekerjaan,WIRASWASTA,WIRASWASTA TANGERANG,67
+4.json,kewarganegaraan,WNI,WNI 161 2013,40
+4.json,berlaku_hingga,04-07-2018,04-07-2018,100
+1.json,NIK,3175070101909999,3175070101909994,94
+1.json,nama,billy bumblebee sifulan,Billy Bumblebee Sifulan,100
+1.json,tempat/tgl_lahir,"SURABAYA, 01-01-1990","Surabaya, 01-01-1990",100
+1.json,jenis_kelamin,LAKI-LAKI,,0
+1.json,gol_darah,AB,AB,100
+1.json,alamat,JL DIMANA NO 100,JL DIMANA NO 100,100
+1.json,rt/rw,001/001,001/001,100
+1.json,kel/desa,ANTAH BERANTAH,ANTAH BERANTAH,100
+1.json,kecamatan,DUREN SAWIT,DUREN SAWIT,100
+1.json,agama,ISLAM,Islam,100
+1.json,status_perkawinan,KAWIN,KAWIN,100
+1.json,pekerjaan,KARYAWAN SWASTA,KARYAWAN SWASTA,100
+1.json,kewarganegaraan,WNI,WNI,100
+1.json,berlaku_hingga,SEUMUR HIDUP,SEUMUR HIDUP,100

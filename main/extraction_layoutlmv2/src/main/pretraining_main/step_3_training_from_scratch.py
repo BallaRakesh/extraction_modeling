@@ -60,6 +60,60 @@ import numpy as np
 #################################################################
 # from config.prod_mapping import product_code_map, document_code_map
 
+def denormalize_bboxes(bboxes, width, height, norm_val=1000, zero_val=0):
+    """
+    Denormalize bounding boxes back to original image coordinates.
+    
+    Args:
+    - bboxes: List of bounding boxes, each bbox is [x0, y0, x2, y2]
+    - width: Original image width
+    - height: Original image height
+    - norm_val: Normalization value used (default 100)
+    - zero_val: Minimum value used in normalization (default 0)
+    
+    Returns:
+    List of denormalized bounding boxes
+    """
+    denormalized_bboxes = []
+    
+    for bbox in bboxes:
+        # Denormalize each coordinate
+        x0 = int((bbox[0] / norm_val) * width)
+        y0 = int((bbox[1] / norm_val) * height)
+        x2 = int((bbox[2] / norm_val) * width)
+        y2 = int((bbox[3] / norm_val) * height)
+        
+        denormalized_bboxes.append([x0, y0, x2, y2])
+    
+    return denormalized_bboxes
+
+# # Example usage
+# image_width = 800  # replace with your actual image width
+# image_height = 640  # replace with your actual image height
+
+# normalized_bboxes = [[97, 604, 212, 635], 
+#                      [337, 595, 462, 626], 
+#                      [467, 595, 513, 626]]
+
+
+# To draw on the image
+import cv2
+
+def draw_bboxes(image, bboxes, color=(0, 255, 0), thickness=2):
+    """
+    Draw bounding boxes on an image.
+    
+    Args:
+    - image: Input image
+    - bboxes: List of bounding boxes [x0, y0, x2, y2]
+    - color: BGR color of bounding box
+    - thickness: Line thickness
+    """
+    for bbox in bboxes:
+        cv2.rectangle(image, (bbox[0], bbox[1]), (bbox[2], bbox[3]), color, thickness)
+    return image
+
+
 
 
 class SROIEDataset(Dataset):
@@ -87,12 +141,25 @@ class SROIEDataset(Dataset):
 		# first, take an image
 		item = self.image_file_names[idx]
 		image = Image.open(self.image_dir + item).convert("RGB")
-
+		# image_width, image_height = image.size
 		# get word-level annotations
 		words = self.words[idx]
 		boxes = self.boxes[idx]
 		word_labels = self.labels[idx]
-
+		# image = np.array(image)
+		# print((self.image_dir + item))
+		# print(words)
+		# # print(boxes)
+		# # Draw each bounding box
+		# for box, word in zip(boxes, words):
+		# 	# Scale the bounding box to image dimensions if necessary
+		# 	x1, y1, x2, y2 = box
+		# 	# Draw the rectangle on the image
+		# 	cv2.rectangle(image, (x1, y1), (x2, y2), color=(0, 255, 0), thickness=2)
+		# 	# Put the corresponding word near the box
+		# 	cv2.putText(image, word, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+		# cv2.imwrite('output_path.png', image)
+		# exit('OLLLL')
 		assert len(words) == len(boxes) == len(word_labels)
 
 		word_labels = [label2id[label] for label in word_labels]
@@ -214,7 +281,7 @@ log_dir = "logs"  # Directory to store the TensorBoard logs
 
 
 
-folder_path = '/home/data_science/geo_testing/COO_V3'
+folder_path = '/home/data_science/geo_testing/COO_V3/testing'
 logger = get_logger_object_and_setting_the_loglevel()
 
 # for doc_code_ in doc_code_list:
@@ -353,12 +420,12 @@ for cou1, cou2 in zip(range(len(train[0])), range(len(train_dataset))):
 	print("***********")
 	logger.info(f"sample: {sample}; train_chunk_count: {len(train[0][cou1])}; embedding: {len(encoding['input_ids'])}; word_count: {word_count}; padding_count: {padding_count}")
 '''
-with open(os.path.join(folder_path, "label.txt"), "r") as file:
-	class_names: List = file.readlines()
-	class_names = list(map(lambda x: x.strip(), class_names))
-	dict_mapping = dict(enumerate(class_names))
-file.close()
-logger.info(f"actual_label_length: {len(dict_mapping)}; train_gen_classes:{len(id2label)}")
+# with open(os.path.join(folder_path, "label.txt"), "r") as file:
+# 	class_names: List = file.readlines()
+# 	class_names = list(map(lambda x: x.strip(), class_names))
+# 	dict_mapping = dict(enumerate(class_names))
+# file.close()
+# logger.info(f"actual_label_length: {len(dict_mapping)}; train_gen_classes:{len(id2label)}")
 
 
 encoding = train_dataset[0]
@@ -399,11 +466,11 @@ config = LayoutLMv2Config(
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model = LayoutLMv2ForTokenClassification(config)
-print(model)
+# model = LayoutLMv2ForTokenClassification(config)
+# print(model)
 # exit('OK')
-# model = LayoutLMv2ForTokenClassification.from_pretrained('microsoft/layoutlmv2-base-uncased',
-															# num_labels=len(labels))
+model = LayoutLMv2ForTokenClassification.from_pretrained('microsoft/layoutlmv2-base-uncased',
+															num_labels=len(labels))
 # exit('*************')
 print(device)
 model.to(device)
@@ -434,7 +501,14 @@ for epoch in range(num_train_epochs):
 		attention_mask = batch['attention_mask'].to(device)
 		token_type_ids = batch['token_type_ids'].to(device)
 		labels = batch['labels'].to(device)
-
+		print(f"input_ids dtype: {batch['input_ids'].dtype}")
+		print(f"bbox dtype: {batch['bbox'].dtype}")
+		print(f"image dtype: {batch['image'].dtype}")
+		print(f"attention_mask dtype: {batch['attention_mask'].dtype}")
+		print(f"token_type_ids dtype: {batch['token_type_ids'].dtype}")
+		print(f"labels dtype: {batch['labels'].dtype}")
+		# exit('OLLLLLLLLLLLLLLLLLLLLL')
+		
 		# zero the parameter gradients
 		optimizer.zero_grad()
 
@@ -587,9 +661,11 @@ else:
 	exit("no best model exist")
 
 
-model = LayoutLMv2ForTokenClassification.from_pretrained(
-		pretrained_model_name_or_path=os.path.join(model_path, 'pytorch_model.bin'),
-		config=os.path.join(model_path, 'config.json'))
+# model = LayoutLMv2ForTokenClassification.from_pretrained(
+# 		pretrained_model_name_or_path=os.path.join(model_path, 'pytorch_model.bin'),
+# 		config=os.path.join(model_path, 'config.json'))
+
+model = LayoutLMv2ForTokenClassification.from_pretrained(model_path)
 
 print(training_loss)
 with open(os.path.join(folder_path, "training_loss.txt"), 'w') as f:

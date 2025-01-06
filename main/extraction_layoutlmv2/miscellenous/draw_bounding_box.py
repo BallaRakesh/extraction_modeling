@@ -80,7 +80,7 @@ if __name__=="__main__":
     # folder_path = "Credit Note"
     # folder_path = "Credit Note updated"
     #folder_path = "Invoices combined"
-    folder_path = "/home/ntlpt19/Desktop/TF_release/geolm_api/grasim_test_samples"
+    folder_path = "/home/ntlpt19/Downloads/Final_Delivery_Training_itter_2/Bill_of_exchange_153/Bill_of_exchange_153"
     #pdf_path = os.path.join(folder_path, "1_page_pdfs")
     images_path = os.path.join(folder_path, "Images")
     labels_path = os.path.join(folder_path, "Labels")
@@ -92,7 +92,7 @@ if __name__=="__main__":
         os.mkdir(bounding_box_path)
 
 
-    with open(os.path.join(folder_path, "label.txt"), "r") as f:
+    with open(os.path.join(folder_path, "classes.txt"), "r") as f:
         classes = (f.read())
         classes = classes.split("\n")
     labelled_files = os.listdir(labels_path)

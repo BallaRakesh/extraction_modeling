@@ -86,7 +86,7 @@ def remove_garbage(dataset):
 
 
 def get_ocr_vision_api(image_path):
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/home/ntlpt19/Downloads/Evaluation_Data/updated_code/src/main/extraction/spheric-time-383904-f1b421d86eef.json"
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/home/ntlpt19/TF_testing_EXT/code/miscellaneous_code/src/main/gv_key.json"
 
     with open(image_path, 'rb') as f:
         ctxt = b64encode(f.read()).decode()
@@ -414,7 +414,7 @@ if __name__== "__main__":
     product_config = ConfigParser()
 
     # relative path => passed in validation
-    product_config.read("/home/ntlpt19/Downloads/Evaluation_Data/updated_code/src/main/extraction/config/config.ini")
+    product_config.read("config/config.ini")
     prod_code = product_code_map[product_config["Product"]["code"]]
     doc_code = product_config["Product"]["document_code"]
     if '[' in doc_code:
@@ -425,7 +425,7 @@ if __name__== "__main__":
     #best_keys_list = ast.literal_eval(configur[f'{ground_truth}_BEST_KEYS']['keys'])
     # data folder path
     product_wise_folder = ConfigParser()
-    product_wise_folder.read("/home/ntlpt19/Downloads/Evaluation_Data/updated_code/src/main/extraction/config/prod.ini")
+    product_wise_folder.read("config/prod.ini")
     
     
     
@@ -444,7 +444,7 @@ if __name__== "__main__":
         # folder_path = '/New_Volume/Rakesh/DATA_LMV3'
         #####################################################################
         configur = ConfigParser()
-        configur.read('/home/ntlpt19/Downloads/Evaluation_Data/updated_code/src/main/extraction/traini_valid_utility.ini')
+        configur.read('traini_valid_utility.ini')
         # is_agumentation: bool = configur["AGUMENTATION"]["is_agumentation"]  #need to change to 250    
         is_agumentation = False
         

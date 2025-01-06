@@ -1,3 +1,126 @@
+
+# DocFormer Model Training 
+
+## Dependencies
+
+Make sure you have the necessary libraries installed. Typically, include instructions for libraries like TensorFlow, PyTorch, OpenCV, etc., depending on your project's requirements.
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Dataset Preparation
+
+This document outlines the necessary steps and requirements for preparing the dataset used in the classification task. Please follow the instructions carefully to ensure a smooth setup.
+ ### Required Changes in `docformer/constants.py`
+
+### Directory Structure
+
+- **Base Directory**:  
+  `/home/ntlpt19/Downloads/Classification_final_training/V2_ROOT/LC`
+  
+- **Split OCR Files**:  
+  `/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/ocr_chunks`
+  
+- **Training Data CSV**:  
+  `/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/training_set_1.csv`
+  
+- **Testing Data CSV**:  
+  `/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/testing_set_1.csv`
+  
+- **Output Folder for Debugging**:  
+  `/home/ntlpt19/Downloads/Classification_final_training/debug`
+  
+- **OCR Directory**:  
+  `/home/ntlpt19/Downloads/Classification_final_training/OCR_GV`
+  
+- **Pytesseract Output Folder**:  
+  `/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/ocr_pytess`
+
+
+If you intend to use a custom split for your data, please make the following changes in the `constants.py` file:
+
+```python
+train_data_csv = '/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/training_set_1.csv'
+test_data_csv = '/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/testing_set_1.csv'
+custom_label2id = {'PO': 0, 'PI': 1, 'OTHERS': 2}
+custom_split = True
+```
+
+### Note:
+
+- **OCR Processing**: It is essential that the Optical Character Recognition (OCR) processing is completed **prior to** proceeding with data classification. If OCR is not done beforehand, you will need to generate and save OCR outputs in a separate folder using Pytesseract.
+
+## Debug Mode
+
+To facilitate debugging, ensure `debug_mode` is set to `True` in your configuration. This will provide more insights during the processing of the dataset.
+
+---
+
+## Training Procedures
+
+Here are the different training procedures available for this classification task:
+
+1. **Training with Previously Trained Model**:  
+   To fine-tune a model using the existing Docformer model tained with same configuration, use the following script:  
+   `/docformer/training_finetuining_using_premodel.py`
+
+2. **Training from Scratch**:  
+   To train the model from scratch using a loaded model based on the configuration, use:  
+   `/docformer/train_main.py`  
+   **Note**: For language embeddings, we are using LayoutLM version 1 language embedding weights.
+
+3. **Chunk-Wise Training**:  
+   To train the model chunk-wise, where the data is split into chunks based on a threshold (set to 250), use:  
+   `/docformer/train_main_chunk_wise.py`
+
+### Label Mapping for Inference
+
+During training, the following files will be generated:
+
+- **Modeling Label to ID Mapping**:  
+  The mapping of labels to IDs will be saved in a file named `modeling_label2id.txt`. 
+### Using `modeling_label2id.txt` for Inference
+
+At the time of inference, you will need to read the `modeling_label2id.txt` file to set up the mappings for inference as follows:
+
+```python
+label2id_infer = {}
+id2label_infer = {}
+
+# Example of how to populate the dictionaries
+label2id_infer = {'PO': 0, 'PI': 1, 'OTHERS': 2}
+id2label_infer = {0: 'PO', 1: 'PI', 2: 'OTHERS'}
+```
+
+Ensure that these mappings are correctly populated based on the contents of `modeling_label2id.txt`.
+
+
+
+## Generating Results
+
+To generate results for a set of images, you can use the following script:
+
+- **Generate Inference Results**:  
+  To generate the results from a set of images, run:  
+  `/docformer/inference_res.py`
+
+## Generating Accuracy and Recall
+
+To evaluate the performance of your model, use the following scripts:
+
+1. **Generate Accuracy and Recall**:  
+   To calculate accuracy and recall for the classification, use:  
+   `/docformer/accuracy_generate.py`
+
+2. **Generate Only Recall**:  
+   If you want to generate only the recall metric, use:  
+   `docformer/accuracy_gen_only_recall.py`
+
+
+# Main Paper
 # DocFormer - PyTorch
 
 ![docformer architecture](images/docformer-architecture.png)
