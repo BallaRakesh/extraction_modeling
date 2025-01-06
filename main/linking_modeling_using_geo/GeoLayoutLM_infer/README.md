@@ -164,7 +164,8 @@ n_classes = 7
 ```
 
 - Maintaining annotations in this format during both training and inference will likely lead to improved results.
-![samples result from above annotations: ](https://github.com/BallaRakesh/extraction_modeling/blob/dev/main/linking_modeling_using_geo/GeoLayoutLM_infer/samples/82092117_linking.png)
+- samples result from above annotations:
+![Sample Link](https://github.com/BallaRakesh/extraction_modeling/blob/dev/main/linking_modeling_using_geo/GeoLayoutLM_infer/samples/82092117_linking.png)
 
 
 - Currently we are Maintaining these kind of annotations , where, each word from the ocr treated as one block, the 'text' will be same as individual word
@@ -195,8 +196,8 @@ n_classes = 7
       "id": 0
     }
 ```
-
-![samples result from above annotations: ](https://github.com/BallaRakesh/extraction_modeling/blob/dev/main/linking_modeling_using_geo/GeoLayoutLM_infer/samples/82092117_linking_before.png)
+- samples result from above annotations: 
+![Sample Link](https://github.com/BallaRakesh/extraction_modeling/blob/dev/main/linking_modeling_using_geo/GeoLayoutLM_infer/samples/82092117_linking_before.png)
 
 ## Usage
 Once the data is prepared, you can proceed with the inference tasks specified in the project documentation. For detailed usage instructions, refer to [link to usage instructions or tutorials].
