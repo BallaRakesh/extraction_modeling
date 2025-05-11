@@ -495,6 +495,7 @@ class LanguageFeatureExtractor(nn.Module):
         layoutlm_dummy = LayoutLMForTokenClassification.from_pretrained("microsoft/layoutlm-base-uncased", num_labels=1)
         self.embedding_vector = nn.Embedding.from_pretrained(layoutlm_dummy.layoutlm.embeddings.word_embeddings.weight)
 
+
     def forward(self, x):
         return self.embedding_vector(x)
         

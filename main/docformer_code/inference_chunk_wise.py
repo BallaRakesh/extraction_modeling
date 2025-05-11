@@ -23,10 +23,15 @@ import sys
 sys.path.append('./src/docformer')
 
 ## Importing the functions from the DocFormer Repo
-from dataset_nonchunk import create_features
+from dataset import create_features
 from modeling import DocFormerEncoder,ResNetFeatureExtractor,DocFormerEmbeddings,LanguageFeatureExtractor
 from transformers import BertTokenizerFast
+from tqdm.auto import tqdm
+from dataset import apply_ocr_gv
 
+from tqdm.auto import tqdm
+from sklearn.model_selection import train_test_split as tts
+import pandas as pd
 
 ## Hyperparameters
 
@@ -56,40 +61,72 @@ config = {
 }
 
 
-from tqdm.auto import tqdm
 
-## For the purpose of prediction
-id2label = []
-label2id = {}
-curr_class = 0
-## Preparing the Dataset
-# base_directory = '/home/ntlpt19/Downloads/Eval_classification/LC'
-from constants import label2id_infer, id2label_infer, model_path, eavl_directory
-print('############', model_path)
 
-dict_of_img_labels = {'img':[], 'label':[]}
+from constants import eavl_directory, eval_split_ocr_files
 
-max_sample_per_class = 250
-
-for label in tqdm(os.listdir(eavl_directory)):
-    img_path = os.path.join(eavl_directory, label)
+def get_train_test_df(base_directory, custom_split=False, train_data_file=None, test_data_file = None, custom_label2id = {}):
+  if custom_split:
+    if not os.path.exists(train_data_file) or not os.path.exists(train_data_file):
+        raise FileNotFoundError("CSV not found. Please provide a valid file path.")
+    if not len(custom_label2id):
+        raise FileNotFoundError(" Please provide a valid custom label2id ")
+      
+    id2label = list(custom_label2id.keys())
+    df_train = pd.read_csv(train_data_file)
+    df_test = pd.read_csv(test_data_file)
+    for data_sets, flag_ in zip([df_train, df_test], ['train', 'test']):
+      dict_of_img_labels = {'img':[], 'label':[]}
+      for image_path_, label_ in zip(data_sets['image_path'], data_sets['label']):
+          print(image_path_, label_)
+          desired_path = os.path.join(base_directory,
+                                        os.path.basename(os.path.dirname(image_path_)), 
+                                        os.path.basename(image_path_)                   
+                                        )
+          if os.path.exists(desired_path) and label_ in custom_label2id:
+              dict_of_img_labels['img'].append(desired_path)
+              dict_of_img_labels['label'].append(custom_label2id[label_])
+      if flag_ == 'train':
+        train_df = pd.DataFrame(dict_of_img_labels)
+      elif flag_ == 'test':
+        valid_df = pd.DataFrame(dict_of_img_labels)
+      
+    label2id = custom_label2id
+    return id2label, label2id, train_df, valid_df
     
-    count = 0
-    if label not in label2id:
-        label2id[label] = curr_class
-        curr_class+=1
-        id2label.append(label)
+  else:
+    id2label = []
+    label2id = {}
+    curr_class = 0
+    dict_of_img_labels = {'img':[], 'label':[]}
+    max_sample_per_class = 300
+
+    for label in tqdm(os.listdir(base_directory)):
+        img_path = os.path.join(base_directory, label)
         
-    for img in os.listdir(img_path):
-        if count>max_sample_per_class:
-            break
+        count = 0
+        if label not in label2id:
+            label2id[label] = curr_class
+            curr_class+=1
+            id2label.append(label)
             
-        curr_img_path = os.path.join(img_path, img)
-        dict_of_img_labels['img'].append(curr_img_path)
-        dict_of_img_labels['label'].append(label2id[label])
-        count+=1
-        
-        
+        for img in os.listdir(img_path):
+            if count>max_sample_per_class:
+                break
+                
+            curr_img_path = os.path.join(img_path, img)
+            dict_of_img_labels['img'].append(curr_img_path)
+            dict_of_img_labels['label'].append(label2id[label])
+            count+=1
+            
+    df = pd.DataFrame(dict_of_img_labels)
+    train_df, valid_df = tts(df, random_state = seed, stratify = df['label'], shuffle = True)
+    
+    return id2label, label2id, train_df, valid_df
+
+id2label, label2id, train_df, valid_df = get_train_test_df(eavl_directory, custom_split=False, train_data_file='', test_data_file = '', custom_label2id={})
+
+   
 # print(dict_of_img_labels)
 print(label2id)
 id2label = {v: k for k, v in label2id.items()}
@@ -100,15 +137,64 @@ with open('modeling_label2id.txt', 'w') as file:
 file.close()
     
 
-import pandas as pd
-df = pd.DataFrame(dict_of_img_labels)
-
-from sklearn.model_selection import train_test_split as tts
-train_df, valid_df = tts(df, random_state = seed, stratify = df['label'], shuffle = True)
 
 train_df = train_df.reset_index().drop(columns = ['index'], axis = 1)
 valid_df = valid_df.reset_index().drop(columns = ['index'], axis = 1)
 
+print(train_df)
+
+
+import json
+
+def filter_updated_data(word_bbox, image_pth, data_dict, label, split_ocr_files, chunk_size = 250):
+    print(image_pth)
+    if len(word_bbox['words']) > chunk_size:
+        print("+++++++++++++$$$$$$$$$$$$$$$$$$$")
+        my_list_words = word_bbox['words'] #updated_dataset[i]['words']
+        my_list_bbox = word_bbox['bbox'] #updated_dataset[i]['bbox']
+        i = 0
+        for k in range(0, len(my_list_words), chunk_size):
+            words_chunk = my_list_words[k:k + chunk_size]
+            bbox_chunk = my_list_bbox[k:k + chunk_size]
+            final_dict = {"words": words_chunk, "bbox": bbox_chunk}
+            base_name, ext = os.path.splitext(image_pth)  
+            # Create the new file name 
+            
+            new_file_path = f"{base_name}_S_{i}{ext}"  
+            print(new_file_path)
+            file_name = f"{os.path.basename(image_pth)[0:-4]}_S_{i}.json"
+            print(file_name)
+            data_dict['img'].append(new_file_path)
+            data_dict['label'].append(label)
+            i = i+1
+            with open(os.path.join(split_ocr_files, file_name), 'w') as json_file:  
+              json.dump(final_dict, json_file)
+            json_file.close()
+            
+    else:
+        file_name = f"{os.path.basename(image_pth)[0:-4]}.json"
+        with open(os.path.join(split_ocr_files, file_name), 'w') as json_file:  
+          json.dump(word_bbox, json_file)
+        json_file.close()
+        data_dict['img'].append(image_pth)
+        data_dict['label'].append(label)
+    return data_dict
+
+
+def get_final_data(in_dataframe):
+  final_data = {'img':[], 'label':[]}
+  for image_path_, label_ in zip(in_dataframe['img'], in_dataframe['label']):
+      print(image_path_, label_)
+      word_bbox = apply_ocr_gv(image_path_)
+      final_data = filter_updated_data(word_bbox, image_path_, final_data, label_, eval_split_ocr_files)
+  return pd.DataFrame(final_data)
+      
+      
+train_df =  get_final_data(train_df)
+valid_df =  get_final_data(valid_df)
+print(train_df)
+train_df.to_csv('train_lc.csv', index=False)  
+valid_df.to_csv('valid_lc.csv', index=False)
 ## Creating the dataset
 
 class RVLCDIPData(Dataset):
@@ -141,7 +227,7 @@ class RVLCDIPData(Dataset):
             apply_mask_for_mlm=False,
             extras_for_debugging=False,
             use_ocr = True
-    )
+          )
         if self.transform is not None:
             ## Note that, ToTensor is already applied on the image
             final_encoding['resized_scaled_img'] = self.transform(final_encoding['resized_scaled_img'])
@@ -339,20 +425,29 @@ class DocFormer(pl.LightningModule):
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 from pytorch_lightning.loggers import WandbLogger
-import torch
-from tqdm import tqdm
+
+
+def update_dataframe(df,imagename, value_list, label):
+    # Check if the imagename already exists in the DataFrame
+    if imagename in df['imagename'].values:
+        # Append the new values to the existing list
+        df.loc[df['imagename'] == imagename, 'values'].iloc[0].extend([value_list])
+    else:
+        # Add a new row with the imagename and the list of values
+        df = pd.concat([df, pd.DataFrame({'imagename': [imagename], 'values': [[value_list]], "gt_label":[label]})], ignore_index=True)
+    return df
+
+
+
+import re
 
 ############ ITTER 1 BILLS
 # label2id_infer = {'BOE': 0, 'AWB': 1, 'PL': 2, 'CS': 3, 'IC': 4, 'OTHERS': 5, 'CI': 6, 'BOL': 7, 'COO': 8}
 # id2label_infer = {0: 'BOE', 1:'AWB', 2:'PL', 3:'CS', 4:'IC', 5:'OTHERS', 6:'CI', 7:'BOL', 8:'COO'}
 
+
 ############ ITTER 1 LC
-# label2id_infer = {'PO': 0, 'PI': 1, 'OTHERS': 2}
-# id2label_infer = {0:'PO', 1:'PI', 2:'OTHERS'}
-
-# model_path = '/home/ntlpt19/Downloads/Classification_final_training/docformer_model/LC_org/model-epoch=01.ckpt'
-# # Load the entire model
-
+from constants import label2id_infer, id2label_infer, model_path
 model = DocFormer.load_from_checkpoint(model_path, config=config)
 pl_dl = datamodule
 
@@ -368,6 +463,8 @@ confidence_scores_list = []
 labels_val = []
 preds_val = []
 
+df_aggregated = pd.DataFrame(columns=['imagename', 'values'])
+
 for idx, batch in enumerate(tqdm(pl_dl.val_dataloader())):
     # move batch to device
     # batch = {k:v.to(device) for k,v in batch.items()}
@@ -378,10 +475,15 @@ for idx, batch in enumerate(tqdm(pl_dl.val_dataloader())):
     list_of_gt.append(id2label.get(batch['label'].item()))
     with torch.no_grad():
         outputs = model.forward(batch)
+        
+        preds_ = torch.softmax(outputs, dim=1).tolist()[0]
+        updated_image_path = re.sub(r'_S_\d+$', '', os.path.splitext(batch['image_path'][0])[0])
+        df_aggregated = update_dataframe(df_aggregated,updated_image_path, preds_,id2label.get(batch['label'].item()))
+        preds = torch.argmax(outputs, 1)
+        # print(preds)
         probs = F.softmax(outputs, dim=1)
         confidence_scores = torch.max(probs, dim=1).values
         confidence_scores_list.append(confidence_scores.item())
-        preds = torch.argmax(outputs, 1)
         # print('pred', preds.item())
         list_of_pred.append(id2label_infer.get(preds.item()))
         preds_val.append(preds)
@@ -406,7 +508,11 @@ for idx, batch in enumerate(tqdm(pl_dl.train_dataloader())):
     list_of_gt.append(id2label.get(batch['label'].item()))
     with torch.no_grad():
         outputs = model.forward(batch)
-
+        
+        preds_ = torch.softmax(outputs, dim=1).tolist()[0]
+        updated_image_path = re.sub(r'_S_\d+$', '', os.path.splitext(batch['image_path'][0])[0])
+        df_aggregated = update_dataframe(df_aggregated,updated_image_path, preds_,id2label.get(batch['label'].item()))
+        
         preds = torch.argmax(outputs, 1)
         probs = F.softmax(outputs, dim=1)
         confidence_scores = torch.max(probs, dim=1).values
@@ -425,9 +531,27 @@ for idx, batch in enumerate(tqdm(pl_dl.train_dataloader())):
     # print(list_of_pred)
     
 
+df_aggregated["probs"]=df_aggregated["values"].apply(lambda x:np.mean(np.array(x), axis=0))
+df_aggregated["predicted_label"] = df_aggregated["probs"].apply(lambda x:id2label_infer[np.argmax(x)])
+print(df_aggregated)
+
+new_col_pred = []
+for i in range(len(df_aggregated)):
+    values = df_aggregated.iloc[i]
+    gt_label = values["gt_label"]
+    predicted_label = values["predicted_label"]
+    if gt_label == predicted_label:
+        new_col_pred.append(1)
+    else:
+        new_col_pred.append(0)
+df_aggregated["pred_1_0"] = new_col_pred
+df_aggregated.to_csv('aggregated_results.csv', index=False)  
+
 data = {'Image Name': list_of_image_name, 'Ground Truth': list_of_gt, 'Predicted': list_of_pred, 'Confidence Score': confidence_scores_list}
 df = pd.DataFrame(data)
 
 # Save to CSV
 df.to_csv('classification_output.csv', index=False)
 print('DONE!!!!!!!')
+
+

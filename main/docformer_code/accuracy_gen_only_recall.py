@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the CSV file
-file_path = '/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/aggregated_results.csv'
+file_path = '/home/ntlpt19/Desktop/TF_release/docformer/aggregated_results.csv'
 df = pd.read_csv(file_path)
 class_accuracy = df.groupby('gt_label')['pred_1_0'].apply(lambda x: x.sum() / len(x))
 

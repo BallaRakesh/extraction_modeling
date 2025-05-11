@@ -23,7 +23,7 @@ import sys
 sys.path.append('./src/docformer')
 
 ## Importing the functions from the DocFormer Repo
-from dataset import create_features
+from dataset_nonchunk import create_features
 from modeling import DocFormerEncoder,ResNetFeatureExtractor,DocFormerEmbeddings,LanguageFeatureExtractor
 from transformers import BertTokenizerFast
 

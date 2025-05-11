@@ -1,13 +1,16 @@
 
 import os  
 import re  
-chunk_size = 5
-chunk_number = 2
-words = [0,0,0,0,0,2,0,0,2,0]#,0,0,0,0,0,0,0,0]
-start_index = chunk_number  * chunk_size
-end_index = start_index + chunk_size
-words = words[start_index:end_index]
-print(words)
+import pandas as pd
+import numpy as np
+df_aggregated = {'values':[[[10, 3, 4], [1, 3, 20]], [[5, 4, 4]]]}
+id2label_infer = {0:'PO', 1:'PI', 2:'OTHERS'}
+df_aggregated = pd.DataFrame(df_aggregated)
+df_aggregated["probs"]=df_aggregated["values"].apply(lambda x:np.mean(np.array(x), axis=0))
+# print(df_aggregated["probs"])
+df_aggregated["predicted_label"] = df_aggregated["probs"].apply(lambda x:id2label_infer[np.argmax(x)])
+print(df_aggregated)
+exit('OL')
 exit()
 import torch
 import torch.nn as nn

@@ -7,21 +7,15 @@ import numpy as np
 from PIL import Image
 import torch
 from torchvision.transforms import ToTensor
-import re
-import ast
-import cv2
 import json
-
-# ocr_gv = ''
-out_fol = '/home/ntlpt19/Downloads/Classification_final_training/debug'
-ocr_gv = '/home/ntlpt19/Downloads/Classification_final_training/OCR_GV'
-split_ocr_folder = '/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/eval/ocr_chunk'
-ocr_pytess = '/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/eval/pytesseract_ocr'
-ocr_gv_json = '/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/EVL_OCR'
-debug_mode = False
 
 PAD_TOKEN_BOX = [0, 0, 0, 0]
 GRID_SIZE = 1000
+
+ocr_gv_txt = '/home/data_science/geo_testing/Classification_root/OCR_GV'
+out_fol = '/home/ntlpt19/Downloads/Classification_final_training/debug'
+ocr_gv_json = '/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/EVL_OCR'
+ocr_pytess = '/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/eval/pytesseract_ocr'
 
 
 def normalize_box(box, width, height, size=1000):
@@ -69,10 +63,15 @@ def apply_ocr(image_fp):
     ocr_df = ocr_df.dropna().reset_index(drop=True)
     words = list(ocr_df.text.apply(lambda x: str(x).strip()))
     actual_bboxes = ocr_df.apply(get_topleft_bottomright_coordinates, axis=1).values.tolist()
-    # draw_word_coordinates(image_fp, actual_bboxes, out_fol, words_given = words)
+    if debug_mode:
+        draw_word_coordinates(image_fp, actual_bboxes, out_fol, words_given = words)
     # add as extra columns
     assert len(words) == len(actual_bboxes)
     return {"words": words, "bbox": actual_bboxes}
+
+
+import pytesseract
+import ast
 
 
 def get_ocr_tesseract(image_, file_name):
@@ -111,20 +110,16 @@ def get_ocr_tesseract(image_, file_name):
                 "x2": x + w,
                 "y2": y + h
             })
-    # except Exception as e:
-    # 	print(f"exception: {e}")	
-    # finally:
-    # 	if hasattr(img,"close"):
-    # 		img.close()
-    # print('pytesseract function', word_coordinates)
-
     with open(os.path.join(ocr_pytess, file_name), 'w') as file:
         file.write(str({'word_coordinates':word_coordinates, 'all_text':all_text}))
     file.close()
+    
     return word_coordinates, all_text
 
 
 
+import cv2
+import os
 
 # Function to draw word coordinates on an image
 def draw_word_coordinates(image_path, word_coordinates, output_folder, default_cords_flag = True, words_given = None):
@@ -179,20 +174,24 @@ def draw_word_coordinates(image_path, word_coordinates, output_folder, default_c
 
 
 
+debug_mode = False
+if debug_mode:
+    os.makedirs(out_fol, exist_ok=True)
+
 def apply_ocr_gv(image_fp):
     # print(image_fp)
     file_name = os.path.basename(image_fp)
-    print('####################>', 'START')
-    print('####################>', 'START')
-    print('####################>', 'START')
-    print(file_name)
+    # print('####################>', 'START')
+    # print('####################>', 'START')
+    # print('####################>', 'START')
+    # print(file_name)
     image = Image.open(image_fp)
     width, height = image.size
     # if custom_pytesseract:
     # print(img_name_)
-    file_path_gv = os.path.join(ocr_gv, file_name[:-4]+'_text.txt')
-    file_path_pytes = os.path.join(ocr_pytess, file_name[:-4]+'_text.txt')
+    file_path_gv = os.path.join(ocr_gv_txt, file_name[:-4]+'_text.txt')
     file_path_json = os.path.join(ocr_gv_json, file_name[:-4]+'.json')
+    
     if os.path.exists(file_path_json):
         # Open and read the JSON file  
         with open(file_path_json, 'r') as file:  
@@ -200,30 +199,21 @@ def apply_ocr_gv(image_fp):
         file.close()
         # wc_data = ast.literal_eval(content)
         word_coordinates = content.get('word_coordinates', [])
-        # print('came to if block !!!!')
+        print('YES OCR TAKEN FROM', file_path_json)
     
     elif os.path.exists(file_path_gv):
         with open(file_path_gv, 'r') as file:
             content = file.read()
-            wc_data = ast.literal_eval(content)
         file.close()
+        wc_data = ast.literal_eval(content)
         if isinstance(wc_data, dict):
             word_coordinates = wc_data.get('word_coordinates', [])
-            print('came to if block !!!!')
-    
-    elif os.path.exists(file_path_pytes):
-        with open(file_path_pytes, 'r') as file:
-            content = file.read()
-            wc_data = ast.literal_eval(content)
-        file.close()
-        if isinstance(wc_data, dict):
-            word_coordinates = wc_data.get('word_coordinates', [])
-            print('came to if block !!!!')
-    
+            # print('came to if block !!!!')
+        
     else:
         print('came to else block')
-        word_coordinates, _ = get_ocr_tesseract(image, file_name[:-4]+'_text.txt')
-
+        word_coordinates, _ = get_ocr_tesseract(image,  file_name[:-4]+'_text.txt')
+        
     words = []
     actual_bboxes = []
 
@@ -236,28 +226,11 @@ def apply_ocr_gv(image_fp):
             # def get_topleft_bottomright_coordinates(df_row):
             left, top, width, height = wrd_["left"], wrd_["top"], wrd_["width"], wrd_["height"]
             actual_bboxes.append([left, top, left + width, top + height])
-            
-    # draw_word_coordinates(image_fp, actual_bboxes, out_fol, words_given = words)
+    if debug_mode:
+        draw_word_coordinates(image_fp, actual_bboxes, out_fol, words_given = words)
     assert len(words) == len(actual_bboxes)
     # assert len(words) != 0
     return {"words": words, "bbox": actual_bboxes}
-
-
-def get_ocr_split_files(img_files):
-    ocr_file_name = os.path.join(split_ocr_folder, f"{os.path.basename(img_files)[0:-4]}.json")
-    with open(ocr_file_name, 'r') as file:
-        data = json.load(file)
-    file.close()
-    return data
-    
-def get_chunk_words_recursive(chunk_number, chunk_size, words, bounding_box):
-    start_index = (chunk_number - 1) * chunk_size
-    end_index = start_index + chunk_size
-    chunk_words = words[start_index:end_index]
-    chunk_bounding_box = bounding_box[start_index:end_index]
-    if not len(chunk_words) and chunk_number > 0:
-        return get_chunk_words_recursive(chunk_number - 1, chunk_size, words, bounding_box)
-    return chunk_words, chunk_bounding_box
 
 def get_tokens_with_boxes(unnormalized_word_boxes, pad_token_box, word_ids,max_seq_len = 512):
     
@@ -504,6 +477,7 @@ def create_features_org(
 
 
 
+
 def create_features(
         image,
         tokenizer,
@@ -518,44 +492,21 @@ def create_features(
         bounding_box=None,
         words=None
 ):
-    def process_features(image_pth, tokenizer, apply_ocr_func, using_function = 1, verify_feature= False, percentage_val = 0.05,  words = [], bounding_box=[]):
-        image = re.sub(r'_S_\d+$', '', os.path.splitext(image_pth)[0])
-        image = f"{image}.png"
-        original_image = Image.open(image).convert("RGB")
-        print('Current image :', image)
-        if not verify_feature:
-            # Step 1: Read the original image and extract OCR entries
-            match = re.search(r'S_(\d+)\.png', image_pth)
-            chunk_size = 250
-            chunk_number = ''
-            if match:
-                chunk_number = match.group(1)
-                print(chunk_number)
+    def process_features(image, tokenizer, apply_ocr_func):
+        # Step 1: Read the original image and extract OCR entries
+        try:
+            original_image = Image.open(image).convert("RGB")
+        except:
+            original_image = Image.new(mode="RGB", size=(500, 500), color=(255, 255, 255))
 
-            if not use_ocr and (bounding_box is None or words is None):
-                raise Exception('Please provide the bounding box and words or pass the argument "use_ocr" = True')
-            # try:
-                # original_image = Image.open(image).convert("RGB")
-            
-            # except:
-                # original_image = Image.new(mode="RGB", size=(500, 500), color=(255, 255, 255))
+        if not use_ocr and (bounding_box is None or words is None):
+            raise Exception('Please provide the bounding box and words or pass the argument "use_ocr" = True')
 
-            if use_ocr:
-                entries = apply_ocr_func(image_pth)
-                bounding_box = entries["bbox"]
-                words = entries["words"]
-                if using_function == 1 and chunk_number:
-                    words, bounding_box = get_chunk_words_recursive(chunk_number, chunk_size, words, bounding_box)
-                    
-        else:
-            num_words = len(words)
-            print('@@@@@@@@@@@@ reduced words by 5%', num_words)
-            num_words_to_keep = int(num_words * (1 - percentage_val))
-            words, bounding_box = words[:num_words_to_keep], bounding_box[:num_words_to_keep]
+        if use_ocr:
+            entries = apply_ocr_func(image)
+            bounding_box = entries["bbox"]
+            words = entries["words"]
 
-            
-        # Step 2: Normalize the image
-        PAD_TOKEN_BOX = [0, 0, 0, 0]
         CLS_TOKEN_BOX = [0, 0, *original_image.size]  # Covers the whole image as per the paper
         resized_image = original_image.resize(target_size)
 
@@ -633,20 +584,17 @@ def create_features(
             keys.append('mlm_labels')
         final_encoding = {k: encoding[k] for k in keys}
 
-        print('y_features MAX $$$$$$$$$', final_encoding["y_features"][:, 0].max().item())
-        # if final_encoding["y_features"][:, 0].max().item() > 1023:
-        #     final_encoding = process_features(image, tokenizer, apply_ocr, using_function = 1, verify_feature = True, words = words, bounding_box=bounding_box)
         return final_encoding
 
-
-
     # First pass: Process features using `apply_ocr_gv`
-    # final_encoding = process_features(image, tokenizer, apply_ocr_gv)
-    final_encoding = process_features(image, tokenizer, get_ocr_split_files, using_function = 0)
-    # final_encoding = process_features(image, tokenizer, get_ocr_split_files, using_function = 0)
+    final_encoding = process_features(image, tokenizer, apply_ocr_gv)
 
+    # Check if x_features[:,:,0].min() < 0
+    # print(final_encoding["x_features"][0])
+    
     if final_encoding["x_features"][:, 0].min().item() < 0:#x_feature[:,:,0].min().item()
         # Regenerate features using `apply_ocr`
-        final_encoding = process_features(image, tokenizer, apply_ocr, using_function = 1)
+        final_encoding = process_features(image, tokenizer, apply_ocr)
         print('@@@@@@@@@@@@@@@@@@ came to the second Itteration')
+
     return final_encoding

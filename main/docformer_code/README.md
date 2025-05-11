@@ -59,6 +59,21 @@ To facilitate debugging, ensure `debug_mode` is set to `True` in your configurat
 
 ---
 
+
+## Updating `src/docformer/dataset.py`
+
+Make sure to update the following paths in the `src/docformer/dataset.py` file to ensure proper handling of your dataset:
+
+```python
+out_fol = '/home/ntlpt19/Downloads/Classification_final_training/debug'
+ocr_gv = '/home/ntlpt19/Downloads/Classification_final_training/OCR_GV'
+split_ocr_folder = '/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/eval/ocr_chunk'
+ocr_pytess = '/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/eval/pytesseract_ocr'
+ocr_gv_json = '/home/ntlpt19/Downloads/Classification_final_training/V4_ROOT/LC/EVL_OCR'
+debug_mode = False  # Set to True for debugging insights
+```
+
+
 ## Training Procedures
 
 Here are the different training procedures available for this classification task:
@@ -106,6 +121,8 @@ To generate results for a set of images, you can use the following script:
 - **Generate Inference Results**:  
   To generate the results from a set of images, run:  
   `/docformer/inference_res.py`
+  or run for chunk wise analysis:
+  `/docformer/inference_chunk_wise.py`
 
 ## Generating Accuracy and Recall
 
@@ -118,6 +135,16 @@ To evaluate the performance of your model, use the following scripts:
 2. **Generate Only Recall**:  
    If you want to generate only the recall metric, use:  
    `docformer/accuracy_gen_only_recall.py`
+
+### Implementation Results
+The following tables summarize the classification scores for different models across specific epochs. **Note:** The given scores are generated on evaluation data.
+
+| Class   |DocFormer Score | LayoutLM Score | Training Count | Evaluation Count |
+|---------|----------------|----------------|----------------|------------------|
+| OTHERS  | 0.73           | 0.90           | 2771           | 109              |
+| PI      | 0.88           | 0.88           | 371            | 50               |
+| PO      | 0.83           | 0.97           | 915            | 150              |
+| **OVERALL** | **0.8133**   | **0.92**       | -              | -                |
 
 
 # Main Paper
