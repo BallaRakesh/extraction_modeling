@@ -1,0 +1,3 @@
+python train.py --data /home/ng6309/datascience/anand/final_doclayout_data_for_training --model m-doclayout --epoch 150 --image-size 1024 --batch-size 4 --project public_dataset/D4LA --plot 1 --optimizer SGD --lr0 0.01 --pretrain /home/ng6309/datascience/anand/doclayout_yolo_docstructbench_imgsz1024.pt
+
+python train.py --data /home/data_science/rakesh/financial_data_table/table_data/doclayout_only_tf --model m-doclayout --epoch 150 --image-size 1024 --batch-size 4 --project public_dataset/D4LA --plot 1 --optimizer SGD --lr0 0.01 --pretrain /home/data_science/rakesh/financial_data_table/doclayout_yolo_docstructbench_imgsz1024.pt
