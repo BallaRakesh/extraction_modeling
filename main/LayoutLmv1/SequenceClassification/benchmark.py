@@ -6,6 +6,8 @@ import pandas as pd
 from ocrpipeline import ApplyOcr
 from torch.utils.data import random_split
 from torch.optim import SGD, RMSprop
+
+
 import torch
 from PIL import Image
 from datasets import Dataset, Features, Sequence, ClassLabel, Value, Array3D, Array2D
