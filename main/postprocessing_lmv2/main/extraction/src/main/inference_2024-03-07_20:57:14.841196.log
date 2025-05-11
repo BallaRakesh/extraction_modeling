@@ -1,0 +1,10 @@
+2024-03-07 20:57:14,841 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-03-07 20:57:14,842 start time: 2024-03-07 20:57:14.842751
+2024-03-07 20:57:18,542 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-03-07 20:57:18,740 Creating converter from 7 to 5
+2024-03-07 20:57:18,740 Creating converter from 5 to 7
+2024-03-07 20:57:18,740 Creating converter from 7 to 5
+2024-03-07 20:57:18,740 Creating converter from 5 to 7
+2024-03-07 20:57:19,315 Starting new HTTPS connection (1): huggingface.co:443
+2024-03-07 20:57:29,566 Starting new HTTPS connection (2): huggingface.co:443
+2024-03-07 20:57:39,573 Starting new HTTPS connection (3): huggingface.co:443

@@ -1,0 +1,4 @@
+python -m training.lmv2code.src.main.Augmentations.src.main.image_data_rotation
+python -m training.lmv2code.src.main.Augmentations.src.main.ocr_data_preparation
+python -m training.lmv2code.src.main.Augmentations.src.main.labels_date_preparation
+python -m training.lmv2code.src.main.Augmentations.src.main.training_data_preparation

@@ -1,0 +1,42 @@
+2024-01-23 15:02:10,427 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-01-23 15:02:10,428 start time: 2024-01-23 15:02:10.428329
+2024-01-23 15:02:23,931 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-01-23 15:02:24,018 Creating converter from 7 to 5
+2024-01-23 15:02:24,018 Creating converter from 5 to 7
+2024-01-23 15:02:24,018 Creating converter from 7 to 5
+2024-01-23 15:02:24,018 Creating converter from 5 to 7
+2024-01-23 15:02:24,716 Starting new HTTPS connection (1): huggingface.co:443
+2024-01-23 15:02:25,091 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-01-23 15:02:25,587 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-01-23 15:02:25,835 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-01-23 15:02:25,872 RAM memory for Model loading used: 79.8
+2024-01-23 15:02:25,872 cpu_utilization % for Model Loading:25.4
+2024-01-23 15:02:25,872 memory_consumption in bytes for Loading Model:1189634048
+2024-01-23 15:02:25,872 Loaded Model successfully
+2024-01-23 15:02:25,872 file name is:Certificate_Of_Origin_621_page_0.png
+2024-01-23 15:02:25,872 folder path :Images
+2024-01-23 15:02:25,872 Calling Image result
+2024-01-23 15:02:25,872 is all_page_result is instance of dict? True
+2024-01-23 15:02:25,876 STREAM b'IHDR' 16 13
+2024-01-23 15:02:25,876 STREAM b'IDAT' 41 60696
+2024-01-23 15:02:26,089 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:02:27,271 is words is instance of list? True
+2024-01-23 15:02:27,271 is bboxes is instance of list? True
+2024-01-23 15:02:27,271 is bounding_boxes is instance of list? True
+2024-01-23 15:02:27,864 is input_id_chunks is instance of list? True
+2024-01-23 15:02:27,864 is mask_chunks is instance of list? True
+2024-01-23 15:02:27,864 is bbox_chunks is instance of list? True
+2024-01-23 15:02:27,864 is image_chunks is instance of list? True
+2024-01-23 15:02:27,865 is input_dict is instance of dict? True
+2024-01-23 15:02:29,749 Model Called
+2024-01-23 15:02:29,750 RAM memory 89.7 used for Certificate_Of_Origin_621_page_0.png:
+2024-01-23 15:02:29,750 is all_predictions is instance of list? True
+2024-01-23 15:02:29,750 is all_boxes is instance of list? True
+2024-01-23 15:02:29,750 is all_confidences is instance of list? True
+2024-01-23 15:02:29,750 is all_text is instance of list? True
+2024-01-23 15:02:29,758 is label2id is instance of dict? True
+2024-01-23 15:02:29,758 is id2label is instance of dict? True
+2024-01-23 15:02:29,759 is label2color is instance of dict? True
+2024-01-23 15:02:29,759 label2color : {'marks_and_no_of_packages': '#03AD3D', 'final_destination': '#3B7B4F', 'lc_ref_no': '#BAAB99', 'net_weight': '#708C48', 'country_of_origin_of_goods': '#6BCE22', 'means_of_transport': '#2423FB', 'original_number': '#F9429E', 'invoice_no': '#06B390', 'signature': '#D0CBEC', 'consignee_address': '#07DB0A', 'vessel_details': '#DA0782', 'description_of_goods': '#A70673', 'invoice_date': '#66A658', 'certificate_stamped': '#92838A', 'gross_weight': '#A7FD5A', 'ref_no': '#496CEB', 'lc_date': '#159823', 'consignee_name': '#2BE1C1', 'declaration_by_exporter': '#F941F8', 'original_or_copy': '#055EE2', 'O': '#01A199', 'declaration_by_certification': '#0018C2', 'consignor_name': '#49DEE8', 'consignor_address': '#03DAE6', 'issue_date': '#A1AA0A', 'coo_issuer_address': '#3F91AB', 'certificate_no': '#0CC94D', 'to_place': '#853AAB', 'page_no': '#525E0D', 'from_place': '#5AA544', 'coo_issuer_name': '#652BC8'}
+2024-01-23 15:02:30,130 is result_set is instance of dict? True
+2024-01-23 15:02:30,221 is final_result_set is instance of dict? True

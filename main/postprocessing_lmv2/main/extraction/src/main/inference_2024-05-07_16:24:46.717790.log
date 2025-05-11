@@ -1,0 +1,40 @@
+2024-05-07 16:24:46,718 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-05-07 16:24:46,719 start time: 2024-05-07 16:24:46.719321
+2024-05-07 16:24:50,064 Starting new HTTPS connection (1): huggingface.co:443
+2024-05-07 16:24:50,362 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-05-07 16:24:50,752 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-05-07 16:24:50,981 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-05-07 16:24:51,028 RAM memory for Model loading used: 78.5
+2024-05-07 16:24:51,028 cpu_utilization % for Model Loading:35.3
+2024-05-07 16:24:51,028 memory_consumption in bytes for Loading Model:910532608
+2024-05-07 16:24:51,028 Loaded Model successfully
+2024-05-07 16:24:51,028 file name is:Invoice_408_0.png
+2024-05-07 16:24:51,028 folder path :Images
+2024-05-07 16:24:51,028 Calling Image result
+2024-05-07 16:24:51,028 is all_page_result is instance of dict? True
+2024-05-07 16:24:51,035 STREAM b'IHDR' 16 13
+2024-05-07 16:24:51,036 STREAM b'IDAT' 41 65536
+2024-05-07 16:24:51,094 is words is instance of list? True
+2024-05-07 16:24:51,094 is bboxes is instance of list? True
+2024-05-07 16:24:51,094 is bounding_boxes is instance of list? True
+2024-05-07 16:24:51,725 is input_id_chunks is instance of list? True
+2024-05-07 16:24:51,725 is mask_chunks is instance of list? True
+2024-05-07 16:24:51,725 is bbox_chunks is instance of list? True
+2024-05-07 16:24:51,725 is image_chunks is instance of list? True
+2024-05-07 16:24:51,727 is input_dict is instance of dict? True
+2024-05-07 16:24:56,024 Model Called
+2024-05-07 16:24:56,025 RAM memory 97.7 used for Invoice_408_0.png:
+2024-05-07 16:24:56,025 is all_predictions is instance of list? True
+2024-05-07 16:24:56,025 is all_boxes is instance of list? True
+2024-05-07 16:24:56,025 is all_confidences is instance of list? True
+2024-05-07 16:24:56,025 is all_text is instance of list? True
+2024-05-07 16:24:56,027 is label2id is instance of dict? True
+2024-05-07 16:24:56,027 is id2label is instance of dict? True
+2024-05-07 16:24:56,027 is label2color is instance of dict? True
+2024-05-07 16:24:56,027 label2color : {'vessel_name': '#6034D7', 'usance_tenor': '#99DAB3', 'awb_number': '#E163E9', 'bill_of_lading_no': '#6BF2F8', 'consignor_name': '#460BD9', 'transaction_amonunt_value': '#E01A73', 'transaction_currency': '#2EC43D', 'beneficiary_bank_identifier': '#D01C12', 'beneficiary_bank_name': '#34C4C7', 'indicator_date': '#9630D9', 'signature_of_the_issuer': '#051126', 'stamp': '#CFBC12', 'beneficiary_account_number': '#190063', 'dimension': '#04682E', 'invoice_discount_ccy': '#D1F3FC', 'shipper_address': '#422FA2', 'invoice_tax_amount': '#2C96BC', 'page_no': '#C3494F', 'rate_per_unit': '#D5A077', 'notify_party_country': '#BB2EA6', 'signature': '#117068', 'original_or_copy': '#DD0085', 'pre-carriage-by': '#F824FE', 'incoterm': '#3BBFD7', 'beneficiary_country': '#BEDA25', 'delivery_terms': '#0B3537', 'lc_date': '#FDDBEF', 'total_quantity_of_goods': '#631175', 'country_of_final_destination': '#3B3C30', 'O': '#20A563', 'consignee_address': '#B78AAC', 'invoice_due_date': '#36DFB4', 'invoice_tax_ccy': '#952A01', 'consignor_address': '#4262BD', 'beneficiary_address': '#894543', 'cosignee_name': '#D99757', 'remitter_drawee_applicant_importer_buyer_name': '#15EA5A', 'net_weight': '#2732BD', 'tenor_type': '#0BF129', 'invoice_amount': '#9DFA99', 'consignor_country': '#5573FB', 'awb_date': '#F5BA34', 'date_of_invoice': '#E5DC20', 'invoice_currency': '#80C44E', 'invoice_no': '#D6ADA3', 'transaction_date': '#C7C260', 'beneficiary_iban_number': '#CE91DE', 'beneficiary_drawer_exporter_seller_supplier_name': '#C5D090', 'gross_weight': '#ECA0ED', 'beneficiary_drawer_exporter_seller_supplier_tin': '#31205C', 'hs_code_no': '#7AEAB5', 'invoice_amount_in_words': '#36D84B', 'notify_party_name': '#94C877', 'notify_party_address': '#5D6F4E', 'invoice_discount_amount': '#CF1320', 'declaration_by_issuer': '#416143', 'beneficiary_bank_country': '#CEECEC', 'port_of_loading': '#C17866', 'goods_description': '#7CE26C', 'tenor_indicator': '#7D287B', 'shipper_name': '#2A23EC', 'indicator_type': '#F84B96', 'country_of_origin_of_goods': '#DAFE8B', 'lc_ref_no': '#F9A840', 'vessel_flight_no': '#299EF8', 'bill_of_lading_date': '#B71F05', 'port_of_discharge': '#730541', 'remitter_address': '#A2128D'}
+2024-05-07 16:24:56,407 is result_set is instance of dict? True
+2024-05-07 16:24:56,408 is final_result_set is instance of dict? True
+2024-05-07 16:24:56,517 Time taken for page 1 of Invoice_408_0.png:0:00:05.481341
+2024-05-07 16:24:56,702 *****Generated All Pages****** for Invoice_408_0.png
+2024-05-07 16:24:56,702 RAM memory 98.2 used for Invoice_408_0.png Generating All Pages:
+2024-05-07 16:24:56,702 Processing time taken for all pages of Invoice_408_0.png1:0:00:05.674013

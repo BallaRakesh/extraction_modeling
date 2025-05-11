@@ -1,0 +1,10 @@
+2024-04-25 15:14:08,941 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-04-25 15:14:08,943 start time: 2024-04-25 15:14:08.943161
+2024-04-25 15:14:12,075 Starting new HTTPS connection (1): huggingface.co:443
+2024-04-25 15:14:12,868 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-04-25 15:14:13,285 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-04-25 15:14:13,602 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-04-25 15:14:13,632 RAM memory for Model loading used: 61.2
+2024-04-25 15:14:13,632 cpu_utilization % for Model Loading:39.1
+2024-04-25 15:14:13,632 memory_consumption in bytes for Loading Model:909824000
+2024-04-25 15:14:13,632 Loaded Model successfully

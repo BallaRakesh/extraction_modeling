@@ -1,0 +1,50 @@
+2024-04-27 05:43:16,395 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-04-27 05:43:16,396 start time: 2024-04-27 05:43:16.396102
+2024-04-27 05:43:18,775 Starting new HTTPS connection (1): huggingface.co:443
+2024-04-27 05:43:19,589 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-04-27 05:43:20,511 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-04-27 05:43:21,228 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-04-27 05:43:21,256 RAM memory for Model loading used: 70.9
+2024-04-27 05:43:21,257 cpu_utilization % for Model Loading:10.5
+2024-04-27 05:43:21,257 memory_consumption in bytes for Loading Model:910831616
+2024-04-27 05:43:21,257 Loaded Model successfully
+2024-04-27 05:43:21,257 file name is:Bill_of_Exchange_44_0.png
+2024-04-27 05:43:21,257 folder path :Images
+2024-04-27 05:43:21,257 Calling Image result
+2024-04-27 05:43:21,257 is all_page_result is instance of dict? True
+2024-04-27 05:43:21,260 STREAM b'IHDR' 16 13
+2024-04-27 05:43:21,260 STREAM b'pHYs' 41 9
+2024-04-27 05:43:21,260 STREAM b'IDAT' 62 98834
+2024-04-27 05:43:21,271 *****Generated All Pages****** for Bill_of_Exchange_44_0.png
+2024-04-27 05:43:21,271 RAM memory 70.9 used for Bill_of_Exchange_44_0.png Generating All Pages:
+2024-04-27 05:43:21,271 Processing time taken for all pages of Bill_of_Exchange_44_0.png1:0:00:00.014023
+2024-04-27 05:43:21,386 file name is:Bill_of_Exchange_42_0.png
+2024-04-27 05:43:21,386 folder path :Images
+2024-04-27 05:43:21,386 Calling Image result
+2024-04-27 05:43:21,386 is all_page_result is instance of dict? True
+2024-04-27 05:43:21,386 STREAM b'IHDR' 16 13
+2024-04-27 05:43:21,386 STREAM b'pHYs' 41 9
+2024-04-27 05:43:21,386 STREAM b'IDAT' 62 77897
+2024-04-27 05:43:21,391 *****Generated All Pages****** for Bill_of_Exchange_42_0.png
+2024-04-27 05:43:21,391 RAM memory 70.9 used for Bill_of_Exchange_42_0.png Generating All Pages:
+2024-04-27 05:43:21,391 Processing time taken for all pages of Bill_of_Exchange_42_0.png1:0:00:00.004954
+2024-04-27 05:43:21,500 file name is:Bill_of_Exchange_88_0.png
+2024-04-27 05:43:21,501 folder path :Images
+2024-04-27 05:43:21,501 Calling Image result
+2024-04-27 05:43:21,501 is all_page_result is instance of dict? True
+2024-04-27 05:43:21,501 STREAM b'IHDR' 16 13
+2024-04-27 05:43:21,501 STREAM b'pHYs' 41 9
+2024-04-27 05:43:21,501 STREAM b'IDAT' 62 111443
+2024-04-27 05:43:21,508 *****Generated All Pages****** for Bill_of_Exchange_88_0.png
+2024-04-27 05:43:21,508 RAM memory 70.9 used for Bill_of_Exchange_88_0.png Generating All Pages:
+2024-04-27 05:43:21,508 Processing time taken for all pages of Bill_of_Exchange_88_0.png1:0:00:00.007616
+2024-04-27 05:43:21,623 file name is:Bill_of_Exchange_157_0.png
+2024-04-27 05:43:21,623 folder path :Images
+2024-04-27 05:43:21,623 Calling Image result
+2024-04-27 05:43:21,623 is all_page_result is instance of dict? True
+2024-04-27 05:43:21,623 STREAM b'IHDR' 16 13
+2024-04-27 05:43:21,623 STREAM b'pHYs' 41 9
+2024-04-27 05:43:21,623 STREAM b'IDAT' 62 126930
+2024-04-27 05:43:21,630 *****Generated All Pages****** for Bill_of_Exchange_157_0.png
+2024-04-27 05:43:21,630 RAM memory 70.9 used for Bill_of_Exchange_157_0.png Generating All Pages:
+2024-04-27 05:43:21,630 Processing time taken for all pages of Bill_of_Exchange_157_0.png1:0:00:00.007174

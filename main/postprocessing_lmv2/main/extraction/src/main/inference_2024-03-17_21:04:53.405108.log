@@ -1,0 +1,444 @@
+2024-03-17 21:04:53,405 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-03-17 21:04:53,407 start time: 2024-03-17 21:04:53.407105
+2024-03-17 21:04:57,206 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-03-17 21:04:57,402 Creating converter from 7 to 5
+2024-03-17 21:04:57,402 Creating converter from 5 to 7
+2024-03-17 21:04:57,402 Creating converter from 7 to 5
+2024-03-17 21:04:57,402 Creating converter from 5 to 7
+2024-03-17 21:04:57,990 Starting new HTTPS connection (1): huggingface.co:443
+2024-03-17 21:04:58,318 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-03-17 21:04:58,830 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-03-17 21:04:59,546 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-03-17 21:04:59,602 RAM memory for Model loading used: 66.9
+2024-03-17 21:04:59,603 cpu_utilization % for Model Loading:-55.7
+2024-03-17 21:04:59,603 memory_consumption in bytes for Loading Model:1156018176
+2024-03-17 21:04:59,603 Loaded Model successfully
+2024-03-17 21:04:59,604 file name is:Insurance_Certificate_874_page_3.png
+2024-03-17 21:04:59,604 folder path :Images
+2024-03-17 21:04:59,604 Calling Image result
+2024-03-17 21:04:59,604 is all_page_result is instance of dict? True
+2024-03-17 21:04:59,610 STREAM b'IHDR' 16 13
+2024-03-17 21:04:59,610 STREAM b'IDAT' 41 37669
+2024-03-17 21:04:59,643 is words is instance of list? True
+2024-03-17 21:04:59,643 is bboxes is instance of list? True
+2024-03-17 21:04:59,643 is bounding_boxes is instance of list? True
+2024-03-17 21:04:59,884 is input_id_chunks is instance of list? True
+2024-03-17 21:04:59,884 is mask_chunks is instance of list? True
+2024-03-17 21:04:59,884 is bbox_chunks is instance of list? True
+2024-03-17 21:04:59,884 is image_chunks is instance of list? True
+2024-03-17 21:04:59,885 is input_dict is instance of dict? True
+2024-03-17 21:05:00,822 Model Called
+2024-03-17 21:05:00,822 RAM memory 73.1 used for Insurance_Certificate_874_page_3.png:
+2024-03-17 21:05:00,822 is all_predictions is instance of list? True
+2024-03-17 21:05:00,822 is all_boxes is instance of list? True
+2024-03-17 21:05:00,822 is all_confidences is instance of list? True
+2024-03-17 21:05:00,822 is all_text is instance of list? True
+2024-03-17 21:05:00,822 is label2id is instance of dict? True
+2024-03-17 21:05:00,822 is id2label is instance of dict? True
+2024-03-17 21:05:00,823 is label2color is instance of dict? True
+2024-03-17 21:05:00,823 label2color : {'conditions_of_coverage': '#4AE49A', 'sum_insured_amount': '#5D4761', 'lc_ref_no': '#DF1500', 'subject_matter_insured': '#08E22E', 'original_Number': '#A560F5', 'policy_no': '#35B2BF', 'insurance_issuer_name_bottom': '#F1A907', 'premium_amount': '#A96E64', 'sail_on_or_about_to_date': '#47DB4B', 'start_date': '#076CC5', 'insurance_issuer_name': '#FF5358', 'original_copy': '#DAE89F', 'place_of_issue': '#267360', 'invoice_no': '#2B54A3', 'claim_payable_by_address': '#C8F6C8', 'signed_by_issuer': '#4A5134', 'signature': '#62D919', 'address_of_assured': '#E839F3', 'signed_by_proxy': '#E54833', 'claim payable_by_name': '#EB6B57', 'sum_insured_currency': '#4C84CF', 'invoice_date': '#FE9437', 'mode_of_transport': '#13818E', 'expiry_date': '#C737F8', 'name_of_assured': '#8E5DB9', 'end_date': '#2C9F26', 'signed_by_underwriter': '#A800D5', 'premium_currency': '#598A4A', 'declaration_by': '#658588', 'insurance_issuer_address_bottom': '#5374EF', 'lc_date': '#70B75B', 'agent_address': '#01CC93', 'insurance_issuer_address': '#48D1AA', 'certificate_Stamped': '#A5CE19', 'agent_name': '#589623', 'O': '#3031B4', 'issue_date': '#CA722F', 'signed_by_agent': '#D8B808', 'country_of_origin_origin_of_goods': '#552C90', 'claim_payable_in': '#AA785E', 'certificate_no': '#CFC2BA', 'vessel_or_flight_name': '#878201', 'to_place': '#88D26F', 'page_no': '#903249', 'from_place': '#61468B', 'vessel_or_flight_number': '#30795E'}
+2024-03-17 21:05:00,938 is result_set is instance of dict? True
+2024-03-17 21:05:00,939 is final_result_set is instance of dict? True
+2024-03-17 21:05:01,125 Time taken for page 1 of Insurance_Certificate_874_page_3.png:0:00:01.515222
+2024-03-17 21:05:01,217 *****Generated All Pages****** for Insurance_Certificate_874_page_3.png
+2024-03-17 21:05:01,217 RAM memory 73.4 used for Insurance_Certificate_874_page_3.png Generating All Pages:
+2024-03-17 21:05:01,217 Processing time taken for all pages of Insurance_Certificate_874_page_3.png1:0:00:01.613582
+2024-03-17 21:05:01,332 file name is:Insurance_Certificate_908_page_2.png
+2024-03-17 21:05:01,332 folder path :Images
+2024-03-17 21:05:01,332 Calling Image result
+2024-03-17 21:05:01,332 is all_page_result is instance of dict? True
+2024-03-17 21:05:01,333 STREAM b'IHDR' 16 13
+2024-03-17 21:05:01,333 STREAM b'IDAT' 41 65536
+2024-03-17 21:05:01,360 is words is instance of list? True
+2024-03-17 21:05:01,360 is bboxes is instance of list? True
+2024-03-17 21:05:01,360 is bounding_boxes is instance of list? True
+2024-03-17 21:05:01,546 is input_id_chunks is instance of list? True
+2024-03-17 21:05:01,546 is mask_chunks is instance of list? True
+2024-03-17 21:05:01,546 is bbox_chunks is instance of list? True
+2024-03-17 21:05:01,546 is image_chunks is instance of list? True
+2024-03-17 21:05:01,546 is input_dict is instance of dict? True
+2024-03-17 21:05:03,227 Model Called
+2024-03-17 21:05:03,228 RAM memory 79.1 used for Insurance_Certificate_908_page_2.png:
+2024-03-17 21:05:03,228 is all_predictions is instance of list? True
+2024-03-17 21:05:03,228 is all_boxes is instance of list? True
+2024-03-17 21:05:03,228 is all_confidences is instance of list? True
+2024-03-17 21:05:03,228 is all_text is instance of list? True
+2024-03-17 21:05:03,228 is label2id is instance of dict? True
+2024-03-17 21:05:03,228 is id2label is instance of dict? True
+2024-03-17 21:05:03,229 is label2color is instance of dict? True
+2024-03-17 21:05:03,229 label2color : {'conditions_of_coverage': '#FA80EB', 'sum_insured_amount': '#229D24', 'lc_ref_no': '#F12328', 'subject_matter_insured': '#F0973E', 'original_Number': '#CED6D0', 'policy_no': '#CE5BDC', 'insurance_issuer_name_bottom': '#BDDB73', 'premium_amount': '#D23C00', 'sail_on_or_about_to_date': '#C57D0E', 'start_date': '#9EE7A9', 'insurance_issuer_name': '#E1EF48', 'original_copy': '#402048', 'place_of_issue': '#7A37BD', 'invoice_no': '#A28D71', 'claim_payable_by_address': '#D24604', 'signed_by_issuer': '#10F0A4', 'signature': '#B48625', 'address_of_assured': '#36E698', 'signed_by_proxy': '#F69747', 'claim payable_by_name': '#658E01', 'sum_insured_currency': '#6BBA96', 'invoice_date': '#481490', 'mode_of_transport': '#94FB67', 'expiry_date': '#0B1316', 'name_of_assured': '#1FB285', 'end_date': '#F52B37', 'signed_by_underwriter': '#AADCC8', 'premium_currency': '#1B4C84', 'declaration_by': '#F8B547', 'insurance_issuer_address_bottom': '#C4EBE2', 'lc_date': '#B87FBA', 'agent_address': '#B20F7F', 'insurance_issuer_address': '#7B180A', 'certificate_Stamped': '#66E473', 'agent_name': '#6110D2', 'O': '#415512', 'issue_date': '#55D4CD', 'signed_by_agent': '#AC4D25', 'country_of_origin_origin_of_goods': '#9E97BE', 'claim_payable_in': '#347551', 'certificate_no': '#4CFF76', 'vessel_or_flight_name': '#98ECE9', 'to_place': '#1792B1', 'page_no': '#3BF2B3', 'from_place': '#A0E52C', 'vessel_or_flight_number': '#6254BD'}
+2024-03-17 21:05:03,391 is result_set is instance of dict? True
+2024-03-17 21:05:03,391 is final_result_set is instance of dict? True
+2024-03-17 21:05:03,556 Time taken for page 1 of Insurance_Certificate_908_page_2.png:0:00:02.223571
+2024-03-17 21:05:03,679 *****Generated All Pages****** for Insurance_Certificate_908_page_2.png
+2024-03-17 21:05:03,679 RAM memory 79.2 used for Insurance_Certificate_908_page_2.png Generating All Pages:
+2024-03-17 21:05:03,679 Processing time taken for all pages of Insurance_Certificate_908_page_2.png1:0:00:02.347286
+2024-03-17 21:05:03,813 file name is:Insurance_Certificate_13_page_1.png
+2024-03-17 21:05:03,813 folder path :Images
+2024-03-17 21:05:03,814 Calling Image result
+2024-03-17 21:05:03,814 is all_page_result is instance of dict? True
+2024-03-17 21:05:03,824 STREAM b'IHDR' 16 13
+2024-03-17 21:05:03,824 STREAM b'IDAT' 41 65536
+2024-03-17 21:05:03,854 is words is instance of list? True
+2024-03-17 21:05:03,854 is bboxes is instance of list? True
+2024-03-17 21:05:03,854 is bounding_boxes is instance of list? True
+2024-03-17 21:05:04,080 is input_id_chunks is instance of list? True
+2024-03-17 21:05:04,080 is mask_chunks is instance of list? True
+2024-03-17 21:05:04,080 is bbox_chunks is instance of list? True
+2024-03-17 21:05:04,080 is image_chunks is instance of list? True
+2024-03-17 21:05:04,081 is input_dict is instance of dict? True
+2024-03-17 21:05:07,701 Model Called
+2024-03-17 21:05:07,702 RAM memory 91.3 used for Insurance_Certificate_13_page_1.png:
+2024-03-17 21:05:07,702 is all_predictions is instance of list? True
+2024-03-17 21:05:07,702 is all_boxes is instance of list? True
+2024-03-17 21:05:07,702 is all_confidences is instance of list? True
+2024-03-17 21:05:07,702 is all_text is instance of list? True
+2024-03-17 21:05:07,703 is label2id is instance of dict? True
+2024-03-17 21:05:07,703 is id2label is instance of dict? True
+2024-03-17 21:05:07,704 is label2color is instance of dict? True
+2024-03-17 21:05:07,704 label2color : {'conditions_of_coverage': '#27493B', 'sum_insured_amount': '#55793F', 'lc_ref_no': '#056EB7', 'subject_matter_insured': '#F00573', 'original_Number': '#CA01FF', 'policy_no': '#FBC67B', 'insurance_issuer_name_bottom': '#AAF0BA', 'premium_amount': '#400E90', 'sail_on_or_about_to_date': '#3A73A7', 'start_date': '#A34A46', 'insurance_issuer_name': '#D303D4', 'original_copy': '#A588DA', 'place_of_issue': '#4E1D32', 'invoice_no': '#8BD67D', 'claim_payable_by_address': '#906B94', 'signed_by_issuer': '#B86F55', 'signature': '#D7D884', 'address_of_assured': '#28EA82', 'signed_by_proxy': '#4D5C49', 'claim payable_by_name': '#4C7ED1', 'sum_insured_currency': '#B7D4E7', 'invoice_date': '#875BD2', 'mode_of_transport': '#3D85DE', 'expiry_date': '#472391', 'name_of_assured': '#0D0BB6', 'end_date': '#2E7387', 'signed_by_underwriter': '#86AE99', 'premium_currency': '#167713', 'declaration_by': '#B2ED24', 'insurance_issuer_address_bottom': '#A556BC', 'lc_date': '#AD828B', 'agent_address': '#9ADBF1', 'insurance_issuer_address': '#E1ED66', 'certificate_Stamped': '#A2AB0D', 'agent_name': '#309B95', 'O': '#6BBCC1', 'issue_date': '#08C56B', 'signed_by_agent': '#4952CB', 'country_of_origin_origin_of_goods': '#12CF02', 'claim_payable_in': '#D0A3AD', 'certificate_no': '#A5E524', 'vessel_or_flight_name': '#DDF249', 'to_place': '#97E391', 'page_no': '#FA3833', 'from_place': '#754AC3', 'vessel_or_flight_number': '#A01E55'}
+2024-03-17 21:05:07,994 is result_set is instance of dict? True
+2024-03-17 21:05:07,996 is final_result_set is instance of dict? True
+2024-03-17 21:05:08,410 Time taken for page 1 of Insurance_Certificate_13_page_1.png:0:00:04.585340
+2024-03-17 21:05:08,528 *****Generated All Pages****** for Insurance_Certificate_13_page_1.png
+2024-03-17 21:05:08,529 RAM memory 92.0 used for Insurance_Certificate_13_page_1.png Generating All Pages:
+2024-03-17 21:05:08,529 Processing time taken for all pages of Insurance_Certificate_13_page_1.png1:0:00:04.715108
+2024-03-17 21:05:08,681 file name is:Insurance_Certificate_39_page_1.png
+2024-03-17 21:05:08,681 folder path :Images
+2024-03-17 21:05:08,681 Calling Image result
+2024-03-17 21:05:08,681 is all_page_result is instance of dict? True
+2024-03-17 21:05:08,691 STREAM b'IHDR' 16 13
+2024-03-17 21:05:08,691 STREAM b'IDAT' 41 57466
+2024-03-17 21:05:08,721 is words is instance of list? True
+2024-03-17 21:05:08,721 is bboxes is instance of list? True
+2024-03-17 21:05:08,721 is bounding_boxes is instance of list? True
+2024-03-17 21:05:08,916 is input_id_chunks is instance of list? True
+2024-03-17 21:05:08,917 is mask_chunks is instance of list? True
+2024-03-17 21:05:08,917 is bbox_chunks is instance of list? True
+2024-03-17 21:05:08,917 is image_chunks is instance of list? True
+2024-03-17 21:05:08,917 is input_dict is instance of dict? True
+2024-03-17 21:05:10,628 Model Called
+2024-03-17 21:05:10,629 RAM memory 81.9 used for Insurance_Certificate_39_page_1.png:
+2024-03-17 21:05:10,629 is all_predictions is instance of list? True
+2024-03-17 21:05:10,629 is all_boxes is instance of list? True
+2024-03-17 21:05:10,629 is all_confidences is instance of list? True
+2024-03-17 21:05:10,629 is all_text is instance of list? True
+2024-03-17 21:05:10,629 is label2id is instance of dict? True
+2024-03-17 21:05:10,629 is id2label is instance of dict? True
+2024-03-17 21:05:10,630 is label2color is instance of dict? True
+2024-03-17 21:05:10,630 label2color : {'conditions_of_coverage': '#216FCB', 'sum_insured_amount': '#722007', 'lc_ref_no': '#B25BC1', 'subject_matter_insured': '#ED2EC8', 'original_Number': '#849E46', 'policy_no': '#BA87C6', 'insurance_issuer_name_bottom': '#617BB6', 'premium_amount': '#2DA06A', 'sail_on_or_about_to_date': '#B842CC', 'start_date': '#F61ECA', 'insurance_issuer_name': '#6AA00F', 'original_copy': '#342E26', 'place_of_issue': '#054E42', 'invoice_no': '#EA2212', 'claim_payable_by_address': '#25A46A', 'signed_by_issuer': '#10049C', 'signature': '#46475E', 'address_of_assured': '#9B1CEC', 'signed_by_proxy': '#68C4D5', 'claim payable_by_name': '#D0EC8A', 'sum_insured_currency': '#A3D68B', 'invoice_date': '#2706D3', 'mode_of_transport': '#35907C', 'expiry_date': '#823009', 'name_of_assured': '#34838B', 'end_date': '#232378', 'signed_by_underwriter': '#834C9A', 'premium_currency': '#F1B35B', 'declaration_by': '#BE7B93', 'insurance_issuer_address_bottom': '#C1BD5C', 'lc_date': '#12C8CA', 'agent_address': '#6024BE', 'insurance_issuer_address': '#3AA8AA', 'certificate_Stamped': '#3E4C02', 'agent_name': '#B13178', 'O': '#99B808', 'issue_date': '#7E5E3B', 'signed_by_agent': '#018A6D', 'country_of_origin_origin_of_goods': '#D1A83D', 'claim_payable_in': '#55ED36', 'certificate_no': '#84515A', 'vessel_or_flight_name': '#FD1D84', 'to_place': '#9B7124', 'page_no': '#28C0E7', 'from_place': '#DFD31B', 'vessel_or_flight_number': '#07BFC7'}
+2024-03-17 21:05:10,826 is result_set is instance of dict? True
+2024-03-17 21:05:10,827 is final_result_set is instance of dict? True
+2024-03-17 21:05:11,023 Time taken for page 1 of Insurance_Certificate_39_page_1.png:0:00:02.332322
+2024-03-17 21:05:11,128 *****Generated All Pages****** for Insurance_Certificate_39_page_1.png
+2024-03-17 21:05:11,128 RAM memory 82.3 used for Insurance_Certificate_39_page_1.png Generating All Pages:
+2024-03-17 21:05:11,128 Processing time taken for all pages of Insurance_Certificate_39_page_1.png1:0:00:02.447515
+2024-03-17 21:05:11,279 file name is:Insurance_Certificate_0_page_0.png
+2024-03-17 21:05:11,279 folder path :Images
+2024-03-17 21:05:11,279 Calling Image result
+2024-03-17 21:05:11,279 is all_page_result is instance of dict? True
+2024-03-17 21:05:11,290 STREAM b'IHDR' 16 13
+2024-03-17 21:05:11,290 STREAM b'IDAT' 41 58422
+2024-03-17 21:05:11,318 is words is instance of list? True
+2024-03-17 21:05:11,318 is bboxes is instance of list? True
+2024-03-17 21:05:11,318 is bounding_boxes is instance of list? True
+2024-03-17 21:05:11,526 is input_id_chunks is instance of list? True
+2024-03-17 21:05:11,526 is mask_chunks is instance of list? True
+2024-03-17 21:05:11,526 is bbox_chunks is instance of list? True
+2024-03-17 21:05:11,526 is image_chunks is instance of list? True
+2024-03-17 21:05:11,526 is input_dict is instance of dict? True
+2024-03-17 21:05:13,257 Model Called
+2024-03-17 21:05:13,258 RAM memory 79.3 used for Insurance_Certificate_0_page_0.png:
+2024-03-17 21:05:13,258 is all_predictions is instance of list? True
+2024-03-17 21:05:13,258 is all_boxes is instance of list? True
+2024-03-17 21:05:13,258 is all_confidences is instance of list? True
+2024-03-17 21:05:13,258 is all_text is instance of list? True
+2024-03-17 21:05:13,258 is label2id is instance of dict? True
+2024-03-17 21:05:13,258 is id2label is instance of dict? True
+2024-03-17 21:05:13,259 is label2color is instance of dict? True
+2024-03-17 21:05:13,259 label2color : {'conditions_of_coverage': '#AFCC8F', 'sum_insured_amount': '#77E7E7', 'lc_ref_no': '#750FDB', 'subject_matter_insured': '#19C86B', 'original_Number': '#FFA479', 'policy_no': '#0C10D7', 'insurance_issuer_name_bottom': '#12D5DD', 'premium_amount': '#738E3F', 'sail_on_or_about_to_date': '#560EAA', 'start_date': '#3F75DF', 'insurance_issuer_name': '#D7A0EE', 'original_copy': '#2CC8EE', 'place_of_issue': '#5B6F8F', 'invoice_no': '#5FA55B', 'claim_payable_by_address': '#213B05', 'signed_by_issuer': '#7DDD62', 'signature': '#FEE49B', 'address_of_assured': '#468D23', 'signed_by_proxy': '#8D3D89', 'claim payable_by_name': '#200BB9', 'sum_insured_currency': '#0EA7C1', 'invoice_date': '#11ACC1', 'mode_of_transport': '#AA845C', 'expiry_date': '#9981F8', 'name_of_assured': '#B5B46A', 'end_date': '#36C767', 'signed_by_underwriter': '#6CC06D', 'premium_currency': '#6F61BA', 'declaration_by': '#F7DBC0', 'insurance_issuer_address_bottom': '#C065F6', 'lc_date': '#2562DC', 'agent_address': '#01D5EE', 'insurance_issuer_address': '#A2B39B', 'certificate_Stamped': '#ED2986', 'agent_name': '#D4AE19', 'O': '#3639E0', 'issue_date': '#C51060', 'signed_by_agent': '#9B8980', 'country_of_origin_origin_of_goods': '#B20169', 'claim_payable_in': '#8F2FCA', 'certificate_no': '#345732', 'vessel_or_flight_name': '#39B5D2', 'to_place': '#137FA9', 'page_no': '#5D96E6', 'from_place': '#862E1A', 'vessel_or_flight_number': '#B7BCBE'}
+2024-03-17 21:05:13,449 is result_set is instance of dict? True
+2024-03-17 21:05:13,450 is final_result_set is instance of dict? True
+2024-03-17 21:05:13,613 Time taken for page 1 of Insurance_Certificate_0_page_0.png:0:00:02.322467
+2024-03-17 21:05:13,721 *****Generated All Pages****** for Insurance_Certificate_0_page_0.png
+2024-03-17 21:05:13,721 RAM memory 79.3 used for Insurance_Certificate_0_page_0.png Generating All Pages:
+2024-03-17 21:05:13,721 Processing time taken for all pages of Insurance_Certificate_0_page_0.png1:0:00:02.442063
+2024-03-17 21:05:13,842 file name is:Insurance_Certificate_977_page_0.png
+2024-03-17 21:05:13,842 folder path :Images
+2024-03-17 21:05:13,842 Calling Image result
+2024-03-17 21:05:13,842 is all_page_result is instance of dict? True
+2024-03-17 21:05:13,853 STREAM b'IHDR' 16 13
+2024-03-17 21:05:13,853 STREAM b'IDAT' 41 65536
+2024-03-17 21:05:13,913 is words is instance of list? True
+2024-03-17 21:05:13,913 is bboxes is instance of list? True
+2024-03-17 21:05:13,913 is bounding_boxes is instance of list? True
+2024-03-17 21:05:14,147 is input_id_chunks is instance of list? True
+2024-03-17 21:05:14,147 is mask_chunks is instance of list? True
+2024-03-17 21:05:14,147 is bbox_chunks is instance of list? True
+2024-03-17 21:05:14,147 is image_chunks is instance of list? True
+2024-03-17 21:05:14,148 is input_dict is instance of dict? True
+2024-03-17 21:05:15,897 Model Called
+2024-03-17 21:05:15,897 RAM memory 80.1 used for Insurance_Certificate_977_page_0.png:
+2024-03-17 21:05:15,897 is all_predictions is instance of list? True
+2024-03-17 21:05:15,897 is all_boxes is instance of list? True
+2024-03-17 21:05:15,897 is all_confidences is instance of list? True
+2024-03-17 21:05:15,897 is all_text is instance of list? True
+2024-03-17 21:05:15,898 is label2id is instance of dict? True
+2024-03-17 21:05:15,898 is id2label is instance of dict? True
+2024-03-17 21:05:15,898 is label2color is instance of dict? True
+2024-03-17 21:05:15,898 label2color : {'conditions_of_coverage': '#0DE4B3', 'sum_insured_amount': '#C46D45', 'lc_ref_no': '#BF36E3', 'subject_matter_insured': '#D4FCDC', 'original_Number': '#E56EA7', 'policy_no': '#D94926', 'insurance_issuer_name_bottom': '#942973', 'premium_amount': '#91C4B7', 'sail_on_or_about_to_date': '#8949B9', 'start_date': '#AF3F2C', 'insurance_issuer_name': '#3F9C6E', 'original_copy': '#637AEC', 'place_of_issue': '#9A1BA5', 'invoice_no': '#E6B1B5', 'claim_payable_by_address': '#296A4A', 'signed_by_issuer': '#D09F84', 'signature': '#496639', 'address_of_assured': '#2EA788', 'signed_by_proxy': '#C7887B', 'claim payable_by_name': '#E18195', 'sum_insured_currency': '#DD2040', 'invoice_date': '#9512D3', 'mode_of_transport': '#8EA6CD', 'expiry_date': '#96C2A5', 'name_of_assured': '#7690CA', 'end_date': '#0D2058', 'signed_by_underwriter': '#E287B6', 'premium_currency': '#52BC44', 'declaration_by': '#A84219', 'insurance_issuer_address_bottom': '#AB5E10', 'lc_date': '#68CB23', 'agent_address': '#DB32FB', 'insurance_issuer_address': '#DFEF3D', 'certificate_Stamped': '#F70DA2', 'agent_name': '#11A86A', 'O': '#2FA9AC', 'issue_date': '#319C97', 'signed_by_agent': '#1EDEDA', 'country_of_origin_origin_of_goods': '#EB12E4', 'claim_payable_in': '#BC4177', 'certificate_no': '#A2599A', 'vessel_or_flight_name': '#0F2460', 'to_place': '#27EDCB', 'page_no': '#F9F42D', 'from_place': '#4C2A1B', 'vessel_or_flight_number': '#84EEB0'}
+2024-03-17 21:05:16,068 is result_set is instance of dict? True
+2024-03-17 21:05:16,069 is final_result_set is instance of dict? True
+2024-03-17 21:05:16,247 Time taken for page 1 of Insurance_Certificate_977_page_0.png:0:00:02.394191
+2024-03-17 21:05:16,370 *****Generated All Pages****** for Insurance_Certificate_977_page_0.png
+2024-03-17 21:05:16,370 RAM memory 80.2 used for Insurance_Certificate_977_page_0.png Generating All Pages:
+2024-03-17 21:05:16,370 Processing time taken for all pages of Insurance_Certificate_977_page_0.png1:0:00:02.527842
+2024-03-17 21:05:16,520 file name is:Insurance_Certificate_828_page_0.png
+2024-03-17 21:05:16,520 folder path :Images
+2024-03-17 21:05:16,520 Calling Image result
+2024-03-17 21:05:16,520 is all_page_result is instance of dict? True
+2024-03-17 21:05:16,531 STREAM b'IHDR' 16 13
+2024-03-17 21:05:16,531 STREAM b'IDAT' 41 64031
+2024-03-17 21:05:16,558 is words is instance of list? True
+2024-03-17 21:05:16,558 is bboxes is instance of list? True
+2024-03-17 21:05:16,558 is bounding_boxes is instance of list? True
+2024-03-17 21:05:16,791 is input_id_chunks is instance of list? True
+2024-03-17 21:05:16,791 is mask_chunks is instance of list? True
+2024-03-17 21:05:16,791 is bbox_chunks is instance of list? True
+2024-03-17 21:05:16,791 is image_chunks is instance of list? True
+2024-03-17 21:05:16,791 is input_dict is instance of dict? True
+2024-03-17 21:05:19,365 Model Called
+2024-03-17 21:05:19,366 RAM memory 86.1 used for Insurance_Certificate_828_page_0.png:
+2024-03-17 21:05:19,366 is all_predictions is instance of list? True
+2024-03-17 21:05:19,366 is all_boxes is instance of list? True
+2024-03-17 21:05:19,366 is all_confidences is instance of list? True
+2024-03-17 21:05:19,366 is all_text is instance of list? True
+2024-03-17 21:05:19,366 is label2id is instance of dict? True
+2024-03-17 21:05:19,366 is id2label is instance of dict? True
+2024-03-17 21:05:19,367 is label2color is instance of dict? True
+2024-03-17 21:05:19,367 label2color : {'conditions_of_coverage': '#7A5429', 'sum_insured_amount': '#A7A156', 'lc_ref_no': '#94D016', 'subject_matter_insured': '#F071F8', 'original_Number': '#688A01', 'policy_no': '#66BF50', 'insurance_issuer_name_bottom': '#BB33E3', 'premium_amount': '#BB92A3', 'sail_on_or_about_to_date': '#DA1EBE', 'start_date': '#A0C581', 'insurance_issuer_name': '#5C1CBC', 'original_copy': '#78C78A', 'place_of_issue': '#0F908E', 'invoice_no': '#332CCB', 'claim_payable_by_address': '#325B22', 'signed_by_issuer': '#C1E0E5', 'signature': '#7A0DFD', 'address_of_assured': '#CC4397', 'signed_by_proxy': '#00B8A1', 'claim payable_by_name': '#E91495', 'sum_insured_currency': '#D5006B', 'invoice_date': '#D7B386', 'mode_of_transport': '#17245E', 'expiry_date': '#99AAFD', 'name_of_assured': '#35C4A8', 'end_date': '#A7DD90', 'signed_by_underwriter': '#C94614', 'premium_currency': '#9F72BC', 'declaration_by': '#5DDD6A', 'insurance_issuer_address_bottom': '#A3C1D5', 'lc_date': '#EF950F', 'agent_address': '#A7B74E', 'insurance_issuer_address': '#793F85', 'certificate_Stamped': '#B4F149', 'agent_name': '#088AB4', 'O': '#087156', 'issue_date': '#15410F', 'signed_by_agent': '#3A166E', 'country_of_origin_origin_of_goods': '#47080E', 'claim_payable_in': '#6E8B53', 'certificate_no': '#AA970A', 'vessel_or_flight_name': '#DAD0FE', 'to_place': '#DC1EC2', 'page_no': '#C7F919', 'from_place': '#38159F', 'vessel_or_flight_number': '#4DC7A8'}
+2024-03-17 21:05:19,600 is result_set is instance of dict? True
+2024-03-17 21:05:19,601 is final_result_set is instance of dict? True
+2024-03-17 21:05:19,907 Time taken for page 1 of Insurance_Certificate_828_page_0.png:0:00:03.375845
+2024-03-17 21:05:20,025 *****Generated All Pages****** for Insurance_Certificate_828_page_0.png
+2024-03-17 21:05:20,026 RAM memory 86.2 used for Insurance_Certificate_828_page_0.png Generating All Pages:
+2024-03-17 21:05:20,026 Processing time taken for all pages of Insurance_Certificate_828_page_0.png1:0:00:03.505233
+2024-03-17 21:05:20,169 file name is:Insurance_Certificate_982_page_0.png
+2024-03-17 21:05:20,169 folder path :Images
+2024-03-17 21:05:20,169 Calling Image result
+2024-03-17 21:05:20,169 is all_page_result is instance of dict? True
+2024-03-17 21:05:20,179 STREAM b'IHDR' 16 13
+2024-03-17 21:05:20,179 STREAM b'IDAT' 41 47548
+2024-03-17 21:05:20,208 is words is instance of list? True
+2024-03-17 21:05:20,208 is bboxes is instance of list? True
+2024-03-17 21:05:20,208 is bounding_boxes is instance of list? True
+2024-03-17 21:05:20,453 is input_id_chunks is instance of list? True
+2024-03-17 21:05:20,453 is mask_chunks is instance of list? True
+2024-03-17 21:05:20,453 is bbox_chunks is instance of list? True
+2024-03-17 21:05:20,453 is image_chunks is instance of list? True
+2024-03-17 21:05:20,454 is input_dict is instance of dict? True
+2024-03-17 21:05:22,185 Model Called
+2024-03-17 21:05:22,185 RAM memory 78.6 used for Insurance_Certificate_982_page_0.png:
+2024-03-17 21:05:22,186 is all_predictions is instance of list? True
+2024-03-17 21:05:22,186 is all_boxes is instance of list? True
+2024-03-17 21:05:22,186 is all_confidences is instance of list? True
+2024-03-17 21:05:22,186 is all_text is instance of list? True
+2024-03-17 21:05:22,186 is label2id is instance of dict? True
+2024-03-17 21:05:22,186 is id2label is instance of dict? True
+2024-03-17 21:05:22,186 is label2color is instance of dict? True
+2024-03-17 21:05:22,186 label2color : {'conditions_of_coverage': '#3C405B', 'sum_insured_amount': '#ADC1AE', 'lc_ref_no': '#47B876', 'subject_matter_insured': '#88DFD7', 'original_Number': '#15FC68', 'policy_no': '#CF2E3A', 'insurance_issuer_name_bottom': '#2B9F80', 'premium_amount': '#5B2F4C', 'sail_on_or_about_to_date': '#3E17CB', 'start_date': '#330207', 'insurance_issuer_name': '#41462A', 'original_copy': '#B0E7D1', 'place_of_issue': '#A17E20', 'invoice_no': '#A4DFDB', 'claim_payable_by_address': '#48F60C', 'signed_by_issuer': '#A94BD0', 'signature': '#17403E', 'address_of_assured': '#7BFBBD', 'signed_by_proxy': '#4E68C7', 'claim payable_by_name': '#151399', 'sum_insured_currency': '#D01720', 'invoice_date': '#3E2A88', 'mode_of_transport': '#FF2ABC', 'expiry_date': '#A174F2', 'name_of_assured': '#A10988', 'end_date': '#7684BA', 'signed_by_underwriter': '#B457A0', 'premium_currency': '#F2741D', 'declaration_by': '#35D9AD', 'insurance_issuer_address_bottom': '#B1346D', 'lc_date': '#516CF7', 'agent_address': '#A0686A', 'insurance_issuer_address': '#ED9920', 'certificate_Stamped': '#206B29', 'agent_name': '#7D8CB0', 'O': '#4A3972', 'issue_date': '#3C4F5C', 'signed_by_agent': '#ACDC02', 'country_of_origin_origin_of_goods': '#A54A0F', 'claim_payable_in': '#E1E1E9', 'certificate_no': '#584BD7', 'vessel_or_flight_name': '#BB36BE', 'to_place': '#CFC982', 'page_no': '#4E3447', 'from_place': '#94927C', 'vessel_or_flight_number': '#29A14B'}
+2024-03-17 21:05:22,360 is result_set is instance of dict? True
+2024-03-17 21:05:22,361 is final_result_set is instance of dict? True
+2024-03-17 21:05:22,499 Time taken for page 1 of Insurance_Certificate_982_page_0.png:0:00:02.319258
+2024-03-17 21:05:22,598 *****Generated All Pages****** for Insurance_Certificate_982_page_0.png
+2024-03-17 21:05:22,598 RAM memory 78.7 used for Insurance_Certificate_982_page_0.png Generating All Pages:
+2024-03-17 21:05:22,598 Processing time taken for all pages of Insurance_Certificate_982_page_0.png1:0:00:02.428779
+2024-03-17 21:05:22,745 file name is:Insurance_Certificate_948_page_1.png
+2024-03-17 21:05:22,745 folder path :Images
+2024-03-17 21:05:22,745 Calling Image result
+2024-03-17 21:05:22,745 is all_page_result is instance of dict? True
+2024-03-17 21:05:22,746 STREAM b'IHDR' 16 13
+2024-03-17 21:05:22,746 STREAM b'IDAT' 41 65536
+2024-03-17 21:05:22,775 is words is instance of list? True
+2024-03-17 21:05:22,775 is bboxes is instance of list? True
+2024-03-17 21:05:22,775 is bounding_boxes is instance of list? True
+2024-03-17 21:05:23,015 is input_id_chunks is instance of list? True
+2024-03-17 21:05:23,016 is mask_chunks is instance of list? True
+2024-03-17 21:05:23,016 is bbox_chunks is instance of list? True
+2024-03-17 21:05:23,016 is image_chunks is instance of list? True
+2024-03-17 21:05:23,016 is input_dict is instance of dict? True
+2024-03-17 21:05:25,608 Model Called
+2024-03-17 21:05:25,609 RAM memory 85.6 used for Insurance_Certificate_948_page_1.png:
+2024-03-17 21:05:25,609 is all_predictions is instance of list? True
+2024-03-17 21:05:25,609 is all_boxes is instance of list? True
+2024-03-17 21:05:25,609 is all_confidences is instance of list? True
+2024-03-17 21:05:25,609 is all_text is instance of list? True
+2024-03-17 21:05:25,609 is label2id is instance of dict? True
+2024-03-17 21:05:25,609 is id2label is instance of dict? True
+2024-03-17 21:05:25,610 is label2color is instance of dict? True
+2024-03-17 21:05:25,610 label2color : {'conditions_of_coverage': '#96844C', 'sum_insured_amount': '#BAFDC3', 'lc_ref_no': '#3FB35D', 'subject_matter_insured': '#552A43', 'original_Number': '#A2C904', 'policy_no': '#B0E14A', 'insurance_issuer_name_bottom': '#546BED', 'premium_amount': '#813EEB', 'sail_on_or_about_to_date': '#F6376C', 'start_date': '#EAE415', 'insurance_issuer_name': '#081973', 'original_copy': '#EBE310', 'place_of_issue': '#DEE704', 'invoice_no': '#D2BF07', 'claim_payable_by_address': '#25FD81', 'signed_by_issuer': '#FDFC6D', 'signature': '#AEF5CF', 'address_of_assured': '#2CEB6B', 'signed_by_proxy': '#8D2986', 'claim payable_by_name': '#BC786E', 'sum_insured_currency': '#00E385', 'invoice_date': '#CF8A8B', 'mode_of_transport': '#4EF372', 'expiry_date': '#30E816', 'name_of_assured': '#0F348C', 'end_date': '#0322AD', 'signed_by_underwriter': '#6F0BE9', 'premium_currency': '#80D576', 'declaration_by': '#556821', 'insurance_issuer_address_bottom': '#E981F8', 'lc_date': '#1B602C', 'agent_address': '#E9B69D', 'insurance_issuer_address': '#4BEEA5', 'certificate_Stamped': '#4F54AF', 'agent_name': '#E9FA0A', 'O': '#804717', 'issue_date': '#D33CDA', 'signed_by_agent': '#F79731', 'country_of_origin_origin_of_goods': '#0DCB99', 'claim_payable_in': '#87B069', 'certificate_no': '#499C3B', 'vessel_or_flight_name': '#5E49A4', 'to_place': '#12FCB6', 'page_no': '#370889', 'from_place': '#EFD000', 'vessel_or_flight_number': '#3972D9'}
+2024-03-17 21:05:25,868 is result_set is instance of dict? True
+2024-03-17 21:05:25,869 is final_result_set is instance of dict? True
+2024-03-17 21:05:26,074 Time taken for page 1 of Insurance_Certificate_948_page_1.png:0:00:03.328557
+2024-03-17 21:05:26,196 *****Generated All Pages****** for Insurance_Certificate_948_page_1.png
+2024-03-17 21:05:26,196 RAM memory 85.8 used for Insurance_Certificate_948_page_1.png Generating All Pages:
+2024-03-17 21:05:26,196 Processing time taken for all pages of Insurance_Certificate_948_page_1.png1:0:00:03.451131
+2024-03-17 21:05:26,343 file name is:Insurance_Certificate_882_page_0.png
+2024-03-17 21:05:26,344 folder path :Images
+2024-03-17 21:05:26,344 Calling Image result
+2024-03-17 21:05:26,344 is all_page_result is instance of dict? True
+2024-03-17 21:05:26,344 STREAM b'IHDR' 16 13
+2024-03-17 21:05:26,344 STREAM b'IDAT' 41 47632
+2024-03-17 21:05:26,399 is words is instance of list? True
+2024-03-17 21:05:26,399 is bboxes is instance of list? True
+2024-03-17 21:05:26,400 is bounding_boxes is instance of list? True
+2024-03-17 21:05:26,621 is input_id_chunks is instance of list? True
+2024-03-17 21:05:26,621 is mask_chunks is instance of list? True
+2024-03-17 21:05:26,621 is bbox_chunks is instance of list? True
+2024-03-17 21:05:26,621 is image_chunks is instance of list? True
+2024-03-17 21:05:26,621 is input_dict is instance of dict? True
+2024-03-17 21:05:27,522 Model Called
+2024-03-17 21:05:27,522 RAM memory 73.3 used for Insurance_Certificate_882_page_0.png:
+2024-03-17 21:05:27,523 is all_predictions is instance of list? True
+2024-03-17 21:05:27,523 is all_boxes is instance of list? True
+2024-03-17 21:05:27,523 is all_confidences is instance of list? True
+2024-03-17 21:05:27,523 is all_text is instance of list? True
+2024-03-17 21:05:27,523 is label2id is instance of dict? True
+2024-03-17 21:05:27,523 is id2label is instance of dict? True
+2024-03-17 21:05:27,524 is label2color is instance of dict? True
+2024-03-17 21:05:27,524 label2color : {'conditions_of_coverage': '#A14BDE', 'sum_insured_amount': '#ADCB75', 'lc_ref_no': '#ED7434', 'subject_matter_insured': '#986173', 'original_Number': '#DBD641', 'policy_no': '#BC33BA', 'insurance_issuer_name_bottom': '#A73A15', 'premium_amount': '#0347BC', 'sail_on_or_about_to_date': '#753BE3', 'start_date': '#82DD81', 'insurance_issuer_name': '#C6CD3C', 'original_copy': '#7A3898', 'place_of_issue': '#5DB2AB', 'invoice_no': '#8662AA', 'claim_payable_by_address': '#067B4B', 'signed_by_issuer': '#59FF5A', 'signature': '#76B7AE', 'address_of_assured': '#6EDE70', 'signed_by_proxy': '#D0B73E', 'claim payable_by_name': '#2E2D8A', 'sum_insured_currency': '#060E98', 'invoice_date': '#5F9313', 'mode_of_transport': '#AE867E', 'expiry_date': '#82B1D2', 'name_of_assured': '#80C5AD', 'end_date': '#7F2CA0', 'signed_by_underwriter': '#601C29', 'premium_currency': '#EDB772', 'declaration_by': '#FD0DCE', 'insurance_issuer_address_bottom': '#19C5B8', 'lc_date': '#E16206', 'agent_address': '#60D434', 'insurance_issuer_address': '#EC1AE4', 'certificate_Stamped': '#D60A8E', 'agent_name': '#540E3D', 'O': '#DC31A4', 'issue_date': '#D7F0DD', 'signed_by_agent': '#405D84', 'country_of_origin_origin_of_goods': '#25F6D2', 'claim_payable_in': '#05B5C0', 'certificate_no': '#B74E3A', 'vessel_or_flight_name': '#9675CB', 'to_place': '#69E237', 'page_no': '#B14CBC', 'from_place': '#9880FD', 'vessel_or_flight_number': '#91B835'}
+2024-03-17 21:05:27,646 is result_set is instance of dict? True
+2024-03-17 21:05:27,647 is final_result_set is instance of dict? True
+2024-03-17 21:05:27,859 Time taken for page 1 of Insurance_Certificate_882_page_0.png:0:00:01.514379
+2024-03-17 21:05:27,967 *****Generated All Pages****** for Insurance_Certificate_882_page_0.png
+2024-03-17 21:05:27,967 RAM memory 73.6 used for Insurance_Certificate_882_page_0.png Generating All Pages:
+2024-03-17 21:05:27,967 Processing time taken for all pages of Insurance_Certificate_882_page_0.png1:0:00:01.623907
+2024-03-17 21:05:28,080 file name is:Insurance_Certificate_847_page_0.png
+2024-03-17 21:05:28,081 folder path :Images
+2024-03-17 21:05:28,081 Calling Image result
+2024-03-17 21:05:28,081 is all_page_result is instance of dict? True
+2024-03-17 21:05:28,091 STREAM b'IHDR' 16 13
+2024-03-17 21:05:28,091 STREAM b'IDAT' 41 65536
+2024-03-17 21:05:28,123 is words is instance of list? True
+2024-03-17 21:05:28,124 is bboxes is instance of list? True
+2024-03-17 21:05:28,124 is bounding_boxes is instance of list? True
+2024-03-17 21:05:28,369 is input_id_chunks is instance of list? True
+2024-03-17 21:05:28,369 is mask_chunks is instance of list? True
+2024-03-17 21:05:28,369 is bbox_chunks is instance of list? True
+2024-03-17 21:05:28,369 is image_chunks is instance of list? True
+2024-03-17 21:05:28,369 is input_dict is instance of dict? True
+2024-03-17 21:05:29,254 Model Called
+2024-03-17 21:05:29,254 RAM memory 73.6 used for Insurance_Certificate_847_page_0.png:
+2024-03-17 21:05:29,254 is all_predictions is instance of list? True
+2024-03-17 21:05:29,254 is all_boxes is instance of list? True
+2024-03-17 21:05:29,254 is all_confidences is instance of list? True
+2024-03-17 21:05:29,254 is all_text is instance of list? True
+2024-03-17 21:05:29,254 is label2id is instance of dict? True
+2024-03-17 21:05:29,254 is id2label is instance of dict? True
+2024-03-17 21:05:29,255 is label2color is instance of dict? True
+2024-03-17 21:05:29,255 label2color : {'conditions_of_coverage': '#AEEAE8', 'sum_insured_amount': '#57A286', 'lc_ref_no': '#0187AF', 'subject_matter_insured': '#227E0C', 'original_Number': '#F836CA', 'policy_no': '#7232D5', 'insurance_issuer_name_bottom': '#1DE0F4', 'premium_amount': '#3DCB72', 'sail_on_or_about_to_date': '#CA67C4', 'start_date': '#2171B7', 'insurance_issuer_name': '#4DB746', 'original_copy': '#0AB80A', 'place_of_issue': '#9C8F9F', 'invoice_no': '#AA9589', 'claim_payable_by_address': '#7B66C2', 'signed_by_issuer': '#860CE1', 'signature': '#307C42', 'address_of_assured': '#33137C', 'signed_by_proxy': '#05FC42', 'claim payable_by_name': '#7F7F27', 'sum_insured_currency': '#3F5911', 'invoice_date': '#B1F69A', 'mode_of_transport': '#54C2EE', 'expiry_date': '#36F01F', 'name_of_assured': '#A4A7A0', 'end_date': '#96C474', 'signed_by_underwriter': '#453954', 'premium_currency': '#53A373', 'declaration_by': '#DA473F', 'insurance_issuer_address_bottom': '#4EB0A8', 'lc_date': '#9A7682', 'agent_address': '#D1BB2A', 'insurance_issuer_address': '#A2F844', 'certificate_Stamped': '#368027', 'agent_name': '#0131ED', 'O': '#B9FB24', 'issue_date': '#227722', 'signed_by_agent': '#6D725F', 'country_of_origin_origin_of_goods': '#ECC8B9', 'claim_payable_in': '#15C886', 'certificate_no': '#33C80A', 'vessel_or_flight_name': '#EF4E34', 'to_place': '#463079', 'page_no': '#FCC61B', 'from_place': '#09BC11', 'vessel_or_flight_number': '#A0654A'}
+2024-03-17 21:05:29,384 is result_set is instance of dict? True
+2024-03-17 21:05:29,385 is final_result_set is instance of dict? True
+2024-03-17 21:05:29,562 Time taken for page 1 of Insurance_Certificate_847_page_0.png:0:00:01.470204
+2024-03-17 21:05:29,692 *****Generated All Pages****** for Insurance_Certificate_847_page_0.png
+2024-03-17 21:05:29,692 RAM memory 73.6 used for Insurance_Certificate_847_page_0.png Generating All Pages:
+2024-03-17 21:05:29,693 Processing time taken for all pages of Insurance_Certificate_847_page_0.png1:0:00:01.611938
+2024-03-17 21:05:29,821 file name is:Insurance_Certificate_14_page_2.png
+2024-03-17 21:05:29,821 folder path :Images
+2024-03-17 21:05:29,821 Calling Image result
+2024-03-17 21:05:29,821 is all_page_result is instance of dict? True
+2024-03-17 21:05:29,832 STREAM b'IHDR' 16 13
+2024-03-17 21:05:29,832 STREAM b'IDAT' 41 65155
+2024-03-17 21:05:29,861 is words is instance of list? True
+2024-03-17 21:05:29,861 is bboxes is instance of list? True
+2024-03-17 21:05:29,861 is bounding_boxes is instance of list? True
+2024-03-17 21:05:30,101 is input_id_chunks is instance of list? True
+2024-03-17 21:05:30,101 is mask_chunks is instance of list? True
+2024-03-17 21:05:30,101 is bbox_chunks is instance of list? True
+2024-03-17 21:05:30,102 is image_chunks is instance of list? True
+2024-03-17 21:05:30,102 is input_dict is instance of dict? True
+2024-03-17 21:05:32,719 Model Called
+2024-03-17 21:05:32,719 RAM memory 86.3 used for Insurance_Certificate_14_page_2.png:
+2024-03-17 21:05:32,719 is all_predictions is instance of list? True
+2024-03-17 21:05:32,719 is all_boxes is instance of list? True
+2024-03-17 21:05:32,719 is all_confidences is instance of list? True
+2024-03-17 21:05:32,719 is all_text is instance of list? True
+2024-03-17 21:05:32,719 is label2id is instance of dict? True
+2024-03-17 21:05:32,719 is id2label is instance of dict? True
+2024-03-17 21:05:32,720 is label2color is instance of dict? True
+2024-03-17 21:05:32,720 label2color : {'conditions_of_coverage': '#42F8A7', 'sum_insured_amount': '#5BAF33', 'lc_ref_no': '#392435', 'subject_matter_insured': '#1A6BE1', 'original_Number': '#962F07', 'policy_no': '#A16399', 'insurance_issuer_name_bottom': '#C2F86A', 'premium_amount': '#4564C0', 'sail_on_or_about_to_date': '#FBC0E8', 'start_date': '#D6BC0A', 'insurance_issuer_name': '#F46261', 'original_copy': '#431E98', 'place_of_issue': '#FD6064', 'invoice_no': '#4E1404', 'claim_payable_by_address': '#80AB97', 'signed_by_issuer': '#BD4A20', 'signature': '#389E50', 'address_of_assured': '#2ADE93', 'signed_by_proxy': '#2B138A', 'claim payable_by_name': '#7D5366', 'sum_insured_currency': '#FA5F34', 'invoice_date': '#60610E', 'mode_of_transport': '#B7C315', 'expiry_date': '#8A9BC4', 'name_of_assured': '#8EE88C', 'end_date': '#DCC43D', 'signed_by_underwriter': '#4731F9', 'premium_currency': '#471AAD', 'declaration_by': '#F4D663', 'insurance_issuer_address_bottom': '#4324C0', 'lc_date': '#5CEFEC', 'agent_address': '#2EB3C9', 'insurance_issuer_address': '#C428B3', 'certificate_Stamped': '#A9D55E', 'agent_name': '#B69863', 'O': '#78C601', 'issue_date': '#0E049E', 'signed_by_agent': '#DF0C2C', 'country_of_origin_origin_of_goods': '#076AD5', 'claim_payable_in': '#D925E2', 'certificate_no': '#64C908', 'vessel_or_flight_name': '#69C622', 'to_place': '#08F9A7', 'page_no': '#5EC46B', 'from_place': '#E8AF09', 'vessel_or_flight_number': '#6D0EE3'}
+2024-03-17 21:05:32,957 is result_set is instance of dict? True
+2024-03-17 21:05:32,958 is final_result_set is instance of dict? True
+2024-03-17 21:05:33,332 Time taken for page 1 of Insurance_Certificate_14_page_2.png:0:00:03.499781
+2024-03-17 21:05:33,459 *****Generated All Pages****** for Insurance_Certificate_14_page_2.png
+2024-03-17 21:05:33,459 RAM memory 86.3 used for Insurance_Certificate_14_page_2.png Generating All Pages:
+2024-03-17 21:05:33,459 Processing time taken for all pages of Insurance_Certificate_14_page_2.png1:0:00:03.637667
+2024-03-17 21:05:33,607 file name is:Insurance_Certificate_915_page_0.png
+2024-03-17 21:05:33,607 folder path :Images
+2024-03-17 21:05:33,607 Calling Image result
+2024-03-17 21:05:33,607 is all_page_result is instance of dict? True
+2024-03-17 21:05:33,617 STREAM b'IHDR' 16 13
+2024-03-17 21:05:33,618 STREAM b'IDAT' 41 64861
+2024-03-17 21:05:33,645 is words is instance of list? True
+2024-03-17 21:05:33,645 is bboxes is instance of list? True
+2024-03-17 21:05:33,645 is bounding_boxes is instance of list? True
+2024-03-17 21:05:33,848 is input_id_chunks is instance of list? True
+2024-03-17 21:05:33,848 is mask_chunks is instance of list? True
+2024-03-17 21:05:33,848 is bbox_chunks is instance of list? True
+2024-03-17 21:05:33,848 is image_chunks is instance of list? True
+2024-03-17 21:05:33,848 is input_dict is instance of dict? True
+2024-03-17 21:05:35,564 Model Called
+2024-03-17 21:05:35,564 RAM memory 79.8 used for Insurance_Certificate_915_page_0.png:
+2024-03-17 21:05:35,565 is all_predictions is instance of list? True
+2024-03-17 21:05:35,565 is all_boxes is instance of list? True
+2024-03-17 21:05:35,565 is all_confidences is instance of list? True
+2024-03-17 21:05:35,565 is all_text is instance of list? True
+2024-03-17 21:05:35,565 is label2id is instance of dict? True
+2024-03-17 21:05:35,565 is id2label is instance of dict? True
+2024-03-17 21:05:35,566 is label2color is instance of dict? True
+2024-03-17 21:05:35,566 label2color : {'conditions_of_coverage': '#7B1DE3', 'sum_insured_amount': '#17B466', 'lc_ref_no': '#4F8EBA', 'subject_matter_insured': '#14ACF2', 'original_Number': '#E252E9', 'policy_no': '#C175F4', 'insurance_issuer_name_bottom': '#3FC1A8', 'premium_amount': '#6D4E2A', 'sail_on_or_about_to_date': '#5FE8F7', 'start_date': '#372D64', 'insurance_issuer_name': '#6834FE', 'original_copy': '#DB213C', 'place_of_issue': '#332F5E', 'invoice_no': '#7308DC', 'claim_payable_by_address': '#9A0738', 'signed_by_issuer': '#5A7FFF', 'signature': '#50195F', 'address_of_assured': '#6505EB', 'signed_by_proxy': '#1F502B', 'claim payable_by_name': '#9679DD', 'sum_insured_currency': '#8AB89C', 'invoice_date': '#93B694', 'mode_of_transport': '#A3BB95', 'expiry_date': '#605E6B', 'name_of_assured': '#C31BC4', 'end_date': '#FFAD3F', 'signed_by_underwriter': '#E8AE68', 'premium_currency': '#829E8D', 'declaration_by': '#C66B8E', 'insurance_issuer_address_bottom': '#19021F', 'lc_date': '#5A49D4', 'agent_address': '#3FF6E9', 'insurance_issuer_address': '#A1C7CB', 'certificate_Stamped': '#955AF7', 'agent_name': '#8B76EC', 'O': '#640D73', 'issue_date': '#5C8009', 'signed_by_agent': '#841B63', 'country_of_origin_origin_of_goods': '#B1A831', 'claim_payable_in': '#41C2CB', 'certificate_no': '#EF6FC0', 'vessel_or_flight_name': '#F19867', 'to_place': '#35E8F5', 'page_no': '#0F78A3', 'from_place': '#D448EF', 'vessel_or_flight_number': '#A37367'}
+2024-03-17 21:05:35,754 is result_set is instance of dict? True
+2024-03-17 21:05:35,755 is final_result_set is instance of dict? True
+2024-03-17 21:05:35,905 Time taken for page 1 of Insurance_Certificate_915_page_0.png:0:00:02.287546
+2024-03-17 21:05:36,022 *****Generated All Pages****** for Insurance_Certificate_915_page_0.png
+2024-03-17 21:05:36,022 RAM memory 79.7 used for Insurance_Certificate_915_page_0.png Generating All Pages:
+2024-03-17 21:05:36,022 Processing time taken for all pages of Insurance_Certificate_915_page_0.png1:0:00:02.415290
+2024-03-17 21:05:36,132 file name is:Insurance_Certificate_903_page_4.png
+2024-03-17 21:05:36,132 folder path :Images
+2024-03-17 21:05:36,132 Calling Image result
+2024-03-17 21:05:36,132 is all_page_result is instance of dict? True
+2024-03-17 21:05:36,142 STREAM b'IHDR' 16 13
+2024-03-17 21:05:36,142 STREAM b'IDAT' 41 46935
+2024-03-17 21:05:36,159 is words is instance of list? True
+2024-03-17 21:05:36,159 is bboxes is instance of list? True
+2024-03-17 21:05:36,159 is bounding_boxes is instance of list? True
+2024-03-17 21:05:36,277 is input_id_chunks is instance of list? True
+2024-03-17 21:05:36,277 is mask_chunks is instance of list? True
+2024-03-17 21:05:36,277 is bbox_chunks is instance of list? True
+2024-03-17 21:05:36,277 is image_chunks is instance of list? True
+2024-03-17 21:05:36,278 is input_dict is instance of dict? True
+2024-03-17 21:05:38,031 Model Called
+2024-03-17 21:05:38,031 RAM memory 79.5 used for Insurance_Certificate_903_page_4.png:
+2024-03-17 21:05:38,031 is all_predictions is instance of list? True
+2024-03-17 21:05:38,031 is all_boxes is instance of list? True
+2024-03-17 21:05:38,031 is all_confidences is instance of list? True
+2024-03-17 21:05:38,031 is all_text is instance of list? True
+2024-03-17 21:05:38,032 is label2id is instance of dict? True
+2024-03-17 21:05:38,032 is id2label is instance of dict? True
+2024-03-17 21:05:38,032 is label2color is instance of dict? True
+2024-03-17 21:05:38,033 label2color : {'conditions_of_coverage': '#57B696', 'sum_insured_amount': '#0D933F', 'lc_ref_no': '#85A4B6', 'subject_matter_insured': '#B17161', 'original_Number': '#963835', 'policy_no': '#FEBE64', 'insurance_issuer_name_bottom': '#C88FEC', 'premium_amount': '#A8E47F', 'sail_on_or_about_to_date': '#C14D39', 'start_date': '#4F75A7', 'insurance_issuer_name': '#009396', 'original_copy': '#5EAAA9', 'place_of_issue': '#AA1800', 'invoice_no': '#61C8E5', 'claim_payable_by_address': '#5FFC49', 'signed_by_issuer': '#AFA09D', 'signature': '#3471BE', 'address_of_assured': '#39D900', 'signed_by_proxy': '#52D9AA', 'claim payable_by_name': '#BF2C4B', 'sum_insured_currency': '#95055F', 'invoice_date': '#AD6BB6', 'mode_of_transport': '#E275F9', 'expiry_date': '#6B8891', 'name_of_assured': '#CADD23', 'end_date': '#C2F4D3', 'signed_by_underwriter': '#E3F1B0', 'premium_currency': '#F914A4', 'declaration_by': '#43719F', 'insurance_issuer_address_bottom': '#701BAA', 'lc_date': '#078D2A', 'agent_address': '#455CEC', 'insurance_issuer_address': '#F84E6B', 'certificate_Stamped': '#9B76B9', 'agent_name': '#F7444E', 'O': '#B2C1CA', 'issue_date': '#02FE95', 'signed_by_agent': '#47D970', 'country_of_origin_origin_of_goods': '#10B428', 'claim_payable_in': '#A7A211', 'certificate_no': '#3E0D3E', 'vessel_or_flight_name': '#68176D', 'to_place': '#429721', 'page_no': '#B93891', 'from_place': '#6FBC65', 'vessel_or_flight_number': '#49D553'}
+2024-03-17 21:05:38,144 is result_set is instance of dict? True
+2024-03-17 21:05:38,145 is final_result_set is instance of dict? True
+2024-03-17 21:05:38,200 Time taken for page 1 of Insurance_Certificate_903_page_4.png:0:00:02.057058
+2024-03-17 21:05:38,280 *****Generated All Pages****** for Insurance_Certificate_903_page_4.png
+2024-03-17 21:05:38,281 RAM memory 79.5 used for Insurance_Certificate_903_page_4.png Generating All Pages:
+2024-03-17 21:05:38,281 Processing time taken for all pages of Insurance_Certificate_903_page_4.png1:0:00:02.148764
+2024-03-17 21:05:38,396 file name is:Insurance_Certificate_15_page_0.png
+2024-03-17 21:05:38,396 folder path :Images
+2024-03-17 21:05:38,396 Calling Image result
+2024-03-17 21:05:38,396 is all_page_result is instance of dict? True
+2024-03-17 21:05:38,406 STREAM b'IHDR' 16 13
+2024-03-17 21:05:38,407 STREAM b'IDAT' 41 65536
+2024-03-17 21:05:38,611 is words is instance of list? True
+2024-03-17 21:05:38,611 is bboxes is instance of list? True
+2024-03-17 21:05:38,611 is bounding_boxes is instance of list? True

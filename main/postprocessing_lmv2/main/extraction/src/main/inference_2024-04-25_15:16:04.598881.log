@@ -1,0 +1,38 @@
+2024-04-25 15:16:04,599 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-04-25 15:16:04,600 start time: 2024-04-25 15:16:04.600580
+2024-04-25 15:16:07,901 Starting new HTTPS connection (1): huggingface.co:443
+2024-04-25 15:16:08,701 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-04-25 15:16:09,537 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-04-25 15:16:10,268 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-04-25 15:16:10,313 RAM memory for Model loading used: 61.1
+2024-04-25 15:16:10,314 cpu_utilization % for Model Loading:-11.700000000000003
+2024-04-25 15:16:10,314 memory_consumption in bytes for Loading Model:910991360
+2024-04-25 15:16:10,314 Loaded Model successfully
+2024-04-25 15:16:10,314 file name is:Bill_of_lading_522_page_6.png
+2024-04-25 15:16:10,314 Calling Image result
+2024-04-25 15:16:10,314 is all_page_result is instance of dict? True
+2024-04-25 15:16:10,324 STREAM b'IHDR' 16 13
+2024-04-25 15:16:10,324 STREAM b'IDAT' 41 41263
+2024-04-25 15:16:10,366 is words is instance of list? True
+2024-04-25 15:16:10,366 is bboxes is instance of list? True
+2024-04-25 15:16:10,367 is bounding_boxes is instance of list? True
+2024-04-25 15:16:10,609 is input_id_chunks is instance of list? True
+2024-04-25 15:16:10,609 is mask_chunks is instance of list? True
+2024-04-25 15:16:10,610 is bbox_chunks is instance of list? True
+2024-04-25 15:16:10,610 is image_chunks is instance of list? True
+2024-04-25 15:16:10,611 is input_dict is instance of dict? True
+2024-04-25 15:16:15,189 Model Called
+2024-04-25 15:16:15,189 RAM memory 80.1 used for Bill_of_lading_522_page_6.png:
+2024-04-25 15:16:15,189 is all_predictions is instance of list? True
+2024-04-25 15:16:15,189 is all_boxes is instance of list? True
+2024-04-25 15:16:15,189 is all_confidences is instance of list? True
+2024-04-25 15:16:15,189 is all_text is instance of list? True
+2024-04-25 15:16:15,190 is label2id is instance of dict? True
+2024-04-25 15:16:15,190 is id2label is instance of dict? True
+2024-04-25 15:16:15,190 is label2color is instance of dict? True
+2024-04-25 15:16:15,379 is result_set is instance of dict? True
+2024-04-25 15:16:15,391 is final_result_set is instance of dict? True
+2024-04-25 15:16:15,465 Time taken for page 1 of Bill_of_lading_522_page_6.png:0:00:05.140597
+2024-04-25 15:16:15,556 *****Generated All Pages****** for Bill_of_lading_522_page_6.png
+2024-04-25 15:16:15,557 RAM memory 80.3 used for Bill_of_lading_522_page_6.png Generating All Pages:
+2024-04-25 15:16:15,557 Processing time taken for all pages of Bill_of_lading_522_page_6.png1:0:00:05.242607

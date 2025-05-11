@@ -1,0 +1,52 @@
+{
+    "numeric_fields": [
+      "invoice_total",
+      "customer_no",
+      "sales_order_number",
+      "order_number",
+      "customer_order_number",
+      "amount",
+      "cash_discount",
+      "tax_amount",
+      "tax_percent",
+      "freight_amount",
+      "net_amount",
+      "vendor_vat_no",
+      "im_vat_no",
+      "gstin",
+      "pan_number",
+      "amount",
+      "taxable_amount"
+    ],
+    "address_fields": [
+      "bill_to",
+      "ship_to",
+      "remit_to"
+    ],
+    "date_fields": [
+      "invoice_date",
+      "order_date",
+      "due_date",
+      "ship_date"
+    ],
+    "single_line_fields": [
+    "vendor_name",
+    "invoice_total_in_words"
+    ],
+    "single_word_fields": [
+      "charge_type",
+      "doc_curr",
+      "purchase_order_number",
+      "swift_code",
+      "vat_code"
+    ],
+    "multi_line_fields": [],
+    "master_fields": [
+    ],
+    "critical_fields": [
+      "invoice_number"
+    ],
+    "remove_fields": [
+    ]
+  }
+  

@@ -1,0 +1,45 @@
+2024-02-21 03:45:34,011 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-02-21 03:45:34,012 start time: 2024-02-21 03:45:34.012433
+2024-02-21 03:45:37,135 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-02-21 03:45:37,197 Creating converter from 7 to 5
+2024-02-21 03:45:37,197 Creating converter from 5 to 7
+2024-02-21 03:45:37,197 Creating converter from 7 to 5
+2024-02-21 03:45:37,197 Creating converter from 5 to 7
+2024-02-21 03:45:37,504 Starting new HTTPS connection (1): huggingface.co:443
+2024-02-21 03:45:38,258 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-02-21 03:45:38,769 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-02-21 03:45:39,076 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-02-21 03:45:39,106 RAM memory for Model loading used: 52.9
+2024-02-21 03:45:39,107 cpu_utilization % for Model Loading:11.6
+2024-02-21 03:45:39,107 memory_consumption in bytes for Loading Model:1145831424
+2024-02-21 03:45:39,107 Loaded Model successfully
+2024-02-21 03:45:39,107 file name is:Packing_List(2013_04_15_16_20_53_5835)_346_page_1.png
+2024-02-21 03:45:39,107 folder path :Images
+2024-02-21 03:45:39,107 Calling Image result
+2024-02-21 03:45:39,107 is all_page_result is instance of dict? True
+2024-02-21 03:45:39,110 STREAM b'IHDR' 16 13
+2024-02-21 03:45:39,110 STREAM b'IDAT' 41 34787
+2024-02-21 03:45:39,127 is words is instance of list? True
+2024-02-21 03:45:39,127 is bboxes is instance of list? True
+2024-02-21 03:45:39,127 is bounding_boxes is instance of list? True
+2024-02-21 03:45:39,266 is input_id_chunks is instance of list? True
+2024-02-21 03:45:39,266 is mask_chunks is instance of list? True
+2024-02-21 03:45:39,266 is bbox_chunks is instance of list? True
+2024-02-21 03:45:39,266 is image_chunks is instance of list? True
+2024-02-21 03:45:39,267 is input_dict is instance of dict? True
+2024-02-21 03:45:40,927 Model Called
+2024-02-21 03:45:40,927 RAM memory 65.7 used for Packing_List(2013_04_15_16_20_53_5835)_346_page_1.png:
+2024-02-21 03:45:40,927 is all_predictions is instance of list? True
+2024-02-21 03:45:40,927 is all_boxes is instance of list? True
+2024-02-21 03:45:40,927 is all_confidences is instance of list? True
+2024-02-21 03:45:40,927 is all_text is instance of list? True
+2024-02-21 03:45:40,927 is label2id is instance of dict? True
+2024-02-21 03:45:40,927 is id2label is instance of dict? True
+2024-02-21 03:45:40,928 is label2color is instance of dict? True
+2024-02-21 03:45:40,928 label2color : {'track_reference': '#965C0C', 'vessel_name': '#6EF1C1', 'transaction_amount_value': '#9DC97D', 'lc_ref_no': '#9D71E5', 'invoice_currency': '#0FB7B5', 'bill_of_lading_date': '#6ED82A', 'net_weight': '#A2B8B4', 'awb_date': '#A6115C', 'date_of_invoice': '#5D39D0', 'port_of_discharge': '#043ED0', 'original_copy': '#5D658A', 'shipper_address': '#153D68', 'rate_per_unit': '#BFD8EB', 'invoice_no': '#47F2E7', 'signature': '#BC9F45', 'consignee_address': '#6F47D6', 'incoterm': '#A5D6BE', 'country_of_final_destination': '#9FC53C', 'description_of_goods': '#6881FB', 'total_quantity_of_goods': '#3B98C4', 'shipper_name': '#6101B2', 'bill_of_lading_number': '#EBED80', 'transaction_currency': '#33CFCA', 'iec_no': '#39BD40', 'gross_weight': '#8FD204', 'vessel_flight_no': '#7DF7D3', 'transaction_date': '#EA58AE', 'lc_date': '#433ABD', 'consignee_name': '#40B477', 'stamp': '#F84B51', 'invoice_amount': '#8B1D7C', 'dimension': '#B61BC3', 'O': '#877DD1', 'consignor_name': '#6E1F50', 'notify_party_name': '#AA15E1', 'beneficiary_drawer_exporter_seller_supplier_name': '#1DF545', 'pre_carriage_by': '#72179C', 'consignor_address': '#04AF4D', 'declaration': '#C036C5', 'beneficiary_drawer_exporter_seller_supplier_tin_no': '#DD1E74', 'country_of_origin_origin_of_goods': '#3B4159', 'awb_number': '#CBE803', 'beneficiary_address': '#27531A', 'remitter_address': '#453F55', 'page_no': '#EB32AF', 'remitter_drawee_applicant_importer_buyer_name': '#E16AFD', 'port_of_loading': '#2F2DE2', 'notify_party_address': '#84A9F7', 'payment_terms_terms_of_delivery_&_payment': '#E6788E'}
+2024-02-21 03:45:41,027 is result_set is instance of dict? True
+2024-02-21 03:45:41,029 is final_result_set is instance of dict? True
+2024-02-21 03:45:41,169 Time taken for page 1 of Packing_List(2013_04_15_16_20_53_5835)_346_page_1.png:0:00:02.058257
+2024-02-21 03:45:41,233 *****Generated All Pages****** for Packing_List(2013_04_15_16_20_53_5835)_346_page_1.png
+2024-02-21 03:45:41,233 RAM memory 66.0 used for Packing_List(2013_04_15_16_20_53_5835)_346_page_1.png Generating All Pages:
+2024-02-21 03:45:41,233 Processing time taken for all pages of Packing_List(2013_04_15_16_20_53_5835)_346_page_1.png1:0:00:02.125949

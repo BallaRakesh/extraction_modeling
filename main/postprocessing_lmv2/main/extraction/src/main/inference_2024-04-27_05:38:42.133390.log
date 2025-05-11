@@ -1,0 +1,71 @@
+2024-04-27 05:38:42,133 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-04-27 05:38:42,134 start time: 2024-04-27 05:38:42.134691
+2024-04-27 05:38:44,472 Starting new HTTPS connection (1): huggingface.co:443
+2024-04-27 05:38:45,266 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-04-27 05:38:46,085 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-04-27 05:38:46,802 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-04-27 05:38:46,829 RAM memory for Model loading used: 71.8
+2024-04-27 05:38:46,829 cpu_utilization % for Model Loading:13.1
+2024-04-27 05:38:46,829 memory_consumption in bytes for Loading Model:912138240
+2024-04-27 05:38:46,829 Loaded Model successfully
+2024-04-27 05:38:46,829 file name is:Bill_of_Exchange_44_0.png
+2024-04-27 05:38:46,829 folder path :Images
+2024-04-27 05:38:46,829 Calling Image result
+2024-04-27 05:38:46,829 is all_page_result is instance of dict? True
+2024-04-27 05:38:46,832 STREAM b'IHDR' 16 13
+2024-04-27 05:38:46,832 STREAM b'pHYs' 41 9
+2024-04-27 05:38:46,832 STREAM b'IDAT' 62 98834
+2024-04-27 05:38:46,840 *****Generated All Pages****** for Bill_of_Exchange_44_0.png
+2024-04-27 05:38:46,840 RAM memory 71.8 used for Bill_of_Exchange_44_0.png Generating All Pages:
+2024-04-27 05:38:46,841 Processing time taken for all pages of Bill_of_Exchange_44_0.png1:0:00:00.011332
+2024-04-27 05:38:46,949 file name is:Bill_of_Exchange_42_0.png
+2024-04-27 05:38:46,949 folder path :Images
+2024-04-27 05:38:46,949 Calling Image result
+2024-04-27 05:38:46,949 is all_page_result is instance of dict? True
+2024-04-27 05:38:46,949 STREAM b'IHDR' 16 13
+2024-04-27 05:38:46,949 STREAM b'pHYs' 41 9
+2024-04-27 05:38:46,949 STREAM b'IDAT' 62 77897
+2024-04-27 05:38:46,953 is words is instance of list? True
+2024-04-27 05:38:46,953 is bboxes is instance of list? True
+2024-04-27 05:38:46,953 is bounding_boxes is instance of list? True
+2024-04-27 05:38:46,974 is input_id_chunks is instance of list? True
+2024-04-27 05:38:46,974 is mask_chunks is instance of list? True
+2024-04-27 05:38:46,974 is bbox_chunks is instance of list? True
+2024-04-27 05:38:46,974 is image_chunks is instance of list? True
+2024-04-27 05:38:46,975 is input_dict is instance of dict? True
+2024-04-27 05:38:47,870 Model Called
+2024-04-27 05:38:47,871 RAM memory 77.8 used for Bill_of_Exchange_42_0.png:
+2024-04-27 05:38:47,871 is all_predictions is instance of list? True
+2024-04-27 05:38:47,871 is all_boxes is instance of list? True
+2024-04-27 05:38:47,871 is all_confidences is instance of list? True
+2024-04-27 05:38:47,871 is all_text is instance of list? True
+2024-04-27 05:38:47,871 is label2id is instance of dict? True
+2024-04-27 05:38:47,871 is id2label is instance of dict? True
+2024-04-27 05:38:47,871 is label2color is instance of dict? True
+2024-04-27 05:38:47,871 label2color : {'tenor_type': '#98315C', 'invoice_due_date': '#AFAFCC', 'diclaration_by': '#0AB91F', 'invoice_amount': '#20440B', 'original_or_copy': '#F77BFB', 'boe_currency': '#D8AE02', 'lc_ref_no': '#F89CFA', 'boe_amount': '#77B0F9', 'indicator_date': '#B3348C', 'tenore_details': '#CFDD8B', 'lc_date': '#0ACC9F', 'issuing_bank': '#6510A2', 'drawer_name': '#5B92E8', 'stamp': '#0B0CC9', 'drawer_bank_address': '#20C16E', 'drawer_address': '#D14851', 'drawee_name': '#E07C4D', 'country_of_origin': '#556A75', 'tenor_indicator': '#50BDCE', 'bill_exchange_no': '#791F67', 'drawee_bank_address': '#C8D046', 'issuing_bank_address': '#57E481', 'bill_exchange_date': '#24B58D', 'goods_discription': '#C42ABF', 'drawer_bank_name': '#D410C6', 'indicator_type': '#3E94EF', 'drawee_bank_name': '#BCB6C3', 'usance_tenor': '#F358C2', 'signature': '#F6A6A1', 'invoice_no': '#974206', 'original_number': '#F07E34', 'drawee_address': '#B40913', 'invoice_date': '#75BBBA', 'issue_place': '#1BB5BA', 'invoice_currency': '#07EB99', 'O': '#C6D38A', 'amount_in_words': '#77F7CE'}
+2024-04-27 05:38:47,883 is result_set is instance of dict? True
+2024-04-27 05:38:47,884 is final_result_set is instance of dict? True
+2024-04-27 05:38:47,921 Time taken for page 1 of Bill_of_Exchange_42_0.png:0:00:00.971688
+2024-04-27 05:38:47,938 *****Generated All Pages****** for Bill_of_Exchange_42_0.png
+2024-04-27 05:38:47,938 RAM memory 77.8 used for Bill_of_Exchange_42_0.png Generating All Pages:
+2024-04-27 05:38:47,938 Processing time taken for all pages of Bill_of_Exchange_42_0.png1:0:00:00.989091
+2024-04-27 05:38:48,056 file name is:Bill_of_Exchange_88_0.png
+2024-04-27 05:38:48,056 folder path :Images
+2024-04-27 05:38:48,056 Calling Image result
+2024-04-27 05:38:48,056 is all_page_result is instance of dict? True
+2024-04-27 05:38:48,056 STREAM b'IHDR' 16 13
+2024-04-27 05:38:48,056 STREAM b'pHYs' 41 9
+2024-04-27 05:38:48,056 STREAM b'IDAT' 62 111443
+2024-04-27 05:38:48,062 *****Generated All Pages****** for Bill_of_Exchange_88_0.png
+2024-04-27 05:38:48,063 RAM memory 76.6 used for Bill_of_Exchange_88_0.png Generating All Pages:
+2024-04-27 05:38:48,063 Processing time taken for all pages of Bill_of_Exchange_88_0.png1:0:00:00.006926
+2024-04-27 05:38:48,173 file name is:Bill_of_Exchange_157_0.png
+2024-04-27 05:38:48,173 folder path :Images
+2024-04-27 05:38:48,173 Calling Image result
+2024-04-27 05:38:48,173 is all_page_result is instance of dict? True
+2024-04-27 05:38:48,173 STREAM b'IHDR' 16 13
+2024-04-27 05:38:48,173 STREAM b'pHYs' 41 9
+2024-04-27 05:38:48,173 STREAM b'IDAT' 62 126930
+2024-04-27 05:38:48,180 *****Generated All Pages****** for Bill_of_Exchange_157_0.png
+2024-04-27 05:38:48,181 RAM memory 76.6 used for Bill_of_Exchange_157_0.png Generating All Pages:
+2024-04-27 05:38:48,181 Processing time taken for all pages of Bill_of_Exchange_157_0.png1:0:00:00.007500

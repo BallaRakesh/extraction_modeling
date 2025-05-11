@@ -1,0 +1,170 @@
+2024-04-25 15:21:38,713 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-04-25 15:21:38,714 start time: 2024-04-25 15:21:38.714083
+2024-04-25 15:21:41,296 Starting new HTTPS connection (1): huggingface.co:443
+2024-04-25 15:21:42,141 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-04-25 15:21:42,529 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-04-25 15:21:42,843 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-04-25 15:21:42,879 RAM memory for Model loading used: 60.8
+2024-04-25 15:21:42,879 cpu_utilization % for Model Loading:23.7
+2024-04-25 15:21:42,879 memory_consumption in bytes for Loading Model:909758464
+2024-04-25 15:21:42,879 Loaded Model successfully
+2024-04-25 15:21:42,879 file name is:Bill_of_lading_522_page_6.png
+2024-04-25 15:21:42,880 folder path :Images
+2024-04-25 15:21:42,880 Calling Image result
+2024-04-25 15:21:42,880 is all_page_result is instance of dict? True
+2024-04-25 15:21:42,883 STREAM b'IHDR' 16 13
+2024-04-25 15:21:42,884 STREAM b'IDAT' 41 41263
+2024-04-25 15:21:42,909 *****Generated All Pages****** for Bill_of_lading_522_page_6.png
+2024-04-25 15:21:42,910 RAM memory 60.9 used for Bill_of_lading_522_page_6.png Generating All Pages:
+2024-04-25 15:21:42,910 Processing time taken for all pages of Bill_of_lading_522_page_6.png1:0:00:00.030489
+2024-04-25 15:21:43,019 file name is:Bill_of_lading_69_page_4.png
+2024-04-25 15:21:43,019 folder path :Images
+2024-04-25 15:21:43,019 Calling Image result
+2024-04-25 15:21:43,019 is all_page_result is instance of dict? True
+2024-04-25 15:21:43,020 STREAM b'IHDR' 16 13
+2024-04-25 15:21:43,020 STREAM b'IDAT' 41 53580
+2024-04-25 15:21:43,059 is words is instance of list? True
+2024-04-25 15:21:43,059 is bboxes is instance of list? True
+2024-04-25 15:21:43,059 is bounding_boxes is instance of list? True
+2024-04-25 15:21:43,314 is input_id_chunks is instance of list? True
+2024-04-25 15:21:43,315 is mask_chunks is instance of list? True
+2024-04-25 15:21:43,315 is bbox_chunks is instance of list? True
+2024-04-25 15:21:43,315 is image_chunks is instance of list? True
+2024-04-25 15:21:43,315 is input_dict is instance of dict? True
+2024-04-25 15:21:45,707 Model Called
+2024-04-25 15:21:45,707 RAM memory 71.8 used for Bill_of_lading_69_page_4.png:
+2024-04-25 15:21:45,707 is all_predictions is instance of list? True
+2024-04-25 15:21:45,707 is all_boxes is instance of list? True
+2024-04-25 15:21:45,707 is all_confidences is instance of list? True
+2024-04-25 15:21:45,707 is all_text is instance of list? True
+2024-04-25 15:21:45,708 is label2id is instance of dict? True
+2024-04-25 15:21:45,708 is id2label is instance of dict? True
+2024-04-25 15:21:45,708 is label2color is instance of dict? True
+2024-04-25 15:21:45,708 label2color : {'stamp': '#70CDBB', 'bol_original_or_copy': '#1C1770', 'vessel_name': '#26980D', 'shipped_onboard_date': '#295A9B', 'final_destination': '#7BB9A3', 'measurement': '#B59E41', 'country_of_origin': '#8451EC', 'bol_original_number': '#92FD28', 'net_weight': '#801F14', 'signed_by_carrier': '#6A027E', 'gross_weight': '#17C62F', 'carrier_country': '#BB71B8', 'port_of_discharge': '#F429C0', 'goods_quantity': '#EF9F36', 'notify_party_name': '#DB0C5E', 'port_of_loading': '#D6C35A', 'shipper_address': '#01D995', 'place_of_issue': '#04F41A', 'agent_country': '#B4FD1A', 'freight_collect_at': '#B81125', 'place_of_receipt': '#A39FDA', 'voyage_number': '#B01E68', 'signature': '#E83C0D', 'consignee_name': '#B1F362', 'consignee_address': '#4A4493', 'bill_of_lading_issue_date': '#CA3684', 'mode_of_transport': '#DAA936', 'shipper_name': '#937A2E', 'signed_By_agent': '#403D1B', 'container_number': '#2B4F7B', 'transaction_date': '#E0E233', 'notify_party_address': '#F94821', 'goods_marks_and_nos': '#157C9F', 'goods_description': '#497A03', 'lc_date': '#9D9EF5', 'dimension': '#AF7B8F', 'agent_name': '#52E61A', 'carrier_name': '#2F7D62', 'O': '#2B9CA6', 'lc_ref_number': '#99B3FD', 'pre_carriage_by': '#8308AB', 'page_no': '#17C225', 'total_original_no': '#1C4894', 'freight_collect_or_prepaid': '#F86C90', 'signed_by_master': '#E40F86', 'bill_of_lading_number': '#4CE780'}
+2024-04-25 15:21:45,928 is result_set is instance of dict? True
+2024-04-25 15:21:45,930 is final_result_set is instance of dict? True
+2024-04-25 15:21:46,049 Time taken for page 1 of Bill_of_lading_69_page_4.png:0:00:03.029407
+2024-04-25 15:21:46,175 *****Generated All Pages****** for Bill_of_lading_69_page_4.png
+2024-04-25 15:21:46,175 RAM memory 72.4 used for Bill_of_lading_69_page_4.png Generating All Pages:
+2024-04-25 15:21:46,175 Processing time taken for all pages of Bill_of_lading_69_page_4.png1:0:00:03.155927
+2024-04-25 15:21:46,292 file name is:Bill_of_lading_512_page_0.png
+2024-04-25 15:21:46,292 folder path :Images
+2024-04-25 15:21:46,292 Calling Image result
+2024-04-25 15:21:46,292 is all_page_result is instance of dict? True
+2024-04-25 15:21:46,292 STREAM b'IHDR' 16 13
+2024-04-25 15:21:46,292 STREAM b'IDAT' 41 57112
+2024-04-25 15:21:46,329 is words is instance of list? True
+2024-04-25 15:21:46,329 is bboxes is instance of list? True
+2024-04-25 15:21:46,329 is bounding_boxes is instance of list? True
+2024-04-25 15:21:46,534 is input_id_chunks is instance of list? True
+2024-04-25 15:21:46,534 is mask_chunks is instance of list? True
+2024-04-25 15:21:46,534 is bbox_chunks is instance of list? True
+2024-04-25 15:21:46,534 is image_chunks is instance of list? True
+2024-04-25 15:21:46,534 is input_dict is instance of dict? True
+2024-04-25 15:21:48,941 Model Called
+2024-04-25 15:21:48,942 RAM memory 73.6 used for Bill_of_lading_512_page_0.png:
+2024-04-25 15:21:48,942 is all_predictions is instance of list? True
+2024-04-25 15:21:48,942 is all_boxes is instance of list? True
+2024-04-25 15:21:48,942 is all_confidences is instance of list? True
+2024-04-25 15:21:48,942 is all_text is instance of list? True
+2024-04-25 15:21:48,942 is label2id is instance of dict? True
+2024-04-25 15:21:48,942 is id2label is instance of dict? True
+2024-04-25 15:21:48,943 is label2color is instance of dict? True
+2024-04-25 15:21:48,943 label2color : {'stamp': '#F0F79F', 'bol_original_or_copy': '#4255B9', 'vessel_name': '#97FC28', 'shipped_onboard_date': '#5AB53A', 'final_destination': '#9ED4E7', 'measurement': '#997861', 'country_of_origin': '#60F331', 'bol_original_number': '#5E117B', 'net_weight': '#DBFB51', 'signed_by_carrier': '#AB708C', 'gross_weight': '#1A5D34', 'carrier_country': '#7F9E6F', 'port_of_discharge': '#D9BC89', 'goods_quantity': '#807FF3', 'notify_party_name': '#B11044', 'port_of_loading': '#C4D12F', 'shipper_address': '#57C29B', 'place_of_issue': '#1FAF3F', 'agent_country': '#0464CA', 'freight_collect_at': '#CAAC48', 'place_of_receipt': '#4E3240', 'voyage_number': '#FE3A93', 'signature': '#ACA274', 'consignee_name': '#9F3E5E', 'consignee_address': '#4E79EE', 'bill_of_lading_issue_date': '#F56DEE', 'mode_of_transport': '#E35B20', 'shipper_name': '#75C135', 'signed_By_agent': '#E61988', 'container_number': '#188620', 'transaction_date': '#8E5DF8', 'notify_party_address': '#12F52F', 'goods_marks_and_nos': '#B01128', 'goods_description': '#42897E', 'lc_date': '#58549C', 'dimension': '#407C1B', 'agent_name': '#CE5F57', 'carrier_name': '#F66D04', 'O': '#D8BCFC', 'lc_ref_number': '#DD64F1', 'pre_carriage_by': '#9882BB', 'page_no': '#B57BE8', 'total_original_no': '#CD9E89', 'freight_collect_or_prepaid': '#D38600', 'signed_by_master': '#3201D5', 'bill_of_lading_number': '#ED19E8'}
+2024-04-25 15:21:49,143 is result_set is instance of dict? True
+2024-04-25 15:21:49,144 is final_result_set is instance of dict? True
+2024-04-25 15:21:49,223 Time taken for page 1 of Bill_of_lading_512_page_0.png:0:00:02.930831
+2024-04-25 15:21:49,353 *****Generated All Pages****** for Bill_of_lading_512_page_0.png
+2024-04-25 15:21:49,354 RAM memory 73.7 used for Bill_of_lading_512_page_0.png Generating All Pages:
+2024-04-25 15:21:49,354 Processing time taken for all pages of Bill_of_lading_512_page_0.png1:0:00:03.061446
+2024-04-25 15:21:49,540 file name is:Bill_of_lading_80_page_0.png
+2024-04-25 15:21:49,540 folder path :Images
+2024-04-25 15:21:49,540 Calling Image result
+2024-04-25 15:21:49,540 is all_page_result is instance of dict? True
+2024-04-25 15:21:49,540 STREAM b'IHDR' 16 13
+2024-04-25 15:21:49,540 STREAM b'IDAT' 41 65536
+2024-04-25 15:21:49,567 is words is instance of list? True
+2024-04-25 15:21:49,567 is bboxes is instance of list? True
+2024-04-25 15:21:49,567 is bounding_boxes is instance of list? True
+2024-04-25 15:21:49,772 is input_id_chunks is instance of list? True
+2024-04-25 15:21:49,772 is mask_chunks is instance of list? True
+2024-04-25 15:21:49,772 is bbox_chunks is instance of list? True
+2024-04-25 15:21:49,772 is image_chunks is instance of list? True
+2024-04-25 15:21:49,773 is input_dict is instance of dict? True
+2024-04-25 15:21:51,761 Model Called
+2024-04-25 15:21:51,762 RAM memory 75.6 used for Bill_of_lading_80_page_0.png:
+2024-04-25 15:21:51,762 is all_predictions is instance of list? True
+2024-04-25 15:21:51,762 is all_boxes is instance of list? True
+2024-04-25 15:21:51,762 is all_confidences is instance of list? True
+2024-04-25 15:21:51,762 is all_text is instance of list? True
+2024-04-25 15:21:51,762 is label2id is instance of dict? True
+2024-04-25 15:21:51,762 is id2label is instance of dict? True
+2024-04-25 15:21:51,763 is label2color is instance of dict? True
+2024-04-25 15:21:51,763 label2color : {'stamp': '#160EDC', 'bol_original_or_copy': '#C45808', 'vessel_name': '#1D17DF', 'shipped_onboard_date': '#075E3C', 'final_destination': '#E1E814', 'measurement': '#44555C', 'country_of_origin': '#F58AD4', 'bol_original_number': '#D7FF17', 'net_weight': '#9B4701', 'signed_by_carrier': '#DBD989', 'gross_weight': '#E01179', 'carrier_country': '#BB0D87', 'port_of_discharge': '#C3FF2C', 'goods_quantity': '#86290E', 'notify_party_name': '#0CD99D', 'port_of_loading': '#F449F3', 'shipper_address': '#759843', 'place_of_issue': '#2A8A76', 'agent_country': '#971887', 'freight_collect_at': '#B708AD', 'place_of_receipt': '#77801F', 'voyage_number': '#F47346', 'signature': '#D42DA9', 'consignee_name': '#CA30A2', 'consignee_address': '#888B70', 'bill_of_lading_issue_date': '#D9A237', 'mode_of_transport': '#85A912', 'shipper_name': '#F1776A', 'signed_By_agent': '#500C96', 'container_number': '#72B663', 'transaction_date': '#59FF87', 'notify_party_address': '#69E4EC', 'goods_marks_and_nos': '#F92DFC', 'goods_description': '#ACF586', 'lc_date': '#9F4003', 'dimension': '#BA6CF0', 'agent_name': '#BEE09D', 'carrier_name': '#02EC18', 'O': '#CEAD07', 'lc_ref_number': '#30FB8F', 'pre_carriage_by': '#4080E0', 'page_no': '#54EEC1', 'total_original_no': '#D37650', 'freight_collect_or_prepaid': '#4B24F1', 'signed_by_master': '#71FBC0', 'bill_of_lading_number': '#166368'}
+2024-04-25 15:21:51,958 is result_set is instance of dict? True
+2024-04-25 15:21:51,959 is final_result_set is instance of dict? True
+2024-04-25 15:21:52,040 Time taken for page 1 of Bill_of_lading_80_page_0.png:0:00:02.499840
+2024-04-25 15:21:52,172 *****Generated All Pages****** for Bill_of_lading_80_page_0.png
+2024-04-25 15:21:52,172 RAM memory 75.7 used for Bill_of_lading_80_page_0.png Generating All Pages:
+2024-04-25 15:21:52,172 Processing time taken for all pages of Bill_of_lading_80_page_0.png1:0:00:02.631894
+2024-04-25 15:21:52,272 file name is:Bill_of_lading_3_page_0.png
+2024-04-25 15:21:52,272 folder path :Images
+2024-04-25 15:21:52,272 Calling Image result
+2024-04-25 15:21:52,272 is all_page_result is instance of dict? True
+2024-04-25 15:21:52,272 STREAM b'IHDR' 16 13
+2024-04-25 15:21:52,272 STREAM b'PLTE' 41 6
+2024-04-25 15:21:52,273 STREAM b'IDAT' 59 65536
+2024-04-25 15:21:52,322 is words is instance of list? True
+2024-04-25 15:21:52,323 is bboxes is instance of list? True
+2024-04-25 15:21:52,323 is bounding_boxes is instance of list? True
+2024-04-25 15:21:52,575 is input_id_chunks is instance of list? True
+2024-04-25 15:21:52,575 is mask_chunks is instance of list? True
+2024-04-25 15:21:52,575 is bbox_chunks is instance of list? True
+2024-04-25 15:21:52,575 is image_chunks is instance of list? True
+2024-04-25 15:21:52,576 is input_dict is instance of dict? True
+2024-04-25 15:21:54,447 Model Called
+2024-04-25 15:21:54,447 RAM memory 73.2 used for Bill_of_lading_3_page_0.png:
+2024-04-25 15:21:54,447 is all_predictions is instance of list? True
+2024-04-25 15:21:54,447 is all_boxes is instance of list? True
+2024-04-25 15:21:54,447 is all_confidences is instance of list? True
+2024-04-25 15:21:54,447 is all_text is instance of list? True
+2024-04-25 15:21:54,448 is label2id is instance of dict? True
+2024-04-25 15:21:54,448 is id2label is instance of dict? True
+2024-04-25 15:21:54,448 is label2color is instance of dict? True
+2024-04-25 15:21:54,448 label2color : {'stamp': '#D5BECA', 'bol_original_or_copy': '#68F039', 'vessel_name': '#05558A', 'shipped_onboard_date': '#203DE5', 'final_destination': '#CA5EA8', 'measurement': '#F0524E', 'country_of_origin': '#F04171', 'bol_original_number': '#57D9AF', 'net_weight': '#709C39', 'signed_by_carrier': '#5EA408', 'gross_weight': '#B2EF84', 'carrier_country': '#BC984C', 'port_of_discharge': '#A6F60A', 'goods_quantity': '#C403DB', 'notify_party_name': '#C58A96', 'port_of_loading': '#97329A', 'shipper_address': '#BB32DE', 'place_of_issue': '#999478', 'agent_country': '#93663D', 'freight_collect_at': '#9D8560', 'place_of_receipt': '#6DEB0B', 'voyage_number': '#03E543', 'signature': '#4ADA19', 'consignee_name': '#939392', 'consignee_address': '#83412A', 'bill_of_lading_issue_date': '#8E17B0', 'mode_of_transport': '#5D66E5', 'shipper_name': '#611C8A', 'signed_By_agent': '#A80B18', 'container_number': '#7D72F2', 'transaction_date': '#09583F', 'notify_party_address': '#FDD634', 'goods_marks_and_nos': '#80E7CE', 'goods_description': '#7CF5DC', 'lc_date': '#D09607', 'dimension': '#8A043D', 'agent_name': '#F51E8C', 'carrier_name': '#836CBE', 'O': '#EF6FAE', 'lc_ref_number': '#0D8C1C', 'pre_carriage_by': '#901E87', 'page_no': '#B505B3', 'total_original_no': '#3E73DE', 'freight_collect_or_prepaid': '#DFFC41', 'signed_by_master': '#F0A6AA', 'bill_of_lading_number': '#A16774'}
+2024-04-25 15:21:54,730 is result_set is instance of dict? True
+2024-04-25 15:21:54,732 is final_result_set is instance of dict? True
+2024-04-25 15:21:54,862 Time taken for page 1 of Bill_of_lading_3_page_0.png:0:00:02.589576
+2024-04-25 15:21:55,013 *****Generated All Pages****** for Bill_of_lading_3_page_0.png
+2024-04-25 15:21:55,013 RAM memory 73.9 used for Bill_of_lading_3_page_0.png Generating All Pages:
+2024-04-25 15:21:55,013 Processing time taken for all pages of Bill_of_lading_3_page_0.png1:0:00:02.740532
+2024-04-25 15:21:55,128 file name is:Bill_Of_Landing_80_page_0.png
+2024-04-25 15:21:55,128 folder path :Images
+2024-04-25 15:21:55,128 Calling Image result
+2024-04-25 15:21:55,128 is all_page_result is instance of dict? True
+2024-04-25 15:21:55,128 STREAM b'IHDR' 16 13
+2024-04-25 15:21:55,128 STREAM b'IDAT' 41 61054
+2024-04-25 15:21:55,169 is words is instance of list? True
+2024-04-25 15:21:55,169 is bboxes is instance of list? True
+2024-04-25 15:21:55,169 is bounding_boxes is instance of list? True
+2024-04-25 15:21:55,419 is input_id_chunks is instance of list? True
+2024-04-25 15:21:55,419 is mask_chunks is instance of list? True
+2024-04-25 15:21:55,419 is bbox_chunks is instance of list? True
+2024-04-25 15:21:55,419 is image_chunks is instance of list? True
+2024-04-25 15:21:55,420 is input_dict is instance of dict? True
+2024-04-25 15:21:57,339 Model Called
+2024-04-25 15:21:57,339 RAM memory 73.3 used for Bill_Of_Landing_80_page_0.png:
+2024-04-25 15:21:57,339 is all_predictions is instance of list? True
+2024-04-25 15:21:57,339 is all_boxes is instance of list? True
+2024-04-25 15:21:57,339 is all_confidences is instance of list? True
+2024-04-25 15:21:57,339 is all_text is instance of list? True
+2024-04-25 15:21:57,340 is label2id is instance of dict? True
+2024-04-25 15:21:57,340 is id2label is instance of dict? True
+2024-04-25 15:21:57,340 is label2color is instance of dict? True
+2024-04-25 15:21:57,340 label2color : {'stamp': '#6C0F67', 'bol_original_or_copy': '#105117', 'vessel_name': '#46D233', 'shipped_onboard_date': '#5153C9', 'final_destination': '#5AE623', 'measurement': '#745688', 'country_of_origin': '#E67E1C', 'bol_original_number': '#F7E662', 'net_weight': '#282D93', 'signed_by_carrier': '#99CC8C', 'gross_weight': '#A802F3', 'carrier_country': '#319305', 'port_of_discharge': '#30CECD', 'goods_quantity': '#73E3D9', 'notify_party_name': '#5223F7', 'port_of_loading': '#C40DA3', 'shipper_address': '#07CCDC', 'place_of_issue': '#B49624', 'agent_country': '#2206AB', 'freight_collect_at': '#3ABA0A', 'place_of_receipt': '#054C57', 'voyage_number': '#7E0037', 'signature': '#14C983', 'consignee_name': '#5408F4', 'consignee_address': '#4B9373', 'bill_of_lading_issue_date': '#AB7B75', 'mode_of_transport': '#A55B62', 'shipper_name': '#904741', 'signed_By_agent': '#9C50AF', 'container_number': '#365D93', 'transaction_date': '#510C86', 'notify_party_address': '#B8450D', 'goods_marks_and_nos': '#79332B', 'goods_description': '#FA83AF', 'lc_date': '#12EE33', 'dimension': '#E6ED2E', 'agent_name': '#B96F82', 'carrier_name': '#EF7C15', 'O': '#F5C4D6', 'lc_ref_number': '#8B3D94', 'pre_carriage_by': '#514882', 'page_no': '#37485B', 'total_original_no': '#635C67', 'freight_collect_or_prepaid': '#936EE7', 'signed_by_master': '#846163', 'bill_of_lading_number': '#A6EBC2'}
+2024-04-25 15:21:57,553 is result_set is instance of dict? True
+2024-04-25 15:21:57,554 is final_result_set is instance of dict? True
+2024-04-25 15:21:57,639 Time taken for page 1 of Bill_Of_Landing_80_page_0.png:0:00:02.510535
+2024-04-25 15:21:57,792 *****Generated All Pages****** for Bill_Of_Landing_80_page_0.png
+2024-04-25 15:21:57,792 RAM memory 73.3 used for Bill_Of_Landing_80_page_0.png Generating All Pages:
+2024-04-25 15:21:57,792 Processing time taken for all pages of Bill_Of_Landing_80_page_0.png1:0:00:02.664138

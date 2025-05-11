@@ -1,0 +1,16 @@
+2024-04-25 18:54:16,399 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-04-25 18:54:16,401 start time: 2024-04-25 18:54:16.401167
+2024-04-25 18:54:21,658 Starting new HTTPS connection (1): huggingface.co:443
+2024-04-25 18:54:22,469 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-04-25 18:54:22,991 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-04-25 18:54:23,259 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-04-25 18:54:23,313 RAM memory for Model loading used: 73.5
+2024-04-25 18:54:23,313 cpu_utilization % for Model Loading:-39.0
+2024-04-25 18:54:23,313 memory_consumption in bytes for Loading Model:909332480
+2024-04-25 18:54:23,313 Loaded Model successfully
+2024-04-25 18:54:23,313 file name is:Bill_of_lading_1077_page_0.png
+2024-04-25 18:54:23,314 folder path :Images
+2024-04-25 18:54:23,314 Calling Image result
+2024-04-25 18:54:23,314 is all_page_result is instance of dict? True
+2024-04-25 18:54:23,321 STREAM b'IHDR' 16 13
+2024-04-25 18:54:23,322 STREAM b'IDAT' 41 59829

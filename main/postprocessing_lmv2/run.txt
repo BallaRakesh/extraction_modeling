@@ -1,0 +1,3 @@
+python -m training.lmv2code.src.main.extraction.inference
+
+python -m training.lmv2code.src.main.extraction.inference --path eval_images

@@ -1,0 +1,42 @@
+2024-03-06 11:39:14,532 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-03-06 11:39:14,532 start time: 2024-03-06 11:39:14.532977
+2024-03-06 11:39:17,457 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-03-06 11:39:17,609 Creating converter from 7 to 5
+2024-03-06 11:39:17,609 Creating converter from 5 to 7
+2024-03-06 11:39:17,609 Creating converter from 7 to 5
+2024-03-06 11:39:17,609 Creating converter from 5 to 7
+2024-03-06 11:39:17,934 Starting new HTTPS connection (1): huggingface.co:443
+2024-03-06 11:39:18,451 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-03-06 11:39:18,925 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-03-06 11:39:19,294 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-03-06 11:39:19,324 RAM memory for Model loading used: 60.0
+2024-03-06 11:39:19,325 cpu_utilization % for Model Loading:13.1
+2024-03-06 11:39:19,325 memory_consumption in bytes for Loading Model:1158049792
+2024-03-06 11:39:19,325 Loaded Model successfully
+2024-03-06 11:39:19,325 file name is:Proforma_Invoice(2013_04_17_14_00_41_9003)_303_0.png
+2024-03-06 11:39:19,325 folder path :Images
+2024-03-06 11:39:19,325 Calling Image result
+2024-03-06 11:39:19,325 is all_page_result is instance of dict? True
+2024-03-06 11:39:19,328 STREAM b'IHDR' 16 13
+2024-03-06 11:39:19,328 STREAM b'pHYs' 41 9
+2024-03-06 11:39:19,328 STREAM b'IDAT' 62 139842
+2024-03-06 11:39:19,348 is words is instance of list? True
+2024-03-06 11:39:19,348 is bboxes is instance of list? True
+2024-03-06 11:39:19,348 is bounding_boxes is instance of list? True
+2024-03-06 11:39:19,390 is input_id_chunks is instance of list? True
+2024-03-06 11:39:19,390 is mask_chunks is instance of list? True
+2024-03-06 11:39:19,390 is bbox_chunks is instance of list? True
+2024-03-06 11:39:19,390 is image_chunks is instance of list? True
+2024-03-06 11:39:19,391 is input_dict is instance of dict? True
+2024-03-06 11:39:21,624 Model Called
+2024-03-06 11:39:21,624 RAM memory 73.1 used for Proforma_Invoice(2013_04_17_14_00_41_9003)_303_0.png:
+2024-03-06 11:39:21,625 is all_predictions is instance of list? True
+2024-03-06 11:39:21,625 is all_boxes is instance of list? True
+2024-03-06 11:39:21,625 is all_confidences is instance of list? True
+2024-03-06 11:39:21,625 is all_text is instance of list? True
+2024-03-06 11:39:21,625 is label2id is instance of dict? True
+2024-03-06 11:39:21,625 is id2label is instance of dict? True
+2024-03-06 11:39:21,626 is label2color is instance of dict? True
+2024-03-06 11:39:21,626 label2color : {'transaction_date': '#E8D1C8', 'beneficiary_bank_swift': '#00A2B8', 'unit': '#D53764', 'gross_weight': '#843BED', 'payment_terms': '#9B0405', 'date_of_invoice': '#DE3A76', 'lc_ref_no': '#0B848B', 'order_date': '#DE5670', 'invoice_tax_amount': '#0E8D95', 'shipper_name': '#360866', 'freight_charges': '#A48334', 'tolerance_of_quantity': '#2E6EF3', 'O': '#19AA32', 'transport_details': '#8CA7BB', 'place_of_receipt': '#15A165', 'country_of_final_destination': '#8091EE', 'notify_party_name': '#97DA5A', 'remitter_country': '#7FCB00', 'beneficiary_country': '#B90813', 'final_destination': '#4FAF4D', 'pre-carriage-by': '#0F3AC4', 'invoice_no': '#DCBB1A', 'insurance_charges': '#D63ECE', 'cosignee_name': '#3569F9', 'tenor_indicator': '#2AC4E5', 'incoterm': '#1ECFA2', 'original_or_copy': '#460F06', 'page_no': '#CBADBF', 'vessel_flight_no': '#9FFC38', 'beneficiary_bank_identifier': '#70F0B9', 'port_of_loading': '#751F88', 'awb_number': '#4E461C', 'transaction_amonunt_value': '#31C045', 'shipper_address': '#8308D2', 'goods_description': '#EBC47E', 'consignor_name': '#F5E194', 'stamp': '#5BD029', 'bill_of_lading_no': '#62A119', 'transhipment': '#27114A', 'invoice_due_date': '#0F692C', 'indicator_type': '#0F6453', 'importer_your_ref_no': '#F1FC90', 'rate_per_unit': '#9601E1', 'beneficiary_bank_country': '#774CA1', 'notify_party_country': '#F77805', 'beneficiary_drawer_exporter_seller_supplier_tin': '#29A107', 'signature': '#65F619', 'invoice_amount': '#C9B8F8', 'lc_date': '#00BEA5', 'advance_amount': '#BE1A6A', 'beneficiary_address': '#9B9D5D', 'signature_of_the_issuer': '#C95917', 'beneficiary_account_number': '#51E3CB', 'signed_by': '#EC86FE', 'from': '#5E9712', 'exporter_our_ref_no': '#EE18EB', 'remitter_drawee_applicant_importer_buyer_name': '#23AEF3', 'packaging_description': '#4DFFEC', 'notify_party_address': '#184F7A', 'hs_code_no': '#B623C5', 'beneficiary_iban_number': '#1AABD6', 'beneficiary_drawer_exporter_seller_supplier_name': '#06690F', 'beneficiary_bank_name': '#C0451D', 'delivery_terms': '#1F5B0B', 'total_quantity_of_goods': '#DAE789', 'dimension': '#634A2A', 'invoice_amount_in_words': '#8284D4', 'invoice_discount_ccy': '#FB53B3', 'declaration_by_issuer': '#8F6900', 'port_of_discharge': '#7BC54D', 'total_pages': '#AFC22C', 'usance_tenor': '#B480EE', 'amount_due': '#F52473', 'purchase_order_no_and_agreement_ref_no': '#76AB35', 'vessel_name': '#0CAE2C', 'indicator_date': '#9145F8', 'invoice_tax_ccy': '#487CFE', 'mode_of_despatch': '#4F82E6', 'net_weight': '#A0E70C', 'awb_date': '#AFBA59', 'country_of_origin_of_goods': '#8567A4', 'invoice_currency': '#D27338', 'bill_of_lading_date': '#505C06', 'shipment_date': '#FADD89', 'consignee_address': '#D4315B', 'invoice_discount_amount': '#95E975', 'transaction_currency': '#473C8E', 'consignor_country': '#B9AA15', 'to': '#B12D85', 'consignor_address': '#121175', 'remitter_address': '#195D2E', 'drawer_ref_no': '#A0622F', 'tenor_type': '#66A356', 'presentation_period': '#60A32B'}
+2024-03-06 11:39:21,680 is result_set is instance of dict? True
+2024-03-06 11:39:21,682 is final_result_set is instance of dict? True

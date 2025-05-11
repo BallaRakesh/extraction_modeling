@@ -1,0 +1,36 @@
+2024-04-29 16:20:07,873 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-04-29 16:20:07,875 start time: 2024-04-29 16:20:07.875914
+2024-04-29 16:20:11,539 Starting new HTTPS connection (1): huggingface.co:443
+2024-04-29 16:20:12,041 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-04-29 16:20:12,563 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-04-29 16:20:12,878 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-04-29 16:20:12,930 RAM memory for Model loading used: 57.3
+2024-04-29 16:20:12,930 cpu_utilization % for Model Loading:29.0
+2024-04-29 16:20:12,930 memory_consumption in bytes for Loading Model:911056896
+2024-04-29 16:20:12,930 Loaded Model successfully
+2024-04-29 16:20:12,931 file name is:Bill_of_lading_512_page_0.png
+2024-04-29 16:20:12,931 folder path :Images
+2024-04-29 16:20:12,931 Calling Image result
+2024-04-29 16:20:12,931 is all_page_result is instance of dict? True
+2024-04-29 16:20:12,939 STREAM b'IHDR' 16 13
+2024-04-29 16:20:12,939 STREAM b'IDAT' 41 57112
+2024-04-29 16:20:12,991 is words is instance of list? True
+2024-04-29 16:20:12,991 is bboxes is instance of list? True
+2024-04-29 16:20:12,991 is bounding_boxes is instance of list? True
+2024-04-29 16:20:13,471 is input_id_chunks is instance of list? True
+2024-04-29 16:20:13,472 is mask_chunks is instance of list? True
+2024-04-29 16:20:13,472 is bbox_chunks is instance of list? True
+2024-04-29 16:20:13,472 is image_chunks is instance of list? True
+2024-04-29 16:20:13,474 is input_dict is instance of dict? True
+2024-04-29 16:20:16,770 Model Called
+2024-04-29 16:20:16,770 RAM memory 69.6 used for Bill_of_lading_512_page_0.png:
+2024-04-29 16:20:16,770 is all_predictions is instance of list? True
+2024-04-29 16:20:16,770 is all_boxes is instance of list? True
+2024-04-29 16:20:16,770 is all_confidences is instance of list? True
+2024-04-29 16:20:16,770 is all_text is instance of list? True
+2024-04-29 16:20:16,770 is label2id is instance of dict? True
+2024-04-29 16:20:16,771 is id2label is instance of dict? True
+2024-04-29 16:20:16,771 is label2color is instance of dict? True
+2024-04-29 16:20:16,771 label2color : {'stamp': '#B56BF2', 'bol_original_or_copy': '#7EAB87', 'vessel_name': '#1E5C3D', 'shipped_onboard_date': '#72B9B1', 'final_destination': '#9240B6', 'measurement': '#388819', 'country_of_origin': '#42D298', 'bol_original_number': '#594090', 'net_weight': '#0E6D95', 'signed_by_carrier': '#07056E', 'gross_weight': '#1455E0', 'carrier_country': '#EAA699', 'port_of_discharge': '#439E62', 'goods_quantity': '#A7E01E', 'notify_party_name': '#B4D3A3', 'port_of_loading': '#54D5C9', 'shipper_address': '#7EF35D', 'place_of_issue': '#BC4080', 'agent_country': '#24971E', 'freight_collect_at': '#7E7DCB', 'place_of_receipt': '#417F31', 'voyage_number': '#2C1609', 'signature': '#706421', 'consignee_name': '#D0BD9A', 'consignee_address': '#841F7E', 'bill_of_lading_issue_date': '#C5A48B', 'mode_of_transport': '#AFF014', 'shipper_name': '#A850A6', 'signed_By_agent': '#5D63B9', 'container_number': '#07400B', 'transaction_date': '#DC215B', 'notify_party_address': '#0DD445', 'goods_marks_and_nos': '#F55E43', 'goods_description': '#715D8A', 'lc_date': '#84DA47', 'dimension': '#E32405', 'agent_name': '#83BC00', 'carrier_name': '#AB9F41', 'O': '#BC4492', 'lc_ref_number': '#A9FD6F', 'pre_carriage_by': '#07F1D2', 'page_no': '#3BA369', 'total_original_no': '#05F939', 'freight_collect_or_prepaid': '#3850EE', 'signed_by_master': '#0CEB8A', 'bill_of_lading_number': '#5AE6EC'}
+2024-04-29 16:20:16,995 is result_set is instance of dict? True
+2024-04-29 16:20:16,998 is final_result_set is instance of dict? True

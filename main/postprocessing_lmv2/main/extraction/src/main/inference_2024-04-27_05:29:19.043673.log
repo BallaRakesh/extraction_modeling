@@ -1,0 +1,41 @@
+2024-04-27 05:29:19,043 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-04-27 05:29:19,044 start time: 2024-04-27 05:29:19.044860
+2024-04-27 05:29:21,693 Starting new HTTPS connection (1): huggingface.co:443
+2024-04-27 05:29:22,689 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-04-27 05:29:23,605 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-04-27 05:29:23,912 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-04-27 05:29:23,965 RAM memory for Model loading used: 71.1
+2024-04-27 05:29:23,965 cpu_utilization % for Model Loading:15.1
+2024-04-27 05:29:23,965 memory_consumption in bytes for Loading Model:911683584
+2024-04-27 05:29:23,965 Loaded Model successfully
+2024-04-27 05:29:23,966 file name is:Bill_of_Exchange_157_0.png
+2024-04-27 05:29:23,966 folder path :Images
+2024-04-27 05:29:23,966 Calling Image result
+2024-04-27 05:29:23,966 is all_page_result is instance of dict? True
+2024-04-27 05:29:23,971 STREAM b'IHDR' 16 13
+2024-04-27 05:29:23,971 STREAM b'pHYs' 41 9
+2024-04-27 05:29:23,971 STREAM b'IDAT' 62 126930
+2024-04-27 05:29:23,985 is words is instance of list? True
+2024-04-27 05:29:23,985 is bboxes is instance of list? True
+2024-04-27 05:29:23,985 is bounding_boxes is instance of list? True
+2024-04-27 05:29:24,033 is input_id_chunks is instance of list? True
+2024-04-27 05:29:24,033 is mask_chunks is instance of list? True
+2024-04-27 05:29:24,033 is bbox_chunks is instance of list? True
+2024-04-27 05:29:24,033 is image_chunks is instance of list? True
+2024-04-27 05:29:24,033 is input_dict is instance of dict? True
+2024-04-27 05:29:24,999 Model Called
+2024-04-27 05:29:24,999 RAM memory 77.2 used for Bill_of_Exchange_157_0.png:
+2024-04-27 05:29:25,009 is all_predictions is instance of list? True
+2024-04-27 05:29:25,009 is all_boxes is instance of list? True
+2024-04-27 05:29:25,009 is all_confidences is instance of list? True
+2024-04-27 05:29:25,009 is all_text is instance of list? True
+2024-04-27 05:29:25,010 is label2id is instance of dict? True
+2024-04-27 05:29:25,010 is id2label is instance of dict? True
+2024-04-27 05:29:25,010 is label2color is instance of dict? True
+2024-04-27 05:29:25,010 label2color : {'tenor_type': '#56B3F8', 'invoice_due_date': '#CB52B8', 'diclaration_by': '#16A0CF', 'invoice_amount': '#B62DDD', 'original_or_copy': '#4E31F3', 'boe_currency': '#7BA96F', 'lc_ref_no': '#D297D0', 'boe_amount': '#E4F20C', 'indicator_date': '#9D94E9', 'tenore_details': '#4AAC09', 'lc_date': '#0C2BE7', 'issuing_bank': '#327336', 'drawer_name': '#5DF4C7', 'stamp': '#5B1BE3', 'drawer_bank_address': '#5F7E99', 'drawer_address': '#388CAE', 'drawee_name': '#CAB35E', 'country_of_origin': '#9AB68F', 'tenor_indicator': '#D8A651', 'bill_exchange_no': '#D75869', 'drawee_bank_address': '#83C788', 'issuing_bank_address': '#5A3CC4', 'bill_exchange_date': '#018D16', 'goods_discription': '#BD11B0', 'drawer_bank_name': '#AC9630', 'indicator_type': '#ECCA70', 'drawee_bank_name': '#1E4B89', 'usance_tenor': '#7B3E2E', 'signature': '#81E51E', 'invoice_no': '#4A206B', 'original_number': '#6D18A9', 'drawee_address': '#E57661', 'invoice_date': '#AA41EE', 'issue_place': '#DE5EA7', 'invoice_currency': '#913CE9', 'O': '#B291C4', 'amount_in_words': '#E7D7E8'}
+2024-04-27 05:29:25,031 is result_set is instance of dict? True
+2024-04-27 05:29:25,033 is final_result_set is instance of dict? True
+2024-04-27 05:29:25,117 Time taken for page 1 of Bill_of_Exchange_157_0.png:0:00:01.145754
+2024-04-27 05:29:25,147 *****Generated All Pages****** for Bill_of_Exchange_157_0.png
+2024-04-27 05:29:25,147 RAM memory 77.3 used for Bill_of_Exchange_157_0.png Generating All Pages:
+2024-04-27 05:29:25,147 Processing time taken for all pages of Bill_of_Exchange_157_0.png1:0:00:01.181147

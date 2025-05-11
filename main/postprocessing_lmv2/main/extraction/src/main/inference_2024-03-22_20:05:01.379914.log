@@ -1,0 +1,1455 @@
+2024-03-22 20:05:01,380 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-03-22 20:05:01,381 start time: 2024-03-22 20:05:01.381488
+2024-03-22 20:05:07,065 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-03-22 20:05:07,371 Creating converter from 7 to 5
+2024-03-22 20:05:07,371 Creating converter from 5 to 7
+2024-03-22 20:05:07,371 Creating converter from 7 to 5
+2024-03-22 20:05:07,371 Creating converter from 5 to 7
+2024-03-22 20:05:08,267 Starting new HTTPS connection (1): huggingface.co:443
+2024-03-22 20:05:09,023 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-03-22 20:05:09,652 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-03-22 20:05:10,377 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-03-22 20:05:10,437 RAM memory for Model loading used: 51.2
+2024-03-22 20:05:10,437 cpu_utilization % for Model Loading:-45.2
+2024-03-22 20:05:10,437 memory_consumption in bytes for Loading Model:1156329472
+2024-03-22 20:05:10,437 Loaded Model successfully
+2024-03-22 20:05:10,438 file name is:Proforma_Invoice(2013_01_10_13_53_55_9320)_516_0.png
+2024-03-22 20:05:10,438 folder path :Images
+2024-03-22 20:05:10,438 Calling Image result
+2024-03-22 20:05:10,438 is all_page_result is instance of dict? True
+2024-03-22 20:05:10,447 STREAM b'IHDR' 16 13
+2024-03-22 20:05:10,447 STREAM b'IDAT' 41 33675
+2024-03-22 20:05:10,499 is words is instance of list? True
+2024-03-22 20:05:10,499 is bboxes is instance of list? True
+2024-03-22 20:05:10,499 is bounding_boxes is instance of list? True
+2024-03-22 20:05:10,978 is input_id_chunks is instance of list? True
+2024-03-22 20:05:10,978 is mask_chunks is instance of list? True
+2024-03-22 20:05:10,978 is bbox_chunks is instance of list? True
+2024-03-22 20:05:10,978 is image_chunks is instance of list? True
+2024-03-22 20:05:10,980 is input_dict is instance of dict? True
+2024-03-22 20:05:13,003 Model Called
+2024-03-22 20:05:13,004 RAM memory 57.0 used for Proforma_Invoice(2013_01_10_13_53_55_9320)_516_0.png:
+2024-03-22 20:05:13,004 is all_predictions is instance of list? True
+2024-03-22 20:05:13,004 is all_boxes is instance of list? True
+2024-03-22 20:05:13,004 is all_confidences is instance of list? True
+2024-03-22 20:05:13,004 is all_text is instance of list? True
+2024-03-22 20:05:13,005 is label2id is instance of dict? True
+2024-03-22 20:05:13,005 is id2label is instance of dict? True
+2024-03-22 20:05:13,006 is label2color is instance of dict? True
+2024-03-22 20:05:13,006 label2color : {'declaration_by_issuer': '#327CDA', 'pre-carriage-by': '#C164D1', 'order_date': '#81FF9A', 'vessel_name': '#CECBA2', 'invoice_no': '#91FAB4', 'signature': '#7E7A35', 'final_destination': '#7BD565', 'country_of_origin_of_goods': '#324305', 'exporter_our_ref_no': '#0BAA48', 'gross_weight': '#222B06', 'beneficiary_bank_swift': '#275445', 'remitter_country': '#6A5E99', 'notify_party_name': '#DD7D25', 'cosignee_name': '#0752F3', 'original_or_copy': '#7BB3D4', 'total_quantity_of_goods': '#7F822E', 'invoice_amount': '#2FD67D', 'incoterm': '#70D12A', 'signed_by': '#8515AB', 'from': '#14E562', 'beneficiary_drawer_exporter_seller_supplier_tin': '#893D3F', 'invoice_currency': '#C3ED15', 'consignor_name': '#8C438E', 'advance_amount': '#D04E38', 'importer_your_ref_no': '#7F0769', 'invoice_due_date': '#43CF9C', 'unit': '#1340F9', 'shipment_date': '#646DC5', 'mode_of_despatch': '#363F7B', 'purchase_order_no_and_agreement_ref_no': '#019364', 'consignor_address': '#12FB99', 'hs_code_no': '#10FDC0', 'date_of_invoice': '#312974', 'presentation_period': '#CE3629', 'invoice_tax_amount': '#CABAF8', 'beneficiary_drawer_exporter_seller_supplier_name': '#06E929', 'O': '#2B8C95', 'port_of_discharge': '#D5DB11', 'to': '#4A5B39', 'delivery_terms': '#157106', 'tolerance_of_quantity': '#CB4D3B', 'goods_description': '#E05166', 'consignee_address': '#749789', 'shipper_address': '#94980D', 'beneficiary_account_number': '#FEC5D2', 'net_weight': '#8889F2', 'invoice_amount_in_words': '#91FA90', 'port_of_loading': '#DF58DA', 'drawer_ref_no': '#13EE7E', 'place_of_receipt': '#89688C', 'rate_per_unit': '#8AE269', 'amount_due': '#C60D91', 'page_no': '#E6D994', 'shipper_name': '#2F7679', 'total_pages': '#F6762A', 'packaging_description': '#E9A0B3', 'beneficiary_bank_name': '#0E24AC', 'remitter_drawee_applicant_importer_buyer_name': '#2B665B', 'transport_details': '#60D618', 'beneficiary_bank_country': '#43D8F6', 'country_of_final_destination': '#03A53B', 'transhipment': '#9C7444', 'beneficiary_address': '#6EF212', 'payment_terms': '#DB5617'}
+2024-03-22 20:05:13,210 is result_set is instance of dict? True
+2024-03-22 20:05:13,211 is final_result_set is instance of dict? True
+2024-03-22 20:05:13,528 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_53_55_9320)_516_0.png:0:00:03.080646
+2024-03-22 20:05:13,700 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_53_55_9320)_516_0.png
+2024-03-22 20:05:13,700 RAM memory 57.6 used for Proforma_Invoice(2013_01_10_13_53_55_9320)_516_0.png Generating All Pages:
+2024-03-22 20:05:13,700 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_53_55_9320)_516_0.png1:0:00:03.262406
+2024-03-22 20:05:13,861 file name is:Proforma_Invoice(2013_01_10_13_54_21_8709)_547_0.png
+2024-03-22 20:05:13,861 folder path :Images
+2024-03-22 20:05:13,861 Calling Image result
+2024-03-22 20:05:13,862 is all_page_result is instance of dict? True
+2024-03-22 20:05:13,872 STREAM b'IHDR' 16 13
+2024-03-22 20:05:13,872 STREAM b'IDAT' 41 35048
+2024-03-22 20:05:13,907 is words is instance of list? True
+2024-03-22 20:05:13,907 is bboxes is instance of list? True
+2024-03-22 20:05:13,907 is bounding_boxes is instance of list? True
+2024-03-22 20:05:14,146 is input_id_chunks is instance of list? True
+2024-03-22 20:05:14,146 is mask_chunks is instance of list? True
+2024-03-22 20:05:14,146 is bbox_chunks is instance of list? True
+2024-03-22 20:05:14,147 is image_chunks is instance of list? True
+2024-03-22 20:05:14,147 is input_dict is instance of dict? True
+2024-03-22 20:05:15,820 Model Called
+2024-03-22 20:05:15,821 RAM memory 57.7 used for Proforma_Invoice(2013_01_10_13_54_21_8709)_547_0.png:
+2024-03-22 20:05:15,821 is all_predictions is instance of list? True
+2024-03-22 20:05:15,821 is all_boxes is instance of list? True
+2024-03-22 20:05:15,821 is all_confidences is instance of list? True
+2024-03-22 20:05:15,821 is all_text is instance of list? True
+2024-03-22 20:05:15,822 is label2id is instance of dict? True
+2024-03-22 20:05:15,822 is id2label is instance of dict? True
+2024-03-22 20:05:15,824 is label2color is instance of dict? True
+2024-03-22 20:05:15,824 label2color : {'declaration_by_issuer': '#99D8AB', 'pre-carriage-by': '#B21506', 'order_date': '#1C3CE5', 'vessel_name': '#A77787', 'invoice_no': '#3C5476', 'signature': '#76C85D', 'final_destination': '#CBFDCB', 'country_of_origin_of_goods': '#27AD5C', 'exporter_our_ref_no': '#F04F69', 'gross_weight': '#00096F', 'beneficiary_bank_swift': '#9B3B51', 'remitter_country': '#D0FDAE', 'notify_party_name': '#D1A5C7', 'cosignee_name': '#212566', 'original_or_copy': '#68E3DD', 'total_quantity_of_goods': '#C6B98B', 'invoice_amount': '#D84049', 'incoterm': '#FF36D3', 'signed_by': '#3EBC29', 'from': '#881137', 'beneficiary_drawer_exporter_seller_supplier_tin': '#0540CE', 'invoice_currency': '#0427C7', 'consignor_name': '#0A7617', 'advance_amount': '#C90778', 'importer_your_ref_no': '#DF8288', 'invoice_due_date': '#92DB7C', 'unit': '#6E0AC0', 'shipment_date': '#65F434', 'mode_of_despatch': '#A22325', 'purchase_order_no_and_agreement_ref_no': '#DA52C5', 'consignor_address': '#842534', 'hs_code_no': '#BD0A5F', 'date_of_invoice': '#65B2D9', 'presentation_period': '#CBB372', 'invoice_tax_amount': '#D56C86', 'beneficiary_drawer_exporter_seller_supplier_name': '#B04B4A', 'O': '#A66885', 'port_of_discharge': '#801C98', 'to': '#3C9263', 'delivery_terms': '#A0EC51', 'tolerance_of_quantity': '#5769E3', 'goods_description': '#F442C4', 'consignee_address': '#DF5F3A', 'shipper_address': '#763200', 'beneficiary_account_number': '#1FFC24', 'net_weight': '#3F84A6', 'invoice_amount_in_words': '#F3B2C9', 'port_of_loading': '#77CA32', 'drawer_ref_no': '#DCB26B', 'place_of_receipt': '#5ECC7A', 'rate_per_unit': '#C18A84', 'amount_due': '#A6F79B', 'page_no': '#DA41E5', 'shipper_name': '#E653AC', 'total_pages': '#50B29F', 'packaging_description': '#084168', 'beneficiary_bank_name': '#FA8AC3', 'remitter_drawee_applicant_importer_buyer_name': '#134DC5', 'transport_details': '#9C1232', 'beneficiary_bank_country': '#F9851F', 'country_of_final_destination': '#98BD9E', 'transhipment': '#F6E8F1', 'beneficiary_address': '#73337E', 'payment_terms': '#ED19FA'}
+2024-03-22 20:05:16,060 is result_set is instance of dict? True
+2024-03-22 20:05:16,062 is final_result_set is instance of dict? True
+2024-03-22 20:05:16,380 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_54_21_8709)_547_0.png:0:00:02.507524
+2024-03-22 20:05:16,554 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_54_21_8709)_547_0.png
+2024-03-22 20:05:16,554 RAM memory 57.9 used for Proforma_Invoice(2013_01_10_13_54_21_8709)_547_0.png Generating All Pages:
+2024-03-22 20:05:16,554 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_54_21_8709)_547_0.png1:0:00:02.692577
+2024-03-22 20:05:16,711 file name is:Proforma_Invoice(2013_01_10_13_52_13_8713)_497_0.png
+2024-03-22 20:05:16,712 folder path :Images
+2024-03-22 20:05:16,712 Calling Image result
+2024-03-22 20:05:16,712 is all_page_result is instance of dict? True
+2024-03-22 20:05:16,722 STREAM b'IHDR' 16 13
+2024-03-22 20:05:16,723 STREAM b'IDAT' 41 34167
+2024-03-22 20:05:16,757 is words is instance of list? True
+2024-03-22 20:05:16,757 is bboxes is instance of list? True
+2024-03-22 20:05:16,757 is bounding_boxes is instance of list? True
+2024-03-22 20:05:17,048 is input_id_chunks is instance of list? True
+2024-03-22 20:05:17,048 is mask_chunks is instance of list? True
+2024-03-22 20:05:17,048 is bbox_chunks is instance of list? True
+2024-03-22 20:05:17,048 is image_chunks is instance of list? True
+2024-03-22 20:05:17,049 is input_dict is instance of dict? True
+2024-03-22 20:05:18,649 Model Called
+2024-03-22 20:05:18,649 RAM memory 57.8 used for Proforma_Invoice(2013_01_10_13_52_13_8713)_497_0.png:
+2024-03-22 20:05:18,649 is all_predictions is instance of list? True
+2024-03-22 20:05:18,649 is all_boxes is instance of list? True
+2024-03-22 20:05:18,649 is all_confidences is instance of list? True
+2024-03-22 20:05:18,649 is all_text is instance of list? True
+2024-03-22 20:05:18,650 is label2id is instance of dict? True
+2024-03-22 20:05:18,650 is id2label is instance of dict? True
+2024-03-22 20:05:18,651 is label2color is instance of dict? True
+2024-03-22 20:05:18,651 label2color : {'declaration_by_issuer': '#C084D7', 'pre-carriage-by': '#A1DFF2', 'order_date': '#A3D23D', 'vessel_name': '#B01EF9', 'invoice_no': '#606618', 'signature': '#84D29F', 'final_destination': '#178CFC', 'country_of_origin_of_goods': '#40D774', 'exporter_our_ref_no': '#D242DC', 'gross_weight': '#2896BA', 'beneficiary_bank_swift': '#3C15F2', 'remitter_country': '#AFAA0C', 'notify_party_name': '#EE8842', 'cosignee_name': '#B8C378', 'original_or_copy': '#420E69', 'total_quantity_of_goods': '#9531FC', 'invoice_amount': '#0EAB73', 'incoterm': '#9F88FB', 'signed_by': '#F318FC', 'from': '#53CD78', 'beneficiary_drawer_exporter_seller_supplier_tin': '#95CAF8', 'invoice_currency': '#15C485', 'consignor_name': '#7F938B', 'advance_amount': '#3A12F1', 'importer_your_ref_no': '#3B50C4', 'invoice_due_date': '#F3FDD9', 'unit': '#442F67', 'shipment_date': '#FF94EB', 'mode_of_despatch': '#E89956', 'purchase_order_no_and_agreement_ref_no': '#F35D76', 'consignor_address': '#39C39B', 'hs_code_no': '#8D57F2', 'date_of_invoice': '#61D69E', 'presentation_period': '#C20385', 'invoice_tax_amount': '#0432AE', 'beneficiary_drawer_exporter_seller_supplier_name': '#E1948D', 'O': '#427D20', 'port_of_discharge': '#3AED5A', 'to': '#86D7EF', 'delivery_terms': '#29F357', 'tolerance_of_quantity': '#B7E24E', 'goods_description': '#F04BB0', 'consignee_address': '#418CBF', 'shipper_address': '#254599', 'beneficiary_account_number': '#ABA762', 'net_weight': '#502405', 'invoice_amount_in_words': '#9BB7ED', 'port_of_loading': '#8D0FF8', 'drawer_ref_no': '#9992E3', 'place_of_receipt': '#8B1812', 'rate_per_unit': '#229D11', 'amount_due': '#A91208', 'page_no': '#69F477', 'shipper_name': '#6B5296', 'total_pages': '#2A9C58', 'packaging_description': '#17ED8C', 'beneficiary_bank_name': '#87059C', 'remitter_drawee_applicant_importer_buyer_name': '#E4D7B1', 'transport_details': '#E57B0F', 'beneficiary_bank_country': '#ECC651', 'country_of_final_destination': '#D58F92', 'transhipment': '#EA8975', 'beneficiary_address': '#C2DF2D', 'payment_terms': '#59BB35'}
+2024-03-22 20:05:18,876 is result_set is instance of dict? True
+2024-03-22 20:05:18,879 is final_result_set is instance of dict? True
+2024-03-22 20:05:19,162 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_52_13_8713)_497_0.png:0:00:02.438834
+2024-03-22 20:05:19,294 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_52_13_8713)_497_0.png
+2024-03-22 20:05:19,295 RAM memory 57.8 used for Proforma_Invoice(2013_01_10_13_52_13_8713)_497_0.png Generating All Pages:
+2024-03-22 20:05:19,295 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_52_13_8713)_497_0.png1:0:00:02.582751
+2024-03-22 20:05:19,435 file name is:Proforma_Invoice(2013_01_10_14_27_36_1131)_541_0.png
+2024-03-22 20:05:19,435 folder path :Images
+2024-03-22 20:05:19,435 Calling Image result
+2024-03-22 20:05:19,435 is all_page_result is instance of dict? True
+2024-03-22 20:05:19,446 STREAM b'IHDR' 16 13
+2024-03-22 20:05:19,446 STREAM b'IDAT' 41 25293
+2024-03-22 20:05:19,467 is words is instance of list? True
+2024-03-22 20:05:19,467 is bboxes is instance of list? True
+2024-03-22 20:05:19,467 is bounding_boxes is instance of list? True
+2024-03-22 20:05:19,605 is input_id_chunks is instance of list? True
+2024-03-22 20:05:19,605 is mask_chunks is instance of list? True
+2024-03-22 20:05:19,605 is bbox_chunks is instance of list? True
+2024-03-22 20:05:19,605 is image_chunks is instance of list? True
+2024-03-22 20:05:19,606 is input_dict is instance of dict? True
+2024-03-22 20:05:21,057 Model Called
+2024-03-22 20:05:21,057 RAM memory 57.2 used for Proforma_Invoice(2013_01_10_14_27_36_1131)_541_0.png:
+2024-03-22 20:05:21,057 is all_predictions is instance of list? True
+2024-03-22 20:05:21,057 is all_boxes is instance of list? True
+2024-03-22 20:05:21,057 is all_confidences is instance of list? True
+2024-03-22 20:05:21,057 is all_text is instance of list? True
+2024-03-22 20:05:21,058 is label2id is instance of dict? True
+2024-03-22 20:05:21,058 is id2label is instance of dict? True
+2024-03-22 20:05:21,059 is label2color is instance of dict? True
+2024-03-22 20:05:21,059 label2color : {'declaration_by_issuer': '#7FF76C', 'pre-carriage-by': '#857113', 'order_date': '#072123', 'vessel_name': '#B1A4AD', 'invoice_no': '#055375', 'signature': '#1DB084', 'final_destination': '#BC5CA1', 'country_of_origin_of_goods': '#EA3F02', 'exporter_our_ref_no': '#EA9A48', 'gross_weight': '#00251C', 'beneficiary_bank_swift': '#19F649', 'remitter_country': '#93ACFA', 'notify_party_name': '#3A4479', 'cosignee_name': '#2F5D3E', 'original_or_copy': '#6B7378', 'total_quantity_of_goods': '#059997', 'invoice_amount': '#7991E3', 'incoterm': '#CDEB52', 'signed_by': '#1E1115', 'from': '#2D286B', 'beneficiary_drawer_exporter_seller_supplier_tin': '#84EFAF', 'invoice_currency': '#1D6CF4', 'consignor_name': '#B40FA8', 'advance_amount': '#DF77E0', 'importer_your_ref_no': '#2840C2', 'invoice_due_date': '#2D1E98', 'unit': '#D4C3E1', 'shipment_date': '#947900', 'mode_of_despatch': '#1DA818', 'purchase_order_no_and_agreement_ref_no': '#36F8E1', 'consignor_address': '#05634F', 'hs_code_no': '#7EE737', 'date_of_invoice': '#56E856', 'presentation_period': '#732257', 'invoice_tax_amount': '#BB04A7', 'beneficiary_drawer_exporter_seller_supplier_name': '#05EC1C', 'O': '#D0BF7A', 'port_of_discharge': '#963D3D', 'to': '#37D310', 'delivery_terms': '#C42C49', 'tolerance_of_quantity': '#2EEE06', 'goods_description': '#33E642', 'consignee_address': '#553CB1', 'shipper_address': '#42BB2D', 'beneficiary_account_number': '#91E19C', 'net_weight': '#CC89C1', 'invoice_amount_in_words': '#A3EACF', 'port_of_loading': '#AA99E2', 'drawer_ref_no': '#7417BA', 'place_of_receipt': '#6A3F01', 'rate_per_unit': '#2BC34E', 'amount_due': '#40A997', 'page_no': '#845483', 'shipper_name': '#4A8F47', 'total_pages': '#71CF4A', 'packaging_description': '#15E914', 'beneficiary_bank_name': '#6FD496', 'remitter_drawee_applicant_importer_buyer_name': '#B91D84', 'transport_details': '#6BB475', 'beneficiary_bank_country': '#BE2161', 'country_of_final_destination': '#67C13A', 'transhipment': '#3B7B75', 'beneficiary_address': '#42C520', 'payment_terms': '#B63BDF'}
+2024-03-22 20:05:21,148 is result_set is instance of dict? True
+2024-03-22 20:05:21,150 is final_result_set is instance of dict? True
+2024-03-22 20:05:21,383 Time taken for page 1 of Proforma_Invoice(2013_01_10_14_27_36_1131)_541_0.png:0:00:01.936413
+2024-03-22 20:05:21,465 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_14_27_36_1131)_541_0.png
+2024-03-22 20:05:21,465 RAM memory 57.4 used for Proforma_Invoice(2013_01_10_14_27_36_1131)_541_0.png Generating All Pages:
+2024-03-22 20:05:21,465 Processing time taken for all pages of Proforma_Invoice(2013_01_10_14_27_36_1131)_541_0.png1:0:00:02.030090
+2024-03-22 20:05:21,599 file name is:Proforma_Invoice(2013_01_10_13_55_07_1508)_518_0.png
+2024-03-22 20:05:21,599 folder path :Images
+2024-03-22 20:05:21,599 Calling Image result
+2024-03-22 20:05:21,600 is all_page_result is instance of dict? True
+2024-03-22 20:05:21,610 STREAM b'IHDR' 16 13
+2024-03-22 20:05:21,610 STREAM b'IDAT' 41 34250
+2024-03-22 20:05:21,644 is words is instance of list? True
+2024-03-22 20:05:21,644 is bboxes is instance of list? True
+2024-03-22 20:05:21,644 is bounding_boxes is instance of list? True
+2024-03-22 20:05:21,884 is input_id_chunks is instance of list? True
+2024-03-22 20:05:21,884 is mask_chunks is instance of list? True
+2024-03-22 20:05:21,884 is bbox_chunks is instance of list? True
+2024-03-22 20:05:21,884 is image_chunks is instance of list? True
+2024-03-22 20:05:21,885 is input_dict is instance of dict? True
+2024-03-22 20:05:23,290 Model Called
+2024-03-22 20:05:23,290 RAM memory 57.7 used for Proforma_Invoice(2013_01_10_13_55_07_1508)_518_0.png:
+2024-03-22 20:05:23,291 is all_predictions is instance of list? True
+2024-03-22 20:05:23,291 is all_boxes is instance of list? True
+2024-03-22 20:05:23,291 is all_confidences is instance of list? True
+2024-03-22 20:05:23,291 is all_text is instance of list? True
+2024-03-22 20:05:23,291 is label2id is instance of dict? True
+2024-03-22 20:05:23,291 is id2label is instance of dict? True
+2024-03-22 20:05:23,292 is label2color is instance of dict? True
+2024-03-22 20:05:23,292 label2color : {'declaration_by_issuer': '#E3EFF4', 'pre-carriage-by': '#781115', 'order_date': '#873A29', 'vessel_name': '#356B95', 'invoice_no': '#9E754A', 'signature': '#6AFA49', 'final_destination': '#FB8FB4', 'country_of_origin_of_goods': '#F06B5E', 'exporter_our_ref_no': '#650C6C', 'gross_weight': '#FAA8D1', 'beneficiary_bank_swift': '#EEC0D1', 'remitter_country': '#2C3603', 'notify_party_name': '#1DE7CD', 'cosignee_name': '#B04121', 'original_or_copy': '#09B02B', 'total_quantity_of_goods': '#3AE4E2', 'invoice_amount': '#FD445D', 'incoterm': '#FBBAF8', 'signed_by': '#5851B0', 'from': '#18B2E6', 'beneficiary_drawer_exporter_seller_supplier_tin': '#2DC288', 'invoice_currency': '#4520B5', 'consignor_name': '#6028B4', 'advance_amount': '#842B4F', 'importer_your_ref_no': '#01F5E1', 'invoice_due_date': '#590418', 'unit': '#7BCB7D', 'shipment_date': '#8BB29B', 'mode_of_despatch': '#9CB422', 'purchase_order_no_and_agreement_ref_no': '#A76DF1', 'consignor_address': '#FC0ABC', 'hs_code_no': '#B62D7F', 'date_of_invoice': '#5C81E7', 'presentation_period': '#49CBF1', 'invoice_tax_amount': '#D5BA5C', 'beneficiary_drawer_exporter_seller_supplier_name': '#80B55E', 'O': '#D51878', 'port_of_discharge': '#51C40F', 'to': '#BF793A', 'delivery_terms': '#B72073', 'tolerance_of_quantity': '#787317', 'goods_description': '#DCD3E8', 'consignee_address': '#2F467F', 'shipper_address': '#3E22C1', 'beneficiary_account_number': '#211421', 'net_weight': '#3440C7', 'invoice_amount_in_words': '#84EE64', 'port_of_loading': '#A4FA67', 'drawer_ref_no': '#6D3EF4', 'place_of_receipt': '#EC994C', 'rate_per_unit': '#CCBD3E', 'amount_due': '#2CEF5A', 'page_no': '#70A530', 'shipper_name': '#0896A9', 'total_pages': '#233573', 'packaging_description': '#CB53D8', 'beneficiary_bank_name': '#3A52D3', 'remitter_drawee_applicant_importer_buyer_name': '#2F3C12', 'transport_details': '#8336F2', 'beneficiary_bank_country': '#06519B', 'country_of_final_destination': '#C610B3', 'transhipment': '#469066', 'beneficiary_address': '#F1AA73', 'payment_terms': '#48727E'}
+2024-03-22 20:05:23,464 is result_set is instance of dict? True
+2024-03-22 20:05:23,466 is final_result_set is instance of dict? True
+2024-03-22 20:05:23,693 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_55_07_1508)_518_0.png:0:00:02.082622
+2024-03-22 20:05:23,836 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_55_07_1508)_518_0.png
+2024-03-22 20:05:23,837 RAM memory 57.9 used for Proforma_Invoice(2013_01_10_13_55_07_1508)_518_0.png Generating All Pages:
+2024-03-22 20:05:23,837 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_55_07_1508)_518_0.png1:0:00:02.237216
+2024-03-22 20:05:23,968 file name is:Proforma_Invoice(2013_01_10_13_52_45_9323)_546_0.png
+2024-03-22 20:05:23,968 folder path :Images
+2024-03-22 20:05:23,968 Calling Image result
+2024-03-22 20:05:23,968 is all_page_result is instance of dict? True
+2024-03-22 20:05:23,979 STREAM b'IHDR' 16 13
+2024-03-22 20:05:23,979 STREAM b'IDAT' 41 35049
+2024-03-22 20:05:24,014 is words is instance of list? True
+2024-03-22 20:05:24,015 is bboxes is instance of list? True
+2024-03-22 20:05:24,015 is bounding_boxes is instance of list? True
+2024-03-22 20:05:24,252 is input_id_chunks is instance of list? True
+2024-03-22 20:05:24,252 is mask_chunks is instance of list? True
+2024-03-22 20:05:24,252 is bbox_chunks is instance of list? True
+2024-03-22 20:05:24,252 is image_chunks is instance of list? True
+2024-03-22 20:05:24,252 is input_dict is instance of dict? True
+2024-03-22 20:05:25,701 Model Called
+2024-03-22 20:05:25,702 RAM memory 57.3 used for Proforma_Invoice(2013_01_10_13_52_45_9323)_546_0.png:
+2024-03-22 20:05:25,702 is all_predictions is instance of list? True
+2024-03-22 20:05:25,702 is all_boxes is instance of list? True
+2024-03-22 20:05:25,702 is all_confidences is instance of list? True
+2024-03-22 20:05:25,702 is all_text is instance of list? True
+2024-03-22 20:05:25,702 is label2id is instance of dict? True
+2024-03-22 20:05:25,702 is id2label is instance of dict? True
+2024-03-22 20:05:25,704 is label2color is instance of dict? True
+2024-03-22 20:05:25,704 label2color : {'declaration_by_issuer': '#76FDC1', 'pre-carriage-by': '#42B2C3', 'order_date': '#1F1540', 'vessel_name': '#A3FB6E', 'invoice_no': '#68EA2C', 'signature': '#DA378E', 'final_destination': '#A2CE16', 'country_of_origin_of_goods': '#83AF0B', 'exporter_our_ref_no': '#98A675', 'gross_weight': '#39DD91', 'beneficiary_bank_swift': '#5AF001', 'remitter_country': '#DBC24B', 'notify_party_name': '#35A7BC', 'cosignee_name': '#83A9A7', 'original_or_copy': '#7B663C', 'total_quantity_of_goods': '#ED868A', 'invoice_amount': '#326F1D', 'incoterm': '#AC13DF', 'signed_by': '#B427C2', 'from': '#920F63', 'beneficiary_drawer_exporter_seller_supplier_tin': '#D0D2F1', 'invoice_currency': '#F95939', 'consignor_name': '#73844F', 'advance_amount': '#31FBB8', 'importer_your_ref_no': '#423CFA', 'invoice_due_date': '#E46E36', 'unit': '#C06CC8', 'shipment_date': '#056FD2', 'mode_of_despatch': '#4ED6D0', 'purchase_order_no_and_agreement_ref_no': '#022B3D', 'consignor_address': '#25270B', 'hs_code_no': '#6D9F5A', 'date_of_invoice': '#B202D8', 'presentation_period': '#B28D46', 'invoice_tax_amount': '#72FFE5', 'beneficiary_drawer_exporter_seller_supplier_name': '#1F7E05', 'O': '#61431A', 'port_of_discharge': '#D95715', 'to': '#BD50FB', 'delivery_terms': '#025856', 'tolerance_of_quantity': '#FDE5FF', 'goods_description': '#734C67', 'consignee_address': '#56AE7E', 'shipper_address': '#AB98AD', 'beneficiary_account_number': '#BEFB23', 'net_weight': '#09426D', 'invoice_amount_in_words': '#529DCE', 'port_of_loading': '#CDF752', 'drawer_ref_no': '#3AF00B', 'place_of_receipt': '#0D6ADD', 'rate_per_unit': '#172E0B', 'amount_due': '#CF36A0', 'page_no': '#2E2AF2', 'shipper_name': '#3F91E6', 'total_pages': '#68223F', 'packaging_description': '#CB479A', 'beneficiary_bank_name': '#CF25D5', 'remitter_drawee_applicant_importer_buyer_name': '#1122B4', 'transport_details': '#55726E', 'beneficiary_bank_country': '#6D9D84', 'country_of_final_destination': '#113B97', 'transhipment': '#202A9F', 'beneficiary_address': '#0F3087', 'payment_terms': '#7241DC'}
+2024-03-22 20:05:25,884 is result_set is instance of dict? True
+2024-03-22 20:05:25,886 is final_result_set is instance of dict? True
+2024-03-22 20:05:26,146 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_52_45_9323)_546_0.png:0:00:02.166944
+2024-03-22 20:05:26,282 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_52_45_9323)_546_0.png
+2024-03-22 20:05:26,282 RAM memory 57.7 used for Proforma_Invoice(2013_01_10_13_52_45_9323)_546_0.png Generating All Pages:
+2024-03-22 20:05:26,282 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_52_45_9323)_546_0.png1:0:00:02.314244
+2024-03-22 20:05:26,414 file name is:Proforma_Invoice_19_0.png
+2024-03-22 20:05:26,414 folder path :Images
+2024-03-22 20:05:26,415 Calling Image result
+2024-03-22 20:05:26,415 is all_page_result is instance of dict? True
+2024-03-22 20:05:26,425 STREAM b'IHDR' 16 13
+2024-03-22 20:05:26,425 STREAM b'IDAT' 41 36329
+2024-03-22 20:05:26,459 is words is instance of list? True
+2024-03-22 20:05:26,460 is bboxes is instance of list? True
+2024-03-22 20:05:26,460 is bounding_boxes is instance of list? True
+2024-03-22 20:05:26,706 is input_id_chunks is instance of list? True
+2024-03-22 20:05:26,706 is mask_chunks is instance of list? True
+2024-03-22 20:05:26,706 is bbox_chunks is instance of list? True
+2024-03-22 20:05:26,706 is image_chunks is instance of list? True
+2024-03-22 20:05:26,707 is input_dict is instance of dict? True
+2024-03-22 20:05:29,880 Model Called
+2024-03-22 20:05:29,881 RAM memory 63.3 used for Proforma_Invoice_19_0.png:
+2024-03-22 20:05:29,881 is all_predictions is instance of list? True
+2024-03-22 20:05:29,881 is all_boxes is instance of list? True
+2024-03-22 20:05:29,881 is all_confidences is instance of list? True
+2024-03-22 20:05:29,881 is all_text is instance of list? True
+2024-03-22 20:05:29,881 is label2id is instance of dict? True
+2024-03-22 20:05:29,881 is id2label is instance of dict? True
+2024-03-22 20:05:29,883 is label2color is instance of dict? True
+2024-03-22 20:05:29,883 label2color : {'declaration_by_issuer': '#42A37A', 'pre-carriage-by': '#E9D155', 'order_date': '#990C1E', 'vessel_name': '#B01D0F', 'invoice_no': '#5F751C', 'signature': '#5AE517', 'final_destination': '#5B2DFA', 'country_of_origin_of_goods': '#6F62D5', 'exporter_our_ref_no': '#708731', 'gross_weight': '#8F2FFC', 'beneficiary_bank_swift': '#1CC970', 'remitter_country': '#34CB0C', 'notify_party_name': '#441DDA', 'cosignee_name': '#ADFDEF', 'original_or_copy': '#0ADCF4', 'total_quantity_of_goods': '#EA39C4', 'invoice_amount': '#6F300B', 'incoterm': '#6B5C69', 'signed_by': '#D9BD5A', 'from': '#944469', 'beneficiary_drawer_exporter_seller_supplier_tin': '#0FF5B0', 'invoice_currency': '#CF8167', 'consignor_name': '#C3DB02', 'advance_amount': '#1C2965', 'importer_your_ref_no': '#0C24A4', 'invoice_due_date': '#316BF9', 'unit': '#84403E', 'shipment_date': '#29BA8A', 'mode_of_despatch': '#C42A06', 'purchase_order_no_and_agreement_ref_no': '#A72705', 'consignor_address': '#7F02EB', 'hs_code_no': '#570EAD', 'date_of_invoice': '#365252', 'presentation_period': '#FA741D', 'invoice_tax_amount': '#E0BE4E', 'beneficiary_drawer_exporter_seller_supplier_name': '#BCE40F', 'O': '#C46668', 'port_of_discharge': '#B2AF1C', 'to': '#2B9D1C', 'delivery_terms': '#F1A968', 'tolerance_of_quantity': '#CEA6CE', 'goods_description': '#0D6BA0', 'consignee_address': '#35FAB7', 'shipper_address': '#E4482B', 'beneficiary_account_number': '#2F988C', 'net_weight': '#0853D3', 'invoice_amount_in_words': '#4D47BF', 'port_of_loading': '#2D00B8', 'drawer_ref_no': '#6BDC15', 'place_of_receipt': '#EF77AA', 'rate_per_unit': '#812D14', 'amount_due': '#CE3A4B', 'page_no': '#332438', 'shipper_name': '#56D27F', 'total_pages': '#34E639', 'packaging_description': '#6D148C', 'beneficiary_bank_name': '#0A3513', 'remitter_drawee_applicant_importer_buyer_name': '#7A74F4', 'transport_details': '#8311B7', 'beneficiary_bank_country': '#73ACC2', 'country_of_final_destination': '#F854FE', 'transhipment': '#752D4E', 'beneficiary_address': '#F776B6', 'payment_terms': '#873234'}
+2024-03-22 20:05:30,242 is result_set is instance of dict? True
+2024-03-22 20:05:30,244 is final_result_set is instance of dict? True
+2024-03-22 20:05:30,424 Time taken for page 1 of Proforma_Invoice_19_0.png:0:00:03.997955
+2024-03-22 20:05:30,569 *****Generated All Pages****** for Proforma_Invoice_19_0.png
+2024-03-22 20:05:30,569 RAM memory 63.9 used for Proforma_Invoice_19_0.png Generating All Pages:
+2024-03-22 20:05:30,570 Processing time taken for all pages of Proforma_Invoice_19_0.png1:0:00:04.155032
+2024-03-22 20:05:30,741 file name is:Proforma_Invoice(2013_01_10_13_54_30_1695)_505_0.png
+2024-03-22 20:05:30,741 folder path :Images
+2024-03-22 20:05:30,741 Calling Image result
+2024-03-22 20:05:30,741 is all_page_result is instance of dict? True
+2024-03-22 20:05:30,752 STREAM b'IHDR' 16 13
+2024-03-22 20:05:30,752 STREAM b'IDAT' 41 34094
+2024-03-22 20:05:30,788 is words is instance of list? True
+2024-03-22 20:05:30,788 is bboxes is instance of list? True
+2024-03-22 20:05:30,788 is bounding_boxes is instance of list? True
+2024-03-22 20:05:31,024 is input_id_chunks is instance of list? True
+2024-03-22 20:05:31,024 is mask_chunks is instance of list? True
+2024-03-22 20:05:31,024 is bbox_chunks is instance of list? True
+2024-03-22 20:05:31,024 is image_chunks is instance of list? True
+2024-03-22 20:05:31,025 is input_dict is instance of dict? True
+2024-03-22 20:05:32,500 Model Called
+2024-03-22 20:05:32,501 RAM memory 63.3 used for Proforma_Invoice(2013_01_10_13_54_30_1695)_505_0.png:
+2024-03-22 20:05:32,502 is all_predictions is instance of list? True
+2024-03-22 20:05:32,503 is all_boxes is instance of list? True
+2024-03-22 20:05:32,503 is all_confidences is instance of list? True
+2024-03-22 20:05:32,504 is all_text is instance of list? True
+2024-03-22 20:05:32,505 is label2id is instance of dict? True
+2024-03-22 20:05:32,506 is id2label is instance of dict? True
+2024-03-22 20:05:32,508 is label2color is instance of dict? True
+2024-03-22 20:05:32,509 label2color : {'declaration_by_issuer': '#E2C8F3', 'pre-carriage-by': '#0F0684', 'order_date': '#12E2E2', 'vessel_name': '#49B171', 'invoice_no': '#7BF73A', 'signature': '#F44B37', 'final_destination': '#37336D', 'country_of_origin_of_goods': '#4D2947', 'exporter_our_ref_no': '#36A9CA', 'gross_weight': '#91D9AD', 'beneficiary_bank_swift': '#DC2CC9', 'remitter_country': '#50B848', 'notify_party_name': '#13BC8F', 'cosignee_name': '#E6259A', 'original_or_copy': '#CFABB3', 'total_quantity_of_goods': '#9DB373', 'invoice_amount': '#393114', 'incoterm': '#297982', 'signed_by': '#7FA26D', 'from': '#058C57', 'beneficiary_drawer_exporter_seller_supplier_tin': '#944307', 'invoice_currency': '#FDC8C7', 'consignor_name': '#E3AD9E', 'advance_amount': '#405B73', 'importer_your_ref_no': '#20ED79', 'invoice_due_date': '#A64178', 'unit': '#C7B82D', 'shipment_date': '#8F8490', 'mode_of_despatch': '#4366A9', 'purchase_order_no_and_agreement_ref_no': '#0612F8', 'consignor_address': '#AB1E27', 'hs_code_no': '#D27F28', 'date_of_invoice': '#003639', 'presentation_period': '#CE93D1', 'invoice_tax_amount': '#D1C232', 'beneficiary_drawer_exporter_seller_supplier_name': '#B07379', 'O': '#ABBE7A', 'port_of_discharge': '#E72CB8', 'to': '#2EF087', 'delivery_terms': '#B9FDC8', 'tolerance_of_quantity': '#44500E', 'goods_description': '#6E4780', 'consignee_address': '#C8B858', 'shipper_address': '#B17725', 'beneficiary_account_number': '#8000D2', 'net_weight': '#520C02', 'invoice_amount_in_words': '#BCE6CC', 'port_of_loading': '#C1656F', 'drawer_ref_no': '#7A21A1', 'place_of_receipt': '#BF4961', 'rate_per_unit': '#04CC2B', 'amount_due': '#D6AE19', 'page_no': '#0845BA', 'shipper_name': '#78E8DB', 'total_pages': '#75D2C8', 'packaging_description': '#FBE096', 'beneficiary_bank_name': '#6FD616', 'remitter_drawee_applicant_importer_buyer_name': '#7BBB0D', 'transport_details': '#5E327C', 'beneficiary_bank_country': '#D61B01', 'country_of_final_destination': '#72FB42', 'transhipment': '#22C601', 'beneficiary_address': '#03318E', 'payment_terms': '#BDB466'}
+2024-03-22 20:05:32,669 is result_set is instance of dict? True
+2024-03-22 20:05:32,671 is final_result_set is instance of dict? True
+2024-03-22 20:05:32,900 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_54_30_1695)_505_0.png:0:00:02.147067
+2024-03-22 20:05:33,037 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_54_30_1695)_505_0.png
+2024-03-22 20:05:33,038 RAM memory 63.3 used for Proforma_Invoice(2013_01_10_13_54_30_1695)_505_0.png Generating All Pages:
+2024-03-22 20:05:33,038 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_54_30_1695)_505_0.png1:0:00:02.296348
+2024-03-22 20:05:33,170 file name is:Proforma_Invoice(2013_01_10_13_53_38_4793)_515_0.png
+2024-03-22 20:05:33,170 folder path :Images
+2024-03-22 20:05:33,171 Calling Image result
+2024-03-22 20:05:33,171 is all_page_result is instance of dict? True
+2024-03-22 20:05:33,181 STREAM b'IHDR' 16 13
+2024-03-22 20:05:33,181 STREAM b'IDAT' 41 35396
+2024-03-22 20:05:33,214 is words is instance of list? True
+2024-03-22 20:05:33,215 is bboxes is instance of list? True
+2024-03-22 20:05:33,215 is bounding_boxes is instance of list? True
+2024-03-22 20:05:33,454 is input_id_chunks is instance of list? True
+2024-03-22 20:05:33,454 is mask_chunks is instance of list? True
+2024-03-22 20:05:33,455 is bbox_chunks is instance of list? True
+2024-03-22 20:05:33,455 is image_chunks is instance of list? True
+2024-03-22 20:05:33,455 is input_dict is instance of dict? True
+2024-03-22 20:05:34,904 Model Called
+2024-03-22 20:05:34,905 RAM memory 63.4 used for Proforma_Invoice(2013_01_10_13_53_38_4793)_515_0.png:
+2024-03-22 20:05:34,906 is all_predictions is instance of list? True
+2024-03-22 20:05:34,906 is all_boxes is instance of list? True
+2024-03-22 20:05:34,906 is all_confidences is instance of list? True
+2024-03-22 20:05:34,906 is all_text is instance of list? True
+2024-03-22 20:05:34,906 is label2id is instance of dict? True
+2024-03-22 20:05:34,907 is id2label is instance of dict? True
+2024-03-22 20:05:34,908 is label2color is instance of dict? True
+2024-03-22 20:05:34,909 label2color : {'declaration_by_issuer': '#A06C3A', 'pre-carriage-by': '#E96BA8', 'order_date': '#E6A7B5', 'vessel_name': '#E83F37', 'invoice_no': '#10B529', 'signature': '#28F933', 'final_destination': '#F6953F', 'country_of_origin_of_goods': '#8CDE64', 'exporter_our_ref_no': '#DB0785', 'gross_weight': '#66F15C', 'beneficiary_bank_swift': '#541055', 'remitter_country': '#4FA479', 'notify_party_name': '#6EDCA7', 'cosignee_name': '#FB3A3A', 'original_or_copy': '#1D4B6E', 'total_quantity_of_goods': '#A77499', 'invoice_amount': '#D67AFD', 'incoterm': '#8381F1', 'signed_by': '#977C1E', 'from': '#9185B6', 'beneficiary_drawer_exporter_seller_supplier_tin': '#EB1C43', 'invoice_currency': '#F752A3', 'consignor_name': '#2E5F52', 'advance_amount': '#AAE35E', 'importer_your_ref_no': '#97942D', 'invoice_due_date': '#29C2A8', 'unit': '#D3B867', 'shipment_date': '#CDA6F5', 'mode_of_despatch': '#F9A7FB', 'purchase_order_no_and_agreement_ref_no': '#8882A1', 'consignor_address': '#6D180D', 'hs_code_no': '#E81ED9', 'date_of_invoice': '#287DEC', 'presentation_period': '#E61704', 'invoice_tax_amount': '#6EF56F', 'beneficiary_drawer_exporter_seller_supplier_name': '#41C18D', 'O': '#4A8DB6', 'port_of_discharge': '#99ACE7', 'to': '#F0C657', 'delivery_terms': '#79C9E6', 'tolerance_of_quantity': '#6CD9F6', 'goods_description': '#5D69D0', 'consignee_address': '#EF670F', 'shipper_address': '#4E40AF', 'beneficiary_account_number': '#5EE459', 'net_weight': '#14710E', 'invoice_amount_in_words': '#79FF70', 'port_of_loading': '#320471', 'drawer_ref_no': '#843161', 'place_of_receipt': '#C2E61C', 'rate_per_unit': '#24B12A', 'amount_due': '#C7568A', 'page_no': '#7C3B11', 'shipper_name': '#F23FD0', 'total_pages': '#AB2930', 'packaging_description': '#985F0D', 'beneficiary_bank_name': '#5533DD', 'remitter_drawee_applicant_importer_buyer_name': '#F2DBBB', 'transport_details': '#7E7583', 'beneficiary_bank_country': '#72A57A', 'country_of_final_destination': '#B0FEA2', 'transhipment': '#9E46BB', 'beneficiary_address': '#9B0E2B', 'payment_terms': '#E7EB97'}
+2024-03-22 20:05:35,087 is result_set is instance of dict? True
+2024-03-22 20:05:35,088 is final_result_set is instance of dict? True
+2024-03-22 20:05:35,396 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_53_38_4793)_515_0.png:0:00:02.213873
+2024-03-22 20:05:35,564 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_53_38_4793)_515_0.png
+2024-03-22 20:05:35,564 RAM memory 63.5 used for Proforma_Invoice(2013_01_10_13_53_38_4793)_515_0.png Generating All Pages:
+2024-03-22 20:05:35,564 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_53_38_4793)_515_0.png1:0:00:02.393866
+2024-03-22 20:05:35,731 file name is:Proforma_Invoice(2013_01_10_13_51_32_1661)_490_0.png
+2024-03-22 20:05:35,731 folder path :Images
+2024-03-22 20:05:35,731 Calling Image result
+2024-03-22 20:05:35,731 is all_page_result is instance of dict? True
+2024-03-22 20:05:35,770 STREAM b'IHDR' 16 13
+2024-03-22 20:05:35,770 STREAM b'IDAT' 41 32741
+2024-03-22 20:05:35,807 is words is instance of list? True
+2024-03-22 20:05:35,807 is bboxes is instance of list? True
+2024-03-22 20:05:35,807 is bounding_boxes is instance of list? True
+2024-03-22 20:05:36,117 is input_id_chunks is instance of list? True
+2024-03-22 20:05:36,117 is mask_chunks is instance of list? True
+2024-03-22 20:05:36,117 is bbox_chunks is instance of list? True
+2024-03-22 20:05:36,117 is image_chunks is instance of list? True
+2024-03-22 20:05:36,118 is input_dict is instance of dict? True
+2024-03-22 20:05:38,157 Model Called
+2024-03-22 20:05:38,158 RAM memory 63.6 used for Proforma_Invoice(2013_01_10_13_51_32_1661)_490_0.png:
+2024-03-22 20:05:38,158 is all_predictions is instance of list? True
+2024-03-22 20:05:38,158 is all_boxes is instance of list? True
+2024-03-22 20:05:38,158 is all_confidences is instance of list? True
+2024-03-22 20:05:38,159 is all_text is instance of list? True
+2024-03-22 20:05:38,159 is label2id is instance of dict? True
+2024-03-22 20:05:38,159 is id2label is instance of dict? True
+2024-03-22 20:05:38,161 is label2color is instance of dict? True
+2024-03-22 20:05:38,161 label2color : {'declaration_by_issuer': '#366F32', 'pre-carriage-by': '#529B5E', 'order_date': '#F6C5B4', 'vessel_name': '#0010FE', 'invoice_no': '#F72B3E', 'signature': '#CC68DA', 'final_destination': '#0A310F', 'country_of_origin_of_goods': '#6EF07A', 'exporter_our_ref_no': '#F77942', 'gross_weight': '#708D57', 'beneficiary_bank_swift': '#1FE7B0', 'remitter_country': '#D99DCF', 'notify_party_name': '#D04AEF', 'cosignee_name': '#0A9939', 'original_or_copy': '#B3412A', 'total_quantity_of_goods': '#080813', 'invoice_amount': '#A8A372', 'incoterm': '#A53C94', 'signed_by': '#DA725C', 'from': '#B8C676', 'beneficiary_drawer_exporter_seller_supplier_tin': '#DF050D', 'invoice_currency': '#251BA5', 'consignor_name': '#7BE8CA', 'advance_amount': '#D51506', 'importer_your_ref_no': '#D78F48', 'invoice_due_date': '#D43E95', 'unit': '#60B34A', 'shipment_date': '#3EE33A', 'mode_of_despatch': '#62A888', 'purchase_order_no_and_agreement_ref_no': '#033E4B', 'consignor_address': '#86A86D', 'hs_code_no': '#0B2B94', 'date_of_invoice': '#E1B7C7', 'presentation_period': '#1D87B7', 'invoice_tax_amount': '#833BD1', 'beneficiary_drawer_exporter_seller_supplier_name': '#02F697', 'O': '#DA1822', 'port_of_discharge': '#718F94', 'to': '#956D04', 'delivery_terms': '#A9EFD3', 'tolerance_of_quantity': '#B4D360', 'goods_description': '#9757F3', 'consignee_address': '#59B2F2', 'shipper_address': '#7030D8', 'beneficiary_account_number': '#3D1593', 'net_weight': '#F6CF9E', 'invoice_amount_in_words': '#3AF6BA', 'port_of_loading': '#CE7CA7', 'drawer_ref_no': '#06A202', 'place_of_receipt': '#A74068', 'rate_per_unit': '#DB3F95', 'amount_due': '#BEE825', 'page_no': '#884F87', 'shipper_name': '#79247F', 'total_pages': '#CC3C26', 'packaging_description': '#42041B', 'beneficiary_bank_name': '#6E0C23', 'remitter_drawee_applicant_importer_buyer_name': '#631DB6', 'transport_details': '#4C8A85', 'beneficiary_bank_country': '#D0C72E', 'country_of_final_destination': '#CE47B9', 'transhipment': '#819AD8', 'beneficiary_address': '#8561D2', 'payment_terms': '#9593F6'}
+2024-03-22 20:05:38,376 is result_set is instance of dict? True
+2024-03-22 20:05:38,377 is final_result_set is instance of dict? True
+2024-03-22 20:05:38,654 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_51_32_1661)_490_0.png:0:00:02.883869
+2024-03-22 20:05:38,810 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_51_32_1661)_490_0.png
+2024-03-22 20:05:38,811 RAM memory 63.5 used for Proforma_Invoice(2013_01_10_13_51_32_1661)_490_0.png Generating All Pages:
+2024-03-22 20:05:38,811 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_51_32_1661)_490_0.png1:0:00:03.079619
+2024-03-22 20:05:38,962 file name is:Proforma_Invoice(2013_01_10_13_51_53_1233)_512_0.png
+2024-03-22 20:05:38,962 folder path :Images
+2024-03-22 20:05:38,963 Calling Image result
+2024-03-22 20:05:38,963 is all_page_result is instance of dict? True
+2024-03-22 20:05:38,973 STREAM b'IHDR' 16 13
+2024-03-22 20:05:38,973 STREAM b'IDAT' 41 33997
+2024-03-22 20:05:39,010 is words is instance of list? True
+2024-03-22 20:05:39,010 is bboxes is instance of list? True
+2024-03-22 20:05:39,010 is bounding_boxes is instance of list? True
+2024-03-22 20:05:39,280 is input_id_chunks is instance of list? True
+2024-03-22 20:05:39,280 is mask_chunks is instance of list? True
+2024-03-22 20:05:39,280 is bbox_chunks is instance of list? True
+2024-03-22 20:05:39,280 is image_chunks is instance of list? True
+2024-03-22 20:05:39,281 is input_dict is instance of dict? True
+2024-03-22 20:05:41,304 Model Called
+2024-03-22 20:05:41,305 RAM memory 63.4 used for Proforma_Invoice(2013_01_10_13_51_53_1233)_512_0.png:
+2024-03-22 20:05:41,305 is all_predictions is instance of list? True
+2024-03-22 20:05:41,305 is all_boxes is instance of list? True
+2024-03-22 20:05:41,305 is all_confidences is instance of list? True
+2024-03-22 20:05:41,305 is all_text is instance of list? True
+2024-03-22 20:05:41,306 is label2id is instance of dict? True
+2024-03-22 20:05:41,306 is id2label is instance of dict? True
+2024-03-22 20:05:41,307 is label2color is instance of dict? True
+2024-03-22 20:05:41,307 label2color : {'declaration_by_issuer': '#D3F54E', 'pre-carriage-by': '#1883BD', 'order_date': '#B592C3', 'vessel_name': '#633DD8', 'invoice_no': '#08687B', 'signature': '#A2B03D', 'final_destination': '#B18FCE', 'country_of_origin_of_goods': '#EBE1F9', 'exporter_our_ref_no': '#BC438D', 'gross_weight': '#877530', 'beneficiary_bank_swift': '#DDDCEF', 'remitter_country': '#88A270', 'notify_party_name': '#C1279D', 'cosignee_name': '#6534B0', 'original_or_copy': '#FCBC9C', 'total_quantity_of_goods': '#AC9EA8', 'invoice_amount': '#491EC5', 'incoterm': '#47472D', 'signed_by': '#7712CC', 'from': '#561E7A', 'beneficiary_drawer_exporter_seller_supplier_tin': '#EAB394', 'invoice_currency': '#B12E43', 'consignor_name': '#A3D190', 'advance_amount': '#0966DC', 'importer_your_ref_no': '#28AE3C', 'invoice_due_date': '#A7E8AA', 'unit': '#E8F060', 'shipment_date': '#7B6C9F', 'mode_of_despatch': '#850E8B', 'purchase_order_no_and_agreement_ref_no': '#17F322', 'consignor_address': '#C529DE', 'hs_code_no': '#785576', 'date_of_invoice': '#BE4D7E', 'presentation_period': '#D6A557', 'invoice_tax_amount': '#C464E8', 'beneficiary_drawer_exporter_seller_supplier_name': '#F493BA', 'O': '#48C5CA', 'port_of_discharge': '#FD14D6', 'to': '#348DD2', 'delivery_terms': '#1EC1F1', 'tolerance_of_quantity': '#8F34B5', 'goods_description': '#41B610', 'consignee_address': '#167DD5', 'shipper_address': '#B95655', 'beneficiary_account_number': '#8C9753', 'net_weight': '#836BC1', 'invoice_amount_in_words': '#7F8B60', 'port_of_loading': '#5E592B', 'drawer_ref_no': '#55905A', 'place_of_receipt': '#270A81', 'rate_per_unit': '#32E90A', 'amount_due': '#7D187E', 'page_no': '#C93CE3', 'shipper_name': '#C42D4E', 'total_pages': '#E5C8CC', 'packaging_description': '#475FEB', 'beneficiary_bank_name': '#B3BD0B', 'remitter_drawee_applicant_importer_buyer_name': '#9C3A59', 'transport_details': '#66001A', 'beneficiary_bank_country': '#74E788', 'country_of_final_destination': '#7D7590', 'transhipment': '#CE9416', 'beneficiary_address': '#3BDC18', 'payment_terms': '#5DC565'}
+2024-03-22 20:05:41,472 is result_set is instance of dict? True
+2024-03-22 20:05:41,473 is final_result_set is instance of dict? True
+2024-03-22 20:05:41,737 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_51_53_1233)_512_0.png:0:00:02.763055
+2024-03-22 20:05:41,912 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_51_53_1233)_512_0.png
+2024-03-22 20:05:41,912 RAM memory 63.4 used for Proforma_Invoice(2013_01_10_13_51_53_1233)_512_0.png Generating All Pages:
+2024-03-22 20:05:41,912 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_51_53_1233)_512_0.png1:0:00:02.949575
+2024-03-22 20:05:42,053 file name is:Proforma_Invoice_8_0.png
+2024-03-22 20:05:42,053 folder path :Images
+2024-03-22 20:05:42,054 Calling Image result
+2024-03-22 20:05:42,054 is all_page_result is instance of dict? True
+2024-03-22 20:05:42,064 STREAM b'IHDR' 16 13
+2024-03-22 20:05:42,064 STREAM b'IDAT' 41 46818
+2024-03-22 20:05:42,102 is words is instance of list? True
+2024-03-22 20:05:42,103 is bboxes is instance of list? True
+2024-03-22 20:05:42,103 is bounding_boxes is instance of list? True
+2024-03-22 20:05:42,384 is input_id_chunks is instance of list? True
+2024-03-22 20:05:42,384 is mask_chunks is instance of list? True
+2024-03-22 20:05:42,385 is bbox_chunks is instance of list? True
+2024-03-22 20:05:42,385 is image_chunks is instance of list? True
+2024-03-22 20:05:42,385 is input_dict is instance of dict? True
+2024-03-22 20:05:44,436 Model Called
+2024-03-22 20:05:44,437 RAM memory 63.4 used for Proforma_Invoice_8_0.png:
+2024-03-22 20:05:44,437 is all_predictions is instance of list? True
+2024-03-22 20:05:44,437 is all_boxes is instance of list? True
+2024-03-22 20:05:44,437 is all_confidences is instance of list? True
+2024-03-22 20:05:44,437 is all_text is instance of list? True
+2024-03-22 20:05:44,437 is label2id is instance of dict? True
+2024-03-22 20:05:44,437 is id2label is instance of dict? True
+2024-03-22 20:05:44,438 is label2color is instance of dict? True
+2024-03-22 20:05:44,438 label2color : {'declaration_by_issuer': '#342AED', 'pre-carriage-by': '#287E34', 'order_date': '#575BD3', 'vessel_name': '#658D85', 'invoice_no': '#E5A0D4', 'signature': '#01D38D', 'final_destination': '#1ED840', 'country_of_origin_of_goods': '#CBE528', 'exporter_our_ref_no': '#80DB54', 'gross_weight': '#E34ABB', 'beneficiary_bank_swift': '#7DCFCB', 'remitter_country': '#637712', 'notify_party_name': '#F754CD', 'cosignee_name': '#D0A91A', 'original_or_copy': '#ACE29D', 'total_quantity_of_goods': '#E0FF8B', 'invoice_amount': '#17C2ED', 'incoterm': '#EAEFBC', 'signed_by': '#0A394A', 'from': '#AA57F0', 'beneficiary_drawer_exporter_seller_supplier_tin': '#21A415', 'invoice_currency': '#8E7AEC', 'consignor_name': '#81C80F', 'advance_amount': '#5A910B', 'importer_your_ref_no': '#693664', 'invoice_due_date': '#4B9344', 'unit': '#12641B', 'shipment_date': '#3A3591', 'mode_of_despatch': '#05C114', 'purchase_order_no_and_agreement_ref_no': '#45327E', 'consignor_address': '#EE2B80', 'hs_code_no': '#580827', 'date_of_invoice': '#92E9B8', 'presentation_period': '#6E4487', 'invoice_tax_amount': '#0E75C9', 'beneficiary_drawer_exporter_seller_supplier_name': '#C46679', 'O': '#974860', 'port_of_discharge': '#BFED57', 'to': '#B87348', 'delivery_terms': '#6AB752', 'tolerance_of_quantity': '#B5D5E7', 'goods_description': '#E97ED8', 'consignee_address': '#3874CE', 'shipper_address': '#2F1D38', 'beneficiary_account_number': '#9FBA6A', 'net_weight': '#70CAB6', 'invoice_amount_in_words': '#6B77DA', 'port_of_loading': '#CBEC54', 'drawer_ref_no': '#78C55C', 'place_of_receipt': '#A8E37F', 'rate_per_unit': '#E94577', 'amount_due': '#16E4CE', 'page_no': '#0F26D0', 'shipper_name': '#1362F5', 'total_pages': '#EA0CB1', 'packaging_description': '#99431A', 'beneficiary_bank_name': '#425783', 'remitter_drawee_applicant_importer_buyer_name': '#5B1343', 'transport_details': '#36D58A', 'beneficiary_bank_country': '#AEDF0F', 'country_of_final_destination': '#BB9337', 'transhipment': '#209829', 'beneficiary_address': '#14979E', 'payment_terms': '#5F7217'}
+2024-03-22 20:05:44,616 is result_set is instance of dict? True
+2024-03-22 20:05:44,617 is final_result_set is instance of dict? True
+2024-03-22 20:05:44,873 Time taken for page 1 of Proforma_Invoice_8_0.png:0:00:02.808185
+2024-03-22 20:05:45,044 *****Generated All Pages****** for Proforma_Invoice_8_0.png
+2024-03-22 20:05:45,044 RAM memory 63.2 used for Proforma_Invoice_8_0.png Generating All Pages:
+2024-03-22 20:05:45,044 Processing time taken for all pages of Proforma_Invoice_8_0.png1:0:00:02.990289
+2024-03-22 20:05:45,191 file name is:Proforma_Invoice_20_0.png
+2024-03-22 20:05:45,191 folder path :Images
+2024-03-22 20:05:45,191 Calling Image result
+2024-03-22 20:05:45,191 is all_page_result is instance of dict? True
+2024-03-22 20:05:45,202 STREAM b'IHDR' 16 13
+2024-03-22 20:05:45,202 STREAM b'IDAT' 41 53220
+2024-03-22 20:05:45,243 is words is instance of list? True
+2024-03-22 20:05:45,243 is bboxes is instance of list? True
+2024-03-22 20:05:45,243 is bounding_boxes is instance of list? True
+2024-03-22 20:05:45,519 is input_id_chunks is instance of list? True
+2024-03-22 20:05:45,519 is mask_chunks is instance of list? True
+2024-03-22 20:05:45,519 is bbox_chunks is instance of list? True
+2024-03-22 20:05:45,519 is image_chunks is instance of list? True
+2024-03-22 20:05:45,520 is input_dict is instance of dict? True
+2024-03-22 20:05:48,825 Model Called
+2024-03-22 20:05:48,826 RAM memory 63.2 used for Proforma_Invoice_20_0.png:
+2024-03-22 20:05:48,826 is all_predictions is instance of list? True
+2024-03-22 20:05:48,826 is all_boxes is instance of list? True
+2024-03-22 20:05:48,826 is all_confidences is instance of list? True
+2024-03-22 20:05:48,826 is all_text is instance of list? True
+2024-03-22 20:05:48,826 is label2id is instance of dict? True
+2024-03-22 20:05:48,826 is id2label is instance of dict? True
+2024-03-22 20:05:48,827 is label2color is instance of dict? True
+2024-03-22 20:05:48,827 label2color : {'declaration_by_issuer': '#F745F7', 'pre-carriage-by': '#DE41B5', 'order_date': '#75C9EC', 'vessel_name': '#3E70D3', 'invoice_no': '#ED8729', 'signature': '#FD3433', 'final_destination': '#764684', 'country_of_origin_of_goods': '#8E262E', 'exporter_our_ref_no': '#E1DDFA', 'gross_weight': '#E60244', 'beneficiary_bank_swift': '#A85315', 'remitter_country': '#C9DFE4', 'notify_party_name': '#EA38F5', 'cosignee_name': '#AB8E56', 'original_or_copy': '#FD07BD', 'total_quantity_of_goods': '#0CF22A', 'invoice_amount': '#CF0855', 'incoterm': '#768BE0', 'signed_by': '#78BEB9', 'from': '#E4D998', 'beneficiary_drawer_exporter_seller_supplier_tin': '#C176B0', 'invoice_currency': '#E7CB36', 'consignor_name': '#857341', 'advance_amount': '#8445F9', 'importer_your_ref_no': '#98AD5F', 'invoice_due_date': '#06B4C7', 'unit': '#CCAB4A', 'shipment_date': '#D7CD43', 'mode_of_despatch': '#449187', 'purchase_order_no_and_agreement_ref_no': '#BB2E11', 'consignor_address': '#AA520B', 'hs_code_no': '#812204', 'date_of_invoice': '#25B890', 'presentation_period': '#A58BB9', 'invoice_tax_amount': '#995115', 'beneficiary_drawer_exporter_seller_supplier_name': '#6CBAC3', 'O': '#93623F', 'port_of_discharge': '#425754', 'to': '#533C72', 'delivery_terms': '#98DBCA', 'tolerance_of_quantity': '#539683', 'goods_description': '#9D8CFF', 'consignee_address': '#41E2E3', 'shipper_address': '#F98639', 'beneficiary_account_number': '#42C1AB', 'net_weight': '#8AABC1', 'invoice_amount_in_words': '#7BA8FC', 'port_of_loading': '#4032E5', 'drawer_ref_no': '#EC6113', 'place_of_receipt': '#71FA0C', 'rate_per_unit': '#C7ED49', 'amount_due': '#EA28C2', 'page_no': '#0431D2', 'shipper_name': '#C8FA47', 'total_pages': '#9BFDB2', 'packaging_description': '#3AC053', 'beneficiary_bank_name': '#5C4B8C', 'remitter_drawee_applicant_importer_buyer_name': '#FD3364', 'transport_details': '#779239', 'beneficiary_bank_country': '#7262DD', 'country_of_final_destination': '#F57B11', 'transhipment': '#F53557', 'beneficiary_address': '#23E3A6', 'payment_terms': '#C8D74B'}
+2024-03-22 20:05:49,082 is result_set is instance of dict? True
+2024-03-22 20:05:49,085 is final_result_set is instance of dict? True
+2024-03-22 20:05:49,356 Time taken for page 1 of Proforma_Invoice_20_0.png:0:00:04.154115
+2024-03-22 20:05:49,524 *****Generated All Pages****** for Proforma_Invoice_20_0.png
+2024-03-22 20:05:49,524 RAM memory 63.2 used for Proforma_Invoice_20_0.png Generating All Pages:
+2024-03-22 20:05:49,524 Processing time taken for all pages of Proforma_Invoice_20_0.png1:0:00:04.333436
+2024-03-22 20:05:49,676 file name is:Proforma_Invoice_27_0.png
+2024-03-22 20:05:49,676 folder path :Images
+2024-03-22 20:05:49,677 Calling Image result
+2024-03-22 20:05:49,677 is all_page_result is instance of dict? True
+2024-03-22 20:05:49,687 STREAM b'IHDR' 16 13
+2024-03-22 20:05:49,688 STREAM b'IDAT' 41 60999
+2024-03-22 20:05:49,729 is words is instance of list? True
+2024-03-22 20:05:49,729 is bboxes is instance of list? True
+2024-03-22 20:05:49,729 is bounding_boxes is instance of list? True
+2024-03-22 20:05:50,011 is input_id_chunks is instance of list? True
+2024-03-22 20:05:50,011 is mask_chunks is instance of list? True
+2024-03-22 20:05:50,011 is bbox_chunks is instance of list? True
+2024-03-22 20:05:50,011 is image_chunks is instance of list? True
+2024-03-22 20:05:50,012 is input_dict is instance of dict? True
+2024-03-22 20:05:51,975 Model Called
+2024-03-22 20:05:51,975 RAM memory 63.1 used for Proforma_Invoice_27_0.png:
+2024-03-22 20:05:51,976 is all_predictions is instance of list? True
+2024-03-22 20:05:51,976 is all_boxes is instance of list? True
+2024-03-22 20:05:51,976 is all_confidences is instance of list? True
+2024-03-22 20:05:51,976 is all_text is instance of list? True
+2024-03-22 20:05:51,976 is label2id is instance of dict? True
+2024-03-22 20:05:51,976 is id2label is instance of dict? True
+2024-03-22 20:05:51,977 is label2color is instance of dict? True
+2024-03-22 20:05:51,977 label2color : {'declaration_by_issuer': '#9354FD', 'pre-carriage-by': '#B931D5', 'order_date': '#31A423', 'vessel_name': '#F086BF', 'invoice_no': '#3916AD', 'signature': '#88CE39', 'final_destination': '#0F85A3', 'country_of_origin_of_goods': '#946FB9', 'exporter_our_ref_no': '#2B3AE3', 'gross_weight': '#CDE091', 'beneficiary_bank_swift': '#75CE06', 'remitter_country': '#1A90DC', 'notify_party_name': '#08129F', 'cosignee_name': '#175DD2', 'original_or_copy': '#E2DDC6', 'total_quantity_of_goods': '#ECEBF9', 'invoice_amount': '#E28BE0', 'incoterm': '#A742AF', 'signed_by': '#0C34C1', 'from': '#408FDB', 'beneficiary_drawer_exporter_seller_supplier_tin': '#E62BB9', 'invoice_currency': '#019E79', 'consignor_name': '#2D8487', 'advance_amount': '#3AC46A', 'importer_your_ref_no': '#72F1DE', 'invoice_due_date': '#0D4C9B', 'unit': '#C6221A', 'shipment_date': '#619192', 'mode_of_despatch': '#A78DE2', 'purchase_order_no_and_agreement_ref_no': '#0DD568', 'consignor_address': '#FE45DE', 'hs_code_no': '#C88667', 'date_of_invoice': '#FB5541', 'presentation_period': '#FDDA04', 'invoice_tax_amount': '#5F3919', 'beneficiary_drawer_exporter_seller_supplier_name': '#2AFE70', 'O': '#72789E', 'port_of_discharge': '#9771FE', 'to': '#D13BD2', 'delivery_terms': '#1E15E5', 'tolerance_of_quantity': '#89E0F0', 'goods_description': '#01E30A', 'consignee_address': '#2315D6', 'shipper_address': '#95D5D9', 'beneficiary_account_number': '#F22B61', 'net_weight': '#31BC9A', 'invoice_amount_in_words': '#791051', 'port_of_loading': '#6FC5DA', 'drawer_ref_no': '#8C328E', 'place_of_receipt': '#B79E67', 'rate_per_unit': '#E17F9D', 'amount_due': '#A6B6BC', 'page_no': '#F2A5CC', 'shipper_name': '#C7F6DE', 'total_pages': '#128624', 'packaging_description': '#9DB66D', 'beneficiary_bank_name': '#B27272', 'remitter_drawee_applicant_importer_buyer_name': '#6EB9E9', 'transport_details': '#82D306', 'beneficiary_bank_country': '#7C4137', 'country_of_final_destination': '#C14889', 'transhipment': '#ACE70F', 'beneficiary_address': '#7A40F3', 'payment_terms': '#843E2C'}
+2024-03-22 20:05:52,168 is result_set is instance of dict? True
+2024-03-22 20:05:52,171 is final_result_set is instance of dict? True
+2024-03-22 20:05:52,451 Time taken for page 1 of Proforma_Invoice_27_0.png:0:00:02.763087
+2024-03-22 20:05:52,629 *****Generated All Pages****** for Proforma_Invoice_27_0.png
+2024-03-22 20:05:52,630 RAM memory 63.0 used for Proforma_Invoice_27_0.png Generating All Pages:
+2024-03-22 20:05:52,630 Processing time taken for all pages of Proforma_Invoice_27_0.png1:0:00:02.953289
+2024-03-22 20:05:52,779 file name is:Proforma_Invoice(2013_01_10_13_52_54_0394)_500_0.png
+2024-03-22 20:05:52,779 folder path :Images
+2024-03-22 20:05:52,780 Calling Image result
+2024-03-22 20:05:52,780 is all_page_result is instance of dict? True
+2024-03-22 20:05:52,790 STREAM b'IHDR' 16 13
+2024-03-22 20:05:52,791 STREAM b'IDAT' 41 33782
+2024-03-22 20:05:52,826 is words is instance of list? True
+2024-03-22 20:05:52,826 is bboxes is instance of list? True
+2024-03-22 20:05:52,826 is bounding_boxes is instance of list? True
+2024-03-22 20:05:53,102 is input_id_chunks is instance of list? True
+2024-03-22 20:05:53,102 is mask_chunks is instance of list? True
+2024-03-22 20:05:53,102 is bbox_chunks is instance of list? True
+2024-03-22 20:05:53,102 is image_chunks is instance of list? True
+2024-03-22 20:05:53,103 is input_dict is instance of dict? True
+2024-03-22 20:05:54,711 Model Called
+2024-03-22 20:05:54,712 RAM memory 63.3 used for Proforma_Invoice(2013_01_10_13_52_54_0394)_500_0.png:
+2024-03-22 20:05:54,712 is all_predictions is instance of list? True
+2024-03-22 20:05:54,712 is all_boxes is instance of list? True
+2024-03-22 20:05:54,712 is all_confidences is instance of list? True
+2024-03-22 20:05:54,712 is all_text is instance of list? True
+2024-03-22 20:05:54,712 is label2id is instance of dict? True
+2024-03-22 20:05:54,712 is id2label is instance of dict? True
+2024-03-22 20:05:54,713 is label2color is instance of dict? True
+2024-03-22 20:05:54,714 label2color : {'declaration_by_issuer': '#9473AD', 'pre-carriage-by': '#D0E88F', 'order_date': '#648E17', 'vessel_name': '#708A6B', 'invoice_no': '#1F3EC2', 'signature': '#4763FB', 'final_destination': '#40FCE4', 'country_of_origin_of_goods': '#9C2E6E', 'exporter_our_ref_no': '#30E137', 'gross_weight': '#69F6EB', 'beneficiary_bank_swift': '#C61192', 'remitter_country': '#E1FEB8', 'notify_party_name': '#049DB1', 'cosignee_name': '#A973FD', 'original_or_copy': '#F0F141', 'total_quantity_of_goods': '#FCED8C', 'invoice_amount': '#2D2096', 'incoterm': '#CF61A4', 'signed_by': '#6D1A1B', 'from': '#901354', 'beneficiary_drawer_exporter_seller_supplier_tin': '#354BAD', 'invoice_currency': '#0E0270', 'consignor_name': '#B8341B', 'advance_amount': '#A25644', 'importer_your_ref_no': '#D19FCC', 'invoice_due_date': '#D9C577', 'unit': '#C2DA37', 'shipment_date': '#2C387C', 'mode_of_despatch': '#93D06F', 'purchase_order_no_and_agreement_ref_no': '#D44783', 'consignor_address': '#AAA9DD', 'hs_code_no': '#74F67C', 'date_of_invoice': '#5193FD', 'presentation_period': '#66B4B0', 'invoice_tax_amount': '#405FF3', 'beneficiary_drawer_exporter_seller_supplier_name': '#67A61B', 'O': '#8FEBEF', 'port_of_discharge': '#09FB1B', 'to': '#DE9858', 'delivery_terms': '#115D7F', 'tolerance_of_quantity': '#A765C5', 'goods_description': '#F6BAE0', 'consignee_address': '#F39341', 'shipper_address': '#2AE6A1', 'beneficiary_account_number': '#5CB5DD', 'net_weight': '#20614F', 'invoice_amount_in_words': '#BB00C5', 'port_of_loading': '#ADB721', 'drawer_ref_no': '#35F863', 'place_of_receipt': '#E0FC56', 'rate_per_unit': '#7CDF58', 'amount_due': '#6623FC', 'page_no': '#D72879', 'shipper_name': '#0EA38C', 'total_pages': '#D4B483', 'packaging_description': '#05F827', 'beneficiary_bank_name': '#B62747', 'remitter_drawee_applicant_importer_buyer_name': '#5BAC9A', 'transport_details': '#5EEF38', 'beneficiary_bank_country': '#A8042C', 'country_of_final_destination': '#7ED283', 'transhipment': '#5169B8', 'beneficiary_address': '#D7E922', 'payment_terms': '#F60D9C'}
+2024-03-22 20:05:54,878 is result_set is instance of dict? True
+2024-03-22 20:05:54,879 is final_result_set is instance of dict? True
+2024-03-22 20:05:55,125 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_52_54_0394)_500_0.png:0:00:02.334230
+2024-03-22 20:05:55,273 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_52_54_0394)_500_0.png
+2024-03-22 20:05:55,273 RAM memory 63.3 used for Proforma_Invoice(2013_01_10_13_52_54_0394)_500_0.png Generating All Pages:
+2024-03-22 20:05:55,273 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_52_54_0394)_500_0.png1:0:00:02.493506
+2024-03-22 20:05:55,422 file name is:Proforma_Invoice_23_0.png
+2024-03-22 20:05:55,422 folder path :Images
+2024-03-22 20:05:55,423 Calling Image result
+2024-03-22 20:05:55,423 is all_page_result is instance of dict? True
+2024-03-22 20:05:55,433 STREAM b'IHDR' 16 13
+2024-03-22 20:05:55,433 STREAM b'IDAT' 41 57591
+2024-03-22 20:05:55,476 is words is instance of list? True
+2024-03-22 20:05:55,476 is bboxes is instance of list? True
+2024-03-22 20:05:55,477 is bounding_boxes is instance of list? True
+2024-03-22 20:05:55,769 is input_id_chunks is instance of list? True
+2024-03-22 20:05:55,769 is mask_chunks is instance of list? True
+2024-03-22 20:05:55,769 is bbox_chunks is instance of list? True
+2024-03-22 20:05:55,769 is image_chunks is instance of list? True
+2024-03-22 20:05:55,771 is input_dict is instance of dict? True
+2024-03-22 20:05:58,683 Model Called
+2024-03-22 20:05:58,684 RAM memory 63.8 used for Proforma_Invoice_23_0.png:
+2024-03-22 20:05:58,684 is all_predictions is instance of list? True
+2024-03-22 20:05:58,684 is all_boxes is instance of list? True
+2024-03-22 20:05:58,684 is all_confidences is instance of list? True
+2024-03-22 20:05:58,684 is all_text is instance of list? True
+2024-03-22 20:05:58,684 is label2id is instance of dict? True
+2024-03-22 20:05:58,684 is id2label is instance of dict? True
+2024-03-22 20:05:58,686 is label2color is instance of dict? True
+2024-03-22 20:05:58,686 label2color : {'declaration_by_issuer': '#B05CA7', 'pre-carriage-by': '#EB835E', 'order_date': '#E5DF6A', 'vessel_name': '#DB2187', 'invoice_no': '#6989E1', 'signature': '#98406C', 'final_destination': '#F3B91D', 'country_of_origin_of_goods': '#B7EB0A', 'exporter_our_ref_no': '#D4EEFA', 'gross_weight': '#139483', 'beneficiary_bank_swift': '#B5C546', 'remitter_country': '#723D36', 'notify_party_name': '#17945C', 'cosignee_name': '#12BE6B', 'original_or_copy': '#B39E45', 'total_quantity_of_goods': '#B111F9', 'invoice_amount': '#6F61FF', 'incoterm': '#0B799E', 'signed_by': '#4A281F', 'from': '#E5261F', 'beneficiary_drawer_exporter_seller_supplier_tin': '#EBE5CA', 'invoice_currency': '#805D28', 'consignor_name': '#692347', 'advance_amount': '#D2C41B', 'importer_your_ref_no': '#3C9F54', 'invoice_due_date': '#15BAEA', 'unit': '#283787', 'shipment_date': '#CBC842', 'mode_of_despatch': '#4D3CA1', 'purchase_order_no_and_agreement_ref_no': '#858545', 'consignor_address': '#C2CC6B', 'hs_code_no': '#2AC901', 'date_of_invoice': '#E911FB', 'presentation_period': '#8D312A', 'invoice_tax_amount': '#043315', 'beneficiary_drawer_exporter_seller_supplier_name': '#8C7C22', 'O': '#13E595', 'port_of_discharge': '#4A9CE5', 'to': '#B738DF', 'delivery_terms': '#3C68AC', 'tolerance_of_quantity': '#963010', 'goods_description': '#FFD47E', 'consignee_address': '#A4FE29', 'shipper_address': '#C939C0', 'beneficiary_account_number': '#90E28E', 'net_weight': '#8E41D4', 'invoice_amount_in_words': '#82073C', 'port_of_loading': '#0D0292', 'drawer_ref_no': '#E1EED4', 'place_of_receipt': '#82D217', 'rate_per_unit': '#C3DB8A', 'amount_due': '#7E1567', 'page_no': '#BB9026', 'shipper_name': '#0A7BD4', 'total_pages': '#F976DC', 'packaging_description': '#B794C3', 'beneficiary_bank_name': '#D98D46', 'remitter_drawee_applicant_importer_buyer_name': '#94F1CC', 'transport_details': '#D0A504', 'beneficiary_bank_country': '#8124AC', 'country_of_final_destination': '#F01C8B', 'transhipment': '#5AB07E', 'beneficiary_address': '#98AFFC', 'payment_terms': '#6523B9'}
+2024-03-22 20:05:58,967 is result_set is instance of dict? True
+2024-03-22 20:05:58,970 is final_result_set is instance of dict? True
+2024-03-22 20:05:59,304 Time taken for page 1 of Proforma_Invoice_23_0.png:0:00:03.870775
+2024-03-22 20:05:59,487 *****Generated All Pages****** for Proforma_Invoice_23_0.png
+2024-03-22 20:05:59,487 RAM memory 63.9 used for Proforma_Invoice_23_0.png Generating All Pages:
+2024-03-22 20:05:59,487 Processing time taken for all pages of Proforma_Invoice_23_0.png1:0:00:04.064824
+2024-03-22 20:05:59,637 file name is:Proforma_Invoice(2013_04_17_14_00_41_9003)_303_0.png
+2024-03-22 20:05:59,638 folder path :Images
+2024-03-22 20:05:59,638 Calling Image result
+2024-03-22 20:05:59,638 is all_page_result is instance of dict? True
+2024-03-22 20:05:59,675 STREAM b'IHDR' 16 13
+2024-03-22 20:05:59,675 STREAM b'IDAT' 41 65536
+2024-03-22 20:05:59,754 is words is instance of list? True
+2024-03-22 20:05:59,754 is bboxes is instance of list? True
+2024-03-22 20:05:59,754 is bounding_boxes is instance of list? True
+2024-03-22 20:06:00,774 is input_id_chunks is instance of list? True
+2024-03-22 20:06:00,774 is mask_chunks is instance of list? True
+2024-03-22 20:06:00,774 is bbox_chunks is instance of list? True
+2024-03-22 20:06:00,774 is image_chunks is instance of list? True
+2024-03-22 20:06:00,775 is input_dict is instance of dict? True
+2024-03-22 20:06:04,792 Model Called
+2024-03-22 20:06:04,793 RAM memory 64.2 used for Proforma_Invoice(2013_04_17_14_00_41_9003)_303_0.png:
+2024-03-22 20:06:04,793 is all_predictions is instance of list? True
+2024-03-22 20:06:04,793 is all_boxes is instance of list? True
+2024-03-22 20:06:04,793 is all_confidences is instance of list? True
+2024-03-22 20:06:04,793 is all_text is instance of list? True
+2024-03-22 20:06:04,793 is label2id is instance of dict? True
+2024-03-22 20:06:04,793 is id2label is instance of dict? True
+2024-03-22 20:06:04,795 is label2color is instance of dict? True
+2024-03-22 20:06:04,795 label2color : {'declaration_by_issuer': '#E0041E', 'pre-carriage-by': '#33AB54', 'order_date': '#ACBE40', 'vessel_name': '#F76518', 'invoice_no': '#0C0830', 'signature': '#CFA697', 'final_destination': '#DF2DBA', 'country_of_origin_of_goods': '#B76BEB', 'exporter_our_ref_no': '#B43915', 'gross_weight': '#96E553', 'beneficiary_bank_swift': '#0F7EE7', 'remitter_country': '#90B107', 'notify_party_name': '#1C44F0', 'cosignee_name': '#CF3F63', 'original_or_copy': '#0B64E4', 'total_quantity_of_goods': '#891E08', 'invoice_amount': '#B3C090', 'incoterm': '#E2DE52', 'signed_by': '#FA98C7', 'from': '#DB82E4', 'beneficiary_drawer_exporter_seller_supplier_tin': '#6337DE', 'invoice_currency': '#80D6D3', 'consignor_name': '#5BDC51', 'advance_amount': '#0CAC9D', 'importer_your_ref_no': '#ABC576', 'invoice_due_date': '#D0A7E6', 'unit': '#3F048C', 'shipment_date': '#D3B574', 'mode_of_despatch': '#248F72', 'purchase_order_no_and_agreement_ref_no': '#C48905', 'consignor_address': '#44D0CE', 'hs_code_no': '#038822', 'date_of_invoice': '#46395D', 'presentation_period': '#2978BB', 'invoice_tax_amount': '#8FB642', 'beneficiary_drawer_exporter_seller_supplier_name': '#335247', 'O': '#AC613F', 'port_of_discharge': '#988D83', 'to': '#55C488', 'delivery_terms': '#78C2A5', 'tolerance_of_quantity': '#FB6D12', 'goods_description': '#A263DE', 'consignee_address': '#AC1758', 'shipper_address': '#A74D64', 'beneficiary_account_number': '#4A9027', 'net_weight': '#FE023D', 'invoice_amount_in_words': '#DC248C', 'port_of_loading': '#3F6F12', 'drawer_ref_no': '#78C4C2', 'place_of_receipt': '#D035A1', 'rate_per_unit': '#A6F059', 'amount_due': '#3D05CB', 'page_no': '#DAE776', 'shipper_name': '#675EAF', 'total_pages': '#1B6E5F', 'packaging_description': '#E487BE', 'beneficiary_bank_name': '#4ED986', 'remitter_drawee_applicant_importer_buyer_name': '#94DFC9', 'transport_details': '#486308', 'beneficiary_bank_country': '#15D020', 'country_of_final_destination': '#0DB7D3', 'transhipment': '#C51CB2', 'beneficiary_address': '#9A16C1', 'payment_terms': '#576C08'}
+2024-03-22 20:06:05,412 is result_set is instance of dict? True
+2024-03-22 20:06:05,414 is final_result_set is instance of dict? True
+2024-03-22 20:06:05,668 Time taken for page 1 of Proforma_Invoice(2013_04_17_14_00_41_9003)_303_0.png:0:00:05.992315
+2024-03-22 20:06:06,008 *****Generated All Pages****** for Proforma_Invoice(2013_04_17_14_00_41_9003)_303_0.png
+2024-03-22 20:06:06,008 RAM memory 65.0 used for Proforma_Invoice(2013_04_17_14_00_41_9003)_303_0.png Generating All Pages:
+2024-03-22 20:06:06,008 Processing time taken for all pages of Proforma_Invoice(2013_04_17_14_00_41_9003)_303_0.png1:0:00:06.370459
+2024-03-22 20:06:06,175 file name is:Proforma_Invoice(2013_01_10_13_54_44_8582)_506_0.png
+2024-03-22 20:06:06,175 folder path :Images
+2024-03-22 20:06:06,175 Calling Image result
+2024-03-22 20:06:06,175 is all_page_result is instance of dict? True
+2024-03-22 20:06:06,176 STREAM b'IHDR' 16 13
+2024-03-22 20:06:06,176 STREAM b'IDAT' 41 34584
+2024-03-22 20:06:06,213 is words is instance of list? True
+2024-03-22 20:06:06,213 is bboxes is instance of list? True
+2024-03-22 20:06:06,213 is bounding_boxes is instance of list? True
+2024-03-22 20:06:06,496 is input_id_chunks is instance of list? True
+2024-03-22 20:06:06,497 is mask_chunks is instance of list? True
+2024-03-22 20:06:06,497 is bbox_chunks is instance of list? True
+2024-03-22 20:06:06,497 is image_chunks is instance of list? True
+2024-03-22 20:06:06,498 is input_dict is instance of dict? True
+2024-03-22 20:06:08,547 Model Called
+2024-03-22 20:06:08,547 RAM memory 64.5 used for Proforma_Invoice(2013_01_10_13_54_44_8582)_506_0.png:
+2024-03-22 20:06:08,548 is all_predictions is instance of list? True
+2024-03-22 20:06:08,548 is all_boxes is instance of list? True
+2024-03-22 20:06:08,548 is all_confidences is instance of list? True
+2024-03-22 20:06:08,548 is all_text is instance of list? True
+2024-03-22 20:06:08,549 is label2id is instance of dict? True
+2024-03-22 20:06:08,549 is id2label is instance of dict? True
+2024-03-22 20:06:08,550 is label2color is instance of dict? True
+2024-03-22 20:06:08,550 label2color : {'declaration_by_issuer': '#F6E42D', 'pre-carriage-by': '#838011', 'order_date': '#8BA720', 'vessel_name': '#C97332', 'invoice_no': '#8E0A03', 'signature': '#03436B', 'final_destination': '#DC463A', 'country_of_origin_of_goods': '#0D1DCE', 'exporter_our_ref_no': '#ACEEC7', 'gross_weight': '#FEAE20', 'beneficiary_bank_swift': '#2C7175', 'remitter_country': '#1E3114', 'notify_party_name': '#DB6F0F', 'cosignee_name': '#9A3B8F', 'original_or_copy': '#23F9B2', 'total_quantity_of_goods': '#C11646', 'invoice_amount': '#07DD82', 'incoterm': '#3D9003', 'signed_by': '#B76B44', 'from': '#115E6A', 'beneficiary_drawer_exporter_seller_supplier_tin': '#442A54', 'invoice_currency': '#E39491', 'consignor_name': '#D90357', 'advance_amount': '#85DC5D', 'importer_your_ref_no': '#434903', 'invoice_due_date': '#3D30B3', 'unit': '#751FB2', 'shipment_date': '#53E989', 'mode_of_despatch': '#885F34', 'purchase_order_no_and_agreement_ref_no': '#F86BBB', 'consignor_address': '#F02018', 'hs_code_no': '#853B81', 'date_of_invoice': '#D53D3F', 'presentation_period': '#4584DC', 'invoice_tax_amount': '#3A6BAB', 'beneficiary_drawer_exporter_seller_supplier_name': '#38D346', 'O': '#AF9B88', 'port_of_discharge': '#D5865D', 'to': '#C82799', 'delivery_terms': '#A28287', 'tolerance_of_quantity': '#7C5DC0', 'goods_description': '#13A7D4', 'consignee_address': '#21541E', 'shipper_address': '#64DA3A', 'beneficiary_account_number': '#EC7960', 'net_weight': '#CBF75E', 'invoice_amount_in_words': '#1586B7', 'port_of_loading': '#C69A4B', 'drawer_ref_no': '#C35B57', 'place_of_receipt': '#32D8E3', 'rate_per_unit': '#252515', 'amount_due': '#5225D1', 'page_no': '#E17556', 'shipper_name': '#274FDA', 'total_pages': '#18F55F', 'packaging_description': '#2B1A87', 'beneficiary_bank_name': '#4A73F6', 'remitter_drawee_applicant_importer_buyer_name': '#AF4968', 'transport_details': '#DF9A42', 'beneficiary_bank_country': '#86B3F6', 'country_of_final_destination': '#8C296E', 'transhipment': '#FD2AE9', 'beneficiary_address': '#D284D4', 'payment_terms': '#14342F'}
+2024-03-22 20:06:08,817 is result_set is instance of dict? True
+2024-03-22 20:06:08,819 is final_result_set is instance of dict? True
+2024-03-22 20:06:09,083 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_54_44_8582)_506_0.png:0:00:02.906488
+2024-03-22 20:06:09,236 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_54_44_8582)_506_0.png
+2024-03-22 20:06:09,236 RAM memory 64.2 used for Proforma_Invoice(2013_01_10_13_54_44_8582)_506_0.png Generating All Pages:
+2024-03-22 20:06:09,236 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_54_44_8582)_506_0.png1:0:00:03.060833
+2024-03-22 20:06:09,368 file name is:Proforma_Invoice_22_1.png
+2024-03-22 20:06:09,368 folder path :Images
+2024-03-22 20:06:09,368 Calling Image result
+2024-03-22 20:06:09,368 is all_page_result is instance of dict? True
+2024-03-22 20:06:09,379 STREAM b'IHDR' 16 13
+2024-03-22 20:06:09,379 STREAM b'IDAT' 41 17977
+2024-03-22 20:06:09,403 is words is instance of list? True
+2024-03-22 20:06:09,403 is bboxes is instance of list? True
+2024-03-22 20:06:09,403 is bounding_boxes is instance of list? True
+2024-03-22 20:06:09,472 is input_id_chunks is instance of list? True
+2024-03-22 20:06:09,472 is mask_chunks is instance of list? True
+2024-03-22 20:06:09,472 is bbox_chunks is instance of list? True
+2024-03-22 20:06:09,472 is image_chunks is instance of list? True
+2024-03-22 20:06:09,472 is input_dict is instance of dict? True
+2024-03-22 20:06:11,519 Model Called
+2024-03-22 20:06:11,520 RAM memory 64.9 used for Proforma_Invoice_22_1.png:
+2024-03-22 20:06:11,520 is all_predictions is instance of list? True
+2024-03-22 20:06:11,520 is all_boxes is instance of list? True
+2024-03-22 20:06:11,520 is all_confidences is instance of list? True
+2024-03-22 20:06:11,520 is all_text is instance of list? True
+2024-03-22 20:06:11,520 is label2id is instance of dict? True
+2024-03-22 20:06:11,521 is id2label is instance of dict? True
+2024-03-22 20:06:11,522 is label2color is instance of dict? True
+2024-03-22 20:06:11,522 label2color : {'declaration_by_issuer': '#2FD42B', 'pre-carriage-by': '#FA0F0C', 'order_date': '#EC7BE5', 'vessel_name': '#5E952A', 'invoice_no': '#7D5E49', 'signature': '#28B579', 'final_destination': '#C5EFEF', 'country_of_origin_of_goods': '#A643B5', 'exporter_our_ref_no': '#59308F', 'gross_weight': '#B73F49', 'beneficiary_bank_swift': '#62E479', 'remitter_country': '#256F43', 'notify_party_name': '#FAAF4C', 'cosignee_name': '#19E907', 'original_or_copy': '#67F204', 'total_quantity_of_goods': '#0454AD', 'invoice_amount': '#5D27AD', 'incoterm': '#832345', 'signed_by': '#3374CD', 'from': '#F21EA3', 'beneficiary_drawer_exporter_seller_supplier_tin': '#33FFAD', 'invoice_currency': '#707C9B', 'consignor_name': '#0D6E70', 'advance_amount': '#1F2768', 'importer_your_ref_no': '#D4FA43', 'invoice_due_date': '#426D80', 'unit': '#EA4D5F', 'shipment_date': '#5717DD', 'mode_of_despatch': '#EAC895', 'purchase_order_no_and_agreement_ref_no': '#15EB84', 'consignor_address': '#BDE8E8', 'hs_code_no': '#C6C285', 'date_of_invoice': '#B8D615', 'presentation_period': '#843DEF', 'invoice_tax_amount': '#FEF548', 'beneficiary_drawer_exporter_seller_supplier_name': '#A7677B', 'O': '#A6F9CF', 'port_of_discharge': '#460F03', 'to': '#40FA38', 'delivery_terms': '#34EA49', 'tolerance_of_quantity': '#AB5D12', 'goods_description': '#27CDBF', 'consignee_address': '#917AF6', 'shipper_address': '#079A60', 'beneficiary_account_number': '#E675F6', 'net_weight': '#397B4E', 'invoice_amount_in_words': '#1AD4D2', 'port_of_loading': '#FA13B3', 'drawer_ref_no': '#D8259E', 'place_of_receipt': '#C64F14', 'rate_per_unit': '#4D88B1', 'amount_due': '#5833DD', 'page_no': '#B118FD', 'shipper_name': '#AE34B2', 'total_pages': '#42D7C4', 'packaging_description': '#BB6163', 'beneficiary_bank_name': '#D908B1', 'remitter_drawee_applicant_importer_buyer_name': '#B537D2', 'transport_details': '#53906C', 'beneficiary_bank_country': '#7FF8D3', 'country_of_final_destination': '#DA68F3', 'transhipment': '#18D25B', 'beneficiary_address': '#13AEA5', 'payment_terms': '#208A44'}
+2024-03-22 20:06:11,590 is result_set is instance of dict? True
+2024-03-22 20:06:11,592 is final_result_set is instance of dict? True
+2024-03-22 20:06:11,858 Time taken for page 1 of Proforma_Invoice_22_1.png:0:00:02.479095
+2024-03-22 20:06:11,946 *****Generated All Pages****** for Proforma_Invoice_22_1.png
+2024-03-22 20:06:11,946 RAM memory 65.1 used for Proforma_Invoice_22_1.png Generating All Pages:
+2024-03-22 20:06:11,947 Processing time taken for all pages of Proforma_Invoice_22_1.png1:0:00:02.578176
+2024-03-22 20:06:12,112 file name is:Proforma_Invoice(2013_01_10_13_54_13_1046)_504_0.png
+2024-03-22 20:06:12,112 folder path :Images
+2024-03-22 20:06:12,112 Calling Image result
+2024-03-22 20:06:12,112 is all_page_result is instance of dict? True
+2024-03-22 20:06:12,112 STREAM b'IHDR' 16 13
+2024-03-22 20:06:12,112 STREAM b'IDAT' 41 33152
+2024-03-22 20:06:12,148 is words is instance of list? True
+2024-03-22 20:06:12,149 is bboxes is instance of list? True
+2024-03-22 20:06:12,149 is bounding_boxes is instance of list? True
+2024-03-22 20:06:12,421 is input_id_chunks is instance of list? True
+2024-03-22 20:06:12,421 is mask_chunks is instance of list? True
+2024-03-22 20:06:12,421 is bbox_chunks is instance of list? True
+2024-03-22 20:06:12,421 is image_chunks is instance of list? True
+2024-03-22 20:06:12,422 is input_dict is instance of dict? True
+2024-03-22 20:06:14,327 Model Called
+2024-03-22 20:06:14,328 RAM memory 64.4 used for Proforma_Invoice(2013_01_10_13_54_13_1046)_504_0.png:
+2024-03-22 20:06:14,328 is all_predictions is instance of list? True
+2024-03-22 20:06:14,328 is all_boxes is instance of list? True
+2024-03-22 20:06:14,328 is all_confidences is instance of list? True
+2024-03-22 20:06:14,328 is all_text is instance of list? True
+2024-03-22 20:06:14,328 is label2id is instance of dict? True
+2024-03-22 20:06:14,328 is id2label is instance of dict? True
+2024-03-22 20:06:14,329 is label2color is instance of dict? True
+2024-03-22 20:06:14,329 label2color : {'declaration_by_issuer': '#51291A', 'pre-carriage-by': '#4980A2', 'order_date': '#B451CB', 'vessel_name': '#28D908', 'invoice_no': '#9A712D', 'signature': '#98AA43', 'final_destination': '#338F3A', 'country_of_origin_of_goods': '#9A329D', 'exporter_our_ref_no': '#44F04E', 'gross_weight': '#01E269', 'beneficiary_bank_swift': '#773BCE', 'remitter_country': '#2DEA79', 'notify_party_name': '#29F316', 'cosignee_name': '#21EFF7', 'original_or_copy': '#8D536E', 'total_quantity_of_goods': '#57F725', 'invoice_amount': '#190D80', 'incoterm': '#6512B8', 'signed_by': '#C13B01', 'from': '#F4A4DC', 'beneficiary_drawer_exporter_seller_supplier_tin': '#C4B41E', 'invoice_currency': '#79AC09', 'consignor_name': '#E8740A', 'advance_amount': '#80B899', 'importer_your_ref_no': '#4326A7', 'invoice_due_date': '#E2ECEF', 'unit': '#0BA0D0', 'shipment_date': '#5E7690', 'mode_of_despatch': '#052CE3', 'purchase_order_no_and_agreement_ref_no': '#B06CBE', 'consignor_address': '#33E1DE', 'hs_code_no': '#713DCE', 'date_of_invoice': '#36A41F', 'presentation_period': '#FE93C9', 'invoice_tax_amount': '#E31F25', 'beneficiary_drawer_exporter_seller_supplier_name': '#A78913', 'O': '#C029E4', 'port_of_discharge': '#D92F62', 'to': '#11AECF', 'delivery_terms': '#B99556', 'tolerance_of_quantity': '#1814AD', 'goods_description': '#33D2C5', 'consignee_address': '#FFA590', 'shipper_address': '#3BFDB6', 'beneficiary_account_number': '#1DB940', 'net_weight': '#87F1FB', 'invoice_amount_in_words': '#11A0BF', 'port_of_loading': '#CDFE9F', 'drawer_ref_no': '#1D6396', 'place_of_receipt': '#F0BCF0', 'rate_per_unit': '#367119', 'amount_due': '#CC9E25', 'page_no': '#CF834C', 'shipper_name': '#665B71', 'total_pages': '#E64D2C', 'packaging_description': '#9FDF3D', 'beneficiary_bank_name': '#1002B7', 'remitter_drawee_applicant_importer_buyer_name': '#0E8CE9', 'transport_details': '#34C5D6', 'beneficiary_bank_country': '#9181A0', 'country_of_final_destination': '#56876D', 'transhipment': '#647EBA', 'beneficiary_address': '#FE5206', 'payment_terms': '#A6683A'}
+2024-03-22 20:06:14,504 is result_set is instance of dict? True
+2024-03-22 20:06:14,505 is final_result_set is instance of dict? True
+2024-03-22 20:06:14,779 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_54_13_1046)_504_0.png:0:00:02.666310
+2024-03-22 20:06:14,931 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_54_13_1046)_504_0.png
+2024-03-22 20:06:14,932 RAM memory 64.3 used for Proforma_Invoice(2013_01_10_13_54_13_1046)_504_0.png Generating All Pages:
+2024-03-22 20:06:14,932 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_54_13_1046)_504_0.png1:0:00:02.819718
+2024-03-22 20:06:15,074 file name is:Proforma_Invoice_13_0.png
+2024-03-22 20:06:15,075 folder path :Images
+2024-03-22 20:06:15,075 Calling Image result
+2024-03-22 20:06:15,075 is all_page_result is instance of dict? True
+2024-03-22 20:06:15,112 STREAM b'IHDR' 16 13
+2024-03-22 20:06:15,112 STREAM b'IDAT' 41 28022
+2024-03-22 20:06:15,155 is words is instance of list? True
+2024-03-22 20:06:15,155 is bboxes is instance of list? True
+2024-03-22 20:06:15,155 is bounding_boxes is instance of list? True
+2024-03-22 20:06:15,428 is input_id_chunks is instance of list? True
+2024-03-22 20:06:15,429 is mask_chunks is instance of list? True
+2024-03-22 20:06:15,429 is bbox_chunks is instance of list? True
+2024-03-22 20:06:15,429 is image_chunks is instance of list? True
+2024-03-22 20:06:15,429 is input_dict is instance of dict? True
+2024-03-22 20:06:17,275 Model Called
+2024-03-22 20:06:17,276 RAM memory 64.3 used for Proforma_Invoice_13_0.png:
+2024-03-22 20:06:17,276 is all_predictions is instance of list? True
+2024-03-22 20:06:17,276 is all_boxes is instance of list? True
+2024-03-22 20:06:17,276 is all_confidences is instance of list? True
+2024-03-22 20:06:17,276 is all_text is instance of list? True
+2024-03-22 20:06:17,276 is label2id is instance of dict? True
+2024-03-22 20:06:17,276 is id2label is instance of dict? True
+2024-03-22 20:06:17,277 is label2color is instance of dict? True
+2024-03-22 20:06:17,277 label2color : {'declaration_by_issuer': '#D542F8', 'pre-carriage-by': '#96F758', 'order_date': '#9F2401', 'vessel_name': '#BB9312', 'invoice_no': '#494E90', 'signature': '#3D45CD', 'final_destination': '#77C466', 'country_of_origin_of_goods': '#364A0B', 'exporter_our_ref_no': '#AAFD57', 'gross_weight': '#D84F05', 'beneficiary_bank_swift': '#C1F0FE', 'remitter_country': '#298BD0', 'notify_party_name': '#E22F07', 'cosignee_name': '#55CE21', 'original_or_copy': '#CEB6DB', 'total_quantity_of_goods': '#240767', 'invoice_amount': '#D88542', 'incoterm': '#47E725', 'signed_by': '#9B9784', 'from': '#02C9C1', 'beneficiary_drawer_exporter_seller_supplier_tin': '#76F75F', 'invoice_currency': '#C49C47', 'consignor_name': '#FD5DDF', 'advance_amount': '#62612E', 'importer_your_ref_no': '#065554', 'invoice_due_date': '#753E76', 'unit': '#D3CC34', 'shipment_date': '#1DBE47', 'mode_of_despatch': '#A45915', 'purchase_order_no_and_agreement_ref_no': '#DDBD31', 'consignor_address': '#0A5D66', 'hs_code_no': '#FC1F90', 'date_of_invoice': '#D84641', 'presentation_period': '#E34D90', 'invoice_tax_amount': '#018DD6', 'beneficiary_drawer_exporter_seller_supplier_name': '#AC6682', 'O': '#245D18', 'port_of_discharge': '#87FA05', 'to': '#64BB0A', 'delivery_terms': '#1AAB71', 'tolerance_of_quantity': '#9E98D8', 'goods_description': '#852BD6', 'consignee_address': '#F3529F', 'shipper_address': '#245A8B', 'beneficiary_account_number': '#56EDA8', 'net_weight': '#F3BE96', 'invoice_amount_in_words': '#7A6832', 'port_of_loading': '#EF0B9A', 'drawer_ref_no': '#22C4A2', 'place_of_receipt': '#B8A4E2', 'rate_per_unit': '#977D28', 'amount_due': '#6B1F13', 'page_no': '#8AF314', 'shipper_name': '#06932E', 'total_pages': '#E8D486', 'packaging_description': '#4ABE8B', 'beneficiary_bank_name': '#28E1F4', 'remitter_drawee_applicant_importer_buyer_name': '#D9F932', 'transport_details': '#5C6705', 'beneficiary_bank_country': '#606E23', 'country_of_final_destination': '#885677', 'transhipment': '#C44E87', 'beneficiary_address': '#A6CD1D', 'payment_terms': '#3C9633'}
+2024-03-22 20:06:17,498 is result_set is instance of dict? True
+2024-03-22 20:06:17,500 is final_result_set is instance of dict? True
+2024-03-22 20:06:17,630 Time taken for page 1 of Proforma_Invoice_13_0.png:0:00:02.517499
+2024-03-22 20:06:17,825 *****Generated All Pages****** for Proforma_Invoice_13_0.png
+2024-03-22 20:06:17,826 RAM memory 64.6 used for Proforma_Invoice_13_0.png Generating All Pages:
+2024-03-22 20:06:17,826 Processing time taken for all pages of Proforma_Invoice_13_0.png1:0:00:02.750893
+2024-03-22 20:06:18,024 file name is:Proforma_Invoice(2013_01_10_13_51_47_2086)_495_0.png
+2024-03-22 20:06:18,024 folder path :Images
+2024-03-22 20:06:18,024 Calling Image result
+2024-03-22 20:06:18,024 is all_page_result is instance of dict? True
+2024-03-22 20:06:18,025 STREAM b'IHDR' 16 13
+2024-03-22 20:06:18,025 STREAM b'IDAT' 41 33163
+2024-03-22 20:06:18,077 is words is instance of list? True
+2024-03-22 20:06:18,077 is bboxes is instance of list? True
+2024-03-22 20:06:18,078 is bounding_boxes is instance of list? True
+2024-03-22 20:06:18,433 is input_id_chunks is instance of list? True
+2024-03-22 20:06:18,433 is mask_chunks is instance of list? True
+2024-03-22 20:06:18,433 is bbox_chunks is instance of list? True
+2024-03-22 20:06:18,433 is image_chunks is instance of list? True
+2024-03-22 20:06:18,434 is input_dict is instance of dict? True
+2024-03-22 20:06:20,434 Model Called
+2024-03-22 20:06:20,434 RAM memory 64.4 used for Proforma_Invoice(2013_01_10_13_51_47_2086)_495_0.png:
+2024-03-22 20:06:20,434 is all_predictions is instance of list? True
+2024-03-22 20:06:20,434 is all_boxes is instance of list? True
+2024-03-22 20:06:20,434 is all_confidences is instance of list? True
+2024-03-22 20:06:20,434 is all_text is instance of list? True
+2024-03-22 20:06:20,435 is label2id is instance of dict? True
+2024-03-22 20:06:20,435 is id2label is instance of dict? True
+2024-03-22 20:06:20,436 is label2color is instance of dict? True
+2024-03-22 20:06:20,436 label2color : {'declaration_by_issuer': '#AA45C5', 'pre-carriage-by': '#EDD2C6', 'order_date': '#857F40', 'vessel_name': '#D529CA', 'invoice_no': '#959A60', 'signature': '#48CBE2', 'final_destination': '#587A0F', 'country_of_origin_of_goods': '#807755', 'exporter_our_ref_no': '#A60140', 'gross_weight': '#BDCA96', 'beneficiary_bank_swift': '#369488', 'remitter_country': '#4C2D7F', 'notify_party_name': '#54CA0A', 'cosignee_name': '#78E731', 'original_or_copy': '#A90233', 'total_quantity_of_goods': '#F4CEE1', 'invoice_amount': '#1F0EDD', 'incoterm': '#F3CFCF', 'signed_by': '#75BE9B', 'from': '#952B56', 'beneficiary_drawer_exporter_seller_supplier_tin': '#594063', 'invoice_currency': '#0EF4D5', 'consignor_name': '#F9206D', 'advance_amount': '#19FAED', 'importer_your_ref_no': '#68D8EA', 'invoice_due_date': '#1ED3CA', 'unit': '#4D5095', 'shipment_date': '#0E532D', 'mode_of_despatch': '#C447DB', 'purchase_order_no_and_agreement_ref_no': '#69E39F', 'consignor_address': '#D38AF1', 'hs_code_no': '#0B6933', 'date_of_invoice': '#5024D4', 'presentation_period': '#C44F27', 'invoice_tax_amount': '#26BEBF', 'beneficiary_drawer_exporter_seller_supplier_name': '#352F66', 'O': '#BC10C5', 'port_of_discharge': '#6A9448', 'to': '#852571', 'delivery_terms': '#17AF98', 'tolerance_of_quantity': '#AB5204', 'goods_description': '#F002B3', 'consignee_address': '#702122', 'shipper_address': '#219E5F', 'beneficiary_account_number': '#6E2FE8', 'net_weight': '#12671E', 'invoice_amount_in_words': '#D75B05', 'port_of_loading': '#1FF309', 'drawer_ref_no': '#222677', 'place_of_receipt': '#4D3CBD', 'rate_per_unit': '#3812E6', 'amount_due': '#2E9D1B', 'page_no': '#C53C55', 'shipper_name': '#51A9F5', 'total_pages': '#600CDC', 'packaging_description': '#17B920', 'beneficiary_bank_name': '#F47ADD', 'remitter_drawee_applicant_importer_buyer_name': '#71C042', 'transport_details': '#B905C6', 'beneficiary_bank_country': '#F2FDFD', 'country_of_final_destination': '#E77465', 'transhipment': '#9085F7', 'beneficiary_address': '#4DDF1F', 'payment_terms': '#013063'}
+2024-03-22 20:06:20,644 is result_set is instance of dict? True
+2024-03-22 20:06:20,646 is final_result_set is instance of dict? True
+2024-03-22 20:06:21,033 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_51_47_2086)_495_0.png:0:00:03.007873
+2024-03-22 20:06:21,187 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_51_47_2086)_495_0.png
+2024-03-22 20:06:21,188 RAM memory 64.5 used for Proforma_Invoice(2013_01_10_13_51_47_2086)_495_0.png Generating All Pages:
+2024-03-22 20:06:21,188 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_51_47_2086)_495_0.png1:0:00:03.163473
+2024-03-22 20:06:21,337 file name is:Proforma_Invoice(2013_01_10_13_52_23_1384)_513_0.png
+2024-03-22 20:06:21,337 folder path :Images
+2024-03-22 20:06:21,337 Calling Image result
+2024-03-22 20:06:21,337 is all_page_result is instance of dict? True
+2024-03-22 20:06:21,348 STREAM b'IHDR' 16 13
+2024-03-22 20:06:21,348 STREAM b'IDAT' 41 34477
+2024-03-22 20:06:21,386 is words is instance of list? True
+2024-03-22 20:06:21,386 is bboxes is instance of list? True
+2024-03-22 20:06:21,386 is bounding_boxes is instance of list? True
+2024-03-22 20:06:21,625 is input_id_chunks is instance of list? True
+2024-03-22 20:06:21,625 is mask_chunks is instance of list? True
+2024-03-22 20:06:21,625 is bbox_chunks is instance of list? True
+2024-03-22 20:06:21,625 is image_chunks is instance of list? True
+2024-03-22 20:06:21,626 is input_dict is instance of dict? True
+2024-03-22 20:06:23,350 Model Called
+2024-03-22 20:06:23,351 RAM memory 65.0 used for Proforma_Invoice(2013_01_10_13_52_23_1384)_513_0.png:
+2024-03-22 20:06:23,351 is all_predictions is instance of list? True
+2024-03-22 20:06:23,351 is all_boxes is instance of list? True
+2024-03-22 20:06:23,351 is all_confidences is instance of list? True
+2024-03-22 20:06:23,351 is all_text is instance of list? True
+2024-03-22 20:06:23,351 is label2id is instance of dict? True
+2024-03-22 20:06:23,351 is id2label is instance of dict? True
+2024-03-22 20:06:23,352 is label2color is instance of dict? True
+2024-03-22 20:06:23,352 label2color : {'declaration_by_issuer': '#A8B2AE', 'pre-carriage-by': '#2A424B', 'order_date': '#969EF3', 'vessel_name': '#D16BE7', 'invoice_no': '#9379D6', 'signature': '#280D17', 'final_destination': '#EB1E80', 'country_of_origin_of_goods': '#35E3B6', 'exporter_our_ref_no': '#82CAEF', 'gross_weight': '#5A97B5', 'beneficiary_bank_swift': '#367170', 'remitter_country': '#D80768', 'notify_party_name': '#AD577C', 'cosignee_name': '#49BC0F', 'original_or_copy': '#242C15', 'total_quantity_of_goods': '#893F45', 'invoice_amount': '#12F302', 'incoterm': '#B1D7B4', 'signed_by': '#3D65DE', 'from': '#294300', 'beneficiary_drawer_exporter_seller_supplier_tin': '#BD10FC', 'invoice_currency': '#2BD428', 'consignor_name': '#10CF6C', 'advance_amount': '#358DA2', 'importer_your_ref_no': '#D89A8A', 'invoice_due_date': '#AD6E46', 'unit': '#C979DA', 'shipment_date': '#C8DF82', 'mode_of_despatch': '#1DFE9B', 'purchase_order_no_and_agreement_ref_no': '#62BDB4', 'consignor_address': '#5BB892', 'hs_code_no': '#8CB01B', 'date_of_invoice': '#15B2D2', 'presentation_period': '#84873C', 'invoice_tax_amount': '#14EB7A', 'beneficiary_drawer_exporter_seller_supplier_name': '#BBDAC1', 'O': '#E2D7A1', 'port_of_discharge': '#337426', 'to': '#9DC864', 'delivery_terms': '#C5ECAC', 'tolerance_of_quantity': '#F38994', 'goods_description': '#26314F', 'consignee_address': '#B48929', 'shipper_address': '#5BCD65', 'beneficiary_account_number': '#0AB71A', 'net_weight': '#1BDA3E', 'invoice_amount_in_words': '#DC1278', 'port_of_loading': '#A007C8', 'drawer_ref_no': '#FCB75D', 'place_of_receipt': '#801697', 'rate_per_unit': '#794D1C', 'amount_due': '#91E04F', 'page_no': '#BA9055', 'shipper_name': '#33D325', 'total_pages': '#820D16', 'packaging_description': '#F82BAB', 'beneficiary_bank_name': '#1CCBFB', 'remitter_drawee_applicant_importer_buyer_name': '#01D1F5', 'transport_details': '#59EADF', 'beneficiary_bank_country': '#10269E', 'country_of_final_destination': '#694051', 'transhipment': '#9D174C', 'beneficiary_address': '#447B26', 'payment_terms': '#71836C'}
+2024-03-22 20:06:23,539 is result_set is instance of dict? True
+2024-03-22 20:06:23,541 is final_result_set is instance of dict? True
+2024-03-22 20:06:23,776 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_52_23_1384)_513_0.png:0:00:02.428015
+2024-03-22 20:06:23,925 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_52_23_1384)_513_0.png
+2024-03-22 20:06:23,925 RAM memory 65.0 used for Proforma_Invoice(2013_01_10_13_52_23_1384)_513_0.png Generating All Pages:
+2024-03-22 20:06:23,925 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_52_23_1384)_513_0.png1:0:00:02.588174
+2024-03-22 20:06:24,047 file name is:Proforma_Invoice_19_3.png
+2024-03-22 20:06:24,047 folder path :Images
+2024-03-22 20:06:24,047 Calling Image result
+2024-03-22 20:06:24,047 is all_page_result is instance of dict? True
+2024-03-22 20:06:24,085 STREAM b'IHDR' 16 13
+2024-03-22 20:06:24,085 STREAM b'IDAT' 41 25551
+2024-03-22 20:06:24,124 is words is instance of list? True
+2024-03-22 20:06:24,124 is bboxes is instance of list? True
+2024-03-22 20:06:24,124 is bounding_boxes is instance of list? True
+2024-03-22 20:06:24,342 is input_id_chunks is instance of list? True
+2024-03-22 20:06:24,342 is mask_chunks is instance of list? True
+2024-03-22 20:06:24,342 is bbox_chunks is instance of list? True
+2024-03-22 20:06:24,342 is image_chunks is instance of list? True
+2024-03-22 20:06:24,343 is input_dict is instance of dict? True
+2024-03-22 20:06:25,839 Model Called
+2024-03-22 20:06:25,840 RAM memory 64.9 used for Proforma_Invoice_19_3.png:
+2024-03-22 20:06:25,840 is all_predictions is instance of list? True
+2024-03-22 20:06:25,840 is all_boxes is instance of list? True
+2024-03-22 20:06:25,840 is all_confidences is instance of list? True
+2024-03-22 20:06:25,840 is all_text is instance of list? True
+2024-03-22 20:06:25,841 is label2id is instance of dict? True
+2024-03-22 20:06:25,841 is id2label is instance of dict? True
+2024-03-22 20:06:25,843 is label2color is instance of dict? True
+2024-03-22 20:06:25,844 label2color : {'declaration_by_issuer': '#CBFB0D', 'pre-carriage-by': '#F94318', 'order_date': '#6E2CA9', 'vessel_name': '#557B1C', 'invoice_no': '#60F158', 'signature': '#24D21B', 'final_destination': '#EAE5FB', 'country_of_origin_of_goods': '#88C147', 'exporter_our_ref_no': '#07D1CB', 'gross_weight': '#47A363', 'beneficiary_bank_swift': '#89977E', 'remitter_country': '#777817', 'notify_party_name': '#966B17', 'cosignee_name': '#432AB8', 'original_or_copy': '#F0C1D6', 'total_quantity_of_goods': '#B692AD', 'invoice_amount': '#35D960', 'incoterm': '#8D78AF', 'signed_by': '#D2970E', 'from': '#A63FDB', 'beneficiary_drawer_exporter_seller_supplier_tin': '#0F96FC', 'invoice_currency': '#2B94DC', 'consignor_name': '#46779C', 'advance_amount': '#9E6B8B', 'importer_your_ref_no': '#9D5408', 'invoice_due_date': '#60A7EA', 'unit': '#095631', 'shipment_date': '#106AC9', 'mode_of_despatch': '#E6B428', 'purchase_order_no_and_agreement_ref_no': '#D893A6', 'consignor_address': '#30109B', 'hs_code_no': '#14CE60', 'date_of_invoice': '#396875', 'presentation_period': '#86F19E', 'invoice_tax_amount': '#5370F2', 'beneficiary_drawer_exporter_seller_supplier_name': '#321E79', 'O': '#8142A2', 'port_of_discharge': '#C6BB6C', 'to': '#A5BAD5', 'delivery_terms': '#32DBB5', 'tolerance_of_quantity': '#993814', 'goods_description': '#39869E', 'consignee_address': '#B933D4', 'shipper_address': '#CABD97', 'beneficiary_account_number': '#1CF36B', 'net_weight': '#821EC6', 'invoice_amount_in_words': '#0FA3B6', 'port_of_loading': '#662946', 'drawer_ref_no': '#56459E', 'place_of_receipt': '#7AE1D7', 'rate_per_unit': '#BD7EBD', 'amount_due': '#2464CF', 'page_no': '#76EF3E', 'shipper_name': '#5D4826', 'total_pages': '#4E2226', 'packaging_description': '#E5BB87', 'beneficiary_bank_name': '#B5DDDC', 'remitter_drawee_applicant_importer_buyer_name': '#6FF47B', 'transport_details': '#EA2053', 'beneficiary_bank_country': '#EFA5D8', 'country_of_final_destination': '#A5C13D', 'transhipment': '#EBF9B7', 'beneficiary_address': '#64421F', 'payment_terms': '#2E403F'}
+2024-03-22 20:06:26,004 is result_set is instance of dict? True
+2024-03-22 20:06:26,005 is final_result_set is instance of dict? True
+2024-03-22 20:06:26,140 Time taken for page 1 of Proforma_Invoice_19_3.png:0:00:02.055067
+2024-03-22 20:06:26,267 *****Generated All Pages****** for Proforma_Invoice_19_3.png
+2024-03-22 20:06:26,267 RAM memory 65.0 used for Proforma_Invoice_19_3.png Generating All Pages:
+2024-03-22 20:06:26,267 Processing time taken for all pages of Proforma_Invoice_19_3.png1:0:00:02.219620
+2024-03-22 20:06:26,384 file name is:Proforma_Invoice_19_1.png
+2024-03-22 20:06:26,384 folder path :Images
+2024-03-22 20:06:26,385 Calling Image result
+2024-03-22 20:06:26,385 is all_page_result is instance of dict? True
+2024-03-22 20:06:26,395 STREAM b'IHDR' 16 13
+2024-03-22 20:06:26,395 STREAM b'IDAT' 41 31743
+2024-03-22 20:06:26,430 is words is instance of list? True
+2024-03-22 20:06:26,430 is bboxes is instance of list? True
+2024-03-22 20:06:26,430 is bounding_boxes is instance of list? True
+2024-03-22 20:06:26,640 is input_id_chunks is instance of list? True
+2024-03-22 20:06:26,640 is mask_chunks is instance of list? True
+2024-03-22 20:06:26,640 is bbox_chunks is instance of list? True
+2024-03-22 20:06:26,640 is image_chunks is instance of list? True
+2024-03-22 20:06:26,641 is input_dict is instance of dict? True
+2024-03-22 20:06:28,122 Model Called
+2024-03-22 20:06:28,122 RAM memory 64.9 used for Proforma_Invoice_19_1.png:
+2024-03-22 20:06:28,122 is all_predictions is instance of list? True
+2024-03-22 20:06:28,122 is all_boxes is instance of list? True
+2024-03-22 20:06:28,122 is all_confidences is instance of list? True
+2024-03-22 20:06:28,122 is all_text is instance of list? True
+2024-03-22 20:06:28,123 is label2id is instance of dict? True
+2024-03-22 20:06:28,123 is id2label is instance of dict? True
+2024-03-22 20:06:28,124 is label2color is instance of dict? True
+2024-03-22 20:06:28,125 label2color : {'declaration_by_issuer': '#3A80F3', 'pre-carriage-by': '#B06BD4', 'order_date': '#9876C8', 'vessel_name': '#DE38EF', 'invoice_no': '#8CB8BC', 'signature': '#C18579', 'final_destination': '#7BF983', 'country_of_origin_of_goods': '#9CB736', 'exporter_our_ref_no': '#3A06A3', 'gross_weight': '#42F1CE', 'beneficiary_bank_swift': '#BE11BB', 'remitter_country': '#9EE2FA', 'notify_party_name': '#8BE461', 'cosignee_name': '#89D238', 'original_or_copy': '#5B5C45', 'total_quantity_of_goods': '#715ECD', 'invoice_amount': '#26C653', 'incoterm': '#C75A2A', 'signed_by': '#E94B18', 'from': '#337332', 'beneficiary_drawer_exporter_seller_supplier_tin': '#DC4E75', 'invoice_currency': '#A58FB5', 'consignor_name': '#66021B', 'advance_amount': '#8A26E0', 'importer_your_ref_no': '#156B49', 'invoice_due_date': '#62E54A', 'unit': '#AEF1E2', 'shipment_date': '#A0C4CF', 'mode_of_despatch': '#82A57D', 'purchase_order_no_and_agreement_ref_no': '#18F225', 'consignor_address': '#2C32AD', 'hs_code_no': '#D0B9D7', 'date_of_invoice': '#A20D12', 'presentation_period': '#F502B0', 'invoice_tax_amount': '#FA5852', 'beneficiary_drawer_exporter_seller_supplier_name': '#BB3497', 'O': '#BE776F', 'port_of_discharge': '#68D786', 'to': '#6285CA', 'delivery_terms': '#03E424', 'tolerance_of_quantity': '#D46AE8', 'goods_description': '#31841F', 'consignee_address': '#43D195', 'shipper_address': '#4EFB97', 'beneficiary_account_number': '#8BBEA7', 'net_weight': '#4EE97E', 'invoice_amount_in_words': '#B8B202', 'port_of_loading': '#3BFF5F', 'drawer_ref_no': '#DF33AC', 'place_of_receipt': '#831F28', 'rate_per_unit': '#6D5B34', 'amount_due': '#21EB57', 'page_no': '#966E5F', 'shipper_name': '#62EA77', 'total_pages': '#C02A0D', 'packaging_description': '#D4D316', 'beneficiary_bank_name': '#637CCC', 'remitter_drawee_applicant_importer_buyer_name': '#B73177', 'transport_details': '#1CB510', 'beneficiary_bank_country': '#002E3F', 'country_of_final_destination': '#DECF5B', 'transhipment': '#887D5C', 'beneficiary_address': '#05758F', 'payment_terms': '#A0D31F'}
+2024-03-22 20:06:28,316 is result_set is instance of dict? True
+2024-03-22 20:06:28,317 is final_result_set is instance of dict? True
+2024-03-22 20:06:28,562 Time taken for page 1 of Proforma_Invoice_19_1.png:0:00:02.166752
+2024-03-22 20:06:28,684 *****Generated All Pages****** for Proforma_Invoice_19_1.png
+2024-03-22 20:06:28,685 RAM memory 64.9 used for Proforma_Invoice_19_1.png Generating All Pages:
+2024-03-22 20:06:28,685 Processing time taken for all pages of Proforma_Invoice_19_1.png1:0:00:02.300115
+2024-03-22 20:06:28,799 file name is:Proforma_Invoice(2013_01_10_13_53_18_2898)_502_0.png
+2024-03-22 20:06:28,799 folder path :Images
+2024-03-22 20:06:28,799 Calling Image result
+2024-03-22 20:06:28,799 is all_page_result is instance of dict? True
+2024-03-22 20:06:28,809 STREAM b'IHDR' 16 13
+2024-03-22 20:06:28,810 STREAM b'IDAT' 41 34147
+2024-03-22 20:06:28,842 is words is instance of list? True
+2024-03-22 20:06:28,842 is bboxes is instance of list? True
+2024-03-22 20:06:28,842 is bounding_boxes is instance of list? True
+2024-03-22 20:06:29,066 is input_id_chunks is instance of list? True
+2024-03-22 20:06:29,066 is mask_chunks is instance of list? True
+2024-03-22 20:06:29,066 is bbox_chunks is instance of list? True
+2024-03-22 20:06:29,066 is image_chunks is instance of list? True
+2024-03-22 20:06:29,067 is input_dict is instance of dict? True
+2024-03-22 20:06:30,434 Model Called
+2024-03-22 20:06:30,435 RAM memory 64.9 used for Proforma_Invoice(2013_01_10_13_53_18_2898)_502_0.png:
+2024-03-22 20:06:30,435 is all_predictions is instance of list? True
+2024-03-22 20:06:30,435 is all_boxes is instance of list? True
+2024-03-22 20:06:30,435 is all_confidences is instance of list? True
+2024-03-22 20:06:30,435 is all_text is instance of list? True
+2024-03-22 20:06:30,435 is label2id is instance of dict? True
+2024-03-22 20:06:30,435 is id2label is instance of dict? True
+2024-03-22 20:06:30,436 is label2color is instance of dict? True
+2024-03-22 20:06:30,436 label2color : {'declaration_by_issuer': '#D9C85A', 'pre-carriage-by': '#6C9A2E', 'order_date': '#7CF5D9', 'vessel_name': '#D2645D', 'invoice_no': '#DBF425', 'signature': '#D710CF', 'final_destination': '#80D79E', 'country_of_origin_of_goods': '#E9A5F7', 'exporter_our_ref_no': '#1556CA', 'gross_weight': '#D4BB92', 'beneficiary_bank_swift': '#3D72A5', 'remitter_country': '#3862A2', 'notify_party_name': '#722A9E', 'cosignee_name': '#AE9513', 'original_or_copy': '#650E9A', 'total_quantity_of_goods': '#8667F7', 'invoice_amount': '#C10CD9', 'incoterm': '#8AA997', 'signed_by': '#9DD463', 'from': '#049258', 'beneficiary_drawer_exporter_seller_supplier_tin': '#A383C0', 'invoice_currency': '#ABD895', 'consignor_name': '#5AC6C2', 'advance_amount': '#48EDBD', 'importer_your_ref_no': '#511AD3', 'invoice_due_date': '#831DEF', 'unit': '#843219', 'shipment_date': '#A2A5BC', 'mode_of_despatch': '#318B7C', 'purchase_order_no_and_agreement_ref_no': '#BAF2C0', 'consignor_address': '#BB2282', 'hs_code_no': '#B5C8D1', 'date_of_invoice': '#71954B', 'presentation_period': '#F4FB07', 'invoice_tax_amount': '#E6B5D4', 'beneficiary_drawer_exporter_seller_supplier_name': '#21EFD2', 'O': '#564770', 'port_of_discharge': '#E883D8', 'to': '#D9CAC2', 'delivery_terms': '#36FE50', 'tolerance_of_quantity': '#B60139', 'goods_description': '#0BF071', 'consignee_address': '#3F9A02', 'shipper_address': '#F3482E', 'beneficiary_account_number': '#11EF2C', 'net_weight': '#20C3CF', 'invoice_amount_in_words': '#CFA1F9', 'port_of_loading': '#CA8038', 'drawer_ref_no': '#23A77E', 'place_of_receipt': '#A6BD50', 'rate_per_unit': '#30ECDA', 'amount_due': '#906268', 'page_no': '#F921DF', 'shipper_name': '#01480D', 'total_pages': '#DE7F54', 'packaging_description': '#637869', 'beneficiary_bank_name': '#7CE58D', 'remitter_drawee_applicant_importer_buyer_name': '#2C9C6D', 'transport_details': '#57E721', 'beneficiary_bank_country': '#254A03', 'country_of_final_destination': '#FBEF99', 'transhipment': '#978F4D', 'beneficiary_address': '#3C4E6F', 'payment_terms': '#02AC7C'}
+2024-03-22 20:06:30,599 is result_set is instance of dict? True
+2024-03-22 20:06:30,600 is final_result_set is instance of dict? True
+2024-03-22 20:06:30,815 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_53_18_2898)_502_0.png:0:00:02.005734
+2024-03-22 20:06:30,936 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_53_18_2898)_502_0.png
+2024-03-22 20:06:30,936 RAM memory 64.9 used for Proforma_Invoice(2013_01_10_13_53_18_2898)_502_0.png Generating All Pages:
+2024-03-22 20:06:30,936 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_53_18_2898)_502_0.png1:0:00:02.137073
+2024-03-22 20:06:31,054 file name is:Proforma_Invoice_3_0.png
+2024-03-22 20:06:31,054 folder path :Images
+2024-03-22 20:06:31,054 Calling Image result
+2024-03-22 20:06:31,054 is all_page_result is instance of dict? True
+2024-03-22 20:06:31,065 STREAM b'IHDR' 16 13
+2024-03-22 20:06:31,065 STREAM b'IDAT' 41 65536
+2024-03-22 20:06:31,101 is words is instance of list? True
+2024-03-22 20:06:31,101 is bboxes is instance of list? True
+2024-03-22 20:06:31,101 is bounding_boxes is instance of list? True
+2024-03-22 20:06:31,321 is input_id_chunks is instance of list? True
+2024-03-22 20:06:31,321 is mask_chunks is instance of list? True
+2024-03-22 20:06:31,321 is bbox_chunks is instance of list? True
+2024-03-22 20:06:31,321 is image_chunks is instance of list? True
+2024-03-22 20:06:31,322 is input_dict is instance of dict? True
+2024-03-22 20:06:33,023 Model Called
+2024-03-22 20:06:33,023 RAM memory 64.6 used for Proforma_Invoice_3_0.png:
+2024-03-22 20:06:33,023 is all_predictions is instance of list? True
+2024-03-22 20:06:33,023 is all_boxes is instance of list? True
+2024-03-22 20:06:33,023 is all_confidences is instance of list? True
+2024-03-22 20:06:33,023 is all_text is instance of list? True
+2024-03-22 20:06:33,024 is label2id is instance of dict? True
+2024-03-22 20:06:33,024 is id2label is instance of dict? True
+2024-03-22 20:06:33,025 is label2color is instance of dict? True
+2024-03-22 20:06:33,025 label2color : {'declaration_by_issuer': '#57EEC3', 'pre-carriage-by': '#24EFCA', 'order_date': '#E5968C', 'vessel_name': '#1C9658', 'invoice_no': '#47BFC7', 'signature': '#DB8C1A', 'final_destination': '#623563', 'country_of_origin_of_goods': '#6B84B1', 'exporter_our_ref_no': '#78FFCA', 'gross_weight': '#5DD991', 'beneficiary_bank_swift': '#2263F3', 'remitter_country': '#6049D7', 'notify_party_name': '#C20854', 'cosignee_name': '#85B2B7', 'original_or_copy': '#FA85CF', 'total_quantity_of_goods': '#05475D', 'invoice_amount': '#651CE1', 'incoterm': '#FFA5B9', 'signed_by': '#827516', 'from': '#87FEB0', 'beneficiary_drawer_exporter_seller_supplier_tin': '#6EF683', 'invoice_currency': '#D610B9', 'consignor_name': '#DB3A8D', 'advance_amount': '#2DACE9', 'importer_your_ref_no': '#1B4F7B', 'invoice_due_date': '#AC43DB', 'unit': '#668877', 'shipment_date': '#D92FC8', 'mode_of_despatch': '#D2D1AB', 'purchase_order_no_and_agreement_ref_no': '#415039', 'consignor_address': '#DDD6F7', 'hs_code_no': '#7F30AF', 'date_of_invoice': '#9BB18F', 'presentation_period': '#36FDD1', 'invoice_tax_amount': '#71E003', 'beneficiary_drawer_exporter_seller_supplier_name': '#61FFBF', 'O': '#DB149A', 'port_of_discharge': '#C594A8', 'to': '#5E4CF3', 'delivery_terms': '#F1C86F', 'tolerance_of_quantity': '#CC2558', 'goods_description': '#61EB24', 'consignee_address': '#D5DDFC', 'shipper_address': '#D4087B', 'beneficiary_account_number': '#195366', 'net_weight': '#25A273', 'invoice_amount_in_words': '#FE816A', 'port_of_loading': '#D24418', 'drawer_ref_no': '#253339', 'place_of_receipt': '#876965', 'rate_per_unit': '#0A4787', 'amount_due': '#CC4380', 'page_no': '#DAD012', 'shipper_name': '#96452B', 'total_pages': '#B22A7E', 'packaging_description': '#F18472', 'beneficiary_bank_name': '#D75AB0', 'remitter_drawee_applicant_importer_buyer_name': '#2E94BC', 'transport_details': '#171BC6', 'beneficiary_bank_country': '#27DFC5', 'country_of_final_destination': '#53ECF5', 'transhipment': '#BABAEA', 'beneficiary_address': '#B1448A', 'payment_terms': '#191932'}
+2024-03-22 20:06:33,232 is result_set is instance of dict? True
+2024-03-22 20:06:33,233 is final_result_set is instance of dict? True
+2024-03-22 20:06:33,451 Time taken for page 1 of Proforma_Invoice_3_0.png:0:00:02.385310
+2024-03-22 20:06:33,866 *****Generated All Pages****** for Proforma_Invoice_3_0.png
+2024-03-22 20:06:33,866 RAM memory 64.5 used for Proforma_Invoice_3_0.png Generating All Pages:
+2024-03-22 20:06:33,866 Processing time taken for all pages of Proforma_Invoice_3_0.png1:0:00:02.811592
+2024-03-22 20:06:34,056 file name is:Proforma_Invoice(2013_01_10_13_55_22_4671)_548_0.png
+2024-03-22 20:06:34,057 folder path :Images
+2024-03-22 20:06:34,057 Calling Image result
+2024-03-22 20:06:34,057 is all_page_result is instance of dict? True
+2024-03-22 20:06:34,067 STREAM b'IHDR' 16 13
+2024-03-22 20:06:34,068 STREAM b'IDAT' 41 37426
+2024-03-22 20:06:34,108 is words is instance of list? True
+2024-03-22 20:06:34,108 is bboxes is instance of list? True
+2024-03-22 20:06:34,108 is bounding_boxes is instance of list? True
+2024-03-22 20:06:34,422 is input_id_chunks is instance of list? True
+2024-03-22 20:06:34,422 is mask_chunks is instance of list? True
+2024-03-22 20:06:34,422 is bbox_chunks is instance of list? True
+2024-03-22 20:06:34,422 is image_chunks is instance of list? True
+2024-03-22 20:06:34,423 is input_dict is instance of dict? True
+2024-03-22 20:06:36,244 Model Called
+2024-03-22 20:06:36,245 RAM memory 64.4 used for Proforma_Invoice(2013_01_10_13_55_22_4671)_548_0.png:
+2024-03-22 20:06:36,245 is all_predictions is instance of list? True
+2024-03-22 20:06:36,245 is all_boxes is instance of list? True
+2024-03-22 20:06:36,245 is all_confidences is instance of list? True
+2024-03-22 20:06:36,245 is all_text is instance of list? True
+2024-03-22 20:06:36,245 is label2id is instance of dict? True
+2024-03-22 20:06:36,245 is id2label is instance of dict? True
+2024-03-22 20:06:36,246 is label2color is instance of dict? True
+2024-03-22 20:06:36,246 label2color : {'declaration_by_issuer': '#A2BA60', 'pre-carriage-by': '#2AF3B8', 'order_date': '#D58DA1', 'vessel_name': '#E57730', 'invoice_no': '#B5DA85', 'signature': '#D1129C', 'final_destination': '#89B6D2', 'country_of_origin_of_goods': '#45C0E9', 'exporter_our_ref_no': '#AD7F7C', 'gross_weight': '#ADD2B5', 'beneficiary_bank_swift': '#4E8628', 'remitter_country': '#CA2A25', 'notify_party_name': '#9858D6', 'cosignee_name': '#4D6CEB', 'original_or_copy': '#3EB4E6', 'total_quantity_of_goods': '#A993C7', 'invoice_amount': '#622327', 'incoterm': '#CEEDF1', 'signed_by': '#701BEF', 'from': '#536CD1', 'beneficiary_drawer_exporter_seller_supplier_tin': '#BFC00E', 'invoice_currency': '#235D88', 'consignor_name': '#20CC24', 'advance_amount': '#6E2EE6', 'importer_your_ref_no': '#9177FF', 'invoice_due_date': '#B52D5E', 'unit': '#AAFF31', 'shipment_date': '#18B66D', 'mode_of_despatch': '#901ADE', 'purchase_order_no_and_agreement_ref_no': '#9DC380', 'consignor_address': '#61FD61', 'hs_code_no': '#75E1E6', 'date_of_invoice': '#EE4B02', 'presentation_period': '#B5F1F8', 'invoice_tax_amount': '#A3C253', 'beneficiary_drawer_exporter_seller_supplier_name': '#2C6C4B', 'O': '#A8362F', 'port_of_discharge': '#AFF174', 'to': '#14F12E', 'delivery_terms': '#7E4CA4', 'tolerance_of_quantity': '#4B6C37', 'goods_description': '#77BF38', 'consignee_address': '#B07F68', 'shipper_address': '#31932D', 'beneficiary_account_number': '#669111', 'net_weight': '#84F608', 'invoice_amount_in_words': '#BC4BDA', 'port_of_loading': '#E60897', 'drawer_ref_no': '#4735E0', 'place_of_receipt': '#93B19F', 'rate_per_unit': '#259D91', 'amount_due': '#AD2111', 'page_no': '#A68FC6', 'shipper_name': '#051EE2', 'total_pages': '#9F11FC', 'packaging_description': '#A9C352', 'beneficiary_bank_name': '#D50519', 'remitter_drawee_applicant_importer_buyer_name': '#15DA96', 'transport_details': '#731DA6', 'beneficiary_bank_country': '#A9DD36', 'country_of_final_destination': '#92F887', 'transhipment': '#77AF85', 'beneficiary_address': '#A702EE', 'payment_terms': '#D64197'}
+2024-03-22 20:06:36,385 is result_set is instance of dict? True
+2024-03-22 20:06:36,386 is final_result_set is instance of dict? True
+2024-03-22 20:06:36,601 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_55_22_4671)_548_0.png:0:00:02.533262
+2024-03-22 20:06:36,744 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_55_22_4671)_548_0.png
+2024-03-22 20:06:36,744 RAM memory 64.4 used for Proforma_Invoice(2013_01_10_13_55_22_4671)_548_0.png Generating All Pages:
+2024-03-22 20:06:36,744 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_55_22_4671)_548_0.png1:0:00:02.687412
+2024-03-22 20:06:36,859 file name is:Proforma_Invoice(2013_01_10_13_51_25_9844)_494_0.png
+2024-03-22 20:06:36,859 folder path :Images
+2024-03-22 20:06:36,859 Calling Image result
+2024-03-22 20:06:36,859 is all_page_result is instance of dict? True
+2024-03-22 20:06:36,897 STREAM b'IHDR' 16 13
+2024-03-22 20:06:36,897 STREAM b'IDAT' 41 35212
+2024-03-22 20:06:36,935 is words is instance of list? True
+2024-03-22 20:06:36,935 is bboxes is instance of list? True
+2024-03-22 20:06:36,935 is bounding_boxes is instance of list? True
+2024-03-22 20:06:37,208 is input_id_chunks is instance of list? True
+2024-03-22 20:06:37,209 is mask_chunks is instance of list? True
+2024-03-22 20:06:37,209 is bbox_chunks is instance of list? True
+2024-03-22 20:06:37,209 is image_chunks is instance of list? True
+2024-03-22 20:06:37,209 is input_dict is instance of dict? True
+2024-03-22 20:06:38,921 Model Called
+2024-03-22 20:06:38,922 RAM memory 64.5 used for Proforma_Invoice(2013_01_10_13_51_25_9844)_494_0.png:
+2024-03-22 20:06:38,922 is all_predictions is instance of list? True
+2024-03-22 20:06:38,922 is all_boxes is instance of list? True
+2024-03-22 20:06:38,922 is all_confidences is instance of list? True
+2024-03-22 20:06:38,922 is all_text is instance of list? True
+2024-03-22 20:06:38,922 is label2id is instance of dict? True
+2024-03-22 20:06:38,922 is id2label is instance of dict? True
+2024-03-22 20:06:38,923 is label2color is instance of dict? True
+2024-03-22 20:06:38,923 label2color : {'declaration_by_issuer': '#237C9C', 'pre-carriage-by': '#6A5915', 'order_date': '#E5E8F0', 'vessel_name': '#7F7F62', 'invoice_no': '#45903B', 'signature': '#E63CD4', 'final_destination': '#DF1F8A', 'country_of_origin_of_goods': '#E250D1', 'exporter_our_ref_no': '#B1B188', 'gross_weight': '#13EB84', 'beneficiary_bank_swift': '#8843BC', 'remitter_country': '#31ACA6', 'notify_party_name': '#C707C2', 'cosignee_name': '#F24DFC', 'original_or_copy': '#10B3F8', 'total_quantity_of_goods': '#9D62B0', 'invoice_amount': '#A06433', 'incoterm': '#CB3D8A', 'signed_by': '#775D16', 'from': '#2D3377', 'beneficiary_drawer_exporter_seller_supplier_tin': '#CDA831', 'invoice_currency': '#72E4FE', 'consignor_name': '#569155', 'advance_amount': '#2C377F', 'importer_your_ref_no': '#0E7293', 'invoice_due_date': '#B6FD5F', 'unit': '#125D1A', 'shipment_date': '#A14796', 'mode_of_despatch': '#4A6408', 'purchase_order_no_and_agreement_ref_no': '#17AF22', 'consignor_address': '#F61B3B', 'hs_code_no': '#36AD49', 'date_of_invoice': '#16C9B0', 'presentation_period': '#9AA413', 'invoice_tax_amount': '#D50B9C', 'beneficiary_drawer_exporter_seller_supplier_name': '#E46D09', 'O': '#41C068', 'port_of_discharge': '#6B46A7', 'to': '#9FBB84', 'delivery_terms': '#25DE12', 'tolerance_of_quantity': '#94ED53', 'goods_description': '#41B693', 'consignee_address': '#3105DB', 'shipper_address': '#B84BC9', 'beneficiary_account_number': '#A58DA6', 'net_weight': '#008FDD', 'invoice_amount_in_words': '#62A4D1', 'port_of_loading': '#C4B8DB', 'drawer_ref_no': '#7D9D27', 'place_of_receipt': '#74E747', 'rate_per_unit': '#C2B546', 'amount_due': '#96ACAA', 'page_no': '#9B06CD', 'shipper_name': '#EBDED4', 'total_pages': '#773AD8', 'packaging_description': '#164A8A', 'beneficiary_bank_name': '#FD740A', 'remitter_drawee_applicant_importer_buyer_name': '#FA8A16', 'transport_details': '#5C9DAF', 'beneficiary_bank_country': '#2A03DA', 'country_of_final_destination': '#2EE20B', 'transhipment': '#F54D01', 'beneficiary_address': '#974515', 'payment_terms': '#622748'}
+2024-03-22 20:06:39,051 is result_set is instance of dict? True
+2024-03-22 20:06:39,053 is final_result_set is instance of dict? True
+2024-03-22 20:06:39,290 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_51_25_9844)_494_0.png:0:00:02.393128
+2024-03-22 20:06:39,432 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_51_25_9844)_494_0.png
+2024-03-22 20:06:39,433 RAM memory 64.5 used for Proforma_Invoice(2013_01_10_13_51_25_9844)_494_0.png Generating All Pages:
+2024-03-22 20:06:39,433 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_51_25_9844)_494_0.png1:0:00:02.573496
+2024-03-22 20:06:39,588 file name is:Proforma_Invoice_31_0.png
+2024-03-22 20:06:39,588 folder path :Images
+2024-03-22 20:06:39,589 Calling Image result
+2024-03-22 20:06:39,589 is all_page_result is instance of dict? True
+2024-03-22 20:06:39,599 STREAM b'IHDR' 16 13
+2024-03-22 20:06:39,599 STREAM b'IDAT' 41 46940
+2024-03-22 20:06:39,637 is words is instance of list? True
+2024-03-22 20:06:39,637 is bboxes is instance of list? True
+2024-03-22 20:06:39,637 is bounding_boxes is instance of list? True
+2024-03-22 20:06:39,947 is input_id_chunks is instance of list? True
+2024-03-22 20:06:39,947 is mask_chunks is instance of list? True
+2024-03-22 20:06:39,947 is bbox_chunks is instance of list? True
+2024-03-22 20:06:39,947 is image_chunks is instance of list? True
+2024-03-22 20:06:39,948 is input_dict is instance of dict? True
+2024-03-22 20:06:41,369 Model Called
+2024-03-22 20:06:41,369 RAM memory 64.3 used for Proforma_Invoice_31_0.png:
+2024-03-22 20:06:41,370 is all_predictions is instance of list? True
+2024-03-22 20:06:41,370 is all_boxes is instance of list? True
+2024-03-22 20:06:41,370 is all_confidences is instance of list? True
+2024-03-22 20:06:41,370 is all_text is instance of list? True
+2024-03-22 20:06:41,370 is label2id is instance of dict? True
+2024-03-22 20:06:41,370 is id2label is instance of dict? True
+2024-03-22 20:06:41,371 is label2color is instance of dict? True
+2024-03-22 20:06:41,371 label2color : {'declaration_by_issuer': '#D40AA8', 'pre-carriage-by': '#BE17A7', 'order_date': '#075A91', 'vessel_name': '#7A52AE', 'invoice_no': '#4A19BE', 'signature': '#0D15C2', 'final_destination': '#53FA57', 'country_of_origin_of_goods': '#774E70', 'exporter_our_ref_no': '#8E1A36', 'gross_weight': '#9C4702', 'beneficiary_bank_swift': '#45C878', 'remitter_country': '#732424', 'notify_party_name': '#5FFCDE', 'cosignee_name': '#E14F0C', 'original_or_copy': '#BB3F92', 'total_quantity_of_goods': '#FBEE92', 'invoice_amount': '#C0D79E', 'incoterm': '#D269FA', 'signed_by': '#2547B8', 'from': '#0645BC', 'beneficiary_drawer_exporter_seller_supplier_tin': '#306143', 'invoice_currency': '#537B50', 'consignor_name': '#428F21', 'advance_amount': '#05CD93', 'importer_your_ref_no': '#FAD1E6', 'invoice_due_date': '#43B828', 'unit': '#6C5BBE', 'shipment_date': '#9D2536', 'mode_of_despatch': '#F31FBF', 'purchase_order_no_and_agreement_ref_no': '#0F848A', 'consignor_address': '#FBE63F', 'hs_code_no': '#1A2670', 'date_of_invoice': '#8E1015', 'presentation_period': '#799381', 'invoice_tax_amount': '#81747F', 'beneficiary_drawer_exporter_seller_supplier_name': '#5FAD58', 'O': '#32205E', 'port_of_discharge': '#12B051', 'to': '#04FB16', 'delivery_terms': '#E112CA', 'tolerance_of_quantity': '#7DE792', 'goods_description': '#C254C7', 'consignee_address': '#ACA74D', 'shipper_address': '#AB2458', 'beneficiary_account_number': '#677E89', 'net_weight': '#50FBF6', 'invoice_amount_in_words': '#40EB48', 'port_of_loading': '#D0FBF8', 'drawer_ref_no': '#C163EC', 'place_of_receipt': '#BB37EA', 'rate_per_unit': '#C707B4', 'amount_due': '#EF24AD', 'page_no': '#918684', 'shipper_name': '#9ADBD1', 'total_pages': '#2F2A1D', 'packaging_description': '#791E99', 'beneficiary_bank_name': '#277372', 'remitter_drawee_applicant_importer_buyer_name': '#1B9F06', 'transport_details': '#C310C0', 'beneficiary_bank_country': '#8119CD', 'country_of_final_destination': '#9170D7', 'transhipment': '#CE586C', 'beneficiary_address': '#845D1D', 'payment_terms': '#A3A5F4'}
+2024-03-22 20:06:41,498 is result_set is instance of dict? True
+2024-03-22 20:06:41,499 is final_result_set is instance of dict? True
+2024-03-22 20:06:41,720 Time taken for page 1 of Proforma_Invoice_31_0.png:0:00:02.119993
+2024-03-22 20:06:41,852 *****Generated All Pages****** for Proforma_Invoice_31_0.png
+2024-03-22 20:06:41,852 RAM memory 64.5 used for Proforma_Invoice_31_0.png Generating All Pages:
+2024-03-22 20:06:41,853 Processing time taken for all pages of Proforma_Invoice_31_0.png1:0:00:02.263975
+2024-03-22 20:06:41,994 file name is:Proforma_Invoice(2013_01_10_13_52_31_4878)_498_0.png
+2024-03-22 20:06:41,994 folder path :Images
+2024-03-22 20:06:41,994 Calling Image result
+2024-03-22 20:06:41,994 is all_page_result is instance of dict? True
+2024-03-22 20:06:42,005 STREAM b'IHDR' 16 13
+2024-03-22 20:06:42,005 STREAM b'IDAT' 41 34222
+2024-03-22 20:06:42,042 is words is instance of list? True
+2024-03-22 20:06:42,042 is bboxes is instance of list? True
+2024-03-22 20:06:42,042 is bounding_boxes is instance of list? True
+2024-03-22 20:06:42,304 is input_id_chunks is instance of list? True
+2024-03-22 20:06:42,304 is mask_chunks is instance of list? True
+2024-03-22 20:06:42,304 is bbox_chunks is instance of list? True
+2024-03-22 20:06:42,304 is image_chunks is instance of list? True
+2024-03-22 20:06:42,304 is input_dict is instance of dict? True
+2024-03-22 20:06:43,572 Model Called
+2024-03-22 20:06:43,572 RAM memory 64.4 used for Proforma_Invoice(2013_01_10_13_52_31_4878)_498_0.png:
+2024-03-22 20:06:43,572 is all_predictions is instance of list? True
+2024-03-22 20:06:43,572 is all_boxes is instance of list? True
+2024-03-22 20:06:43,573 is all_confidences is instance of list? True
+2024-03-22 20:06:43,573 is all_text is instance of list? True
+2024-03-22 20:06:43,573 is label2id is instance of dict? True
+2024-03-22 20:06:43,573 is id2label is instance of dict? True
+2024-03-22 20:06:43,574 is label2color is instance of dict? True
+2024-03-22 20:06:43,574 label2color : {'declaration_by_issuer': '#238243', 'pre-carriage-by': '#5F372C', 'order_date': '#0586F7', 'vessel_name': '#EC32BB', 'invoice_no': '#C1432D', 'signature': '#FE9894', 'final_destination': '#D9F45F', 'country_of_origin_of_goods': '#30F6A9', 'exporter_our_ref_no': '#4D4142', 'gross_weight': '#F188A9', 'beneficiary_bank_swift': '#DEAB6A', 'remitter_country': '#309D0B', 'notify_party_name': '#1DE7CF', 'cosignee_name': '#7452A2', 'original_or_copy': '#1CEB08', 'total_quantity_of_goods': '#2D1ACC', 'invoice_amount': '#520EA1', 'incoterm': '#6CDC5E', 'signed_by': '#9FDB0E', 'from': '#F23434', 'beneficiary_drawer_exporter_seller_supplier_tin': '#36621B', 'invoice_currency': '#987DAA', 'consignor_name': '#14B582', 'advance_amount': '#B563D8', 'importer_your_ref_no': '#B90711', 'invoice_due_date': '#22DFB8', 'unit': '#579EB3', 'shipment_date': '#FF505C', 'mode_of_despatch': '#0833E5', 'purchase_order_no_and_agreement_ref_no': '#26312C', 'consignor_address': '#FAC919', 'hs_code_no': '#572DF9', 'date_of_invoice': '#D0742C', 'presentation_period': '#512CA8', 'invoice_tax_amount': '#4783F0', 'beneficiary_drawer_exporter_seller_supplier_name': '#007B22', 'O': '#D99F10', 'port_of_discharge': '#B18CDE', 'to': '#ABFDA7', 'delivery_terms': '#14B999', 'tolerance_of_quantity': '#2ED8F8', 'goods_description': '#1FDA75', 'consignee_address': '#6D714B', 'shipper_address': '#F02F26', 'beneficiary_account_number': '#455C42', 'net_weight': '#645F29', 'invoice_amount_in_words': '#ED49EB', 'port_of_loading': '#4CBCD2', 'drawer_ref_no': '#E72B20', 'place_of_receipt': '#8F8FB8', 'rate_per_unit': '#7AE0F6', 'amount_due': '#5CBCC2', 'page_no': '#246CE3', 'shipper_name': '#70FFC3', 'total_pages': '#B6E8A9', 'packaging_description': '#D2B961', 'beneficiary_bank_name': '#D3CE51', 'remitter_drawee_applicant_importer_buyer_name': '#1B35A1', 'transport_details': '#CE0756', 'beneficiary_bank_country': '#260E96', 'country_of_final_destination': '#3B23F4', 'transhipment': '#AC9198', 'beneficiary_address': '#3FC1E8', 'payment_terms': '#4CCABD'}
+2024-03-22 20:06:43,700 is result_set is instance of dict? True
+2024-03-22 20:06:43,701 is final_result_set is instance of dict? True
+2024-03-22 20:06:43,919 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_52_31_4878)_498_0.png:0:00:01.913718
+2024-03-22 20:06:44,040 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_52_31_4878)_498_0.png
+2024-03-22 20:06:44,041 RAM memory 64.4 used for Proforma_Invoice(2013_01_10_13_52_31_4878)_498_0.png Generating All Pages:
+2024-03-22 20:06:44,041 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_52_31_4878)_498_0.png1:0:00:02.046609
+2024-03-22 20:06:44,153 file name is:Proforma_Invoice(2013_01_10_13_55_14_3594)_523_0.png
+2024-03-22 20:06:44,154 folder path :Images
+2024-03-22 20:06:44,154 Calling Image result
+2024-03-22 20:06:44,154 is all_page_result is instance of dict? True
+2024-03-22 20:06:44,164 STREAM b'IHDR' 16 13
+2024-03-22 20:06:44,165 STREAM b'IDAT' 41 33176
+2024-03-22 20:06:44,197 is words is instance of list? True
+2024-03-22 20:06:44,198 is bboxes is instance of list? True
+2024-03-22 20:06:44,198 is bounding_boxes is instance of list? True
+2024-03-22 20:06:44,400 is input_id_chunks is instance of list? True
+2024-03-22 20:06:44,400 is mask_chunks is instance of list? True
+2024-03-22 20:06:44,400 is bbox_chunks is instance of list? True
+2024-03-22 20:06:44,400 is image_chunks is instance of list? True
+2024-03-22 20:06:44,400 is input_dict is instance of dict? True
+2024-03-22 20:06:45,675 Model Called
+2024-03-22 20:06:45,675 RAM memory 64.2 used for Proforma_Invoice(2013_01_10_13_55_14_3594)_523_0.png:
+2024-03-22 20:06:45,675 is all_predictions is instance of list? True
+2024-03-22 20:06:45,675 is all_boxes is instance of list? True
+2024-03-22 20:06:45,675 is all_confidences is instance of list? True
+2024-03-22 20:06:45,675 is all_text is instance of list? True
+2024-03-22 20:06:45,676 is label2id is instance of dict? True
+2024-03-22 20:06:45,676 is id2label is instance of dict? True
+2024-03-22 20:06:45,677 is label2color is instance of dict? True
+2024-03-22 20:06:45,677 label2color : {'declaration_by_issuer': '#1B6B78', 'pre-carriage-by': '#E44229', 'order_date': '#24D9D3', 'vessel_name': '#9A706C', 'invoice_no': '#B7A116', 'signature': '#CD9191', 'final_destination': '#4F6E9C', 'country_of_origin_of_goods': '#3187ED', 'exporter_our_ref_no': '#322276', 'gross_weight': '#2E019E', 'beneficiary_bank_swift': '#A3CC9D', 'remitter_country': '#381F09', 'notify_party_name': '#2E36CA', 'cosignee_name': '#3CEF9F', 'original_or_copy': '#91B42E', 'total_quantity_of_goods': '#4A84AD', 'invoice_amount': '#9C58DA', 'incoterm': '#F754F5', 'signed_by': '#349A55', 'from': '#884846', 'beneficiary_drawer_exporter_seller_supplier_tin': '#0E2B54', 'invoice_currency': '#A2445D', 'consignor_name': '#BB4008', 'advance_amount': '#742893', 'importer_your_ref_no': '#EE0A30', 'invoice_due_date': '#727C49', 'unit': '#E156BB', 'shipment_date': '#F6B2E8', 'mode_of_despatch': '#9B78B3', 'purchase_order_no_and_agreement_ref_no': '#E6D022', 'consignor_address': '#A64997', 'hs_code_no': '#52F915', 'date_of_invoice': '#97557A', 'presentation_period': '#1889AB', 'invoice_tax_amount': '#A7F463', 'beneficiary_drawer_exporter_seller_supplier_name': '#DFFFEB', 'O': '#2C1553', 'port_of_discharge': '#856F89', 'to': '#32BF59', 'delivery_terms': '#735A2D', 'tolerance_of_quantity': '#5E6C86', 'goods_description': '#FB8444', 'consignee_address': '#7865EA', 'shipper_address': '#EF0717', 'beneficiary_account_number': '#565DD2', 'net_weight': '#4219EF', 'invoice_amount_in_words': '#10F99F', 'port_of_loading': '#ABBC1C', 'drawer_ref_no': '#D0D57D', 'place_of_receipt': '#A953ED', 'rate_per_unit': '#18C3E3', 'amount_due': '#04C370', 'page_no': '#BEAA6E', 'shipper_name': '#F78999', 'total_pages': '#6998CC', 'packaging_description': '#AB4546', 'beneficiary_bank_name': '#9D70EA', 'remitter_drawee_applicant_importer_buyer_name': '#7E06C2', 'transport_details': '#8F6DFE', 'beneficiary_bank_country': '#4EE15E', 'country_of_final_destination': '#81664E', 'transhipment': '#E308E0', 'beneficiary_address': '#B9E583', 'payment_terms': '#757F27'}
+2024-03-22 20:06:45,798 is result_set is instance of dict? True
+2024-03-22 20:06:45,800 is final_result_set is instance of dict? True
+2024-03-22 20:06:46,023 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_55_14_3594)_523_0.png:0:00:01.858370
+2024-03-22 20:06:46,167 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_55_14_3594)_523_0.png
+2024-03-22 20:06:46,167 RAM memory 64.3 used for Proforma_Invoice(2013_01_10_13_55_14_3594)_523_0.png Generating All Pages:
+2024-03-22 20:06:46,167 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_55_14_3594)_523_0.png1:0:00:02.013352
+2024-03-22 20:06:46,321 file name is:Proforma_Invoice(2012_08_21_17_37_37_7580)_82_0.png
+2024-03-22 20:06:46,322 folder path :Images
+2024-03-22 20:06:46,322 Calling Image result
+2024-03-22 20:06:46,322 is all_page_result is instance of dict? True
+2024-03-22 20:06:46,322 STREAM b'IHDR' 16 13
+2024-03-22 20:06:46,322 STREAM b'IDAT' 41 57103
+2024-03-22 20:06:46,373 is words is instance of list? True
+2024-03-22 20:06:46,373 is bboxes is instance of list? True
+2024-03-22 20:06:46,373 is bounding_boxes is instance of list? True
+2024-03-22 20:06:46,635 is input_id_chunks is instance of list? True
+2024-03-22 20:06:46,635 is mask_chunks is instance of list? True
+2024-03-22 20:06:46,635 is bbox_chunks is instance of list? True
+2024-03-22 20:06:46,635 is image_chunks is instance of list? True
+2024-03-22 20:06:46,636 is input_dict is instance of dict? True
+2024-03-22 20:06:49,868 Model Called
+2024-03-22 20:06:49,868 RAM memory 65.3 used for Proforma_Invoice(2012_08_21_17_37_37_7580)_82_0.png:
+2024-03-22 20:06:49,869 is all_predictions is instance of list? True
+2024-03-22 20:06:49,869 is all_boxes is instance of list? True
+2024-03-22 20:06:49,869 is all_confidences is instance of list? True
+2024-03-22 20:06:49,869 is all_text is instance of list? True
+2024-03-22 20:06:49,870 is label2id is instance of dict? True
+2024-03-22 20:06:49,870 is id2label is instance of dict? True
+2024-03-22 20:06:49,871 is label2color is instance of dict? True
+2024-03-22 20:06:49,872 label2color : {'declaration_by_issuer': '#83520B', 'pre-carriage-by': '#DE2D40', 'order_date': '#A66094', 'vessel_name': '#E32BA0', 'invoice_no': '#D5D0D3', 'signature': '#6206F6', 'final_destination': '#3D7C95', 'country_of_origin_of_goods': '#6D964F', 'exporter_our_ref_no': '#3A51EE', 'gross_weight': '#0D1EB1', 'beneficiary_bank_swift': '#2364BE', 'remitter_country': '#B6B4E0', 'notify_party_name': '#10ECE7', 'cosignee_name': '#4BDE2A', 'original_or_copy': '#AF103B', 'total_quantity_of_goods': '#66B9FB', 'invoice_amount': '#5C187C', 'incoterm': '#A7BBB8', 'signed_by': '#B5C223', 'from': '#861F00', 'beneficiary_drawer_exporter_seller_supplier_tin': '#29C1F8', 'invoice_currency': '#0A3D20', 'consignor_name': '#DD7064', 'advance_amount': '#C1B80E', 'importer_your_ref_no': '#593EC1', 'invoice_due_date': '#62E516', 'unit': '#753717', 'shipment_date': '#9F07CB', 'mode_of_despatch': '#B3E248', 'purchase_order_no_and_agreement_ref_no': '#4526CE', 'consignor_address': '#4B29D0', 'hs_code_no': '#49E5AF', 'date_of_invoice': '#18D35F', 'presentation_period': '#EC07D7', 'invoice_tax_amount': '#2AFF5A', 'beneficiary_drawer_exporter_seller_supplier_name': '#16F179', 'O': '#AFC99B', 'port_of_discharge': '#07ED9B', 'to': '#59D9D6', 'delivery_terms': '#EA4656', 'tolerance_of_quantity': '#6992FE', 'goods_description': '#65E70C', 'consignee_address': '#96B927', 'shipper_address': '#71C6CD', 'beneficiary_account_number': '#97E787', 'net_weight': '#2AC3F2', 'invoice_amount_in_words': '#FEB620', 'port_of_loading': '#38E483', 'drawer_ref_no': '#4EA327', 'place_of_receipt': '#1CA726', 'rate_per_unit': '#C1A45B', 'amount_due': '#FDB594', 'page_no': '#7C6BCB', 'shipper_name': '#B1DB80', 'total_pages': '#6180E1', 'packaging_description': '#89D4B4', 'beneficiary_bank_name': '#84B2B8', 'remitter_drawee_applicant_importer_buyer_name': '#A29E63', 'transport_details': '#A1E12D', 'beneficiary_bank_country': '#249F83', 'country_of_final_destination': '#B9002F', 'transhipment': '#492525', 'beneficiary_address': '#4D60DF', 'payment_terms': '#C0FBBF'}
+2024-03-22 20:06:50,127 is result_set is instance of dict? True
+2024-03-22 20:06:50,130 is final_result_set is instance of dict? True
+2024-03-22 20:06:50,459 Time taken for page 1 of Proforma_Invoice(2012_08_21_17_37_37_7580)_82_0.png:0:00:04.136734
+2024-03-22 20:06:50,643 *****Generated All Pages****** for Proforma_Invoice(2012_08_21_17_37_37_7580)_82_0.png
+2024-03-22 20:06:50,643 RAM memory 65.5 used for Proforma_Invoice(2012_08_21_17_37_37_7580)_82_0.png Generating All Pages:
+2024-03-22 20:06:50,643 Processing time taken for all pages of Proforma_Invoice(2012_08_21_17_37_37_7580)_82_0.png1:0:00:04.321728
+2024-03-22 20:06:50,834 file name is:Proforma_Invoice(2013_01_10_13_51_15_4180)_493_0.png
+2024-03-22 20:06:50,834 folder path :Images
+2024-03-22 20:06:50,835 Calling Image result
+2024-03-22 20:06:50,835 is all_page_result is instance of dict? True
+2024-03-22 20:06:50,835 STREAM b'IHDR' 16 13
+2024-03-22 20:06:50,835 STREAM b'IDAT' 41 34028
+2024-03-22 20:06:50,871 is words is instance of list? True
+2024-03-22 20:06:50,871 is bboxes is instance of list? True
+2024-03-22 20:06:50,871 is bounding_boxes is instance of list? True
+2024-03-22 20:06:51,190 is input_id_chunks is instance of list? True
+2024-03-22 20:06:51,191 is mask_chunks is instance of list? True
+2024-03-22 20:06:51,191 is bbox_chunks is instance of list? True
+2024-03-22 20:06:51,191 is image_chunks is instance of list? True
+2024-03-22 20:06:51,191 is input_dict is instance of dict? True
+2024-03-22 20:06:53,176 Model Called
+2024-03-22 20:06:53,177 RAM memory 65.1 used for Proforma_Invoice(2013_01_10_13_51_15_4180)_493_0.png:
+2024-03-22 20:06:53,177 is all_predictions is instance of list? True
+2024-03-22 20:06:53,177 is all_boxes is instance of list? True
+2024-03-22 20:06:53,177 is all_confidences is instance of list? True
+2024-03-22 20:06:53,177 is all_text is instance of list? True
+2024-03-22 20:06:53,178 is label2id is instance of dict? True
+2024-03-22 20:06:53,178 is id2label is instance of dict? True
+2024-03-22 20:06:53,179 is label2color is instance of dict? True
+2024-03-22 20:06:53,179 label2color : {'declaration_by_issuer': '#36D0CD', 'pre-carriage-by': '#0B1F9A', 'order_date': '#9F6C2B', 'vessel_name': '#0B94B8', 'invoice_no': '#C73DB9', 'signature': '#6625BB', 'final_destination': '#BEFD7D', 'country_of_origin_of_goods': '#021880', 'exporter_our_ref_no': '#9AB21A', 'gross_weight': '#9639FE', 'beneficiary_bank_swift': '#B8BE2E', 'remitter_country': '#D476D3', 'notify_party_name': '#E85F7B', 'cosignee_name': '#6A51BF', 'original_or_copy': '#5A3142', 'total_quantity_of_goods': '#E3E51D', 'invoice_amount': '#8B8ECD', 'incoterm': '#301514', 'signed_by': '#156B30', 'from': '#5D4F11', 'beneficiary_drawer_exporter_seller_supplier_tin': '#533365', 'invoice_currency': '#3431A6', 'consignor_name': '#D6791D', 'advance_amount': '#06C84D', 'importer_your_ref_no': '#823EA1', 'invoice_due_date': '#3DFB22', 'unit': '#449412', 'shipment_date': '#81C147', 'mode_of_despatch': '#61DDAA', 'purchase_order_no_and_agreement_ref_no': '#2348CF', 'consignor_address': '#8693A3', 'hs_code_no': '#2BE130', 'date_of_invoice': '#3AF5AB', 'presentation_period': '#1D26BB', 'invoice_tax_amount': '#60A5F8', 'beneficiary_drawer_exporter_seller_supplier_name': '#5A4D72', 'O': '#0725EC', 'port_of_discharge': '#E15521', 'to': '#411B8B', 'delivery_terms': '#A0AF01', 'tolerance_of_quantity': '#FCF75A', 'goods_description': '#5F5031', 'consignee_address': '#C01A35', 'shipper_address': '#25D6D0', 'beneficiary_account_number': '#AF096E', 'net_weight': '#52EA08', 'invoice_amount_in_words': '#FDA388', 'port_of_loading': '#78C290', 'drawer_ref_no': '#DBE934', 'place_of_receipt': '#CBA022', 'rate_per_unit': '#5C01FD', 'amount_due': '#9A389E', 'page_no': '#5BA977', 'shipper_name': '#4A343A', 'total_pages': '#44E1F7', 'packaging_description': '#CDE109', 'beneficiary_bank_name': '#AC67B8', 'remitter_drawee_applicant_importer_buyer_name': '#8E5834', 'transport_details': '#156BFA', 'beneficiary_bank_country': '#5FC2D7', 'country_of_final_destination': '#845F97', 'transhipment': '#461458', 'beneficiary_address': '#E0ED5B', 'payment_terms': '#1EFBA7'}
+2024-03-22 20:06:53,366 is result_set is instance of dict? True
+2024-03-22 20:06:53,368 is final_result_set is instance of dict? True
+2024-03-22 20:06:53,623 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_51_15_4180)_493_0.png:0:00:02.787321
+2024-03-22 20:06:53,761 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_51_15_4180)_493_0.png
+2024-03-22 20:06:53,761 RAM memory 65.1 used for Proforma_Invoice(2013_01_10_13_51_15_4180)_493_0.png Generating All Pages:
+2024-03-22 20:06:53,761 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_51_15_4180)_493_0.png1:0:00:02.926641
+2024-03-22 20:06:53,879 file name is:Proforma_Invoice_29_0.png
+2024-03-22 20:06:53,879 folder path :Images
+2024-03-22 20:06:53,879 Calling Image result
+2024-03-22 20:06:53,879 is all_page_result is instance of dict? True
+2024-03-22 20:06:53,890 STREAM b'IHDR' 16 13
+2024-03-22 20:06:53,890 STREAM b'IDAT' 41 65536
+2024-03-22 20:06:53,924 is words is instance of list? True
+2024-03-22 20:06:53,924 is bboxes is instance of list? True
+2024-03-22 20:06:53,924 is bounding_boxes is instance of list? True
+2024-03-22 20:06:54,149 is input_id_chunks is instance of list? True
+2024-03-22 20:06:54,150 is mask_chunks is instance of list? True
+2024-03-22 20:06:54,150 is bbox_chunks is instance of list? True
+2024-03-22 20:06:54,150 is image_chunks is instance of list? True
+2024-03-22 20:06:54,150 is input_dict is instance of dict? True
+2024-03-22 20:06:56,561 Model Called
+2024-03-22 20:06:56,561 RAM memory 65.0 used for Proforma_Invoice_29_0.png:
+2024-03-22 20:06:56,561 is all_predictions is instance of list? True
+2024-03-22 20:06:56,561 is all_boxes is instance of list? True
+2024-03-22 20:06:56,562 is all_confidences is instance of list? True
+2024-03-22 20:06:56,562 is all_text is instance of list? True
+2024-03-22 20:06:56,562 is label2id is instance of dict? True
+2024-03-22 20:06:56,562 is id2label is instance of dict? True
+2024-03-22 20:06:56,563 is label2color is instance of dict? True
+2024-03-22 20:06:56,563 label2color : {'declaration_by_issuer': '#7F248F', 'pre-carriage-by': '#618DEA', 'order_date': '#0E0D3B', 'vessel_name': '#749052', 'invoice_no': '#687374', 'signature': '#8C52DB', 'final_destination': '#8A4AFC', 'country_of_origin_of_goods': '#F0ACB4', 'exporter_our_ref_no': '#51FE34', 'gross_weight': '#407D60', 'beneficiary_bank_swift': '#6D50AC', 'remitter_country': '#8C1066', 'notify_party_name': '#60B683', 'cosignee_name': '#FE34A3', 'original_or_copy': '#87FCAB', 'total_quantity_of_goods': '#BCAAB4', 'invoice_amount': '#FAD446', 'incoterm': '#19006E', 'signed_by': '#6A6B51', 'from': '#6FC635', 'beneficiary_drawer_exporter_seller_supplier_tin': '#5E4513', 'invoice_currency': '#4B0785', 'consignor_name': '#D61293', 'advance_amount': '#C85873', 'importer_your_ref_no': '#2432A4', 'invoice_due_date': '#D2F0DF', 'unit': '#14ABC5', 'shipment_date': '#83A3A8', 'mode_of_despatch': '#E58505', 'purchase_order_no_and_agreement_ref_no': '#FF504C', 'consignor_address': '#EA6652', 'hs_code_no': '#F30AD4', 'date_of_invoice': '#40C9AD', 'presentation_period': '#E31F1C', 'invoice_tax_amount': '#57CC8E', 'beneficiary_drawer_exporter_seller_supplier_name': '#7CBA41', 'O': '#555E12', 'port_of_discharge': '#3A50B7', 'to': '#0C2164', 'delivery_terms': '#C87B38', 'tolerance_of_quantity': '#DBACBD', 'goods_description': '#C5F9F5', 'consignee_address': '#922195', 'shipper_address': '#C7A747', 'beneficiary_account_number': '#777E19', 'net_weight': '#30816E', 'invoice_amount_in_words': '#634847', 'port_of_loading': '#5F1F86', 'drawer_ref_no': '#946BAB', 'place_of_receipt': '#6E6669', 'rate_per_unit': '#3CF263', 'amount_due': '#A9B5D9', 'page_no': '#5AF4C6', 'shipper_name': '#365208', 'total_pages': '#B6C42F', 'packaging_description': '#CCA3D8', 'beneficiary_bank_name': '#5EE909', 'remitter_drawee_applicant_importer_buyer_name': '#816BD1', 'transport_details': '#FAB784', 'beneficiary_bank_country': '#4EF03A', 'country_of_final_destination': '#F0E92E', 'transhipment': '#A09D0E', 'beneficiary_address': '#5DDCF2', 'payment_terms': '#1419B0'}
+2024-03-22 20:06:56,748 is result_set is instance of dict? True
+2024-03-22 20:06:56,750 is final_result_set is instance of dict? True
+2024-03-22 20:06:57,075 Time taken for page 1 of Proforma_Invoice_29_0.png:0:00:03.185062
+2024-03-22 20:06:57,232 *****Generated All Pages****** for Proforma_Invoice_29_0.png
+2024-03-22 20:06:57,232 RAM memory 64.9 used for Proforma_Invoice_29_0.png Generating All Pages:
+2024-03-22 20:06:57,232 Processing time taken for all pages of Proforma_Invoice_29_0.png1:0:00:03.353133
+2024-03-22 20:06:57,347 file name is:Proforma_Invoice_32_0.png
+2024-03-22 20:06:57,347 folder path :Images
+2024-03-22 20:06:57,347 Calling Image result
+2024-03-22 20:06:57,347 is all_page_result is instance of dict? True
+2024-03-22 20:06:57,348 STREAM b'IHDR' 16 13
+2024-03-22 20:06:57,348 STREAM b'IDAT' 41 35639
+2024-03-22 20:06:57,379 is words is instance of list? True
+2024-03-22 20:06:57,379 is bboxes is instance of list? True
+2024-03-22 20:06:57,379 is bounding_boxes is instance of list? True
+2024-03-22 20:06:57,593 is input_id_chunks is instance of list? True
+2024-03-22 20:06:57,593 is mask_chunks is instance of list? True
+2024-03-22 20:06:57,593 is bbox_chunks is instance of list? True
+2024-03-22 20:06:57,593 is image_chunks is instance of list? True
+2024-03-22 20:06:57,593 is input_dict is instance of dict? True
+2024-03-22 20:06:58,861 Model Called
+2024-03-22 20:06:58,862 RAM memory 64.4 used for Proforma_Invoice_32_0.png:
+2024-03-22 20:06:58,862 is all_predictions is instance of list? True
+2024-03-22 20:06:58,862 is all_boxes is instance of list? True
+2024-03-22 20:06:58,862 is all_confidences is instance of list? True
+2024-03-22 20:06:58,862 is all_text is instance of list? True
+2024-03-22 20:06:58,863 is label2id is instance of dict? True
+2024-03-22 20:06:58,863 is id2label is instance of dict? True
+2024-03-22 20:06:58,863 is label2color is instance of dict? True
+2024-03-22 20:06:58,864 label2color : {'declaration_by_issuer': '#AE83E8', 'pre-carriage-by': '#05BF0C', 'order_date': '#BAD618', 'vessel_name': '#F2A8D6', 'invoice_no': '#C0BF12', 'signature': '#898551', 'final_destination': '#8DEC4D', 'country_of_origin_of_goods': '#35365E', 'exporter_our_ref_no': '#9127BA', 'gross_weight': '#B902F8', 'beneficiary_bank_swift': '#B8F8FA', 'remitter_country': '#0769A8', 'notify_party_name': '#022672', 'cosignee_name': '#07934D', 'original_or_copy': '#8E0AB7', 'total_quantity_of_goods': '#2EB8D0', 'invoice_amount': '#24CF50', 'incoterm': '#1870E7', 'signed_by': '#69E56C', 'from': '#B6E8CB', 'beneficiary_drawer_exporter_seller_supplier_tin': '#7C9E55', 'invoice_currency': '#DED2FB', 'consignor_name': '#51C21B', 'advance_amount': '#B16F16', 'importer_your_ref_no': '#4FED69', 'invoice_due_date': '#4CB0A1', 'unit': '#497B55', 'shipment_date': '#A0ED6C', 'mode_of_despatch': '#2A8FEB', 'purchase_order_no_and_agreement_ref_no': '#A7BABA', 'consignor_address': '#413DED', 'hs_code_no': '#AC886D', 'date_of_invoice': '#BF4E9C', 'presentation_period': '#538AE9', 'invoice_tax_amount': '#91F03F', 'beneficiary_drawer_exporter_seller_supplier_name': '#1C3154', 'O': '#A2FD2E', 'port_of_discharge': '#370B63', 'to': '#04556A', 'delivery_terms': '#BE0703', 'tolerance_of_quantity': '#FC9ADC', 'goods_description': '#FD67F2', 'consignee_address': '#CDBBF7', 'shipper_address': '#657D0D', 'beneficiary_account_number': '#B68110', 'net_weight': '#D33FF2', 'invoice_amount_in_words': '#65F9A8', 'port_of_loading': '#F7E79D', 'drawer_ref_no': '#D1185E', 'place_of_receipt': '#2975F3', 'rate_per_unit': '#0242F3', 'amount_due': '#4F2927', 'page_no': '#751DA3', 'shipper_name': '#CC4BB6', 'total_pages': '#EB8E33', 'packaging_description': '#597EFA', 'beneficiary_bank_name': '#257E73', 'remitter_drawee_applicant_importer_buyer_name': '#709E7D', 'transport_details': '#3D8F4A', 'beneficiary_bank_country': '#15876A', 'country_of_final_destination': '#A9C5F8', 'transhipment': '#2516F8', 'beneficiary_address': '#9C3A2F', 'payment_terms': '#EE00C0'}
+2024-03-22 20:06:58,983 is result_set is instance of dict? True
+2024-03-22 20:06:58,984 is final_result_set is instance of dict? True
+2024-03-22 20:06:59,163 Time taken for page 1 of Proforma_Invoice_32_0.png:0:00:01.815028
+2024-03-22 20:06:59,273 *****Generated All Pages****** for Proforma_Invoice_32_0.png
+2024-03-22 20:06:59,273 RAM memory 64.4 used for Proforma_Invoice_32_0.png Generating All Pages:
+2024-03-22 20:06:59,273 Processing time taken for all pages of Proforma_Invoice_32_0.png1:0:00:01.926116
+2024-03-22 20:06:59,399 file name is:Proforma_Invoice_22_0.png
+2024-03-22 20:06:59,399 folder path :Images
+2024-03-22 20:06:59,399 Calling Image result
+2024-03-22 20:06:59,399 is all_page_result is instance of dict? True
+2024-03-22 20:06:59,410 STREAM b'IHDR' 16 13
+2024-03-22 20:06:59,410 STREAM b'IDAT' 41 16762
+2024-03-22 20:06:59,422 is words is instance of list? True
+2024-03-22 20:06:59,422 is bboxes is instance of list? True
+2024-03-22 20:06:59,422 is bounding_boxes is instance of list? True
+2024-03-22 20:06:59,480 is input_id_chunks is instance of list? True
+2024-03-22 20:06:59,480 is mask_chunks is instance of list? True
+2024-03-22 20:06:59,481 is bbox_chunks is instance of list? True
+2024-03-22 20:06:59,481 is image_chunks is instance of list? True
+2024-03-22 20:06:59,481 is input_dict is instance of dict? True
+2024-03-22 20:07:00,698 Model Called
+2024-03-22 20:07:00,698 RAM memory 64.4 used for Proforma_Invoice_22_0.png:
+2024-03-22 20:07:00,699 is all_predictions is instance of list? True
+2024-03-22 20:07:00,699 is all_boxes is instance of list? True
+2024-03-22 20:07:00,699 is all_confidences is instance of list? True
+2024-03-22 20:07:00,699 is all_text is instance of list? True
+2024-03-22 20:07:00,699 is label2id is instance of dict? True
+2024-03-22 20:07:00,699 is id2label is instance of dict? True
+2024-03-22 20:07:00,700 is label2color is instance of dict? True
+2024-03-22 20:07:00,700 label2color : {'declaration_by_issuer': '#7DCA5D', 'pre-carriage-by': '#D43BCC', 'order_date': '#08327C', 'vessel_name': '#37EE9E', 'invoice_no': '#2FDDE8', 'signature': '#219F60', 'final_destination': '#1EE1C2', 'country_of_origin_of_goods': '#EDC920', 'exporter_our_ref_no': '#793897', 'gross_weight': '#10E2EF', 'beneficiary_bank_swift': '#95257D', 'remitter_country': '#124BBA', 'notify_party_name': '#4DEC46', 'cosignee_name': '#32FB9B', 'original_or_copy': '#D8579A', 'total_quantity_of_goods': '#211E93', 'invoice_amount': '#7DAB90', 'incoterm': '#B735CF', 'signed_by': '#9A6953', 'from': '#0B34FF', 'beneficiary_drawer_exporter_seller_supplier_tin': '#E8511C', 'invoice_currency': '#903BCF', 'consignor_name': '#7836B1', 'advance_amount': '#FF9296', 'importer_your_ref_no': '#7DB6D1', 'invoice_due_date': '#1A509A', 'unit': '#37E564', 'shipment_date': '#916CC1', 'mode_of_despatch': '#988EA7', 'purchase_order_no_and_agreement_ref_no': '#45F162', 'consignor_address': '#C8A515', 'hs_code_no': '#BB4E34', 'date_of_invoice': '#97BC89', 'presentation_period': '#0E407F', 'invoice_tax_amount': '#911AC0', 'beneficiary_drawer_exporter_seller_supplier_name': '#F1F75C', 'O': '#C2401E', 'port_of_discharge': '#EF9C6F', 'to': '#844866', 'delivery_terms': '#CC3D3B', 'tolerance_of_quantity': '#5CA691', 'goods_description': '#1C56D9', 'consignee_address': '#C7FDA5', 'shipper_address': '#9BDDBE', 'beneficiary_account_number': '#F49B96', 'net_weight': '#43F850', 'invoice_amount_in_words': '#00FEA3', 'port_of_loading': '#D48E4C', 'drawer_ref_no': '#F8ED55', 'place_of_receipt': '#85CC16', 'rate_per_unit': '#B117DD', 'amount_due': '#716B40', 'page_no': '#D34912', 'shipper_name': '#9AD941', 'total_pages': '#43BA29', 'packaging_description': '#F81607', 'beneficiary_bank_name': '#85F0A5', 'remitter_drawee_applicant_importer_buyer_name': '#6C4BC8', 'transport_details': '#C82C94', 'beneficiary_bank_country': '#1454B1', 'country_of_final_destination': '#FAE3F1', 'transhipment': '#12BD83', 'beneficiary_address': '#0C3082', 'payment_terms': '#BF656B'}
+2024-03-22 20:07:00,737 is result_set is instance of dict? True
+2024-03-22 20:07:00,738 is final_result_set is instance of dict? True
+2024-03-22 20:07:00,898 Time taken for page 1 of Proforma_Invoice_22_0.png:0:00:01.487565
+2024-03-22 20:07:00,942 *****Generated All Pages****** for Proforma_Invoice_22_0.png
+2024-03-22 20:07:00,943 RAM memory 64.2 used for Proforma_Invoice_22_0.png Generating All Pages:
+2024-03-22 20:07:00,943 Processing time taken for all pages of Proforma_Invoice_22_0.png1:0:00:01.543574
+2024-03-22 20:07:01,055 file name is:Proforma_Invoice(2013_01_10_13_55_32_9751)_519_0.png
+2024-03-22 20:07:01,056 folder path :Images
+2024-03-22 20:07:01,056 Calling Image result
+2024-03-22 20:07:01,056 is all_page_result is instance of dict? True
+2024-03-22 20:07:01,066 STREAM b'IHDR' 16 13
+2024-03-22 20:07:01,066 STREAM b'IDAT' 41 32735
+2024-03-22 20:07:01,096 is words is instance of list? True
+2024-03-22 20:07:01,096 is bboxes is instance of list? True
+2024-03-22 20:07:01,096 is bounding_boxes is instance of list? True
+2024-03-22 20:07:01,317 is input_id_chunks is instance of list? True
+2024-03-22 20:07:01,317 is mask_chunks is instance of list? True
+2024-03-22 20:07:01,317 is bbox_chunks is instance of list? True
+2024-03-22 20:07:01,317 is image_chunks is instance of list? True
+2024-03-22 20:07:01,318 is input_dict is instance of dict? True
+2024-03-22 20:07:02,698 Model Called
+2024-03-22 20:07:02,698 RAM memory 64.3 used for Proforma_Invoice(2013_01_10_13_55_32_9751)_519_0.png:
+2024-03-22 20:07:02,698 is all_predictions is instance of list? True
+2024-03-22 20:07:02,698 is all_boxes is instance of list? True
+2024-03-22 20:07:02,698 is all_confidences is instance of list? True
+2024-03-22 20:07:02,698 is all_text is instance of list? True
+2024-03-22 20:07:02,698 is label2id is instance of dict? True
+2024-03-22 20:07:02,698 is id2label is instance of dict? True
+2024-03-22 20:07:02,699 is label2color is instance of dict? True
+2024-03-22 20:07:02,699 label2color : {'declaration_by_issuer': '#63FF46', 'pre-carriage-by': '#B171F0', 'order_date': '#9F10EA', 'vessel_name': '#A7356F', 'invoice_no': '#78C1EB', 'signature': '#A9F58A', 'final_destination': '#4E3E03', 'country_of_origin_of_goods': '#BD8C42', 'exporter_our_ref_no': '#832ADC', 'gross_weight': '#54390A', 'beneficiary_bank_swift': '#9FDF8D', 'remitter_country': '#6A9AFE', 'notify_party_name': '#3054A7', 'cosignee_name': '#DBB30A', 'original_or_copy': '#08B09D', 'total_quantity_of_goods': '#3A5EF4', 'invoice_amount': '#D30717', 'incoterm': '#DD308F', 'signed_by': '#242BBD', 'from': '#A9B3C3', 'beneficiary_drawer_exporter_seller_supplier_tin': '#B46DA6', 'invoice_currency': '#E40599', 'consignor_name': '#DC54B7', 'advance_amount': '#19EA46', 'importer_your_ref_no': '#2C3313', 'invoice_due_date': '#FCA6A7', 'unit': '#DCEC75', 'shipment_date': '#56FC5F', 'mode_of_despatch': '#F67041', 'purchase_order_no_and_agreement_ref_no': '#08BD27', 'consignor_address': '#B35376', 'hs_code_no': '#66F3B9', 'date_of_invoice': '#C48778', 'presentation_period': '#2ED83D', 'invoice_tax_amount': '#AA0D8F', 'beneficiary_drawer_exporter_seller_supplier_name': '#970586', 'O': '#E88BE4', 'port_of_discharge': '#F8E748', 'to': '#08508F', 'delivery_terms': '#D2654C', 'tolerance_of_quantity': '#061524', 'goods_description': '#355CE9', 'consignee_address': '#81C5CB', 'shipper_address': '#8B05CA', 'beneficiary_account_number': '#E75721', 'net_weight': '#0E2936', 'invoice_amount_in_words': '#FFC444', 'port_of_loading': '#57B9F0', 'drawer_ref_no': '#46CF58', 'place_of_receipt': '#781C3C', 'rate_per_unit': '#F0B295', 'amount_due': '#C09A0C', 'page_no': '#68135C', 'shipper_name': '#128F26', 'total_pages': '#DBC278', 'packaging_description': '#63F045', 'beneficiary_bank_name': '#12B1B4', 'remitter_drawee_applicant_importer_buyer_name': '#5D44A1', 'transport_details': '#4AC82D', 'beneficiary_bank_country': '#C79E3E', 'country_of_final_destination': '#EB9A21', 'transhipment': '#DB1321', 'beneficiary_address': '#FA1E35', 'payment_terms': '#E4B74A'}
+2024-03-22 20:07:02,832 is result_set is instance of dict? True
+2024-03-22 20:07:02,832 is final_result_set is instance of dict? True
+2024-03-22 20:07:02,943 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_55_32_9751)_519_0.png:0:00:01.876401
+2024-03-22 20:07:03,063 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_55_32_9751)_519_0.png
+2024-03-22 20:07:03,063 RAM memory 64.4 used for Proforma_Invoice(2013_01_10_13_55_32_9751)_519_0.png Generating All Pages:
+2024-03-22 20:07:03,063 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_55_32_9751)_519_0.png1:0:00:02.006998
+2024-03-22 20:07:03,175 file name is:Proforma_Invoice(2013_01_10_13_54_03_3279)_517_0.png
+2024-03-22 20:07:03,175 folder path :Images
+2024-03-22 20:07:03,175 Calling Image result
+2024-03-22 20:07:03,175 is all_page_result is instance of dict? True
+2024-03-22 20:07:03,185 STREAM b'IHDR' 16 13
+2024-03-22 20:07:03,186 STREAM b'IDAT' 41 34372
+2024-03-22 20:07:03,215 is words is instance of list? True
+2024-03-22 20:07:03,215 is bboxes is instance of list? True
+2024-03-22 20:07:03,215 is bounding_boxes is instance of list? True
+2024-03-22 20:07:03,424 is input_id_chunks is instance of list? True
+2024-03-22 20:07:03,424 is mask_chunks is instance of list? True
+2024-03-22 20:07:03,424 is bbox_chunks is instance of list? True
+2024-03-22 20:07:03,424 is image_chunks is instance of list? True
+2024-03-22 20:07:03,425 is input_dict is instance of dict? True
+2024-03-22 20:07:04,641 Model Called
+2024-03-22 20:07:04,641 RAM memory 64.4 used for Proforma_Invoice(2013_01_10_13_54_03_3279)_517_0.png:
+2024-03-22 20:07:04,641 is all_predictions is instance of list? True
+2024-03-22 20:07:04,641 is all_boxes is instance of list? True
+2024-03-22 20:07:04,641 is all_confidences is instance of list? True
+2024-03-22 20:07:04,642 is all_text is instance of list? True
+2024-03-22 20:07:04,642 is label2id is instance of dict? True
+2024-03-22 20:07:04,642 is id2label is instance of dict? True
+2024-03-22 20:07:04,643 is label2color is instance of dict? True
+2024-03-22 20:07:04,643 label2color : {'declaration_by_issuer': '#DE8D80', 'pre-carriage-by': '#96A51E', 'order_date': '#629DCE', 'vessel_name': '#BDBD0D', 'invoice_no': '#4626E1', 'signature': '#48B985', 'final_destination': '#676C01', 'country_of_origin_of_goods': '#27D387', 'exporter_our_ref_no': '#7453DE', 'gross_weight': '#093E55', 'beneficiary_bank_swift': '#F2B68F', 'remitter_country': '#81DF8D', 'notify_party_name': '#611A53', 'cosignee_name': '#16AA47', 'original_or_copy': '#8789B9', 'total_quantity_of_goods': '#D13342', 'invoice_amount': '#750C84', 'incoterm': '#48A358', 'signed_by': '#C6FA4A', 'from': '#91042D', 'beneficiary_drawer_exporter_seller_supplier_tin': '#5FE9F2', 'invoice_currency': '#F66E73', 'consignor_name': '#B79375', 'advance_amount': '#53C658', 'importer_your_ref_no': '#84561A', 'invoice_due_date': '#C65096', 'unit': '#0620CD', 'shipment_date': '#B59028', 'mode_of_despatch': '#90F36B', 'purchase_order_no_and_agreement_ref_no': '#AF9EFB', 'consignor_address': '#A563B1', 'hs_code_no': '#33A283', 'date_of_invoice': '#687B84', 'presentation_period': '#C9C2D3', 'invoice_tax_amount': '#1566F4', 'beneficiary_drawer_exporter_seller_supplier_name': '#A4AA41', 'O': '#6452ED', 'port_of_discharge': '#4ABB3C', 'to': '#24DE8E', 'delivery_terms': '#591DA3', 'tolerance_of_quantity': '#FCC22D', 'goods_description': '#B203A2', 'consignee_address': '#0EB25C', 'shipper_address': '#40B15B', 'beneficiary_account_number': '#601488', 'net_weight': '#AF3452', 'invoice_amount_in_words': '#A41D0D', 'port_of_loading': '#BD97D7', 'drawer_ref_no': '#C4195D', 'place_of_receipt': '#234872', 'rate_per_unit': '#709B0B', 'amount_due': '#2F96D0', 'page_no': '#C43788', 'shipper_name': '#72FA69', 'total_pages': '#438BFF', 'packaging_description': '#1FEF92', 'beneficiary_bank_name': '#42DFC8', 'remitter_drawee_applicant_importer_buyer_name': '#44573B', 'transport_details': '#01BDBE', 'beneficiary_bank_country': '#F706A6', 'country_of_final_destination': '#5E2169', 'transhipment': '#7286D4', 'beneficiary_address': '#F924B7', 'payment_terms': '#140DA5'}
+2024-03-22 20:07:04,762 is result_set is instance of dict? True
+2024-03-22 20:07:04,763 is final_result_set is instance of dict? True
+2024-03-22 20:07:04,991 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_54_03_3279)_517_0.png:0:00:01.804865
+2024-03-22 20:07:05,115 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_54_03_3279)_517_0.png
+2024-03-22 20:07:05,116 RAM memory 64.2 used for Proforma_Invoice(2013_01_10_13_54_03_3279)_517_0.png Generating All Pages:
+2024-03-22 20:07:05,116 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_54_03_3279)_517_0.png1:0:00:01.940689
+2024-03-22 20:07:05,226 file name is:Proforma_Invoice(2013_04_16_16_37_06_4995)_283_0.png
+2024-03-22 20:07:05,226 folder path :Images
+2024-03-22 20:07:05,226 Calling Image result
+2024-03-22 20:07:05,226 is all_page_result is instance of dict? True
+2024-03-22 20:07:05,236 STREAM b'IHDR' 16 13
+2024-03-22 20:07:05,237 STREAM b'IDAT' 41 33495
+2024-03-22 20:07:05,256 is words is instance of list? True
+2024-03-22 20:07:05,256 is bboxes is instance of list? True
+2024-03-22 20:07:05,256 is bounding_boxes is instance of list? True
+2024-03-22 20:07:05,380 is input_id_chunks is instance of list? True
+2024-03-22 20:07:05,380 is mask_chunks is instance of list? True
+2024-03-22 20:07:05,381 is bbox_chunks is instance of list? True
+2024-03-22 20:07:05,381 is image_chunks is instance of list? True
+2024-03-22 20:07:05,381 is input_dict is instance of dict? True
+2024-03-22 20:07:07,752 Model Called
+2024-03-22 20:07:07,753 RAM memory 64.3 used for Proforma_Invoice(2013_04_16_16_37_06_4995)_283_0.png:
+2024-03-22 20:07:07,753 is all_predictions is instance of list? True
+2024-03-22 20:07:07,753 is all_boxes is instance of list? True
+2024-03-22 20:07:07,753 is all_confidences is instance of list? True
+2024-03-22 20:07:07,753 is all_text is instance of list? True
+2024-03-22 20:07:07,753 is label2id is instance of dict? True
+2024-03-22 20:07:07,753 is id2label is instance of dict? True
+2024-03-22 20:07:07,755 is label2color is instance of dict? True
+2024-03-22 20:07:07,755 label2color : {'declaration_by_issuer': '#FD0F87', 'pre-carriage-by': '#7EA95C', 'order_date': '#65D7E9', 'vessel_name': '#49E330', 'invoice_no': '#0B057F', 'signature': '#F1ED25', 'final_destination': '#F86D6D', 'country_of_origin_of_goods': '#457520', 'exporter_our_ref_no': '#147453', 'gross_weight': '#2C208C', 'beneficiary_bank_swift': '#EF464F', 'remitter_country': '#9D6590', 'notify_party_name': '#B0FD6A', 'cosignee_name': '#67B337', 'original_or_copy': '#A41D7B', 'total_quantity_of_goods': '#EE587B', 'invoice_amount': '#629FB7', 'incoterm': '#D434B3', 'signed_by': '#963CC3', 'from': '#8BA7E0', 'beneficiary_drawer_exporter_seller_supplier_tin': '#02493F', 'invoice_currency': '#4D4EB4', 'consignor_name': '#8F74BA', 'advance_amount': '#466CD0', 'importer_your_ref_no': '#7C5259', 'invoice_due_date': '#A82CFF', 'unit': '#6DA256', 'shipment_date': '#6BB6BF', 'mode_of_despatch': '#C0E399', 'purchase_order_no_and_agreement_ref_no': '#E002D8', 'consignor_address': '#DB3B17', 'hs_code_no': '#AC1E17', 'date_of_invoice': '#3BF2F4', 'presentation_period': '#00DA1C', 'invoice_tax_amount': '#7937AF', 'beneficiary_drawer_exporter_seller_supplier_name': '#6DAAC6', 'O': '#905B63', 'port_of_discharge': '#702501', 'to': '#BA33F2', 'delivery_terms': '#A44BFF', 'tolerance_of_quantity': '#26B5C6', 'goods_description': '#5512A1', 'consignee_address': '#22CD22', 'shipper_address': '#D8DC2A', 'beneficiary_account_number': '#A42963', 'net_weight': '#B22EFF', 'invoice_amount_in_words': '#F51BE7', 'port_of_loading': '#693D94', 'drawer_ref_no': '#C3F653', 'place_of_receipt': '#D69D8E', 'rate_per_unit': '#32A2DB', 'amount_due': '#8E88C1', 'page_no': '#784D49', 'shipper_name': '#862D3B', 'total_pages': '#F62347', 'packaging_description': '#5628ED', 'beneficiary_bank_name': '#4A839E', 'remitter_drawee_applicant_importer_buyer_name': '#B4B11D', 'transport_details': '#DC0FE5', 'beneficiary_bank_country': '#D20CC4', 'country_of_final_destination': '#0BF8F9', 'transhipment': '#D0F86D', 'beneficiary_address': '#0AE45F', 'payment_terms': '#1297EB'}
+2024-03-22 20:07:07,911 is result_set is instance of dict? True
+2024-03-22 20:07:07,915 is final_result_set is instance of dict? True
+2024-03-22 20:07:08,232 Time taken for page 1 of Proforma_Invoice(2013_04_16_16_37_06_4995)_283_0.png:0:00:02.995088
+2024-03-22 20:07:08,336 *****Generated All Pages****** for Proforma_Invoice(2013_04_16_16_37_06_4995)_283_0.png
+2024-03-22 20:07:08,337 RAM memory 64.4 used for Proforma_Invoice(2013_04_16_16_37_06_4995)_283_0.png Generating All Pages:
+2024-03-22 20:07:08,337 Processing time taken for all pages of Proforma_Invoice(2013_04_16_16_37_06_4995)_283_0.png1:0:00:03.110898
+2024-03-22 20:07:08,507 file name is:Proforma_Invoice(2013_01_10_13_53_01_7838)_501_0.png
+2024-03-22 20:07:08,508 folder path :Images
+2024-03-22 20:07:08,508 Calling Image result
+2024-03-22 20:07:08,508 is all_page_result is instance of dict? True
+2024-03-22 20:07:08,512 STREAM b'IHDR' 16 13
+2024-03-22 20:07:08,512 STREAM b'IDAT' 41 34340
+2024-03-22 20:07:08,559 is words is instance of list? True
+2024-03-22 20:07:08,559 is bboxes is instance of list? True
+2024-03-22 20:07:08,560 is bounding_boxes is instance of list? True
+2024-03-22 20:07:08,851 is input_id_chunks is instance of list? True
+2024-03-22 20:07:08,851 is mask_chunks is instance of list? True
+2024-03-22 20:07:08,851 is bbox_chunks is instance of list? True
+2024-03-22 20:07:08,851 is image_chunks is instance of list? True
+2024-03-22 20:07:08,852 is input_dict is instance of dict? True
+2024-03-22 20:07:10,274 Model Called
+2024-03-22 20:07:10,274 RAM memory 64.5 used for Proforma_Invoice(2013_01_10_13_53_01_7838)_501_0.png:
+2024-03-22 20:07:10,274 is all_predictions is instance of list? True
+2024-03-22 20:07:10,274 is all_boxes is instance of list? True
+2024-03-22 20:07:10,274 is all_confidences is instance of list? True
+2024-03-22 20:07:10,274 is all_text is instance of list? True
+2024-03-22 20:07:10,275 is label2id is instance of dict? True
+2024-03-22 20:07:10,275 is id2label is instance of dict? True
+2024-03-22 20:07:10,276 is label2color is instance of dict? True
+2024-03-22 20:07:10,276 label2color : {'declaration_by_issuer': '#2C14EB', 'pre-carriage-by': '#40AC0A', 'order_date': '#D8EBC0', 'vessel_name': '#546928', 'invoice_no': '#231EA6', 'signature': '#7431BD', 'final_destination': '#146116', 'country_of_origin_of_goods': '#B65F39', 'exporter_our_ref_no': '#AC1EAE', 'gross_weight': '#7EA87D', 'beneficiary_bank_swift': '#23EF22', 'remitter_country': '#FBC7BE', 'notify_party_name': '#7ECD65', 'cosignee_name': '#ABA595', 'original_or_copy': '#9F2288', 'total_quantity_of_goods': '#7F6A4E', 'invoice_amount': '#EA1443', 'incoterm': '#E7EE29', 'signed_by': '#208123', 'from': '#DA412A', 'beneficiary_drawer_exporter_seller_supplier_tin': '#2B728F', 'invoice_currency': '#693C53', 'consignor_name': '#60FCE3', 'advance_amount': '#66367E', 'importer_your_ref_no': '#43B3C9', 'invoice_due_date': '#64B1F2', 'unit': '#889948', 'shipment_date': '#7FACB2', 'mode_of_despatch': '#1A636E', 'purchase_order_no_and_agreement_ref_no': '#964AA9', 'consignor_address': '#6BA8E6', 'hs_code_no': '#E5CB7A', 'date_of_invoice': '#77A8EB', 'presentation_period': '#907D95', 'invoice_tax_amount': '#1D2A5C', 'beneficiary_drawer_exporter_seller_supplier_name': '#46FC8E', 'O': '#F513B1', 'port_of_discharge': '#545846', 'to': '#BA4FB3', 'delivery_terms': '#0412F0', 'tolerance_of_quantity': '#96B54B', 'goods_description': '#704977', 'consignee_address': '#866382', 'shipper_address': '#F5E03B', 'beneficiary_account_number': '#87163F', 'net_weight': '#E8BB7A', 'invoice_amount_in_words': '#8A575B', 'port_of_loading': '#26B5C6', 'drawer_ref_no': '#124316', 'place_of_receipt': '#535672', 'rate_per_unit': '#A57F98', 'amount_due': '#EDC7D7', 'page_no': '#2F4C19', 'shipper_name': '#D901D7', 'total_pages': '#784DFD', 'packaging_description': '#C71610', 'beneficiary_bank_name': '#4594DA', 'remitter_drawee_applicant_importer_buyer_name': '#14C068', 'transport_details': '#97F485', 'beneficiary_bank_country': '#6AA0D6', 'country_of_final_destination': '#6C43A2', 'transhipment': '#744234', 'beneficiary_address': '#684DA8', 'payment_terms': '#AD0A2D'}
+2024-03-22 20:07:10,466 is result_set is instance of dict? True
+2024-03-22 20:07:10,468 is final_result_set is instance of dict? True
+2024-03-22 20:07:10,760 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_53_01_7838)_501_0.png:0:00:02.247562
+2024-03-22 20:07:10,919 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_53_01_7838)_501_0.png
+2024-03-22 20:07:10,920 RAM memory 64.5 used for Proforma_Invoice(2013_01_10_13_53_01_7838)_501_0.png Generating All Pages:
+2024-03-22 20:07:10,920 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_53_01_7838)_501_0.png1:0:00:02.412037
+2024-03-22 20:07:11,059 file name is:Proforma_Invoice(2013_01_10_13_51_40_2579)_491_0.png
+2024-03-22 20:07:11,060 folder path :Images
+2024-03-22 20:07:11,060 Calling Image result
+2024-03-22 20:07:11,060 is all_page_result is instance of dict? True
+2024-03-22 20:07:11,070 STREAM b'IHDR' 16 13
+2024-03-22 20:07:11,070 STREAM b'IDAT' 41 35489
+2024-03-22 20:07:11,104 is words is instance of list? True
+2024-03-22 20:07:11,104 is bboxes is instance of list? True
+2024-03-22 20:07:11,104 is bounding_boxes is instance of list? True
+2024-03-22 20:07:11,378 is input_id_chunks is instance of list? True
+2024-03-22 20:07:11,378 is mask_chunks is instance of list? True
+2024-03-22 20:07:11,378 is bbox_chunks is instance of list? True
+2024-03-22 20:07:11,378 is image_chunks is instance of list? True
+2024-03-22 20:07:11,380 is input_dict is instance of dict? True
+2024-03-22 20:07:12,988 Model Called
+2024-03-22 20:07:12,989 RAM memory 64.5 used for Proforma_Invoice(2013_01_10_13_51_40_2579)_491_0.png:
+2024-03-22 20:07:12,989 is all_predictions is instance of list? True
+2024-03-22 20:07:12,989 is all_boxes is instance of list? True
+2024-03-22 20:07:12,989 is all_confidences is instance of list? True
+2024-03-22 20:07:12,989 is all_text is instance of list? True
+2024-03-22 20:07:12,989 is label2id is instance of dict? True
+2024-03-22 20:07:12,989 is id2label is instance of dict? True
+2024-03-22 20:07:12,990 is label2color is instance of dict? True
+2024-03-22 20:07:12,990 label2color : {'declaration_by_issuer': '#A7494F', 'pre-carriage-by': '#51E422', 'order_date': '#8359C2', 'vessel_name': '#676CBF', 'invoice_no': '#42D2D0', 'signature': '#1B1BBE', 'final_destination': '#869B39', 'country_of_origin_of_goods': '#C97D97', 'exporter_our_ref_no': '#925CC8', 'gross_weight': '#FA3702', 'beneficiary_bank_swift': '#888ECD', 'remitter_country': '#8F3FE2', 'notify_party_name': '#73D86F', 'cosignee_name': '#2C3A6D', 'original_or_copy': '#2A9909', 'total_quantity_of_goods': '#B100AC', 'invoice_amount': '#E35DBB', 'incoterm': '#1FB8CE', 'signed_by': '#2CBD65', 'from': '#C42C29', 'beneficiary_drawer_exporter_seller_supplier_tin': '#6B17AB', 'invoice_currency': '#DE45AA', 'consignor_name': '#6C527F', 'advance_amount': '#3DDA03', 'importer_your_ref_no': '#BABBE7', 'invoice_due_date': '#CAEE86', 'unit': '#0E5AB2', 'shipment_date': '#09C16D', 'mode_of_despatch': '#00D8EC', 'purchase_order_no_and_agreement_ref_no': '#FD1B97', 'consignor_address': '#92013B', 'hs_code_no': '#3749BB', 'date_of_invoice': '#7988CC', 'presentation_period': '#FCC666', 'invoice_tax_amount': '#C41C62', 'beneficiary_drawer_exporter_seller_supplier_name': '#DA8CD6', 'O': '#C6D049', 'port_of_discharge': '#3E229D', 'to': '#CC7155', 'delivery_terms': '#B54CB3', 'tolerance_of_quantity': '#296752', 'goods_description': '#BC086E', 'consignee_address': '#A3E741', 'shipper_address': '#79FB1B', 'beneficiary_account_number': '#667691', 'net_weight': '#2E454D', 'invoice_amount_in_words': '#F9DD29', 'port_of_loading': '#D94E0D', 'drawer_ref_no': '#E4535B', 'place_of_receipt': '#5D8760', 'rate_per_unit': '#D5FF8A', 'amount_due': '#1D1D19', 'page_no': '#CBF8D4', 'shipper_name': '#2BB84B', 'total_pages': '#FC841C', 'packaging_description': '#CB2A68', 'beneficiary_bank_name': '#1E0261', 'remitter_drawee_applicant_importer_buyer_name': '#B2CD20', 'transport_details': '#E0240A', 'beneficiary_bank_country': '#D25A2B', 'country_of_final_destination': '#8F2C8A', 'transhipment': '#1A0128', 'beneficiary_address': '#0B0A73', 'payment_terms': '#B03D1A'}
+2024-03-22 20:07:13,181 is result_set is instance of dict? True
+2024-03-22 20:07:13,182 is final_result_set is instance of dict? True
+2024-03-22 20:07:13,433 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_51_40_2579)_491_0.png:0:00:02.362329
+2024-03-22 20:07:13,573 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_51_40_2579)_491_0.png
+2024-03-22 20:07:13,573 RAM memory 64.5 used for Proforma_Invoice(2013_01_10_13_51_40_2579)_491_0.png Generating All Pages:
+2024-03-22 20:07:13,573 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_51_40_2579)_491_0.png1:0:00:02.513088
+2024-03-22 20:07:13,696 file name is:Proforma_Invoice(2013_01_10_13_52_39_0207)_499_0.png
+2024-03-22 20:07:13,696 folder path :Images
+2024-03-22 20:07:13,696 Calling Image result
+2024-03-22 20:07:13,696 is all_page_result is instance of dict? True
+2024-03-22 20:07:13,707 STREAM b'IHDR' 16 13
+2024-03-22 20:07:13,707 STREAM b'IDAT' 41 34848
+2024-03-22 20:07:13,740 is words is instance of list? True
+2024-03-22 20:07:13,741 is bboxes is instance of list? True
+2024-03-22 20:07:13,741 is bounding_boxes is instance of list? True
+2024-03-22 20:07:13,989 is input_id_chunks is instance of list? True
+2024-03-22 20:07:13,990 is mask_chunks is instance of list? True
+2024-03-22 20:07:13,990 is bbox_chunks is instance of list? True
+2024-03-22 20:07:13,990 is image_chunks is instance of list? True
+2024-03-22 20:07:13,990 is input_dict is instance of dict? True
+2024-03-22 20:07:15,681 Model Called
+2024-03-22 20:07:15,681 RAM memory 64.9 used for Proforma_Invoice(2013_01_10_13_52_39_0207)_499_0.png:
+2024-03-22 20:07:15,681 is all_predictions is instance of list? True
+2024-03-22 20:07:15,681 is all_boxes is instance of list? True
+2024-03-22 20:07:15,681 is all_confidences is instance of list? True
+2024-03-22 20:07:15,681 is all_text is instance of list? True
+2024-03-22 20:07:15,682 is label2id is instance of dict? True
+2024-03-22 20:07:15,682 is id2label is instance of dict? True
+2024-03-22 20:07:15,683 is label2color is instance of dict? True
+2024-03-22 20:07:15,683 label2color : {'declaration_by_issuer': '#A4F606', 'pre-carriage-by': '#C9AD4E', 'order_date': '#4CA8DA', 'vessel_name': '#429CB8', 'invoice_no': '#AD6E3B', 'signature': '#BE005E', 'final_destination': '#31CFAA', 'country_of_origin_of_goods': '#17239D', 'exporter_our_ref_no': '#236C8F', 'gross_weight': '#AB1B06', 'beneficiary_bank_swift': '#0F9CA1', 'remitter_country': '#23E6B3', 'notify_party_name': '#0393E8', 'cosignee_name': '#0F0A76', 'original_or_copy': '#D5B3E4', 'total_quantity_of_goods': '#2D39CD', 'invoice_amount': '#A621B2', 'incoterm': '#2E780E', 'signed_by': '#B5A0B2', 'from': '#BA734C', 'beneficiary_drawer_exporter_seller_supplier_tin': '#8BAB58', 'invoice_currency': '#8BB341', 'consignor_name': '#D50C34', 'advance_amount': '#9A9487', 'importer_your_ref_no': '#3CAC96', 'invoice_due_date': '#14B370', 'unit': '#021EAA', 'shipment_date': '#F21911', 'mode_of_despatch': '#CCA7D9', 'purchase_order_no_and_agreement_ref_no': '#143D85', 'consignor_address': '#F519BB', 'hs_code_no': '#5581FC', 'date_of_invoice': '#1261DD', 'presentation_period': '#E33B55', 'invoice_tax_amount': '#E18A3E', 'beneficiary_drawer_exporter_seller_supplier_name': '#385631', 'O': '#172EF8', 'port_of_discharge': '#628549', 'to': '#88DEB4', 'delivery_terms': '#107261', 'tolerance_of_quantity': '#3437D2', 'goods_description': '#1B099E', 'consignee_address': '#6CCA45', 'shipper_address': '#4B23D1', 'beneficiary_account_number': '#9E1F82', 'net_weight': '#5A66F8', 'invoice_amount_in_words': '#226CB4', 'port_of_loading': '#A166B1', 'drawer_ref_no': '#771DB5', 'place_of_receipt': '#16AAF7', 'rate_per_unit': '#B68159', 'amount_due': '#369B02', 'page_no': '#01A516', 'shipper_name': '#4D811A', 'total_pages': '#C78A13', 'packaging_description': '#8A2B49', 'beneficiary_bank_name': '#26E3F9', 'remitter_drawee_applicant_importer_buyer_name': '#76AB62', 'transport_details': '#5E957C', 'beneficiary_bank_country': '#82509A', 'country_of_final_destination': '#32150A', 'transhipment': '#6A67CE', 'beneficiary_address': '#BE56F9', 'payment_terms': '#52577A'}
+2024-03-22 20:07:15,866 is result_set is instance of dict? True
+2024-03-22 20:07:15,867 is final_result_set is instance of dict? True
+2024-03-22 20:07:16,150 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_52_39_0207)_499_0.png:0:00:02.442614
+2024-03-22 20:07:16,320 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_52_39_0207)_499_0.png
+2024-03-22 20:07:16,320 RAM memory 64.9 used for Proforma_Invoice(2013_01_10_13_52_39_0207)_499_0.png Generating All Pages:
+2024-03-22 20:07:16,320 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_52_39_0207)_499_0.png1:0:00:02.623876
+2024-03-22 20:07:16,475 file name is:Proforma_Invoice(2013_01_10_13_54_59_7183)_522_0.png
+2024-03-22 20:07:16,476 folder path :Images
+2024-03-22 20:07:16,476 Calling Image result
+2024-03-22 20:07:16,476 is all_page_result is instance of dict? True
+2024-03-22 20:07:16,477 STREAM b'IHDR' 16 13
+2024-03-22 20:07:16,477 STREAM b'IDAT' 41 33239
+2024-03-22 20:07:16,512 is words is instance of list? True
+2024-03-22 20:07:16,512 is bboxes is instance of list? True
+2024-03-22 20:07:16,512 is bounding_boxes is instance of list? True
+2024-03-22 20:07:16,735 is input_id_chunks is instance of list? True
+2024-03-22 20:07:16,735 is mask_chunks is instance of list? True
+2024-03-22 20:07:16,735 is bbox_chunks is instance of list? True
+2024-03-22 20:07:16,735 is image_chunks is instance of list? True
+2024-03-22 20:07:16,735 is input_dict is instance of dict? True
+2024-03-22 20:07:18,483 Model Called
+2024-03-22 20:07:18,483 RAM memory 64.8 used for Proforma_Invoice(2013_01_10_13_54_59_7183)_522_0.png:
+2024-03-22 20:07:18,483 is all_predictions is instance of list? True
+2024-03-22 20:07:18,483 is all_boxes is instance of list? True
+2024-03-22 20:07:18,483 is all_confidences is instance of list? True
+2024-03-22 20:07:18,484 is all_text is instance of list? True
+2024-03-22 20:07:18,484 is label2id is instance of dict? True
+2024-03-22 20:07:18,484 is id2label is instance of dict? True
+2024-03-22 20:07:18,485 is label2color is instance of dict? True
+2024-03-22 20:07:18,485 label2color : {'declaration_by_issuer': '#A9CFCC', 'pre-carriage-by': '#CDB220', 'order_date': '#2EBE9F', 'vessel_name': '#D94931', 'invoice_no': '#A029D7', 'signature': '#F5B5A6', 'final_destination': '#81394D', 'country_of_origin_of_goods': '#000896', 'exporter_our_ref_no': '#0DD3EA', 'gross_weight': '#D72F1E', 'beneficiary_bank_swift': '#9DA0A1', 'remitter_country': '#BC099B', 'notify_party_name': '#5BA271', 'cosignee_name': '#8A7478', 'original_or_copy': '#D88619', 'total_quantity_of_goods': '#16087B', 'invoice_amount': '#4180B5', 'incoterm': '#F2682A', 'signed_by': '#5A8FCD', 'from': '#CB01BB', 'beneficiary_drawer_exporter_seller_supplier_tin': '#F53FDD', 'invoice_currency': '#A7E8B4', 'consignor_name': '#7B4DAC', 'advance_amount': '#09E71F', 'importer_your_ref_no': '#D442BF', 'invoice_due_date': '#ADBD82', 'unit': '#B6BFD3', 'shipment_date': '#7A8BE8', 'mode_of_despatch': '#9029F3', 'purchase_order_no_and_agreement_ref_no': '#AE8EFD', 'consignor_address': '#DFE306', 'hs_code_no': '#F6FBCF', 'date_of_invoice': '#A9F79E', 'presentation_period': '#82B07A', 'invoice_tax_amount': '#D0C18B', 'beneficiary_drawer_exporter_seller_supplier_name': '#4E2487', 'O': '#1953A6', 'port_of_discharge': '#0AA5B5', 'to': '#3CAF4A', 'delivery_terms': '#AEE018', 'tolerance_of_quantity': '#7F8850', 'goods_description': '#4BD76F', 'consignee_address': '#C48A38', 'shipper_address': '#92E0D9', 'beneficiary_account_number': '#F76F7F', 'net_weight': '#A2BBC0', 'invoice_amount_in_words': '#1B1C01', 'port_of_loading': '#AC8BB8', 'drawer_ref_no': '#896BDD', 'place_of_receipt': '#34D5FA', 'rate_per_unit': '#50E053', 'amount_due': '#E90BC8', 'page_no': '#40A5A3', 'shipper_name': '#978A76', 'total_pages': '#34EEBF', 'packaging_description': '#5B6E52', 'beneficiary_bank_name': '#47EB61', 'remitter_drawee_applicant_importer_buyer_name': '#35EB6E', 'transport_details': '#18C8A9', 'beneficiary_bank_country': '#59C95A', 'country_of_final_destination': '#9D5F64', 'transhipment': '#E39DFD', 'beneficiary_address': '#F6EB4A', 'payment_terms': '#7175A9'}
+2024-03-22 20:07:18,622 is result_set is instance of dict? True
+2024-03-22 20:07:18,623 is final_result_set is instance of dict? True
+2024-03-22 20:07:18,891 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_54_59_7183)_522_0.png:0:00:02.413708
+2024-03-22 20:07:19,035 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_54_59_7183)_522_0.png
+2024-03-22 20:07:19,036 RAM memory 64.8 used for Proforma_Invoice(2013_01_10_13_54_59_7183)_522_0.png Generating All Pages:
+2024-03-22 20:07:19,036 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_54_59_7183)_522_0.png1:0:00:02.560097
+2024-03-22 20:07:19,191 file name is:Proforma_Invoice(2013_01_10_13_52_06_4463)_496_0.png
+2024-03-22 20:07:19,191 folder path :Images
+2024-03-22 20:07:19,191 Calling Image result
+2024-03-22 20:07:19,191 is all_page_result is instance of dict? True
+2024-03-22 20:07:19,202 STREAM b'IHDR' 16 13
+2024-03-22 20:07:19,202 STREAM b'IDAT' 41 33922
+2024-03-22 20:07:19,240 is words is instance of list? True
+2024-03-22 20:07:19,240 is bboxes is instance of list? True
+2024-03-22 20:07:19,240 is bounding_boxes is instance of list? True
+2024-03-22 20:07:19,505 is input_id_chunks is instance of list? True
+2024-03-22 20:07:19,505 is mask_chunks is instance of list? True
+2024-03-22 20:07:19,505 is bbox_chunks is instance of list? True
+2024-03-22 20:07:19,505 is image_chunks is instance of list? True
+2024-03-22 20:07:19,505 is input_dict is instance of dict? True
+2024-03-22 20:07:20,937 Model Called
+2024-03-22 20:07:20,937 RAM memory 64.8 used for Proforma_Invoice(2013_01_10_13_52_06_4463)_496_0.png:
+2024-03-22 20:07:20,937 is all_predictions is instance of list? True
+2024-03-22 20:07:20,937 is all_boxes is instance of list? True
+2024-03-22 20:07:20,938 is all_confidences is instance of list? True
+2024-03-22 20:07:20,938 is all_text is instance of list? True
+2024-03-22 20:07:20,938 is label2id is instance of dict? True
+2024-03-22 20:07:20,938 is id2label is instance of dict? True
+2024-03-22 20:07:20,939 is label2color is instance of dict? True
+2024-03-22 20:07:20,939 label2color : {'declaration_by_issuer': '#C7AB40', 'pre-carriage-by': '#395163', 'order_date': '#F4F49E', 'vessel_name': '#DD7FF0', 'invoice_no': '#6220D7', 'signature': '#EA2311', 'final_destination': '#27A820', 'country_of_origin_of_goods': '#251613', 'exporter_our_ref_no': '#B5B3AB', 'gross_weight': '#8AFCB9', 'beneficiary_bank_swift': '#5DF068', 'remitter_country': '#2BC55B', 'notify_party_name': '#FA0734', 'cosignee_name': '#19A041', 'original_or_copy': '#1E6838', 'total_quantity_of_goods': '#6BBCD1', 'invoice_amount': '#78C387', 'incoterm': '#B55784', 'signed_by': '#2AAA41', 'from': '#E32D56', 'beneficiary_drawer_exporter_seller_supplier_tin': '#E3CB8D', 'invoice_currency': '#BCEDD9', 'consignor_name': '#92C291', 'advance_amount': '#C7DFE0', 'importer_your_ref_no': '#B1D256', 'invoice_due_date': '#8D0490', 'unit': '#E3DE13', 'shipment_date': '#CD71D5', 'mode_of_despatch': '#962F70', 'purchase_order_no_and_agreement_ref_no': '#5A74B1', 'consignor_address': '#F218EA', 'hs_code_no': '#87716B', 'date_of_invoice': '#42A899', 'presentation_period': '#C10E47', 'invoice_tax_amount': '#505981', 'beneficiary_drawer_exporter_seller_supplier_name': '#137119', 'O': '#843AC5', 'port_of_discharge': '#E5AF1D', 'to': '#F9D3D8', 'delivery_terms': '#1367C0', 'tolerance_of_quantity': '#9D1011', 'goods_description': '#3B93CC', 'consignee_address': '#AB97E9', 'shipper_address': '#9662A4', 'beneficiary_account_number': '#9130BC', 'net_weight': '#7DAAD9', 'invoice_amount_in_words': '#32F0FD', 'port_of_loading': '#1C31F4', 'drawer_ref_no': '#9B24FC', 'place_of_receipt': '#82A7EF', 'rate_per_unit': '#2E0565', 'amount_due': '#82C066', 'page_no': '#529A3A', 'shipper_name': '#195D76', 'total_pages': '#82C1BD', 'packaging_description': '#1F9236', 'beneficiary_bank_name': '#7CE01D', 'remitter_drawee_applicant_importer_buyer_name': '#A8500F', 'transport_details': '#D01411', 'beneficiary_bank_country': '#961549', 'country_of_final_destination': '#E9167C', 'transhipment': '#DBB484', 'beneficiary_address': '#209296', 'payment_terms': '#6E9AAC'}
+2024-03-22 20:07:21,105 is result_set is instance of dict? True
+2024-03-22 20:07:21,107 is final_result_set is instance of dict? True
+2024-03-22 20:07:21,409 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_52_06_4463)_496_0.png:0:00:02.206948
+2024-03-22 20:07:21,549 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_52_06_4463)_496_0.png
+2024-03-22 20:07:21,549 RAM memory 64.5 used for Proforma_Invoice(2013_01_10_13_52_06_4463)_496_0.png Generating All Pages:
+2024-03-22 20:07:21,549 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_52_06_4463)_496_0.png1:0:00:02.357950
+2024-03-22 20:07:21,659 file name is:Proforma_Invoice(2013_01_10_13_53_48_7045)_503_0.png
+2024-03-22 20:07:21,659 folder path :Images
+2024-03-22 20:07:21,659 Calling Image result
+2024-03-22 20:07:21,659 is all_page_result is instance of dict? True
+2024-03-22 20:07:21,670 STREAM b'IHDR' 16 13
+2024-03-22 20:07:21,670 STREAM b'IDAT' 41 33690
+2024-03-22 20:07:21,703 is words is instance of list? True
+2024-03-22 20:07:21,704 is bboxes is instance of list? True
+2024-03-22 20:07:21,704 is bounding_boxes is instance of list? True
+2024-03-22 20:07:21,945 is input_id_chunks is instance of list? True
+2024-03-22 20:07:21,945 is mask_chunks is instance of list? True
+2024-03-22 20:07:21,945 is bbox_chunks is instance of list? True
+2024-03-22 20:07:21,945 is image_chunks is instance of list? True
+2024-03-22 20:07:21,945 is input_dict is instance of dict? True
+2024-03-22 20:07:23,192 Model Called
+2024-03-22 20:07:23,192 RAM memory 64.6 used for Proforma_Invoice(2013_01_10_13_53_48_7045)_503_0.png:
+2024-03-22 20:07:23,192 is all_predictions is instance of list? True
+2024-03-22 20:07:23,192 is all_boxes is instance of list? True
+2024-03-22 20:07:23,192 is all_confidences is instance of list? True
+2024-03-22 20:07:23,192 is all_text is instance of list? True
+2024-03-22 20:07:23,192 is label2id is instance of dict? True
+2024-03-22 20:07:23,193 is id2label is instance of dict? True
+2024-03-22 20:07:23,194 is label2color is instance of dict? True
+2024-03-22 20:07:23,194 label2color : {'declaration_by_issuer': '#00A811', 'pre-carriage-by': '#914E8B', 'order_date': '#C353C0', 'vessel_name': '#EB08BB', 'invoice_no': '#FC8E70', 'signature': '#A1C8DD', 'final_destination': '#DC74CA', 'country_of_origin_of_goods': '#F45595', 'exporter_our_ref_no': '#65EC9A', 'gross_weight': '#412A7E', 'beneficiary_bank_swift': '#C519A4', 'remitter_country': '#2446C0', 'notify_party_name': '#599CD7', 'cosignee_name': '#882AE1', 'original_or_copy': '#A101E4', 'total_quantity_of_goods': '#47F567', 'invoice_amount': '#0339D2', 'incoterm': '#A7A451', 'signed_by': '#3EE19A', 'from': '#CB3B9A', 'beneficiary_drawer_exporter_seller_supplier_tin': '#2DD88A', 'invoice_currency': '#32F235', 'consignor_name': '#04C8FB', 'advance_amount': '#A80C0C', 'importer_your_ref_no': '#E965A2', 'invoice_due_date': '#64B687', 'unit': '#DF4A59', 'shipment_date': '#6E7EC6', 'mode_of_despatch': '#AAEFAA', 'purchase_order_no_and_agreement_ref_no': '#22D10C', 'consignor_address': '#53C5AF', 'hs_code_no': '#8781A0', 'date_of_invoice': '#4971FD', 'presentation_period': '#B83884', 'invoice_tax_amount': '#A9B780', 'beneficiary_drawer_exporter_seller_supplier_name': '#729C26', 'O': '#6EF576', 'port_of_discharge': '#D02422', 'to': '#398450', 'delivery_terms': '#CE8264', 'tolerance_of_quantity': '#696DBC', 'goods_description': '#1FE849', 'consignee_address': '#6A65AA', 'shipper_address': '#594228', 'beneficiary_account_number': '#3095DB', 'net_weight': '#BA0ACA', 'invoice_amount_in_words': '#F04828', 'port_of_loading': '#47200D', 'drawer_ref_no': '#1E456D', 'place_of_receipt': '#7E5ADF', 'rate_per_unit': '#FFE5DC', 'amount_due': '#4F887A', 'page_no': '#967D60', 'shipper_name': '#CBB880', 'total_pages': '#FAA5AD', 'packaging_description': '#72E202', 'beneficiary_bank_name': '#3F7366', 'remitter_drawee_applicant_importer_buyer_name': '#8EEE30', 'transport_details': '#6399EF', 'beneficiary_bank_country': '#63ACBE', 'country_of_final_destination': '#3FDCA8', 'transhipment': '#431B8F', 'beneficiary_address': '#9EE5DE', 'payment_terms': '#A69C5B'}
+2024-03-22 20:07:23,347 is result_set is instance of dict? True
+2024-03-22 20:07:23,348 is final_result_set is instance of dict? True
+2024-03-22 20:07:23,647 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_53_48_7045)_503_0.png:0:00:01.976383
+2024-03-22 20:07:23,791 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_53_48_7045)_503_0.png
+2024-03-22 20:07:23,791 RAM memory 64.6 used for Proforma_Invoice(2013_01_10_13_53_48_7045)_503_0.png Generating All Pages:
+2024-03-22 20:07:23,791 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_53_48_7045)_503_0.png1:0:00:02.131773
+2024-03-22 20:07:23,926 file name is:Proforma_Invoice(2013_01_10_13_54_51_9272)_507_0.png
+2024-03-22 20:07:23,927 folder path :Images
+2024-03-22 20:07:23,927 Calling Image result
+2024-03-22 20:07:23,927 is all_page_result is instance of dict? True
+2024-03-22 20:07:23,937 STREAM b'IHDR' 16 13
+2024-03-22 20:07:23,938 STREAM b'IDAT' 41 34699
+2024-03-22 20:07:23,969 is words is instance of list? True
+2024-03-22 20:07:23,969 is bboxes is instance of list? True
+2024-03-22 20:07:23,969 is bounding_boxes is instance of list? True
+2024-03-22 20:07:24,183 is input_id_chunks is instance of list? True
+2024-03-22 20:07:24,183 is mask_chunks is instance of list? True
+2024-03-22 20:07:24,183 is bbox_chunks is instance of list? True
+2024-03-22 20:07:24,183 is image_chunks is instance of list? True
+2024-03-22 20:07:24,183 is input_dict is instance of dict? True
+2024-03-22 20:07:25,487 Model Called
+2024-03-22 20:07:25,487 RAM memory 64.5 used for Proforma_Invoice(2013_01_10_13_54_51_9272)_507_0.png:
+2024-03-22 20:07:25,487 is all_predictions is instance of list? True
+2024-03-22 20:07:25,488 is all_boxes is instance of list? True
+2024-03-22 20:07:25,488 is all_confidences is instance of list? True
+2024-03-22 20:07:25,488 is all_text is instance of list? True
+2024-03-22 20:07:25,488 is label2id is instance of dict? True
+2024-03-22 20:07:25,488 is id2label is instance of dict? True
+2024-03-22 20:07:25,489 is label2color is instance of dict? True
+2024-03-22 20:07:25,489 label2color : {'declaration_by_issuer': '#83CD95', 'pre-carriage-by': '#3E1CF5', 'order_date': '#1E8F04', 'vessel_name': '#B69A22', 'invoice_no': '#FE4463', 'signature': '#7C0E8D', 'final_destination': '#319BC4', 'country_of_origin_of_goods': '#29BDAB', 'exporter_our_ref_no': '#B8AEC9', 'gross_weight': '#DEF3C7', 'beneficiary_bank_swift': '#6AA1B0', 'remitter_country': '#F27750', 'notify_party_name': '#D349A9', 'cosignee_name': '#700009', 'original_or_copy': '#1AF38B', 'total_quantity_of_goods': '#67E7AD', 'invoice_amount': '#C2F1B7', 'incoterm': '#42BEE4', 'signed_by': '#5DE830', 'from': '#ECE806', 'beneficiary_drawer_exporter_seller_supplier_tin': '#ABEA42', 'invoice_currency': '#1E2BE0', 'consignor_name': '#14EB4A', 'advance_amount': '#CC25B9', 'importer_your_ref_no': '#F766B7', 'invoice_due_date': '#E0F3DD', 'unit': '#3A6FB3', 'shipment_date': '#63D091', 'mode_of_despatch': '#CD6229', 'purchase_order_no_and_agreement_ref_no': '#84689D', 'consignor_address': '#661B2D', 'hs_code_no': '#ADB23F', 'date_of_invoice': '#070472', 'presentation_period': '#8BF085', 'invoice_tax_amount': '#36E2A8', 'beneficiary_drawer_exporter_seller_supplier_name': '#011F5C', 'O': '#92902B', 'port_of_discharge': '#74DC00', 'to': '#73848E', 'delivery_terms': '#6AA661', 'tolerance_of_quantity': '#EB12BD', 'goods_description': '#824E63', 'consignee_address': '#C96737', 'shipper_address': '#00C754', 'beneficiary_account_number': '#C907DC', 'net_weight': '#88ECE4', 'invoice_amount_in_words': '#10FEF8', 'port_of_loading': '#3DCF84', 'drawer_ref_no': '#301992', 'place_of_receipt': '#D5C455', 'rate_per_unit': '#AE1F2F', 'amount_due': '#24F7C5', 'page_no': '#FB90B4', 'shipper_name': '#03E2A8', 'total_pages': '#CEB230', 'packaging_description': '#4B936E', 'beneficiary_bank_name': '#5A1D37', 'remitter_drawee_applicant_importer_buyer_name': '#FE0937', 'transport_details': '#508005', 'beneficiary_bank_country': '#51272D', 'country_of_final_destination': '#4E1301', 'transhipment': '#AFCE18', 'beneficiary_address': '#5CEB72', 'payment_terms': '#C75B64'}
+2024-03-22 20:07:25,675 is result_set is instance of dict? True
+2024-03-22 20:07:25,676 is final_result_set is instance of dict? True
+2024-03-22 20:07:25,960 Time taken for page 1 of Proforma_Invoice(2013_01_10_13_54_51_9272)_507_0.png:0:00:02.021971
+2024-03-22 20:07:26,110 *****Generated All Pages****** for Proforma_Invoice(2013_01_10_13_54_51_9272)_507_0.png
+2024-03-22 20:07:26,110 RAM memory 64.7 used for Proforma_Invoice(2013_01_10_13_54_51_9272)_507_0.png Generating All Pages:
+2024-03-22 20:07:26,110 Processing time taken for all pages of Proforma_Invoice(2013_01_10_13_54_51_9272)_507_0.png1:0:00:02.183770
+2024-03-22 20:07:26,253 file name is:Proforma_Invoice_33_0.png
+2024-03-22 20:07:26,253 folder path :Images
+2024-03-22 20:07:26,253 Calling Image result
+2024-03-22 20:07:26,253 is all_page_result is instance of dict? True
+2024-03-22 20:07:26,264 STREAM b'IHDR' 16 13
+2024-03-22 20:07:26,264 STREAM b'IDAT' 41 38109
+2024-03-22 20:07:26,302 is words is instance of list? True
+2024-03-22 20:07:26,302 is bboxes is instance of list? True
+2024-03-22 20:07:26,302 is bounding_boxes is instance of list? True
+2024-03-22 20:07:26,528 is input_id_chunks is instance of list? True
+2024-03-22 20:07:26,528 is mask_chunks is instance of list? True
+2024-03-22 20:07:26,528 is bbox_chunks is instance of list? True
+2024-03-22 20:07:26,528 is image_chunks is instance of list? True
+2024-03-22 20:07:26,529 is input_dict is instance of dict? True
+2024-03-22 20:07:27,859 Model Called
+2024-03-22 20:07:27,860 RAM memory 64.6 used for Proforma_Invoice_33_0.png:
+2024-03-22 20:07:27,860 is all_predictions is instance of list? True
+2024-03-22 20:07:27,860 is all_boxes is instance of list? True
+2024-03-22 20:07:27,860 is all_confidences is instance of list? True
+2024-03-22 20:07:27,860 is all_text is instance of list? True
+2024-03-22 20:07:27,860 is label2id is instance of dict? True
+2024-03-22 20:07:27,861 is id2label is instance of dict? True
+2024-03-22 20:07:27,861 is label2color is instance of dict? True
+2024-03-22 20:07:27,861 label2color : {'declaration_by_issuer': '#78FD35', 'pre-carriage-by': '#506651', 'order_date': '#D045DF', 'vessel_name': '#F554EB', 'invoice_no': '#CD8A00', 'signature': '#5C7FA6', 'final_destination': '#E45732', 'country_of_origin_of_goods': '#86F3E8', 'exporter_our_ref_no': '#C0F989', 'gross_weight': '#46CD96', 'beneficiary_bank_swift': '#C8D0CF', 'remitter_country': '#F61399', 'notify_party_name': '#D5D0F2', 'cosignee_name': '#C4185E', 'original_or_copy': '#D9DE9E', 'total_quantity_of_goods': '#E7036D', 'invoice_amount': '#7B1C12', 'incoterm': '#42EBE4', 'signed_by': '#52DF94', 'from': '#562BB8', 'beneficiary_drawer_exporter_seller_supplier_tin': '#81CB40', 'invoice_currency': '#1459BF', 'consignor_name': '#A5902E', 'advance_amount': '#D9868A', 'importer_your_ref_no': '#16498E', 'invoice_due_date': '#7E0831', 'unit': '#7AE116', 'shipment_date': '#74DA58', 'mode_of_despatch': '#B691B6', 'purchase_order_no_and_agreement_ref_no': '#4EA4BA', 'consignor_address': '#84BCA9', 'hs_code_no': '#1DCED9', 'date_of_invoice': '#6D4CAF', 'presentation_period': '#96999D', 'invoice_tax_amount': '#BA55D8', 'beneficiary_drawer_exporter_seller_supplier_name': '#E3368A', 'O': '#119241', 'port_of_discharge': '#217E75', 'to': '#AE64C1', 'delivery_terms': '#72CD28', 'tolerance_of_quantity': '#618B0B', 'goods_description': '#1DC7F3', 'consignee_address': '#D81216', 'shipper_address': '#AE0A9D', 'beneficiary_account_number': '#381D67', 'net_weight': '#8BA3BF', 'invoice_amount_in_words': '#5CE57D', 'port_of_loading': '#A719E7', 'drawer_ref_no': '#679AEE', 'place_of_receipt': '#A9255B', 'rate_per_unit': '#49D590', 'amount_due': '#AE2406', 'page_no': '#B9CBBB', 'shipper_name': '#E7A313', 'total_pages': '#789D0D', 'packaging_description': '#C7F7D5', 'beneficiary_bank_name': '#0B681E', 'remitter_drawee_applicant_importer_buyer_name': '#81D278', 'transport_details': '#657D83', 'beneficiary_bank_country': '#EFEC1E', 'country_of_final_destination': '#D41614', 'transhipment': '#68E20A', 'beneficiary_address': '#675A29', 'payment_terms': '#9ABC24'}
+2024-03-22 20:07:27,982 is result_set is instance of dict? True
+2024-03-22 20:07:27,983 is final_result_set is instance of dict? True
+2024-03-22 20:07:28,216 Time taken for page 1 of Proforma_Invoice_33_0.png:0:00:01.952352
+2024-03-22 20:07:28,329 *****Generated All Pages****** for Proforma_Invoice_33_0.png
+2024-03-22 20:07:28,330 RAM memory 64.6 used for Proforma_Invoice_33_0.png Generating All Pages:
+2024-03-22 20:07:28,330 Processing time taken for all pages of Proforma_Invoice_33_0.png1:0:00:02.076435

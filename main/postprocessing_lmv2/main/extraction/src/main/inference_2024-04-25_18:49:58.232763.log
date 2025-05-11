@@ -1,0 +1,19 @@
+2024-04-25 18:49:58,243 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-04-25 18:49:58,245 start time: 2024-04-25 18:49:58.245612
+2024-04-25 18:50:02,491 Starting new HTTPS connection (1): huggingface.co:443
+2024-04-25 18:50:03,308 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-04-25 18:50:04,168 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-04-25 18:50:04,495 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-04-25 18:50:04,539 RAM memory for Model loading used: 72.8
+2024-04-25 18:50:04,539 cpu_utilization % for Model Loading:-16.1
+2024-04-25 18:50:04,539 memory_consumption in bytes for Loading Model:907776000
+2024-04-25 18:50:04,539 Loaded Model successfully
+2024-04-25 18:50:04,540 file name is:Bill_of_lading_1077_page_0.png
+2024-04-25 18:50:04,540 folder path :Images
+2024-04-25 18:50:04,540 Calling Image result
+2024-04-25 18:50:04,540 is all_page_result is instance of dict? True
+2024-04-25 18:50:04,545 STREAM b'IHDR' 16 13
+2024-04-25 18:50:04,546 STREAM b'IDAT' 41 59829
+2024-04-25 18:50:04,587 *****Generated All Pages****** for Bill_of_lading_1077_page_0.png
+2024-04-25 18:50:04,588 RAM memory 72.9 used for Bill_of_lading_1077_page_0.png Generating All Pages:
+2024-04-25 18:50:04,588 Processing time taken for all pages of Bill_of_lading_1077_page_0.png1:0:00:00.048351

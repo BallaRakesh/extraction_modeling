@@ -1,0 +1,372 @@
+2024-01-23 15:04:08,286 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-01-23 15:04:08,306 start time: 2024-01-23 15:04:08.306924
+2024-01-23 15:04:13,606 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-01-23 15:04:13,711 Creating converter from 7 to 5
+2024-01-23 15:04:13,711 Creating converter from 5 to 7
+2024-01-23 15:04:13,711 Creating converter from 7 to 5
+2024-01-23 15:04:13,711 Creating converter from 5 to 7
+2024-01-23 15:04:14,471 Starting new HTTPS connection (1): huggingface.co:443
+2024-01-23 15:04:14,808 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-01-23 15:04:15,271 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-01-23 15:04:15,496 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-01-23 15:04:15,547 RAM memory for Model loading used: 77.1
+2024-01-23 15:04:15,547 cpu_utilization % for Model Loading:7.900000000000002
+2024-01-23 15:04:15,547 memory_consumption in bytes for Loading Model:1188954112
+2024-01-23 15:04:15,547 Loaded Model successfully
+2024-01-23 15:04:15,612 file name is:Certificate_Of_Origin_621_page_0.png
+2024-01-23 15:04:15,612 folder path :Images
+2024-01-23 15:04:15,612 Calling Image result
+2024-01-23 15:04:15,612 is all_page_result is instance of dict? True
+2024-01-23 15:04:15,629 STREAM b'IHDR' 16 13
+2024-01-23 15:04:15,630 STREAM b'IDAT' 41 60696
+2024-01-23 15:04:15,859 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:04:16,835 is words is instance of list? True
+2024-01-23 15:04:16,835 is bboxes is instance of list? True
+2024-01-23 15:04:16,835 is bounding_boxes is instance of list? True
+2024-01-23 15:04:17,591 is input_id_chunks is instance of list? True
+2024-01-23 15:04:17,591 is mask_chunks is instance of list? True
+2024-01-23 15:04:17,592 is bbox_chunks is instance of list? True
+2024-01-23 15:04:17,592 is image_chunks is instance of list? True
+2024-01-23 15:04:17,592 is input_dict is instance of dict? True
+2024-01-23 15:04:19,238 Model Called
+2024-01-23 15:04:19,238 RAM memory 87.8 used for Certificate_Of_Origin_621_page_0.png:
+2024-01-23 15:04:19,238 is all_predictions is instance of list? True
+2024-01-23 15:04:19,238 is all_boxes is instance of list? True
+2024-01-23 15:04:19,238 is all_confidences is instance of list? True
+2024-01-23 15:04:19,238 is all_text is instance of list? True
+2024-01-23 15:04:19,238 is label2id is instance of dict? True
+2024-01-23 15:04:19,239 is id2label is instance of dict? True
+2024-01-23 15:04:19,239 is label2color is instance of dict? True
+2024-01-23 15:04:19,239 label2color : {'marks_and_no_of_packages': '#D88D04', 'final_destination': '#A8D22D', 'lc_ref_no': '#93ED41', 'net_weight': '#E67B1F', 'country_of_origin_of_goods': '#D0F34C', 'means_of_transport': '#532F32', 'original_number': '#5D9CCB', 'invoice_no': '#170D37', 'signature': '#95A83D', 'consignee_address': '#18A49F', 'vessel_details': '#C74CA6', 'description_of_goods': '#BAEA82', 'invoice_date': '#3C6A5E', 'certificate_stamped': '#11DEB7', 'gross_weight': '#F74CA8', 'ref_no': '#47AECC', 'lc_date': '#CDB51D', 'consignee_name': '#A60DF0', 'declaration_by_exporter': '#508671', 'original_or_copy': '#B07EBF', 'O': '#9971E3', 'declaration_by_certification': '#33C2B3', 'consignor_name': '#944729', 'consignor_address': '#8DAE8E', 'issue_date': '#E2B5F2', 'coo_issuer_address': '#068EA0', 'certificate_no': '#891AF8', 'to_place': '#116F90', 'page_no': '#B003A5', 'from_place': '#912D94', 'coo_issuer_name': '#81A2EE'}
+2024-01-23 15:04:19,530 is result_set is instance of dict? True
+2024-01-23 15:04:19,547 is final_result_set is instance of dict? True
+2024-01-23 15:04:19,618 Time taken for page 1 of Certificate_Of_Origin_621_page_0.png:0:00:03.988709
+2024-01-23 15:04:19,818 *****Generated All Pages****** for Certificate_Of_Origin_621_page_0.png
+2024-01-23 15:04:19,818 RAM memory 88.0 used for Certificate_Of_Origin_621_page_0.png Generating All Pages:
+2024-01-23 15:04:19,818 Processing time taken for all pages of Certificate_Of_Origin_621_page_0.png1:0:00:04.205803
+2024-01-23 15:04:20,028 file name is:Certificate_Of_Origin_282_page_1.png
+2024-01-23 15:04:20,028 folder path :Images
+2024-01-23 15:04:20,028 Calling Image result
+2024-01-23 15:04:20,028 is all_page_result is instance of dict? True
+2024-01-23 15:04:20,077 STREAM b'IHDR' 16 13
+2024-01-23 15:04:20,078 STREAM b'IDAT' 41 65536
+2024-01-23 15:04:20,098 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:04:21,352 is words is instance of list? True
+2024-01-23 15:04:21,352 is bboxes is instance of list? True
+2024-01-23 15:04:21,352 is bounding_boxes is instance of list? True
+2024-01-23 15:04:21,536 is input_id_chunks is instance of list? True
+2024-01-23 15:04:21,536 is mask_chunks is instance of list? True
+2024-01-23 15:04:21,536 is bbox_chunks is instance of list? True
+2024-01-23 15:04:21,536 is image_chunks is instance of list? True
+2024-01-23 15:04:21,537 is input_dict is instance of dict? True
+2024-01-23 15:04:23,106 Model Called
+2024-01-23 15:04:23,107 RAM memory 87.9 used for Certificate_Of_Origin_282_page_1.png:
+2024-01-23 15:04:23,107 is all_predictions is instance of list? True
+2024-01-23 15:04:23,107 is all_boxes is instance of list? True
+2024-01-23 15:04:23,107 is all_confidences is instance of list? True
+2024-01-23 15:04:23,107 is all_text is instance of list? True
+2024-01-23 15:04:23,107 is label2id is instance of dict? True
+2024-01-23 15:04:23,107 is id2label is instance of dict? True
+2024-01-23 15:04:23,107 is label2color is instance of dict? True
+2024-01-23 15:04:23,108 label2color : {'marks_and_no_of_packages': '#9469EB', 'final_destination': '#57CAD4', 'lc_ref_no': '#EB3DE7', 'net_weight': '#1D09AD', 'country_of_origin_of_goods': '#2F6E4E', 'means_of_transport': '#DD7DB7', 'original_number': '#0E95BC', 'invoice_no': '#10AA02', 'signature': '#931F47', 'consignee_address': '#FFFA01', 'vessel_details': '#BE8747', 'description_of_goods': '#374DC9', 'invoice_date': '#408626', 'certificate_stamped': '#305972', 'gross_weight': '#54D855', 'ref_no': '#D31530', 'lc_date': '#A2C8ED', 'consignee_name': '#34205D', 'declaration_by_exporter': '#45D1FA', 'original_or_copy': '#44E387', 'O': '#05496F', 'declaration_by_certification': '#8DD5E4', 'consignor_name': '#8D79ED', 'consignor_address': '#A1263E', 'issue_date': '#A060BB', 'coo_issuer_address': '#810C61', 'certificate_no': '#98E5DB', 'to_place': '#A47527', 'page_no': '#5F7A42', 'from_place': '#8F80C1', 'coo_issuer_name': '#105655'}
+2024-01-23 15:04:23,303 is result_set is instance of dict? True
+2024-01-23 15:04:23,304 is final_result_set is instance of dict? True
+2024-01-23 15:04:23,344 Time taken for page 1 of Certificate_Of_Origin_282_page_1.png:0:00:03.266498
+2024-01-23 15:04:23,506 *****Generated All Pages****** for Certificate_Of_Origin_282_page_1.png
+2024-01-23 15:04:23,506 RAM memory 87.8 used for Certificate_Of_Origin_282_page_1.png Generating All Pages:
+2024-01-23 15:04:23,506 Processing time taken for all pages of Certificate_Of_Origin_282_page_1.png1:0:00:03.478332
+2024-01-23 15:04:23,677 file name is:Certificate_Of_Origin_325_page_2.png
+2024-01-23 15:04:23,677 folder path :Images
+2024-01-23 15:04:23,677 Calling Image result
+2024-01-23 15:04:23,677 is all_page_result is instance of dict? True
+2024-01-23 15:04:23,710 STREAM b'IHDR' 16 13
+2024-01-23 15:04:23,710 STREAM b'pHYs' 41 9
+2024-01-23 15:04:23,711 STREAM b'IDAT' 62 65536
+2024-01-23 15:04:23,864 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:04:26,504 is words is instance of list? True
+2024-01-23 15:04:26,504 is bboxes is instance of list? True
+2024-01-23 15:04:26,504 is bounding_boxes is instance of list? True
+2024-01-23 15:04:27,258 is input_id_chunks is instance of list? True
+2024-01-23 15:04:27,258 is mask_chunks is instance of list? True
+2024-01-23 15:04:27,258 is bbox_chunks is instance of list? True
+2024-01-23 15:04:27,258 is image_chunks is instance of list? True
+2024-01-23 15:04:27,259 is input_dict is instance of dict? True
+2024-01-23 15:04:28,566 Model Called
+2024-01-23 15:04:28,566 RAM memory 88.1 used for Certificate_Of_Origin_325_page_2.png:
+2024-01-23 15:04:28,567 is all_predictions is instance of list? True
+2024-01-23 15:04:28,567 is all_boxes is instance of list? True
+2024-01-23 15:04:28,567 is all_confidences is instance of list? True
+2024-01-23 15:04:28,567 is all_text is instance of list? True
+2024-01-23 15:04:28,567 is label2id is instance of dict? True
+2024-01-23 15:04:28,567 is id2label is instance of dict? True
+2024-01-23 15:04:28,568 is label2color is instance of dict? True
+2024-01-23 15:04:28,568 label2color : {'marks_and_no_of_packages': '#AF62D8', 'final_destination': '#FD8381', 'lc_ref_no': '#EB2862', 'net_weight': '#E0ED35', 'country_of_origin_of_goods': '#322ED9', 'means_of_transport': '#7EDCF0', 'original_number': '#14EADA', 'invoice_no': '#CEB71F', 'signature': '#CA5975', 'consignee_address': '#6364EF', 'vessel_details': '#36E1A0', 'description_of_goods': '#2383C2', 'invoice_date': '#FA36AB', 'certificate_stamped': '#26D46A', 'gross_weight': '#BEE114', 'ref_no': '#E7F1E3', 'lc_date': '#CA19A5', 'consignee_name': '#93AF35', 'declaration_by_exporter': '#61000B', 'original_or_copy': '#8519FE', 'O': '#1E7051', 'declaration_by_certification': '#E4B8CE', 'consignor_name': '#9727B8', 'consignor_address': '#054E72', 'issue_date': '#6E0B40', 'coo_issuer_address': '#800EF3', 'certificate_no': '#833B20', 'to_place': '#432025', 'page_no': '#D31D01', 'from_place': '#823EE7', 'coo_issuer_name': '#21FC8F'}
+2024-01-23 15:04:29,164 is result_set is instance of dict? True
+2024-01-23 15:04:29,167 is final_result_set is instance of dict? True
+2024-01-23 15:04:29,203 Time taken for page 1 of Certificate_Of_Origin_325_page_2.png:0:00:05.492386
+2024-01-23 15:04:29,546 *****Generated All Pages****** for Certificate_Of_Origin_325_page_2.png
+2024-01-23 15:04:29,546 RAM memory 88.0 used for Certificate_Of_Origin_325_page_2.png Generating All Pages:
+2024-01-23 15:04:29,546 Processing time taken for all pages of Certificate_Of_Origin_325_page_2.png1:0:00:05.869651
+2024-01-23 15:04:29,700 file name is:Certificate_Of_Origin_188_page_0.png
+2024-01-23 15:04:29,700 folder path :Images
+2024-01-23 15:04:29,700 Calling Image result
+2024-01-23 15:04:29,700 is all_page_result is instance of dict? True
+2024-01-23 15:04:29,712 STREAM b'IHDR' 16 13
+2024-01-23 15:04:29,712 STREAM b'IDAT' 41 65536
+2024-01-23 15:04:29,787 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:04:31,233 is words is instance of list? True
+2024-01-23 15:04:31,233 is bboxes is instance of list? True
+2024-01-23 15:04:31,233 is bounding_boxes is instance of list? True
+2024-01-23 15:04:34,352 is input_id_chunks is instance of list? True
+2024-01-23 15:04:34,382 is mask_chunks is instance of list? True
+2024-01-23 15:04:34,382 is bbox_chunks is instance of list? True
+2024-01-23 15:04:34,382 is image_chunks is instance of list? True
+2024-01-23 15:04:34,383 is input_dict is instance of dict? True
+2024-01-23 15:04:35,176 Model Called
+2024-01-23 15:04:35,176 RAM memory 86.6 used for Certificate_Of_Origin_188_page_0.png:
+2024-01-23 15:04:35,176 is all_predictions is instance of list? True
+2024-01-23 15:04:35,176 is all_boxes is instance of list? True
+2024-01-23 15:04:35,176 is all_confidences is instance of list? True
+2024-01-23 15:04:35,176 is all_text is instance of list? True
+2024-01-23 15:04:35,176 is label2id is instance of dict? True
+2024-01-23 15:04:35,176 is id2label is instance of dict? True
+2024-01-23 15:04:35,177 is label2color is instance of dict? True
+2024-01-23 15:04:35,177 label2color : {'marks_and_no_of_packages': '#ED8CCD', 'final_destination': '#FEE459', 'lc_ref_no': '#33984E', 'net_weight': '#3913B0', 'country_of_origin_of_goods': '#802614', 'means_of_transport': '#AB87E1', 'original_number': '#6BA533', 'invoice_no': '#588BF2', 'signature': '#BFD265', 'consignee_address': '#459E14', 'vessel_details': '#786E1A', 'description_of_goods': '#C58264', 'invoice_date': '#263611', 'certificate_stamped': '#ACC693', 'gross_weight': '#06DC3B', 'ref_no': '#8F232A', 'lc_date': '#5F9AA7', 'consignee_name': '#6ED902', 'declaration_by_exporter': '#063E76', 'original_or_copy': '#BABDF1', 'O': '#0F8680', 'declaration_by_certification': '#2A3B2E', 'consignor_name': '#B30BBB', 'consignor_address': '#F13A18', 'issue_date': '#D3A30C', 'coo_issuer_address': '#7CC01D', 'certificate_no': '#377210', 'to_place': '#80281F', 'page_no': '#FF9C17', 'from_place': '#912C91', 'coo_issuer_name': '#A61EA8'}
+2024-01-23 15:04:35,771 is result_set is instance of dict? True
+2024-01-23 15:04:35,773 is final_result_set is instance of dict? True
+2024-01-23 15:04:35,806 Time taken for page 1 of Certificate_Of_Origin_188_page_0.png:0:00:06.093925
+2024-01-23 15:04:36,287 *****Generated All Pages****** for Certificate_Of_Origin_188_page_0.png
+2024-01-23 15:04:36,287 RAM memory 86.7 used for Certificate_Of_Origin_188_page_0.png Generating All Pages:
+2024-01-23 15:04:36,287 Processing time taken for all pages of Certificate_Of_Origin_188_page_0.png1:0:00:06.586375
+2024-01-23 15:04:36,442 file name is:Certificate_Of_Origin_189_page_1.png
+2024-01-23 15:04:36,443 folder path :Images
+2024-01-23 15:04:36,443 Calling Image result
+2024-01-23 15:04:36,443 is all_page_result is instance of dict? True
+2024-01-23 15:04:36,456 STREAM b'IHDR' 16 13
+2024-01-23 15:04:36,456 STREAM b'IDAT' 41 65536
+2024-01-23 15:04:36,476 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:04:37,499 is words is instance of list? True
+2024-01-23 15:04:37,500 is bboxes is instance of list? True
+2024-01-23 15:04:37,500 is bounding_boxes is instance of list? True
+2024-01-23 15:04:37,686 is input_id_chunks is instance of list? True
+2024-01-23 15:04:37,686 is mask_chunks is instance of list? True
+2024-01-23 15:04:37,686 is bbox_chunks is instance of list? True
+2024-01-23 15:04:37,686 is image_chunks is instance of list? True
+2024-01-23 15:04:37,687 is input_dict is instance of dict? True
+2024-01-23 15:04:39,321 Model Called
+2024-01-23 15:04:39,322 RAM memory 86.7 used for Certificate_Of_Origin_189_page_1.png:
+2024-01-23 15:04:39,322 is all_predictions is instance of list? True
+2024-01-23 15:04:39,322 is all_boxes is instance of list? True
+2024-01-23 15:04:39,322 is all_confidences is instance of list? True
+2024-01-23 15:04:39,322 is all_text is instance of list? True
+2024-01-23 15:04:39,322 is label2id is instance of dict? True
+2024-01-23 15:04:39,322 is id2label is instance of dict? True
+2024-01-23 15:04:39,322 is label2color is instance of dict? True
+2024-01-23 15:04:39,323 label2color : {'marks_and_no_of_packages': '#68A39E', 'final_destination': '#0A172E', 'lc_ref_no': '#27E7D0', 'net_weight': '#75FF79', 'country_of_origin_of_goods': '#60A62C', 'means_of_transport': '#775EE0', 'original_number': '#C16F16', 'invoice_no': '#0EDECE', 'signature': '#3995DC', 'consignee_address': '#44838F', 'vessel_details': '#59B50A', 'description_of_goods': '#EBFAB7', 'invoice_date': '#17B2D0', 'certificate_stamped': '#E505A6', 'gross_weight': '#A79A5F', 'ref_no': '#632D81', 'lc_date': '#E2A122', 'consignee_name': '#A8C41B', 'declaration_by_exporter': '#80C98A', 'original_or_copy': '#2EAE95', 'O': '#8CE913', 'declaration_by_certification': '#FA9FA1', 'consignor_name': '#855FFA', 'consignor_address': '#98C440', 'issue_date': '#48B35A', 'coo_issuer_address': '#82B59C', 'certificate_no': '#4A74C1', 'to_place': '#0124E6', 'page_no': '#8265BE', 'from_place': '#47C145', 'coo_issuer_name': '#7B3576'}
+2024-01-23 15:04:39,625 is result_set is instance of dict? True
+2024-01-23 15:04:39,627 is final_result_set is instance of dict? True
+2024-01-23 15:04:39,677 Time taken for page 1 of Certificate_Of_Origin_189_page_1.png:0:00:03.221051
+2024-01-23 15:04:39,898 *****Generated All Pages****** for Certificate_Of_Origin_189_page_1.png
+2024-01-23 15:04:39,898 RAM memory 86.8 used for Certificate_Of_Origin_189_page_1.png Generating All Pages:
+2024-01-23 15:04:39,898 Processing time taken for all pages of Certificate_Of_Origin_189_page_1.png1:0:00:03.455050
+2024-01-23 15:04:40,051 file name is:Certificate_Of_Origin_171_page_0.png
+2024-01-23 15:04:40,052 folder path :Images
+2024-01-23 15:04:40,052 Calling Image result
+2024-01-23 15:04:40,052 is all_page_result is instance of dict? True
+2024-01-23 15:04:40,084 STREAM b'IHDR' 16 13
+2024-01-23 15:04:40,084 STREAM b'IDAT' 41 38163
+2024-01-23 15:04:40,114 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:04:41,101 is words is instance of list? True
+2024-01-23 15:04:41,101 is bboxes is instance of list? True
+2024-01-23 15:04:41,101 is bounding_boxes is instance of list? True
+2024-01-23 15:04:41,245 is input_id_chunks is instance of list? True
+2024-01-23 15:04:41,245 is mask_chunks is instance of list? True
+2024-01-23 15:04:41,245 is bbox_chunks is instance of list? True
+2024-01-23 15:04:41,245 is image_chunks is instance of list? True
+2024-01-23 15:04:41,246 is input_dict is instance of dict? True
+2024-01-23 15:04:42,819 Model Called
+2024-01-23 15:04:42,820 RAM memory 86.8 used for Certificate_Of_Origin_171_page_0.png:
+2024-01-23 15:04:42,820 is all_predictions is instance of list? True
+2024-01-23 15:04:42,820 is all_boxes is instance of list? True
+2024-01-23 15:04:42,820 is all_confidences is instance of list? True
+2024-01-23 15:04:42,820 is all_text is instance of list? True
+2024-01-23 15:04:42,820 is label2id is instance of dict? True
+2024-01-23 15:04:42,820 is id2label is instance of dict? True
+2024-01-23 15:04:42,821 is label2color is instance of dict? True
+2024-01-23 15:04:42,821 label2color : {'marks_and_no_of_packages': '#534EC0', 'final_destination': '#577B79', 'lc_ref_no': '#BD0959', 'net_weight': '#57AF7E', 'country_of_origin_of_goods': '#BB189D', 'means_of_transport': '#C21983', 'original_number': '#7295AD', 'invoice_no': '#D3F2DC', 'signature': '#429249', 'consignee_address': '#978E14', 'vessel_details': '#9E0759', 'description_of_goods': '#B73C9A', 'invoice_date': '#137D4D', 'certificate_stamped': '#3C322E', 'gross_weight': '#40B131', 'ref_no': '#020A9C', 'lc_date': '#5A2B32', 'consignee_name': '#6CB896', 'declaration_by_exporter': '#9C42AF', 'original_or_copy': '#A5F916', 'O': '#6FCFCF', 'declaration_by_certification': '#4D047B', 'consignor_name': '#F8FB9A', 'consignor_address': '#A7AF54', 'issue_date': '#F1E694', 'coo_issuer_address': '#662C00', 'certificate_no': '#9D844C', 'to_place': '#87E7D5', 'page_no': '#956B87', 'from_place': '#2A0FDB', 'coo_issuer_name': '#1DC101'}
+2024-01-23 15:04:42,967 is result_set is instance of dict? True
+2024-01-23 15:04:42,969 is final_result_set is instance of dict? True
+2024-01-23 15:04:43,005 Time taken for page 1 of Certificate_Of_Origin_171_page_0.png:0:00:02.920164
+2024-01-23 15:04:43,118 *****Generated All Pages****** for Certificate_Of_Origin_171_page_0.png
+2024-01-23 15:04:43,118 RAM memory 86.9 used for Certificate_Of_Origin_171_page_0.png Generating All Pages:
+2024-01-23 15:04:43,118 Processing time taken for all pages of Certificate_Of_Origin_171_page_0.png1:0:00:03.066224
+2024-01-23 15:04:43,265 file name is:Certificate_Of_Origin_223_page_16.png
+2024-01-23 15:04:43,265 folder path :Images
+2024-01-23 15:04:43,265 Calling Image result
+2024-01-23 15:04:43,265 is all_page_result is instance of dict? True
+2024-01-23 15:04:43,273 STREAM b'IHDR' 16 13
+2024-01-23 15:04:43,273 STREAM b'IDAT' 41 64777
+2024-01-23 15:04:43,310 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:04:44,349 is words is instance of list? True
+2024-01-23 15:04:44,349 is bboxes is instance of list? True
+2024-01-23 15:04:44,349 is bounding_boxes is instance of list? True
+2024-01-23 15:04:44,545 is input_id_chunks is instance of list? True
+2024-01-23 15:04:44,545 is mask_chunks is instance of list? True
+2024-01-23 15:04:44,545 is bbox_chunks is instance of list? True
+2024-01-23 15:04:44,545 is image_chunks is instance of list? True
+2024-01-23 15:04:44,546 is input_dict is instance of dict? True
+2024-01-23 15:04:46,090 Model Called
+2024-01-23 15:04:46,090 RAM memory 86.9 used for Certificate_Of_Origin_223_page_16.png:
+2024-01-23 15:04:46,090 is all_predictions is instance of list? True
+2024-01-23 15:04:46,090 is all_boxes is instance of list? True
+2024-01-23 15:04:46,090 is all_confidences is instance of list? True
+2024-01-23 15:04:46,090 is all_text is instance of list? True
+2024-01-23 15:04:46,090 is label2id is instance of dict? True
+2024-01-23 15:04:46,090 is id2label is instance of dict? True
+2024-01-23 15:04:46,091 is label2color is instance of dict? True
+2024-01-23 15:04:46,091 label2color : {'marks_and_no_of_packages': '#54159A', 'final_destination': '#E40F1D', 'lc_ref_no': '#7D7A28', 'net_weight': '#B30329', 'country_of_origin_of_goods': '#91D0A1', 'means_of_transport': '#AF1379', 'original_number': '#EC13EF', 'invoice_no': '#335ADB', 'signature': '#3BB332', 'consignee_address': '#9023F0', 'vessel_details': '#44B828', 'description_of_goods': '#FBE6BC', 'invoice_date': '#F989B5', 'certificate_stamped': '#0044B2', 'gross_weight': '#3D4923', 'ref_no': '#925A32', 'lc_date': '#C03695', 'consignee_name': '#5E6606', 'declaration_by_exporter': '#C1E8CE', 'original_or_copy': '#EDDDCB', 'O': '#03762D', 'declaration_by_certification': '#B808A4', 'consignor_name': '#AB7A09', 'consignor_address': '#04ED3B', 'issue_date': '#E54747', 'coo_issuer_address': '#C49E2F', 'certificate_no': '#499E1B', 'to_place': '#D9B2F0', 'page_no': '#ADEBD5', 'from_place': '#D6A5BF', 'coo_issuer_name': '#C0627D'}
+2024-01-23 15:04:46,298 is result_set is instance of dict? True
+2024-01-23 15:04:46,299 is final_result_set is instance of dict? True
+2024-01-23 15:04:46,336 Time taken for page 1 of Certificate_Of_Origin_223_page_16.png:0:00:03.063185
+2024-01-23 15:04:46,476 *****Generated All Pages****** for Certificate_Of_Origin_223_page_16.png
+2024-01-23 15:04:46,476 RAM memory 87.0 used for Certificate_Of_Origin_223_page_16.png Generating All Pages:
+2024-01-23 15:04:46,476 Processing time taken for all pages of Certificate_Of_Origin_223_page_16.png1:0:00:03.210959
+2024-01-23 15:04:46,631 file name is:Certificate_Of_Origin_271_page_3.png
+2024-01-23 15:04:46,631 folder path :Images
+2024-01-23 15:04:46,631 Calling Image result
+2024-01-23 15:04:46,631 is all_page_result is instance of dict? True
+2024-01-23 15:04:46,647 STREAM b'IHDR' 16 13
+2024-01-23 15:04:46,647 STREAM b'IDAT' 41 52278
+2024-01-23 15:04:46,677 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:04:47,616 is words is instance of list? True
+2024-01-23 15:04:47,616 is bboxes is instance of list? True
+2024-01-23 15:04:47,616 is bounding_boxes is instance of list? True
+2024-01-23 15:04:47,808 is input_id_chunks is instance of list? True
+2024-01-23 15:04:47,808 is mask_chunks is instance of list? True
+2024-01-23 15:04:47,808 is bbox_chunks is instance of list? True
+2024-01-23 15:04:47,808 is image_chunks is instance of list? True
+2024-01-23 15:04:47,809 is input_dict is instance of dict? True
+2024-01-23 15:04:49,084 Model Called
+2024-01-23 15:04:49,085 RAM memory 87.1 used for Certificate_Of_Origin_271_page_3.png:
+2024-01-23 15:04:49,085 is all_predictions is instance of list? True
+2024-01-23 15:04:49,085 is all_boxes is instance of list? True
+2024-01-23 15:04:49,085 is all_confidences is instance of list? True
+2024-01-23 15:04:49,085 is all_text is instance of list? True
+2024-01-23 15:04:49,085 is label2id is instance of dict? True
+2024-01-23 15:04:49,085 is id2label is instance of dict? True
+2024-01-23 15:04:49,086 is label2color is instance of dict? True
+2024-01-23 15:04:49,086 label2color : {'marks_and_no_of_packages': '#DF748D', 'final_destination': '#2DF88C', 'lc_ref_no': '#328E06', 'net_weight': '#BF8601', 'country_of_origin_of_goods': '#571D90', 'means_of_transport': '#87D544', 'original_number': '#647A79', 'invoice_no': '#0E73AC', 'signature': '#D1519E', 'consignee_address': '#F79EBC', 'vessel_details': '#7845FC', 'description_of_goods': '#EC8239', 'invoice_date': '#2340F2', 'certificate_stamped': '#099A0E', 'gross_weight': '#8D4393', 'ref_no': '#BC4B25', 'lc_date': '#ABD651', 'consignee_name': '#C43D8D', 'declaration_by_exporter': '#E88A14', 'original_or_copy': '#EB7B5B', 'O': '#2990F8', 'declaration_by_certification': '#E4F5AC', 'consignor_name': '#D211E9', 'consignor_address': '#2ADB81', 'issue_date': '#ADD8E7', 'coo_issuer_address': '#674280', 'certificate_no': '#A6CFBD', 'to_place': '#08C962', 'page_no': '#CE07E7', 'from_place': '#A4EF0E', 'coo_issuer_name': '#740B2C'}
+2024-01-23 15:04:49,344 is result_set is instance of dict? True
+2024-01-23 15:04:49,346 is final_result_set is instance of dict? True
+2024-01-23 15:04:49,378 Time taken for page 1 of Certificate_Of_Origin_271_page_3.png:0:00:02.730827
+2024-01-23 15:04:49,530 *****Generated All Pages****** for Certificate_Of_Origin_271_page_3.png
+2024-01-23 15:04:49,530 RAM memory 87.1 used for Certificate_Of_Origin_271_page_3.png Generating All Pages:
+2024-01-23 15:04:49,530 Processing time taken for all pages of Certificate_Of_Origin_271_page_3.png1:0:00:02.899481
+2024-01-23 15:04:49,691 file name is:Certificate_Of_Origin_512_page_0.png
+2024-01-23 15:04:49,691 folder path :Images
+2024-01-23 15:04:49,691 Calling Image result
+2024-01-23 15:04:49,691 is all_page_result is instance of dict? True
+2024-01-23 15:04:49,766 STREAM b'IHDR' 16 13
+2024-01-23 15:04:49,766 STREAM b'IDAT' 41 52949
+2024-01-23 15:04:49,798 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:04:50,787 is words is instance of list? True
+2024-01-23 15:04:50,787 is bboxes is instance of list? True
+2024-01-23 15:04:50,787 is bounding_boxes is instance of list? True
+2024-01-23 15:04:50,970 is input_id_chunks is instance of list? True
+2024-01-23 15:04:50,970 is mask_chunks is instance of list? True
+2024-01-23 15:04:50,970 is bbox_chunks is instance of list? True
+2024-01-23 15:04:50,971 is image_chunks is instance of list? True
+2024-01-23 15:04:50,971 is input_dict is instance of dict? True
+2024-01-23 15:04:51,758 Model Called
+2024-01-23 15:04:51,758 RAM memory 85.7 used for Certificate_Of_Origin_512_page_0.png:
+2024-01-23 15:04:51,758 is all_predictions is instance of list? True
+2024-01-23 15:04:51,758 is all_boxes is instance of list? True
+2024-01-23 15:04:51,758 is all_confidences is instance of list? True
+2024-01-23 15:04:51,758 is all_text is instance of list? True
+2024-01-23 15:04:51,759 is label2id is instance of dict? True
+2024-01-23 15:04:51,759 is id2label is instance of dict? True
+2024-01-23 15:04:51,759 is label2color is instance of dict? True
+2024-01-23 15:04:51,759 label2color : {'marks_and_no_of_packages': '#6AE59C', 'final_destination': '#787F7E', 'lc_ref_no': '#AF8C0C', 'net_weight': '#CE60FE', 'country_of_origin_of_goods': '#9C6C3C', 'means_of_transport': '#9F4A71', 'original_number': '#1E33E0', 'invoice_no': '#E8517F', 'signature': '#CFEB64', 'consignee_address': '#A90F34', 'vessel_details': '#E08EF4', 'description_of_goods': '#EE4A93', 'invoice_date': '#758696', 'certificate_stamped': '#AA05D7', 'gross_weight': '#5A176A', 'ref_no': '#F7A121', 'lc_date': '#D459C8', 'consignee_name': '#522103', 'declaration_by_exporter': '#DEE822', 'original_or_copy': '#A29DD3', 'O': '#DEC2EC', 'declaration_by_certification': '#E29770', 'consignor_name': '#1341D3', 'consignor_address': '#7C3195', 'issue_date': '#053512', 'coo_issuer_address': '#8FB761', 'certificate_no': '#34F88D', 'to_place': '#DE7929', 'page_no': '#7645FC', 'from_place': '#44E584', 'coo_issuer_name': '#564399'}
+2024-01-23 15:04:51,896 is result_set is instance of dict? True
+2024-01-23 15:04:51,897 is final_result_set is instance of dict? True
+2024-01-23 15:04:51,934 Time taken for page 1 of Certificate_Of_Origin_512_page_0.png:0:00:02.167688
+2024-01-23 15:04:52,070 *****Generated All Pages****** for Certificate_Of_Origin_512_page_0.png
+2024-01-23 15:04:52,070 RAM memory 85.7 used for Certificate_Of_Origin_512_page_0.png Generating All Pages:
+2024-01-23 15:04:52,071 Processing time taken for all pages of Certificate_Of_Origin_512_page_0.png1:0:00:02.379248
+2024-01-23 15:04:52,236 file name is:Certificate_Of_Origin_425_page_1.png
+2024-01-23 15:04:52,236 folder path :Images
+2024-01-23 15:04:52,236 Calling Image result
+2024-01-23 15:04:52,236 is all_page_result is instance of dict? True
+2024-01-23 15:04:52,270 STREAM b'IHDR' 16 13
+2024-01-23 15:04:52,270 STREAM b'IDAT' 41 58454
+2024-01-23 15:04:52,298 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:04:53,500 is words is instance of list? True
+2024-01-23 15:04:53,500 is bboxes is instance of list? True
+2024-01-23 15:04:53,500 is bounding_boxes is instance of list? True
+2024-01-23 15:04:53,687 is input_id_chunks is instance of list? True
+2024-01-23 15:04:53,687 is mask_chunks is instance of list? True
+2024-01-23 15:04:53,687 is bbox_chunks is instance of list? True
+2024-01-23 15:04:53,687 is image_chunks is instance of list? True
+2024-01-23 15:04:53,688 is input_dict is instance of dict? True
+2024-01-23 15:04:55,244 Model Called
+2024-01-23 15:04:55,244 RAM memory 87.0 used for Certificate_Of_Origin_425_page_1.png:
+2024-01-23 15:04:55,244 is all_predictions is instance of list? True
+2024-01-23 15:04:55,244 is all_boxes is instance of list? True
+2024-01-23 15:04:55,244 is all_confidences is instance of list? True
+2024-01-23 15:04:55,244 is all_text is instance of list? True
+2024-01-23 15:04:55,245 is label2id is instance of dict? True
+2024-01-23 15:04:55,245 is id2label is instance of dict? True
+2024-01-23 15:04:55,245 is label2color is instance of dict? True
+2024-01-23 15:04:55,245 label2color : {'marks_and_no_of_packages': '#B191E0', 'final_destination': '#24F9A5', 'lc_ref_no': '#A40137', 'net_weight': '#F4D1F0', 'country_of_origin_of_goods': '#428FF9', 'means_of_transport': '#0B68BD', 'original_number': '#8C2F51', 'invoice_no': '#4B5240', 'signature': '#BB82A6', 'consignee_address': '#8EDAA6', 'vessel_details': '#DD8AE8', 'description_of_goods': '#78C7EA', 'invoice_date': '#569F41', 'certificate_stamped': '#8C5B05', 'gross_weight': '#43E9FF', 'ref_no': '#B15EFB', 'lc_date': '#518049', 'consignee_name': '#463151', 'declaration_by_exporter': '#01F267', 'original_or_copy': '#AF9874', 'O': '#473191', 'declaration_by_certification': '#61BCB5', 'consignor_name': '#98E219', 'consignor_address': '#7DDFD9', 'issue_date': '#8AE623', 'coo_issuer_address': '#07E210', 'certificate_no': '#7A0297', 'to_place': '#A49AE0', 'page_no': '#B66D8F', 'from_place': '#D5BE8F', 'coo_issuer_name': '#A1B080'}
+2024-01-23 15:04:55,511 is result_set is instance of dict? True
+2024-01-23 15:04:55,513 is final_result_set is instance of dict? True
+2024-01-23 15:04:55,551 Time taken for page 1 of Certificate_Of_Origin_425_page_1.png:0:00:03.281157
+2024-01-23 15:04:55,687 *****Generated All Pages****** for Certificate_Of_Origin_425_page_1.png
+2024-01-23 15:04:55,687 RAM memory 87.2 used for Certificate_Of_Origin_425_page_1.png Generating All Pages:
+2024-01-23 15:04:55,687 Processing time taken for all pages of Certificate_Of_Origin_425_page_1.png1:0:00:03.450841
+2024-01-23 15:04:55,856 file name is:Certificate_Of_Origin_281_page_2.png
+2024-01-23 15:04:55,856 folder path :Images
+2024-01-23 15:04:55,856 Calling Image result
+2024-01-23 15:04:55,856 is all_page_result is instance of dict? True
+2024-01-23 15:04:55,872 STREAM b'IHDR' 16 13
+2024-01-23 15:04:55,872 STREAM b'IDAT' 41 65536
+2024-01-23 15:04:55,906 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:05:01,664 is words is instance of list? True
+2024-01-23 15:05:01,664 is bboxes is instance of list? True
+2024-01-23 15:05:01,664 is bounding_boxes is instance of list? True
+2024-01-23 15:05:01,780 is input_id_chunks is instance of list? True
+2024-01-23 15:05:01,780 is mask_chunks is instance of list? True
+2024-01-23 15:05:01,780 is bbox_chunks is instance of list? True
+2024-01-23 15:05:01,780 is image_chunks is instance of list? True
+2024-01-23 15:05:01,781 is input_dict is instance of dict? True
+2024-01-23 15:05:04,146 Model Called
+2024-01-23 15:05:04,146 RAM memory 93.6 used for Certificate_Of_Origin_281_page_2.png:
+2024-01-23 15:05:04,146 is all_predictions is instance of list? True
+2024-01-23 15:05:04,146 is all_boxes is instance of list? True
+2024-01-23 15:05:04,146 is all_confidences is instance of list? True
+2024-01-23 15:05:04,146 is all_text is instance of list? True
+2024-01-23 15:05:04,147 is label2id is instance of dict? True
+2024-01-23 15:05:04,147 is id2label is instance of dict? True
+2024-01-23 15:05:04,147 is label2color is instance of dict? True
+2024-01-23 15:05:04,147 label2color : {'marks_and_no_of_packages': '#9E7B05', 'final_destination': '#32D7D0', 'lc_ref_no': '#EAC4D8', 'net_weight': '#CA2AFC', 'country_of_origin_of_goods': '#5289A0', 'means_of_transport': '#1AF074', 'original_number': '#85E6EB', 'invoice_no': '#5C53EC', 'signature': '#01A5E5', 'consignee_address': '#1E83A4', 'vessel_details': '#0C88F0', 'description_of_goods': '#C2F46F', 'invoice_date': '#35CABF', 'certificate_stamped': '#DBBE7C', 'gross_weight': '#0049EB', 'ref_no': '#E2C129', 'lc_date': '#3F28E5', 'consignee_name': '#13B170', 'declaration_by_exporter': '#9CE53F', 'original_or_copy': '#207954', 'O': '#DDBA99', 'declaration_by_certification': '#96F6DE', 'consignor_name': '#3D1CCA', 'consignor_address': '#35B7F1', 'issue_date': '#905058', 'coo_issuer_address': '#2C18E6', 'certificate_no': '#4CF06B', 'to_place': '#BA68E4', 'page_no': '#AC0D63', 'from_place': '#568F7F', 'coo_issuer_name': '#71A821'}
+2024-01-23 15:05:04,314 is result_set is instance of dict? True
+2024-01-23 15:05:04,314 is final_result_set is instance of dict? True
+2024-01-23 15:05:04,341 Time taken for page 1 of Certificate_Of_Origin_281_page_2.png:0:00:08.468598
+2024-01-23 15:05:04,472 *****Generated All Pages****** for Certificate_Of_Origin_281_page_2.png
+2024-01-23 15:05:04,472 RAM memory 93.3 used for Certificate_Of_Origin_281_page_2.png Generating All Pages:
+2024-01-23 15:05:04,472 Processing time taken for all pages of Certificate_Of_Origin_281_page_2.png1:0:00:08.616165
+2024-01-23 15:05:04,647 file name is:Certificate_Of_Origin_382_page_0.png
+2024-01-23 15:05:04,647 folder path :Images
+2024-01-23 15:05:04,647 Calling Image result
+2024-01-23 15:05:04,647 is all_page_result is instance of dict? True
+2024-01-23 15:05:04,663 STREAM b'IHDR' 16 13
+2024-01-23 15:05:04,663 STREAM b'IDAT' 41 60432
+2024-01-23 15:05:04,698 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:05:05,793 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-01-23 15:05:06,917 is words is instance of list? True
+2024-01-23 15:05:06,918 is bboxes is instance of list? True
+2024-01-23 15:05:06,918 is bounding_boxes is instance of list? True
+2024-01-23 15:05:07,106 is input_id_chunks is instance of list? True
+2024-01-23 15:05:07,106 is mask_chunks is instance of list? True
+2024-01-23 15:05:07,106 is bbox_chunks is instance of list? True
+2024-01-23 15:05:07,106 is image_chunks is instance of list? True

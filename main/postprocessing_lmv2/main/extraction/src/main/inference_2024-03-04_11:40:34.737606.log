@@ -1,0 +1,367 @@
+2024-03-04 11:40:34,737 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-03-04 11:40:34,738 start time: 2024-03-04 11:40:34.738814
+2024-03-04 11:40:37,868 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-03-04 11:40:38,019 Creating converter from 7 to 5
+2024-03-04 11:40:38,020 Creating converter from 5 to 7
+2024-03-04 11:40:38,020 Creating converter from 7 to 5
+2024-03-04 11:40:38,020 Creating converter from 5 to 7
+2024-03-04 11:40:38,343 Starting new HTTPS connection (1): huggingface.co:443
+2024-03-04 11:40:39,141 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-03-04 11:40:39,574 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-03-04 11:40:39,841 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-03-04 11:40:39,883 RAM memory for Model loading used: 49.9
+2024-03-04 11:40:39,883 cpu_utilization % for Model Loading:16.0
+2024-03-04 11:40:39,883 memory_consumption in bytes for Loading Model:1157017600
+2024-03-04 11:40:39,883 Loaded Model successfully
+2024-03-04 11:40:39,883 file name is:Cncl_7_Rid_0.png
+2024-03-04 11:40:39,883 folder path :Images
+2024-03-04 11:40:39,883 Calling Image result
+2024-03-04 11:40:39,883 is all_page_result is instance of dict? True
+2024-03-04 11:40:39,887 STREAM b'IHDR' 16 13
+2024-03-04 11:40:39,887 STREAM b'pHYs' 41 9
+2024-03-04 11:40:39,887 STREAM b'IDAT' 62 89152
+2024-03-04 11:40:39,893 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:40:40,642 is words is instance of list? True
+2024-03-04 11:40:40,642 is bboxes is instance of list? True
+2024-03-04 11:40:40,642 is bounding_boxes is instance of list? True
+2024-03-04 11:40:40,685 is input_id_chunks is instance of list? True
+2024-03-04 11:40:40,685 is mask_chunks is instance of list? True
+2024-03-04 11:40:40,685 is bbox_chunks is instance of list? True
+2024-03-04 11:40:40,685 is image_chunks is instance of list? True
+2024-03-04 11:40:40,686 is input_dict is instance of dict? True
+2024-03-04 11:40:41,607 Model Called
+2024-03-04 11:40:41,607 RAM memory 55.6 used for Cncl_7_Rid_0.png:
+2024-03-04 11:40:41,607 is all_predictions is instance of list? True
+2024-03-04 11:40:41,607 is all_boxes is instance of list? True
+2024-03-04 11:40:41,607 is all_confidences is instance of list? True
+2024-03-04 11:40:41,607 is all_text is instance of list? True
+2024-03-04 11:40:41,607 is label2id is instance of dict? True
+2024-03-04 11:40:41,607 is id2label is instance of dict? True
+2024-03-04 11:40:41,608 is label2color is instance of dict? True
+2024-03-04 11:40:41,608 label2color : {'lc_issuing_bank': '#9DB702', 'date': '#64E83F', 'O': '#884C55', 'bg_in_favour_of': '#8B3712', 'bg_amount_in_words': '#BE456C', 'declaration_by': '#756935', 'stamp': '#7FD161', 'bg_amount_in_number': '#499586', 'bg_issuing_bank_address': '#BA0A26', 'beneficiary_name': '#E471D1', 'fd_no': '#D818C1', 'bg_date': '#22D4DA', 'bg_no': '#98510A', 'applicant_address': '#F265B2', 'signature': '#8C301D', 'current_account_no': '#7B5680', 'ref_no': '#CD1CD9', 'bg_expiry_date': '#3094E3', 'beneficiary_address': '#414600', 'applicant': '#592A62', 'new_bg_no': '#9E0A81'}
+2024-03-04 11:40:41,627 is result_set is instance of dict? True
+2024-03-04 11:40:41,628 is final_result_set is instance of dict? True
+2024-03-04 11:40:41,693 Time taken for page 1 of Cncl_7_Rid_0.png:0:00:01.806032
+2024-03-04 11:40:41,711 *****Generated All Pages****** for Cncl_7_Rid_0.png
+2024-03-04 11:40:41,711 RAM memory 55.6 used for Cncl_7_Rid_0.png Generating All Pages:
+2024-03-04 11:40:41,711 Processing time taken for all pages of Cncl_7_Rid_0.png1:0:00:01.828145
+2024-03-04 11:40:41,834 file name is:Cncl_5_Rid_0.png
+2024-03-04 11:40:41,834 folder path :Images
+2024-03-04 11:40:41,834 Calling Image result
+2024-03-04 11:40:41,834 is all_page_result is instance of dict? True
+2024-03-04 11:40:41,834 STREAM b'IHDR' 16 13
+2024-03-04 11:40:41,834 STREAM b'pHYs' 41 9
+2024-03-04 11:40:41,834 STREAM b'IDAT' 62 129349
+2024-03-04 11:40:41,840 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:40:42,610 is words is instance of list? True
+2024-03-04 11:40:42,611 is bboxes is instance of list? True
+2024-03-04 11:40:42,611 is bounding_boxes is instance of list? True
+2024-03-04 11:40:42,638 is input_id_chunks is instance of list? True
+2024-03-04 11:40:42,638 is mask_chunks is instance of list? True
+2024-03-04 11:40:42,638 is bbox_chunks is instance of list? True
+2024-03-04 11:40:42,638 is image_chunks is instance of list? True
+2024-03-04 11:40:42,638 is input_dict is instance of dict? True
+2024-03-04 11:40:43,515 Model Called
+2024-03-04 11:40:43,515 RAM memory 55.6 used for Cncl_5_Rid_0.png:
+2024-03-04 11:40:43,515 is all_predictions is instance of list? True
+2024-03-04 11:40:43,515 is all_boxes is instance of list? True
+2024-03-04 11:40:43,515 is all_confidences is instance of list? True
+2024-03-04 11:40:43,515 is all_text is instance of list? True
+2024-03-04 11:40:43,515 is label2id is instance of dict? True
+2024-03-04 11:40:43,516 is id2label is instance of dict? True
+2024-03-04 11:40:43,516 is label2color is instance of dict? True
+2024-03-04 11:40:43,516 label2color : {'lc_issuing_bank': '#06545A', 'date': '#05390F', 'O': '#69E00D', 'bg_in_favour_of': '#64DE1C', 'bg_amount_in_words': '#D8943D', 'declaration_by': '#D3368A', 'stamp': '#5C306E', 'bg_amount_in_number': '#C319A0', 'bg_issuing_bank_address': '#691BF7', 'beneficiary_name': '#A1815B', 'fd_no': '#3F1B2E', 'bg_date': '#BCEFC8', 'bg_no': '#847CAA', 'applicant_address': '#D51F12', 'signature': '#FBD0D2', 'current_account_no': '#473459', 'ref_no': '#BF27CB', 'bg_expiry_date': '#3A0873', 'beneficiary_address': '#17C575', 'applicant': '#8C0813', 'new_bg_no': '#5523EA'}
+2024-03-04 11:40:43,534 is result_set is instance of dict? True
+2024-03-04 11:40:43,534 is final_result_set is instance of dict? True
+2024-03-04 11:40:43,570 Time taken for page 1 of Cncl_5_Rid_0.png:0:00:01.735328
+2024-03-04 11:40:43,590 *****Generated All Pages****** for Cncl_5_Rid_0.png
+2024-03-04 11:40:43,590 RAM memory 55.6 used for Cncl_5_Rid_0.png Generating All Pages:
+2024-03-04 11:40:43,590 Processing time taken for all pages of Cncl_5_Rid_0.png1:0:00:01.756460
+2024-03-04 11:40:43,707 file name is:Cncl_3_Rid_0.png
+2024-03-04 11:40:43,707 folder path :Images
+2024-03-04 11:40:43,707 Calling Image result
+2024-03-04 11:40:43,707 is all_page_result is instance of dict? True
+2024-03-04 11:40:43,708 STREAM b'IHDR' 16 13
+2024-03-04 11:40:43,708 STREAM b'pHYs' 41 9
+2024-03-04 11:40:43,708 STREAM b'IDAT' 62 85863
+2024-03-04 11:40:43,714 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:40:44,390 is words is instance of list? True
+2024-03-04 11:40:44,390 is bboxes is instance of list? True
+2024-03-04 11:40:44,390 is bounding_boxes is instance of list? True
+2024-03-04 11:40:44,419 is input_id_chunks is instance of list? True
+2024-03-04 11:40:44,419 is mask_chunks is instance of list? True
+2024-03-04 11:40:44,419 is bbox_chunks is instance of list? True
+2024-03-04 11:40:44,419 is image_chunks is instance of list? True
+2024-03-04 11:40:44,419 is input_dict is instance of dict? True
+2024-03-04 11:40:45,352 Model Called
+2024-03-04 11:40:45,352 RAM memory 55.8 used for Cncl_3_Rid_0.png:
+2024-03-04 11:40:45,352 is all_predictions is instance of list? True
+2024-03-04 11:40:45,352 is all_boxes is instance of list? True
+2024-03-04 11:40:45,352 is all_confidences is instance of list? True
+2024-03-04 11:40:45,352 is all_text is instance of list? True
+2024-03-04 11:40:45,352 is label2id is instance of dict? True
+2024-03-04 11:40:45,352 is id2label is instance of dict? True
+2024-03-04 11:40:45,353 is label2color is instance of dict? True
+2024-03-04 11:40:45,353 label2color : {'lc_issuing_bank': '#F5E27C', 'date': '#1727C7', 'O': '#2B61F0', 'bg_in_favour_of': '#65C356', 'bg_amount_in_words': '#D6A29A', 'declaration_by': '#277096', 'stamp': '#B0F959', 'bg_amount_in_number': '#43715B', 'bg_issuing_bank_address': '#01DE87', 'beneficiary_name': '#2EA23F', 'fd_no': '#17E320', 'bg_date': '#1970F9', 'bg_no': '#61429F', 'applicant_address': '#CA7B5E', 'signature': '#22BD00', 'current_account_no': '#BDB697', 'ref_no': '#44D36B', 'bg_expiry_date': '#8A3584', 'beneficiary_address': '#81A3F1', 'applicant': '#0794CF', 'new_bg_no': '#A733A5'}
+2024-03-04 11:40:45,371 is result_set is instance of dict? True
+2024-03-04 11:40:45,372 is final_result_set is instance of dict? True
+2024-03-04 11:40:45,414 Time taken for page 1 of Cncl_3_Rid_0.png:0:00:01.706294
+2024-03-04 11:40:45,433 *****Generated All Pages****** for Cncl_3_Rid_0.png
+2024-03-04 11:40:45,433 RAM memory 55.8 used for Cncl_3_Rid_0.png Generating All Pages:
+2024-03-04 11:40:45,433 Processing time taken for all pages of Cncl_3_Rid_0.png1:0:00:01.725364
+2024-03-04 11:40:45,548 file name is:Canc - 1_0.png
+2024-03-04 11:40:45,548 folder path :Images
+2024-03-04 11:40:45,548 Calling Image result
+2024-03-04 11:40:45,548 is all_page_result is instance of dict? True
+2024-03-04 11:40:45,549 STREAM b'IHDR' 16 13
+2024-03-04 11:40:45,549 STREAM b'pHYs' 41 9
+2024-03-04 11:40:45,549 STREAM b'IDAT' 62 108974
+2024-03-04 11:40:45,555 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:40:46,245 is words is instance of list? True
+2024-03-04 11:40:46,245 is bboxes is instance of list? True
+2024-03-04 11:40:46,245 is bounding_boxes is instance of list? True
+2024-03-04 11:40:46,277 is input_id_chunks is instance of list? True
+2024-03-04 11:40:46,277 is mask_chunks is instance of list? True
+2024-03-04 11:40:46,277 is bbox_chunks is instance of list? True
+2024-03-04 11:40:46,277 is image_chunks is instance of list? True
+2024-03-04 11:40:46,278 is input_dict is instance of dict? True
+2024-03-04 11:40:47,146 Model Called
+2024-03-04 11:40:47,146 RAM memory 56.1 used for Canc - 1_0.png:
+2024-03-04 11:40:47,146 is all_predictions is instance of list? True
+2024-03-04 11:40:47,146 is all_boxes is instance of list? True
+2024-03-04 11:40:47,146 is all_confidences is instance of list? True
+2024-03-04 11:40:47,146 is all_text is instance of list? True
+2024-03-04 11:40:47,146 is label2id is instance of dict? True
+2024-03-04 11:40:47,146 is id2label is instance of dict? True
+2024-03-04 11:40:47,147 is label2color is instance of dict? True
+2024-03-04 11:40:47,147 label2color : {'lc_issuing_bank': '#3D8FE6', 'date': '#1F6CEB', 'O': '#BB6BD2', 'bg_in_favour_of': '#24C5BC', 'bg_amount_in_words': '#96DA0B', 'declaration_by': '#D8FD51', 'stamp': '#28334B', 'bg_amount_in_number': '#92F626', 'bg_issuing_bank_address': '#CC5DB3', 'beneficiary_name': '#DC5D54', 'fd_no': '#2131E8', 'bg_date': '#459BD8', 'bg_no': '#DB4EAC', 'applicant_address': '#564F8E', 'signature': '#4ED5B7', 'current_account_no': '#1F3F2F', 'ref_no': '#E011CC', 'bg_expiry_date': '#227FF9', 'beneficiary_address': '#77EF67', 'applicant': '#8264D1', 'new_bg_no': '#6F36F1'}
+2024-03-04 11:40:47,166 is result_set is instance of dict? True
+2024-03-04 11:40:47,166 is final_result_set is instance of dict? True
+2024-03-04 11:40:47,225 Time taken for page 1 of Canc - 1_0.png:0:00:01.675976
+2024-03-04 11:40:47,250 *****Generated All Pages****** for Canc - 1_0.png
+2024-03-04 11:40:47,250 RAM memory 56.3 used for Canc - 1_0.png Generating All Pages:
+2024-03-04 11:40:47,250 Processing time taken for all pages of Canc - 1_0.png1:0:00:01.701886
+2024-03-04 11:40:47,384 file name is:Cncl_1_Rid_0.png
+2024-03-04 11:40:47,384 folder path :Images
+2024-03-04 11:40:47,384 Calling Image result
+2024-03-04 11:40:47,384 is all_page_result is instance of dict? True
+2024-03-04 11:40:47,384 STREAM b'IHDR' 16 13
+2024-03-04 11:40:47,384 STREAM b'pHYs' 41 9
+2024-03-04 11:40:47,384 STREAM b'IDAT' 62 73904
+2024-03-04 11:40:47,389 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:40:48,158 is words is instance of list? True
+2024-03-04 11:40:48,158 is bboxes is instance of list? True
+2024-03-04 11:40:48,158 is bounding_boxes is instance of list? True
+2024-03-04 11:40:48,184 is input_id_chunks is instance of list? True
+2024-03-04 11:40:48,184 is mask_chunks is instance of list? True
+2024-03-04 11:40:48,184 is bbox_chunks is instance of list? True
+2024-03-04 11:40:48,184 is image_chunks is instance of list? True
+2024-03-04 11:40:48,184 is input_dict is instance of dict? True
+2024-03-04 11:40:49,087 Model Called
+2024-03-04 11:40:49,087 RAM memory 56.2 used for Cncl_1_Rid_0.png:
+2024-03-04 11:40:49,087 is all_predictions is instance of list? True
+2024-03-04 11:40:49,087 is all_boxes is instance of list? True
+2024-03-04 11:40:49,087 is all_confidences is instance of list? True
+2024-03-04 11:40:49,087 is all_text is instance of list? True
+2024-03-04 11:40:49,087 is label2id is instance of dict? True
+2024-03-04 11:40:49,087 is id2label is instance of dict? True
+2024-03-04 11:40:49,088 is label2color is instance of dict? True
+2024-03-04 11:40:49,088 label2color : {'lc_issuing_bank': '#7194FD', 'date': '#5D0867', 'O': '#AB8E40', 'bg_in_favour_of': '#421AA1', 'bg_amount_in_words': '#AFDD34', 'declaration_by': '#1C5621', 'stamp': '#D7DB2E', 'bg_amount_in_number': '#A75195', 'bg_issuing_bank_address': '#54C93E', 'beneficiary_name': '#A3D138', 'fd_no': '#92864B', 'bg_date': '#C32950', 'bg_no': '#14B094', 'applicant_address': '#A6129A', 'signature': '#B638FF', 'current_account_no': '#2E6BD0', 'ref_no': '#9AEC13', 'bg_expiry_date': '#CBD268', 'beneficiary_address': '#4D039B', 'applicant': '#399064', 'new_bg_no': '#5151A2'}
+2024-03-04 11:40:49,107 is result_set is instance of dict? True
+2024-03-04 11:40:49,108 is final_result_set is instance of dict? True
+2024-03-04 11:40:49,163 Time taken for page 1 of Cncl_1_Rid_0.png:0:00:01.778618
+2024-03-04 11:40:49,180 *****Generated All Pages****** for Cncl_1_Rid_0.png
+2024-03-04 11:40:49,180 RAM memory 56.3 used for Cncl_1_Rid_0.png Generating All Pages:
+2024-03-04 11:40:49,180 Processing time taken for all pages of Cncl_1_Rid_0.png1:0:00:01.796274
+2024-03-04 11:40:49,303 file name is:Cncl_2_Rid_0.png
+2024-03-04 11:40:49,303 folder path :Images
+2024-03-04 11:40:49,303 Calling Image result
+2024-03-04 11:40:49,303 is all_page_result is instance of dict? True
+2024-03-04 11:40:49,303 STREAM b'IHDR' 16 13
+2024-03-04 11:40:49,303 STREAM b'pHYs' 41 9
+2024-03-04 11:40:49,303 STREAM b'IDAT' 62 86662
+2024-03-04 11:40:49,309 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:40:49,968 is words is instance of list? True
+2024-03-04 11:40:49,969 is bboxes is instance of list? True
+2024-03-04 11:40:49,969 is bounding_boxes is instance of list? True
+2024-03-04 11:40:49,994 is input_id_chunks is instance of list? True
+2024-03-04 11:40:49,994 is mask_chunks is instance of list? True
+2024-03-04 11:40:49,994 is bbox_chunks is instance of list? True
+2024-03-04 11:40:49,994 is image_chunks is instance of list? True
+2024-03-04 11:40:49,995 is input_dict is instance of dict? True
+2024-03-04 11:40:50,957 Model Called
+2024-03-04 11:40:50,958 RAM memory 56.6 used for Cncl_2_Rid_0.png:
+2024-03-04 11:40:50,958 is all_predictions is instance of list? True
+2024-03-04 11:40:50,958 is all_boxes is instance of list? True
+2024-03-04 11:40:50,958 is all_confidences is instance of list? True
+2024-03-04 11:40:50,958 is all_text is instance of list? True
+2024-03-04 11:40:50,958 is label2id is instance of dict? True
+2024-03-04 11:40:50,958 is id2label is instance of dict? True
+2024-03-04 11:40:50,959 is label2color is instance of dict? True
+2024-03-04 11:40:50,959 label2color : {'lc_issuing_bank': '#638F38', 'date': '#39B70F', 'O': '#41BAA4', 'bg_in_favour_of': '#AAAC04', 'bg_amount_in_words': '#72595F', 'declaration_by': '#8751AD', 'stamp': '#9FEB38', 'bg_amount_in_number': '#774A85', 'bg_issuing_bank_address': '#98C67E', 'beneficiary_name': '#FA977E', 'fd_no': '#4C85B8', 'bg_date': '#E20409', 'bg_no': '#F14E5A', 'applicant_address': '#F5ACE0', 'signature': '#D006E3', 'current_account_no': '#8C01C0', 'ref_no': '#2248EB', 'bg_expiry_date': '#DF8CAD', 'beneficiary_address': '#427B1E', 'applicant': '#287625', 'new_bg_no': '#4DD5EE'}
+2024-03-04 11:40:50,978 is result_set is instance of dict? True
+2024-03-04 11:40:50,978 is final_result_set is instance of dict? True
+2024-03-04 11:40:51,032 Time taken for page 1 of Cncl_2_Rid_0.png:0:00:01.728419
+2024-03-04 11:40:51,058 *****Generated All Pages****** for Cncl_2_Rid_0.png
+2024-03-04 11:40:51,058 RAM memory 56.6 used for Cncl_2_Rid_0.png Generating All Pages:
+2024-03-04 11:40:51,058 Processing time taken for all pages of Cncl_2_Rid_0.png1:0:00:01.755498
+2024-03-04 11:40:51,181 file name is:Cncl_8_Rid_0.png
+2024-03-04 11:40:51,181 folder path :Images
+2024-03-04 11:40:51,181 Calling Image result
+2024-03-04 11:40:51,181 is all_page_result is instance of dict? True
+2024-03-04 11:40:51,181 STREAM b'IHDR' 16 13
+2024-03-04 11:40:51,181 STREAM b'pHYs' 41 9
+2024-03-04 11:40:51,181 STREAM b'IDAT' 62 86862
+2024-03-04 11:40:51,189 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:40:52,016 is words is instance of list? True
+2024-03-04 11:40:52,016 is bboxes is instance of list? True
+2024-03-04 11:40:52,016 is bounding_boxes is instance of list? True
+2024-03-04 11:40:52,049 is input_id_chunks is instance of list? True
+2024-03-04 11:40:52,050 is mask_chunks is instance of list? True
+2024-03-04 11:40:52,050 is bbox_chunks is instance of list? True
+2024-03-04 11:40:52,050 is image_chunks is instance of list? True
+2024-03-04 11:40:52,050 is input_dict is instance of dict? True
+2024-03-04 11:40:52,934 Model Called
+2024-03-04 11:40:52,934 RAM memory 56.4 used for Cncl_8_Rid_0.png:
+2024-03-04 11:40:52,935 is all_predictions is instance of list? True
+2024-03-04 11:40:52,935 is all_boxes is instance of list? True
+2024-03-04 11:40:52,935 is all_confidences is instance of list? True
+2024-03-04 11:40:52,935 is all_text is instance of list? True
+2024-03-04 11:40:52,935 is label2id is instance of dict? True
+2024-03-04 11:40:52,935 is id2label is instance of dict? True
+2024-03-04 11:40:52,935 is label2color is instance of dict? True
+2024-03-04 11:40:52,935 label2color : {'lc_issuing_bank': '#0CBEB6', 'date': '#1E0E25', 'O': '#2BFB74', 'bg_in_favour_of': '#35E0C3', 'bg_amount_in_words': '#944A21', 'declaration_by': '#9F3100', 'stamp': '#6B45E4', 'bg_amount_in_number': '#4A7C27', 'bg_issuing_bank_address': '#680963', 'beneficiary_name': '#0EFAFA', 'fd_no': '#7E9E72', 'bg_date': '#540B0C', 'bg_no': '#41949E', 'applicant_address': '#FF6B11', 'signature': '#12A9A6', 'current_account_no': '#6122CB', 'ref_no': '#AF1308', 'bg_expiry_date': '#795AB9', 'beneficiary_address': '#0E9533', 'applicant': '#BA9FB4', 'new_bg_no': '#2EF581'}
+2024-03-04 11:40:52,954 is result_set is instance of dict? True
+2024-03-04 11:40:52,955 is final_result_set is instance of dict? True
+2024-03-04 11:40:53,009 Time taken for page 1 of Cncl_8_Rid_0.png:0:00:01.828020
+2024-03-04 11:40:53,026 *****Generated All Pages****** for Cncl_8_Rid_0.png
+2024-03-04 11:40:53,026 RAM memory 56.4 used for Cncl_8_Rid_0.png Generating All Pages:
+2024-03-04 11:40:53,026 Processing time taken for all pages of Cncl_8_Rid_0.png1:0:00:01.845382
+2024-03-04 11:40:53,142 file name is:Cncl_9_Pdf_0.png
+2024-03-04 11:40:53,142 folder path :Images
+2024-03-04 11:40:53,142 Calling Image result
+2024-03-04 11:40:53,142 is all_page_result is instance of dict? True
+2024-03-04 11:40:53,142 STREAM b'IHDR' 16 13
+2024-03-04 11:40:53,142 STREAM b'pHYs' 41 9
+2024-03-04 11:40:53,143 STREAM b'IDAT' 62 116186
+2024-03-04 11:40:53,150 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:40:53,891 is words is instance of list? True
+2024-03-04 11:40:53,891 is bboxes is instance of list? True
+2024-03-04 11:40:53,891 is bounding_boxes is instance of list? True
+2024-03-04 11:40:53,919 is input_id_chunks is instance of list? True
+2024-03-04 11:40:53,919 is mask_chunks is instance of list? True
+2024-03-04 11:40:53,919 is bbox_chunks is instance of list? True
+2024-03-04 11:40:53,919 is image_chunks is instance of list? True
+2024-03-04 11:40:53,920 is input_dict is instance of dict? True
+2024-03-04 11:40:54,863 Model Called
+2024-03-04 11:40:54,863 RAM memory 56.5 used for Cncl_9_Pdf_0.png:
+2024-03-04 11:40:54,863 is all_predictions is instance of list? True
+2024-03-04 11:40:54,863 is all_boxes is instance of list? True
+2024-03-04 11:40:54,863 is all_confidences is instance of list? True
+2024-03-04 11:40:54,863 is all_text is instance of list? True
+2024-03-04 11:40:54,864 is label2id is instance of dict? True
+2024-03-04 11:40:54,864 is id2label is instance of dict? True
+2024-03-04 11:40:54,864 is label2color is instance of dict? True
+2024-03-04 11:40:54,864 label2color : {'lc_issuing_bank': '#C1B5E1', 'date': '#B5E275', 'O': '#2BE6D3', 'bg_in_favour_of': '#AC07D3', 'bg_amount_in_words': '#2187CE', 'declaration_by': '#DAD5EC', 'stamp': '#6CE013', 'bg_amount_in_number': '#397E58', 'bg_issuing_bank_address': '#52CC64', 'beneficiary_name': '#F07D33', 'fd_no': '#393862', 'bg_date': '#E38006', 'bg_no': '#2875AE', 'applicant_address': '#0F1AB0', 'signature': '#F43981', 'current_account_no': '#BA63D6', 'ref_no': '#B16630', 'bg_expiry_date': '#B486FA', 'beneficiary_address': '#F67F06', 'applicant': '#AACA92', 'new_bg_no': '#FA753C'}
+2024-03-04 11:40:54,882 is result_set is instance of dict? True
+2024-03-04 11:40:54,883 is final_result_set is instance of dict? True
+2024-03-04 11:40:54,933 Time taken for page 1 of Cncl_9_Pdf_0.png:0:00:01.790165
+2024-03-04 11:40:54,952 *****Generated All Pages****** for Cncl_9_Pdf_0.png
+2024-03-04 11:40:54,952 RAM memory 56.5 used for Cncl_9_Pdf_0.png Generating All Pages:
+2024-03-04 11:40:54,952 Processing time taken for all pages of Cncl_9_Pdf_0.png1:0:00:01.810014
+2024-03-04 11:40:55,067 file name is:Cncl_10_Rid_0.png
+2024-03-04 11:40:55,067 folder path :Images
+2024-03-04 11:40:55,067 Calling Image result
+2024-03-04 11:40:55,067 is all_page_result is instance of dict? True
+2024-03-04 11:40:55,068 STREAM b'IHDR' 16 13
+2024-03-04 11:40:55,068 STREAM b'pHYs' 41 9
+2024-03-04 11:40:55,068 STREAM b'IDAT' 62 90706
+2024-03-04 11:40:55,074 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:40:55,754 is words is instance of list? True
+2024-03-04 11:40:55,754 is bboxes is instance of list? True
+2024-03-04 11:40:55,754 is bounding_boxes is instance of list? True
+2024-03-04 11:40:55,782 is input_id_chunks is instance of list? True
+2024-03-04 11:40:55,782 is mask_chunks is instance of list? True
+2024-03-04 11:40:55,782 is bbox_chunks is instance of list? True
+2024-03-04 11:40:55,782 is image_chunks is instance of list? True
+2024-03-04 11:40:55,783 is input_dict is instance of dict? True
+2024-03-04 11:40:56,671 Model Called
+2024-03-04 11:40:56,671 RAM memory 56.5 used for Cncl_10_Rid_0.png:
+2024-03-04 11:40:56,671 is all_predictions is instance of list? True
+2024-03-04 11:40:56,671 is all_boxes is instance of list? True
+2024-03-04 11:40:56,671 is all_confidences is instance of list? True
+2024-03-04 11:40:56,671 is all_text is instance of list? True
+2024-03-04 11:40:56,671 is label2id is instance of dict? True
+2024-03-04 11:40:56,671 is id2label is instance of dict? True
+2024-03-04 11:40:56,672 is label2color is instance of dict? True
+2024-03-04 11:40:56,672 label2color : {'lc_issuing_bank': '#839C16', 'date': '#30C5D4', 'O': '#F1A518', 'bg_in_favour_of': '#409C3A', 'bg_amount_in_words': '#974CA2', 'declaration_by': '#FEBAA5', 'stamp': '#F0F692', 'bg_amount_in_number': '#8A1D8E', 'bg_issuing_bank_address': '#A96CB1', 'beneficiary_name': '#D1B148', 'fd_no': '#B03363', 'bg_date': '#B63B80', 'bg_no': '#EF1E24', 'applicant_address': '#403733', 'signature': '#002BE7', 'current_account_no': '#AEF324', 'ref_no': '#D77E91', 'bg_expiry_date': '#05D84E', 'beneficiary_address': '#08E177', 'applicant': '#384E6E', 'new_bg_no': '#C943B9'}
+2024-03-04 11:40:56,691 is result_set is instance of dict? True
+2024-03-04 11:40:56,691 is final_result_set is instance of dict? True
+2024-03-04 11:40:56,740 Time taken for page 1 of Cncl_10_Rid_0.png:0:00:01.672649
+2024-03-04 11:40:56,758 *****Generated All Pages****** for Cncl_10_Rid_0.png
+2024-03-04 11:40:56,758 RAM memory 56.5 used for Cncl_10_Rid_0.png Generating All Pages:
+2024-03-04 11:40:56,758 Processing time taken for all pages of Cncl_10_Rid_0.png1:0:00:01.690668
+2024-03-04 11:40:56,874 file name is:Cncl_4_Rid_0.png
+2024-03-04 11:40:56,875 folder path :Images
+2024-03-04 11:40:56,875 Calling Image result
+2024-03-04 11:40:56,875 is all_page_result is instance of dict? True
+2024-03-04 11:40:56,875 STREAM b'IHDR' 16 13
+2024-03-04 11:40:56,875 STREAM b'pHYs' 41 9
+2024-03-04 11:40:56,875 STREAM b'IDAT' 62 58210
+2024-03-04 11:40:56,880 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:40:57,559 is words is instance of list? True
+2024-03-04 11:40:57,559 is bboxes is instance of list? True
+2024-03-04 11:40:57,559 is bounding_boxes is instance of list? True
+2024-03-04 11:40:57,584 is input_id_chunks is instance of list? True
+2024-03-04 11:40:57,584 is mask_chunks is instance of list? True
+2024-03-04 11:40:57,584 is bbox_chunks is instance of list? True
+2024-03-04 11:40:57,584 is image_chunks is instance of list? True
+2024-03-04 11:40:57,585 is input_dict is instance of dict? True
+2024-03-04 11:40:58,476 Model Called
+2024-03-04 11:40:58,476 RAM memory 56.5 used for Cncl_4_Rid_0.png:
+2024-03-04 11:40:58,476 is all_predictions is instance of list? True
+2024-03-04 11:40:58,476 is all_boxes is instance of list? True
+2024-03-04 11:40:58,476 is all_confidences is instance of list? True
+2024-03-04 11:40:58,476 is all_text is instance of list? True
+2024-03-04 11:40:58,476 is label2id is instance of dict? True
+2024-03-04 11:40:58,476 is id2label is instance of dict? True
+2024-03-04 11:40:58,477 is label2color is instance of dict? True
+2024-03-04 11:40:58,477 label2color : {'lc_issuing_bank': '#CA1472', 'date': '#848681', 'O': '#DDC619', 'bg_in_favour_of': '#BB1452', 'bg_amount_in_words': '#6D9324', 'declaration_by': '#DC84E9', 'stamp': '#1B2CA1', 'bg_amount_in_number': '#8E55B1', 'bg_issuing_bank_address': '#F59A62', 'beneficiary_name': '#91C67F', 'fd_no': '#D64E1F', 'bg_date': '#8D8EDA', 'bg_no': '#10373D', 'applicant_address': '#EB2413', 'signature': '#9303C2', 'current_account_no': '#C1AB14', 'ref_no': '#E8F43C', 'bg_expiry_date': '#F0170F', 'beneficiary_address': '#6EE9BC', 'applicant': '#3F4019', 'new_bg_no': '#5E59EF'}
+2024-03-04 11:40:58,494 is result_set is instance of dict? True
+2024-03-04 11:40:58,495 is final_result_set is instance of dict? True
+2024-03-04 11:40:58,550 Time taken for page 1 of Cncl_4_Rid_0.png:0:00:01.675296
+2024-03-04 11:40:58,565 *****Generated All Pages****** for Cncl_4_Rid_0.png
+2024-03-04 11:40:58,565 RAM memory 56.5 used for Cncl_4_Rid_0.png Generating All Pages:
+2024-03-04 11:40:58,565 Processing time taken for all pages of Cncl_4_Rid_0.png1:0:00:01.690288
+2024-03-04 11:40:58,681 file name is:Cncl_6_Rid_0.png
+2024-03-04 11:40:58,682 folder path :Images
+2024-03-04 11:40:58,682 Calling Image result
+2024-03-04 11:40:58,682 is all_page_result is instance of dict? True
+2024-03-04 11:40:58,682 STREAM b'IHDR' 16 13
+2024-03-04 11:40:58,682 STREAM b'pHYs' 41 9
+2024-03-04 11:40:58,682 STREAM b'IDAT' 62 152506
+2024-03-04 11:40:58,688 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:40:59,426 is words is instance of list? True
+2024-03-04 11:40:59,427 is bboxes is instance of list? True
+2024-03-04 11:40:59,427 is bounding_boxes is instance of list? True
+2024-03-04 11:40:59,458 is input_id_chunks is instance of list? True
+2024-03-04 11:40:59,458 is mask_chunks is instance of list? True
+2024-03-04 11:40:59,458 is bbox_chunks is instance of list? True
+2024-03-04 11:40:59,458 is image_chunks is instance of list? True
+2024-03-04 11:40:59,458 is input_dict is instance of dict? True
+2024-03-04 11:41:00,384 Model Called
+2024-03-04 11:41:00,384 RAM memory 56.5 used for Cncl_6_Rid_0.png:
+2024-03-04 11:41:00,384 is all_predictions is instance of list? True
+2024-03-04 11:41:00,384 is all_boxes is instance of list? True
+2024-03-04 11:41:00,384 is all_confidences is instance of list? True
+2024-03-04 11:41:00,384 is all_text is instance of list? True
+2024-03-04 11:41:00,385 is label2id is instance of dict? True
+2024-03-04 11:41:00,385 is id2label is instance of dict? True
+2024-03-04 11:41:00,385 is label2color is instance of dict? True
+2024-03-04 11:41:00,385 label2color : {'lc_issuing_bank': '#03D752', 'date': '#D018F6', 'O': '#24B4D5', 'bg_in_favour_of': '#27317A', 'bg_amount_in_words': '#E2A015', 'declaration_by': '#F9D79D', 'stamp': '#F0C505', 'bg_amount_in_number': '#688685', 'bg_issuing_bank_address': '#896907', 'beneficiary_name': '#9BCB87', 'fd_no': '#D9D0A5', 'bg_date': '#5E01B1', 'bg_no': '#B1D8B0', 'applicant_address': '#79D8ED', 'signature': '#5CB4D5', 'current_account_no': '#FB41F3', 'ref_no': '#31F0EB', 'bg_expiry_date': '#FF9A6C', 'beneficiary_address': '#335E8A', 'applicant': '#55378F', 'new_bg_no': '#25744A'}
+2024-03-04 11:41:00,403 is result_set is instance of dict? True
+2024-03-04 11:41:00,404 is final_result_set is instance of dict? True
+2024-03-04 11:41:00,450 Time taken for page 1 of Cncl_6_Rid_0.png:0:00:01.767900
+2024-03-04 11:41:00,478 *****Generated All Pages****** for Cncl_6_Rid_0.png
+2024-03-04 11:41:00,478 RAM memory 56.5 used for Cncl_6_Rid_0.png Generating All Pages:
+2024-03-04 11:41:00,478 Processing time taken for all pages of Cncl_6_Rid_0.png1:0:00:01.796659

@@ -1,0 +1,24 @@
+2024-03-04 11:39:15,473 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-03-04 11:39:15,474 start time: 2024-03-04 11:39:15.474826
+2024-03-04 11:39:18,921 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-03-04 11:39:19,120 Creating converter from 7 to 5
+2024-03-04 11:39:19,121 Creating converter from 5 to 7
+2024-03-04 11:39:19,121 Creating converter from 7 to 5
+2024-03-04 11:39:19,121 Creating converter from 5 to 7
+2024-03-04 11:39:19,713 Starting new HTTPS connection (1): huggingface.co:443
+2024-03-04 11:39:20,151 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-03-04 11:39:20,671 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-03-04 11:39:21,088 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-03-04 11:39:21,145 RAM memory for Model loading used: 48.9
+2024-03-04 11:39:21,145 cpu_utilization % for Model Loading:11.8
+2024-03-04 11:39:21,145 memory_consumption in bytes for Loading Model:1154904064
+2024-03-04 11:39:21,145 Loaded Model successfully
+2024-03-04 11:39:21,145 file name is:Cncl_7_Rid_0.png
+2024-03-04 11:39:21,145 folder path :Images
+2024-03-04 11:39:21,145 Calling Image result
+2024-03-04 11:39:21,145 is all_page_result is instance of dict? True
+2024-03-04 11:39:21,151 STREAM b'IHDR' 16 13
+2024-03-04 11:39:21,151 STREAM b'pHYs' 41 9
+2024-03-04 11:39:21,151 STREAM b'IDAT' 62 89152
+2024-03-04 11:39:21,163 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...
+2024-03-04 11:39:21,718 Checking spheric-time-383904-f1b421d86eef.json for explicit credentials as part of auth process...

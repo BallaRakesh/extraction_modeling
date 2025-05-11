@@ -1,0 +1,24 @@
+2024-02-21 03:34:30,331 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-02-21 03:34:30,332 start time: 2024-02-21 03:34:30.332116
+2024-02-21 03:34:33,500 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-02-21 03:34:33,564 Creating converter from 7 to 5
+2024-02-21 03:34:33,564 Creating converter from 5 to 7
+2024-02-21 03:34:33,564 Creating converter from 7 to 5
+2024-02-21 03:34:33,564 Creating converter from 5 to 7
+2024-02-21 03:34:33,869 Starting new HTTPS connection (1): huggingface.co:443
+2024-02-21 03:34:34,126 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-02-21 03:34:35,002 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-02-21 03:34:35,681 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-02-21 03:34:35,711 RAM memory for Model loading used: 52.6
+2024-02-21 03:34:35,711 cpu_utilization % for Model Loading:11.5
+2024-02-21 03:34:35,711 memory_consumption in bytes for Loading Model:1146310656
+2024-02-21 03:34:35,711 Loaded Model successfully
+2024-02-21 03:34:35,712 file name is:Packing_List(2013_04_15_16_20_53_5835)_346_page_1.png
+2024-02-21 03:34:35,712 folder path :Images
+2024-02-21 03:34:35,712 Calling Image result
+2024-02-21 03:34:35,712 is all_page_result is instance of dict? True
+2024-02-21 03:34:35,715 STREAM b'IHDR' 16 13
+2024-02-21 03:34:35,715 STREAM b'IDAT' 41 34787
+2024-02-21 03:34:35,731 *****Generated All Pages****** for Packing_List(2013_04_15_16_20_53_5835)_346_page_1.png
+2024-02-21 03:34:35,731 RAM memory 52.7 used for Packing_List(2013_04_15_16_20_53_5835)_346_page_1.png Generating All Pages:
+2024-02-21 03:34:35,731 Processing time taken for all pages of Packing_List(2013_04_15_16_20_53_5835)_346_page_1.png1:0:00:00.019146

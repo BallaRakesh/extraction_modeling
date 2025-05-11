@@ -306,8 +306,9 @@ def train_test_split(split_file,flag, img_files, labelled_files):
                                 tu.normalize([l_d['x1'], l_d['y1'], l_d['x2'], l_d['y2']], w, h))
                             final_labelled_data["labels"].append(l_d['label'])
                         annotation_data.append(final_labelled_data)
-                        df = pd.DataFrame(final_labelled_data)
-                        df.to_csv(f'{SEGREGATION_path}/{file}.csv')                       
+                        if bool(configur['debug_mode']['debug_flag']):
+                            df = pd.DataFrame(final_labelled_data)
+                            df.to_csv(f'{SEGREGATION_path}/{file}.csv')                       
                     else:
                         concat_final_label = []
                         final_labelled_data = {
@@ -341,8 +342,10 @@ def train_test_split(split_file,flag, img_files, labelled_files):
                                                                                                 pdf_text) / thresh) + 1) + ".png"))
                             annotation_data.append(final_labelled_data)
                             concat_final_label.append(pd.DataFrame(final_labelled_data))
-                        result = pd.concat(concat_final_label, axis=1)
-                        result.to_csv(f'{SEGREGATION_path}/{file}.csv')   
+                            
+                        if bool(configur['debug_mode']['debug_flag']):
+                            result = pd.concat(concat_final_label, axis=1)
+                            result.to_csv(f'{SEGREGATION_path}/{file}.csv')   
                     #print(final_labelled_data["labels"])
             else:
                 try:
@@ -721,11 +724,12 @@ if __name__== "__main__":
                     "Length of word coordinate data:", len(word_cordinate_data), "\n",
                     "Length of the IOU value:", len(IOU_value), "\n")
                 # exit("++++++++++")
-                try:
-                    df = pd.DataFrame(csv_data)
-                    df.to_csv(f'{iou_path}/{file}.csv', index = False)
-                except:
-                    pass
+                if bool(configur['debug_mode']['debug_flag']):
+                    try:
+                        df = pd.DataFrame(csv_data)
+                        df.to_csv(f'{iou_path}/{file}.csv', index = False)
+                    except:
+                        pass
             else:
                 print("No") 
             

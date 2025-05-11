@@ -1,0 +1,36 @@
+2024-05-06 17:24:49,149 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-05-06 17:24:49,150 start time: 2024-05-06 17:24:49.150523
+2024-05-06 17:24:52,172 Starting new HTTPS connection (1): huggingface.co:443
+2024-05-06 17:24:52,588 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-05-06 17:24:53,109 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-05-06 17:24:53,737 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-05-06 17:24:53,769 RAM memory for Model loading used: 80.0
+2024-05-06 17:24:53,769 cpu_utilization % for Model Loading:22.6
+2024-05-06 17:24:53,769 memory_consumption in bytes for Loading Model:911147008
+2024-05-06 17:24:53,769 Loaded Model successfully
+2024-05-06 17:24:53,769 file name is:Covering_Schedule_139_page_2.png
+2024-05-06 17:24:53,769 folder path :Images
+2024-05-06 17:24:53,769 Calling Image result
+2024-05-06 17:24:53,769 is all_page_result is instance of dict? True
+2024-05-06 17:24:53,774 STREAM b'IHDR' 16 13
+2024-05-06 17:24:53,775 STREAM b'IDAT' 41 57809
+2024-05-06 17:24:53,809 is words is instance of list? True
+2024-05-06 17:24:53,809 is bboxes is instance of list? True
+2024-05-06 17:24:53,809 is bounding_boxes is instance of list? True
+2024-05-06 17:24:54,283 is input_id_chunks is instance of list? True
+2024-05-06 17:24:54,283 is mask_chunks is instance of list? True
+2024-05-06 17:24:54,283 is bbox_chunks is instance of list? True
+2024-05-06 17:24:54,283 is image_chunks is instance of list? True
+2024-05-06 17:24:54,285 is input_dict is instance of dict? True
+2024-05-06 17:24:55,770 Model Called
+2024-05-06 17:24:55,770 RAM memory 86.2 used for Covering_Schedule_139_page_2.png:
+2024-05-06 17:24:55,770 is all_predictions is instance of list? True
+2024-05-06 17:24:55,770 is all_boxes is instance of list? True
+2024-05-06 17:24:55,770 is all_confidences is instance of list? True
+2024-05-06 17:24:55,770 is all_text is instance of list? True
+2024-05-06 17:24:55,771 is label2id is instance of dict? True
+2024-05-06 17:24:55,771 is id2label is instance of dict? True
+2024-05-06 17:24:55,772 is label2color is instance of dict? True
+2024-05-06 17:24:55,772 label2color : {'doc_charge_instructions': '#656DEE', 'drawer_bank_address': '#E67569', 'document_enclosed': '#0D2BA7', 'less_commission_charges': '#C6C3BA', 'swift_charges': '#849CAB', 'csh_presentation_date': '#FBA04C', 'nostro_bank_bic': '#5141B7', 'drawer_bank_bic': '#B86B98', 'csh_due_date': '#302474', 'your_charges': '#1DB32A', 'page_no': '#6A0EFB', 'csh_bill_currency': '#EEFF98', 'drawer_bank_bottom_address': '#EA801E', 'our_charges': '#BB1C56', 'commissioned_charges': '#5889D3', 'tenor_indicator_date': '#22E99F', 'signed_stamp': '#0647D7', 'doc_delivery_instruction': '#A206A2', 'original_number': '#185A14', 'postal_charges': '#8B5269', 'less_your_charges': '#FCE035', 'drawee_address': '#4E90E1', 'drawer_country': '#CF07B8', 'drawer_bank_bottom_bic': '#6E6326', 'signature': '#FF6952', 'usance_tenor': '#7320FD', 'O': '#A84FC0', 'currency_amount': '#2CD9C3', 'drawee_country': '#E6309B', 'nostro_bank_country': '#1DB811', 'drawer_bank_bottom_name': '#4BFD59', 'drawee_name': '#2100FA', 'drawer_ref_no': '#CF835D', 'drawer_bank_country': '#5F613B', 'doc_settlement_instructions': '#DC8898', 'tenor_type': '#76795A', 'csh_drawn_under_rules': '#D46D9F', 'csh_drawn_under_lc_number': '#609D05', 'csh_ref_no': '#A067F0', 'drawer_address': '#67D095', 'total_page': '#DF1A19', 'tenor_indicator': '#DE4EF2', 'drawee_bank_bic': '#9BFA0D', 'other_charges': '#C3A688', 'nostro_bank_address': '#76A4EA', 'total_bill_amount': '#C4D6AC', 'plus_our_charges': '#0DDDA3', 'csh_bill_amount': '#C1610C', 'tenor_indicator_type': '#8ED7E4', 'nostro_bank_name': '#67020F', 'drawer_name': '#73321E', 'drawee_bank_address': '#C947C0', 'original': '#7C2FEA', 'drawer_bank_name': '#3EC616', 'drawee_bank_name': '#4E8171'}
+2024-05-06 17:24:55,933 is result_set is instance of dict? True
+2024-05-06 17:24:55,934 is final_result_set is instance of dict? True

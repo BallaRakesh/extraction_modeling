@@ -1,0 +1,15 @@
+2024-01-30 01:16:58,337 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-01-30 01:16:58,431 start time: 2024-01-30 01:16:58.430957
+2024-01-30 01:17:11,790 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-01-30 01:17:11,917 Creating converter from 7 to 5
+2024-01-30 01:17:11,917 Creating converter from 5 to 7
+2024-01-30 01:17:11,917 Creating converter from 7 to 5
+2024-01-30 01:17:11,917 Creating converter from 5 to 7
+2024-01-30 01:17:12,609 Starting new HTTPS connection (1): huggingface.co:443
+2024-01-30 01:17:13,306 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-01-30 01:17:13,757 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-01-30 01:17:13,982 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-01-30 01:17:14,020 RAM memory for Model loading used: 31.9
+2024-01-30 01:17:14,020 cpu_utilization % for Model Loading:7.1
+2024-01-30 01:17:14,020 memory_consumption in bytes for Loading Model:1201893376
+2024-01-30 01:17:14,020 Loaded Model successfully

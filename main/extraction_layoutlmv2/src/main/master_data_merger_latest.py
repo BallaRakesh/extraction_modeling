@@ -344,6 +344,7 @@ if __name__ == '__main__':
 		print("folder_path: {}".format(folder_path)) 
 
 		images_path = os.path.join(folder_path, "Labels")
+		folder_path = os.path.join(folder_path, "temp_folder")
 
 		master_data_path = os.path.join(folder_path, "Master_Data")
 

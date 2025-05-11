@@ -70,6 +70,75 @@ pi_mapping_old = {
 }
 
 
+pi_mapping_reversed = {
+    22: 0,
+    23: 1,
+    49: 2,
+    75: 3,
+    10: 4,
+    12: 5,
+    1: 6,
+    3: 7,
+    38: 8,
+    39: 9,
+    76: 10,
+    40: 11,
+    17: 12,
+    18: 13,
+    14: 14,
+    15: 15,
+    7: 16,
+    8: 17,
+    4: 18,
+    5: 19,
+    77: 20,
+    78: 21,
+    31: 22,
+    32: 23,
+    79: 24,
+    33: 25,
+    25: 26,
+    24: 27,
+    30: 28,
+    29: 29,
+    80: 30,
+    81: 31,
+    82: 32,
+    11: 33,
+    51: 34,
+    54: 35,
+    55: 36,
+    52: 37,
+    53: 38,
+    83: 39,
+    84: 40,
+    85: 41,
+    69: 42,  # Note: 69 appears twice; this is the latest mapping.
+    34: 43,
+    35: 44,
+    61: 45,
+    86: 46,
+    68: 47,
+    87: 49,
+    43: 50,
+    88: 51,
+    89: 52,
+    90: 53,
+    91: 54,
+    92: 55,  # Note: 92 appears twice; this is the latest mapping.
+    93: 56,
+    94: 57,
+    95: 58,
+    96: 59,
+    97: 61,
+    50: 62,
+    62: 63,
+    64: 64,
+    98: 65
+}
+
+
+
 pi_mapping = {
     4:2,
     5:3,
@@ -141,6 +210,7 @@ def label_mapping(labels_folder, actual_mapping):
             
 
 if __name__ == '__main__':              
-    labels_folder = '/home/ntlpt19/Downloads/Evaluation_Data/finalEvaluationEvalData_itter3/BEFORE/BOL/Labels'
-    label_mapping(labels_folder, bol_mapping)
+    #labels_folder = '/home/ntlpt19/Downloads/Evaluation_Data/finalEvaluationEvalData_itter3/BEFORE/BOL/Labels'
+    labels_folder = ''
+    label_mapping(labels_folder, pi_mapping_reversed)
     

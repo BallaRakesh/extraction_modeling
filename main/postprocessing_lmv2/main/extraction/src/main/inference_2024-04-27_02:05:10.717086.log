@@ -1,0 +1,40 @@
+2024-04-27 02:05:10,717 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-04-27 02:05:10,718 start time: 2024-04-27 02:05:10.718734
+2024-04-27 02:05:13,102 Starting new HTTPS connection (1): huggingface.co:443
+2024-04-27 02:05:13,943 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-04-27 02:05:14,763 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-04-27 02:05:15,071 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-04-27 02:05:15,110 RAM memory for Model loading used: 64.5
+2024-04-27 02:05:15,110 cpu_utilization % for Model Loading:-51.300000000000004
+2024-04-27 02:05:15,110 memory_consumption in bytes for Loading Model:912388096
+2024-04-27 02:05:15,110 Loaded Model successfully
+2024-04-27 02:05:15,110 file name is:Bill_of_lading_1589_page_0.png
+2024-04-27 02:05:15,110 folder path :Images
+2024-04-27 02:05:15,110 Calling Image result
+2024-04-27 02:05:15,110 is all_page_result is instance of dict? True
+2024-04-27 02:05:15,113 STREAM b'IHDR' 16 13
+2024-04-27 02:05:15,113 STREAM b'IDAT' 41 65536
+2024-04-27 02:05:15,154 is words is instance of list? True
+2024-04-27 02:05:15,154 is bboxes is instance of list? True
+2024-04-27 02:05:15,154 is bounding_boxes is instance of list? True
+2024-04-27 02:05:15,381 is input_id_chunks is instance of list? True
+2024-04-27 02:05:15,381 is mask_chunks is instance of list? True
+2024-04-27 02:05:15,381 is bbox_chunks is instance of list? True
+2024-04-27 02:05:15,381 is image_chunks is instance of list? True
+2024-04-27 02:05:15,381 is input_dict is instance of dict? True
+2024-04-27 02:05:18,306 Model Called
+2024-04-27 02:05:18,306 RAM memory 82.1 used for Bill_of_lading_1589_page_0.png:
+2024-04-27 02:05:18,307 is all_predictions is instance of list? True
+2024-04-27 02:05:18,307 is all_boxes is instance of list? True
+2024-04-27 02:05:18,307 is all_confidences is instance of list? True
+2024-04-27 02:05:18,307 is all_text is instance of list? True
+2024-04-27 02:05:18,307 is label2id is instance of dict? True
+2024-04-27 02:05:18,307 is id2label is instance of dict? True
+2024-04-27 02:05:18,308 is label2color is instance of dict? True
+2024-04-27 02:05:18,308 label2color : {'stamp': '#3D0934', 'bol_original_or_copy': '#051F29', 'vessel_name': '#66FA08', 'shipped_onboard_date': '#DD7D8E', 'final_destination': '#CD00BD', 'measurement': '#50A02C', 'country_of_origin': '#39B2B7', 'bol_original_number': '#B0F526', 'net_weight': '#737FA5', 'signed_by_carrier': '#9A73F2', 'gross_weight': '#AC12A2', 'carrier_country': '#B83725', 'port_of_discharge': '#E54526', 'goods_quantity': '#18E4DF', 'notify_party_name': '#0617FF', 'port_of_loading': '#A7CE6B', 'shipper_address': '#DCCCC5', 'place_of_issue': '#7365A5', 'agent_country': '#A264F4', 'freight_collect_at': '#404385', 'place_of_receipt': '#32C23B', 'voyage_number': '#6A259A', 'signature': '#F55A92', 'consignee_name': '#F291A4', 'consignee_address': '#A425BA', 'bill_of_lading_issue_date': '#8D7873', 'mode_of_transport': '#B8C42D', 'shipper_name': '#5B3E1C', 'signed_By_agent': '#AC42A9', 'container_number': '#D79F9C', 'transaction_date': '#ADC359', 'notify_party_address': '#FEE625', 'goods_marks_and_nos': '#FA46D0', 'goods_description': '#D665B6', 'lc_date': '#F726F9', 'dimension': '#4A7970', 'agent_name': '#903225', 'carrier_name': '#B4FE66', 'O': '#4E008F', 'lc_ref_number': '#068EF3', 'pre_carriage_by': '#996875', 'page_no': '#84E6A1', 'total_original_no': '#97AFDA', 'freight_collect_or_prepaid': '#936574', 'signed_by_master': '#45CBA9', 'bill_of_lading_number': '#82E817'}
+2024-04-27 02:05:18,577 is result_set is instance of dict? True
+2024-04-27 02:05:18,579 is final_result_set is instance of dict? True
+2024-04-27 02:05:18,669 Time taken for page 1 of Bill_of_lading_1589_page_0.png:0:00:03.555828
+2024-04-27 02:05:18,801 *****Generated All Pages****** for Bill_of_lading_1589_page_0.png
+2024-04-27 02:05:18,801 RAM memory 82.4 used for Bill_of_lading_1589_page_0.png Generating All Pages:
+2024-04-27 02:05:18,801 Processing time taken for all pages of Bill_of_lading_1589_page_0.png1:0:00:03.691029

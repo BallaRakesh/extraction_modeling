@@ -1,0 +1,4028 @@
+2024-04-25 01:21:01.226407: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-04-25 01:21:01.233044: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2024-04-25 01:21:01.283001: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2024-04-25 01:21:01.283400: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-04-25 01:21:02.115509: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-04-25 01:21:03.920171: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-04-25 01:21:03.923613: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1960] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+version of the cuda
+2.1.0+cu121
+cuda available: True
+['S-customs_invoice_1st', 'S-beneficiary_certificate_1st', 'S-inspection_certificate', 'S-shipping_company_certificate_1st', 'O', 'S-beneficiary_certificate_2nd', 'S-insurance_certificate_document_2nd', 'S-airway_bill_1st', 'S-phytosanitary_certificate_2nd', 'S-certificate_of_analysis_document', 'S-certificate_of_analysis_document_1st', 'S-certificate_of_analysis_document_2nd', 'S-bill_of_exchange_document', 'S-packing_list_document', 'S-packing_list_document_1st', 'S-phytosanitary_certificate', 'S-bill_of_ladding_document_1st', 'S-certificate_of_weight_document_1st', 'S-airway_bill_2nd', 'S-commercial_invoice_document_2nd', 'S-bill_of_ladding_document', 'S-shipping_company_certificate_2nd', 'S-inspection_certificate_2nd', 'S-draft_document', 'S-health_certificate_document_1st', 'S-packing_list_document_2nd', 'S-fumigation_certificate', 'S-quality_certificate', 'S-certificate_of_origin_document_1st', 'S-insurance_policy', 'S-shipping_company_certificate', 'S-bill_of_exchange_document_1st', 'S-draft_document_2nd', 'S-certificate_of_origin_document_2nd', 'S-commercial_invoice_document_1st', 'S-airway_bill', 'S-insurance_policy_1st', 'S-fumigation_certificate_1st', 'S-custom_certificate_1st', 'S-quality_certificate_1st', 'S-draft_document_1st', 'S-certificate_of_weight_document_2nd', 'S-covering_schedule_document_1st', 'S-phytosanitary_certificate_1st', 'S-custom_certificate', 'S-commercial_invoice_document', 'S-certificate_of_origin_document', 'S-health_certificate_document', 'S-inspection_certificate_1st', 'S-bill_of_exchange_document_2nd', 'S-insurance_certificate_document_1st', 'S-certificate_of_weight_document', 'S-beneficiary_certificate', 'S-insurance_policy_2nd', 'S-insurance_certificate_document', 'S-quality_certificate_2nd', 'S-customs_invoice', 'S-bill_of_ladding_document_2nd', 'S-fumigation_certificate_2nd']
+59
+{'S-customs_invoice_1st': 0, 'S-beneficiary_certificate_1st': 1, 'S-inspection_certificate': 2, 'S-shipping_company_certificate_1st': 3, 'O': 4, 'S-beneficiary_certificate_2nd': 5, 'S-insurance_certificate_document_2nd': 6, 'S-airway_bill_1st': 7, 'S-phytosanitary_certificate_2nd': 8, 'S-certificate_of_analysis_document': 9, 'S-certificate_of_analysis_document_1st': 10, 'S-certificate_of_analysis_document_2nd': 11, 'S-bill_of_exchange_document': 12, 'S-packing_list_document': 13, 'S-packing_list_document_1st': 14, 'S-phytosanitary_certificate': 15, 'S-bill_of_ladding_document_1st': 16, 'S-certificate_of_weight_document_1st': 17, 'S-airway_bill_2nd': 18, 'S-commercial_invoice_document_2nd': 19, 'S-bill_of_ladding_document': 20, 'S-shipping_company_certificate_2nd': 21, 'S-inspection_certificate_2nd': 22, 'S-draft_document': 23, 'S-health_certificate_document_1st': 24, 'S-packing_list_document_2nd': 25, 'S-fumigation_certificate': 26, 'S-quality_certificate': 27, 'S-certificate_of_origin_document_1st': 28, 'S-insurance_policy': 29, 'S-shipping_company_certificate': 30, 'S-bill_of_exchange_document_1st': 31, 'S-draft_document_2nd': 32, 'S-certificate_of_origin_document_2nd': 33, 'S-commercial_invoice_document_1st': 34, 'S-airway_bill': 35, 'S-insurance_policy_1st': 36, 'S-fumigation_certificate_1st': 37, 'S-custom_certificate_1st': 38, 'S-quality_certificate_1st': 39, 'S-draft_document_1st': 40, 'S-certificate_of_weight_document_2nd': 41, 'S-covering_schedule_document_1st': 42, 'S-phytosanitary_certificate_1st': 43, 'S-custom_certificate': 44, 'S-commercial_invoice_document': 45, 'S-certificate_of_origin_document': 46, 'S-health_certificate_document': 47, 'S-inspection_certificate_1st': 48, 'S-bill_of_exchange_document_2nd': 49, 'S-insurance_certificate_document_1st': 50, 'S-certificate_of_weight_document': 51, 'S-beneficiary_certificate': 52, 'S-insurance_policy_2nd': 53, 'S-insurance_certificate_document': 54, 'S-quality_certificate_2nd': 55, 'S-customs_invoice': 56, 'S-bill_of_ladding_document_2nd': 57, 'S-fumigation_certificate_2nd': 58}
+{0: 'S-customs_invoice_1st', 1: 'S-beneficiary_certificate_1st', 2: 'S-inspection_certificate', 3: 'S-shipping_company_certificate_1st', 4: 'O', 5: 'S-beneficiary_certificate_2nd', 6: 'S-insurance_certificate_document_2nd', 7: 'S-airway_bill_1st', 8: 'S-phytosanitary_certificate_2nd', 9: 'S-certificate_of_analysis_document', 10: 'S-certificate_of_analysis_document_1st', 11: 'S-certificate_of_analysis_document_2nd', 12: 'S-bill_of_exchange_document', 13: 'S-packing_list_document', 14: 'S-packing_list_document_1st', 15: 'S-phytosanitary_certificate', 16: 'S-bill_of_ladding_document_1st', 17: 'S-certificate_of_weight_document_1st', 18: 'S-airway_bill_2nd', 19: 'S-commercial_invoice_document_2nd', 20: 'S-bill_of_ladding_document', 21: 'S-shipping_company_certificate_2nd', 22: 'S-inspection_certificate_2nd', 23: 'S-draft_document', 24: 'S-health_certificate_document_1st', 25: 'S-packing_list_document_2nd', 26: 'S-fumigation_certificate', 27: 'S-quality_certificate', 28: 'S-certificate_of_origin_document_1st', 29: 'S-insurance_policy', 30: 'S-shipping_company_certificate', 31: 'S-bill_of_exchange_document_1st', 32: 'S-draft_document_2nd', 33: 'S-certificate_of_origin_document_2nd', 34: 'S-commercial_invoice_document_1st', 35: 'S-airway_bill', 36: 'S-insurance_policy_1st', 37: 'S-fumigation_certificate_1st', 38: 'S-custom_certificate_1st', 39: 'S-quality_certificate_1st', 40: 'S-draft_document_1st', 41: 'S-certificate_of_weight_document_2nd', 42: 'S-covering_schedule_document_1st', 43: 'S-phytosanitary_certificate_1st', 44: 'S-custom_certificate', 45: 'S-commercial_invoice_document', 46: 'S-certificate_of_origin_document', 47: 'S-health_certificate_document', 48: 'S-inspection_certificate_1st', 49: 'S-bill_of_exchange_document_2nd', 50: 'S-insurance_certificate_document_1st', 51: 'S-certificate_of_weight_document', 52: 'S-beneficiary_certificate', 53: 'S-insurance_policy_2nd', 54: 'S-insurance_certificate_document', 55: 'S-quality_certificate_2nd', 56: 'S-customs_invoice', 57: 'S-bill_of_ladding_document_2nd', 58: 'S-fumigation_certificate_2nd'}
+input_ids torch.Size([512])
+attention_mask torch.Size([512])
+bbox torch.Size([512, 4])
+labels torch.Size([512])
+pixel_values torch.Size([3, 224, 224])
+<s> HBL MAC 2001112 Degllood Thack No. 1768793. HABIB BANK LTD - 3 Phillip Street # 01-03 Commerce Point Singapore 048693 Tel : ( 65 ) 64380055, Fax : ( 65 ) 64383244, Swift : HABBSGSG 13 HABIB BANK حبیب بینک 6011MFC00029012 COVERING SCHEDUL Date : December 15, 2011 Our Ref : ODC3497 / 10055 / 11 To : ICICI BANK LTD. ANDHERI ( W ) 17 DEC 2011 IER SERVICE ICICI BANK LIMITED SAGAR AVENUE GROUND FLOOR S.V. ROAD ANDHERI ( W ) MUMBAI - 400058 MAHARASHTRA INDIA Dear Sir, Our Reference Number Amount of Drafts Tenor Drawer Drawer's Reference Number Drawee 02 RECEIVED 00 ODC3497 / 10055 / 11 USD 26,848.83 120 DAYS FROM DATE OF ACCEPTANCE KAPPA INTL PTE LTD, SINGAPORE KIPL / NIG / IND / 11 / 385 GIRA INTERNATIONAL PVT LTD B - 203 PHOENIX RESIDENCY 2ND FLOOR PLOT NO. 64 SECTOR - 20 KHARGHAR NAVI MUMBAI - 4000634 MAHARSHTRA INDIA We enclose following documents on collection under Uniform Rules for Collection ICC Publication No. 522 as instructed below. Documents to be delivered against Acceptance. DOCUMENTS MAIL Bill Of Exchange Commercial Invoice 2 3 Special Instructions : DOCUMENTS Bill Of Lading Packing List MAIL 3 + 3NN 3 ALL CHARGES OUTSIDE SINGAPORE INCLUDING REIMBURSEMENT AND ADVISING BANK CHARGES ARE FOR THE DRAWEE'S ACCOUNT AND CANNOT BE WAIVED. Payment Instructions : KINDLY TELECONFIRM ACCEPTANCE AND MATURITY DATE BY AUTHENTICATED SWIft, UPON MATURITY,</s><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad>
+Some weights of LayoutLMv3ForTokenClassification were not initialized from the model checkpoint at microsoft/layoutlmv3-base and are newly initialized: ['classifier.dense.weight', 'classifier.out_proj.weight', 'classifier.out_proj.bias', 'classifier.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+['HBL', 'MAC', '2001112', 'Degllood', 'Thack', 'No.', '1768793', '.', 'HABIB', 'BANK', 'LTD', '-', '3', 'Phillip', 'Street', '#', '01-03', 'Commerce', 'Point', 'Singapore', '048693', 'Tel', ':', '(', '65', ')', '64380055', ',', 'Fax', ':', '(', '65', ')', '64383244', ',', 'Swift', ':', 'HABBSGSG', '13', 'HABIB', 'BANK', 'حبیب', 'بینک', '6011MFC00029012', 'COVERING', 'SCHEDUL', 'Date', ':', 'December', '15', ',', '2011', 'Our', 'Ref', ':', 'ODC3497', '/', '10055', '/', '11', 'To', ':', 'ICICI', 'BANK', 'LTD', '.', 'ANDHERI', '(', 'W', ')', '17', 'DEC', '2011', 'IER', 'SERVICE', 'ICICI', 'BANK', 'LIMITED', 'SAGAR', 'AVENUE', 'GROUND', 'FLOOR', 'S.V.', 'ROAD', 'ANDHERI', '(', 'W', ')', 'MUMBAI', '-', '400058', 'MAHARASHTRA', 'INDIA', 'Dear', 'Sir', ',', 'Our', 'Reference', 'Number', 'Amount', 'of', 'Drafts', 'Tenor', 'Drawer', "Drawer's", 'Reference', 'Number', 'Drawee', '02', 'RECEIVED', '00', 'ODC3497', '/', '10055', '/', '11', 'USD', '26,848.83', '120', 'DAYS', 'FROM', 'DATE', 'OF', 'ACCEPTANCE', 'KAPPA', 'INTL', 'PTE', 'LTD', ',', 'SINGAPORE', 'KIPL', '/', 'NIG', '/', 'IND', '/', '11', '/', '385', 'GIRA', 'INTERNATIONAL', 'PVT', 'LTD', 'B', '-', '203', 'PHOENIX', 'RESIDENCY', '2ND', 'FLOOR', 'PLOT', 'NO', '.', '64', 'SECTOR', '-', '20', 'KHARGHAR', 'NAVI', 'MUMBAI', '-', '4000634', 'MAHARSHTRA', 'INDIA', 'We', 'enclose', 'following', 'documents', 'on', 'collection', 'under', 'Uniform', 'Rules', 'for', 'Collection', 'ICC', 'Publication', 'No.', '522', 'as', 'instructed', 'below', '.', 'Documents', 'to', 'be', 'delivered', 'against', 'Acceptance', '.', 'DOCUMENTS', 'MAIL', 'Bill', 'Of', 'Exchange', 'Commercial', 'Invoice', '2', '3', 'Special', 'Instructions', ':', 'DOCUMENTS', 'Bill', 'Of', 'Lading', 'Packing', 'List', 'MAIL', '3', '+', '3NN', '3', 'ALL', 'CHARGES', 'OUTSIDE', 'SINGAPORE', 'INCLUDING', 'REIMBURSEMENT', 'AND', 'ADVISING', 'BANK', 'CHARGES', 'ARE', 'FOR', 'THE', "DRAWEE'S", 'ACCOUNT', 'AND', 'CANNOT', 'BE', 'WAIVED', '.', 'Payment', 'Instructions', ':', 'KINDLY', 'TELECONFIRM', 'ACCEPTANCE', 'AND', 'MATURITY', 'DATE', 'BY', 'AUTHENTICATED', 'SWIft', ',', 'UPON', 'MATURITY', ',']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-bill_of_exchange_document', 'S-bill_of_exchange_document', 'S-bill_of_exchange_document', 'S-commercial_invoice_document', 'S-commercial_invoice_document', 'S-bill_of_ladding_document_1st', 'S-commercial_invoice_document_1st', 'O', 'O', 'O', 'O', 'S-bill_of_ladding_document', 'S-bill_of_ladding_document', 'S-bill_of_ladding_document', 'S-packing_list_document', 'S-packing_list_document', 'O', 'S-bill_of_ladding_document_1st', 'S-bill_of_ladding_document_1st', 'S-bill_of_ladding_document_1st', 'S-packing_list_document_1st', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-bill_of_exchange_document', 'S-bill_of_exchange_document', 'S-bill_of_exchange_document', 'S-commercial_invoice_document', 'S-commercial_invoice_document', 'S-bill_of_ladding_document_1st', 'S-commercial_invoice_document_1st', 'O', 'O', 'O', 'O', 'S-bill_of_ladding_document', 'S-bill_of_ladding_document', 'S-bill_of_ladding_document', 'S-packing_list_document', 'S-packing_list_document', 'O', 'S-bill_of_ladding_document_1st', 'S-bill_of_ladding_document_1st', 'S-bill_of_ladding_document_1st', 'S-packing_list_document_1st', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+<s> -100
+ H 4
+BL -100
+ MAC 4
+ 200 4
+11 -100
+12 -100
+ Deg 4
+ll -100
+ood -100
+ Th 4
+ack -100
+ No 4
+. -100
+ 17 4
+68 -100
+793 -100
+. 4
+ HA 4
+BI -100
+B -100
+ B 4
+ANK -100
+ LTD 4
+ - 4
+ 3 4
+ Phillip 4
+ Street 4
+ # 4
+ 01 4
+cuda
+Epoch: 0
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 0 steps: 4.060699462890625
+Loss after 256 steps: 0.17809833586215973
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.1768966168165207
+validataion loss: 0.13511879742145538
+validataion loss: 0.2159743309020996
+validataion loss: 0.19294437766075134
+validataion loss: 0.26131725311279297
+validataion loss: 0.2134256362915039
+validataion loss: 0.2042398899793625
+validataion loss: 0.1953045278787613
+validataion loss: 0.32536181807518005
+validataion loss: 0.30004647374153137
+validataion loss: 0.15065191686153412
+validataion loss: 0.30418744683265686
+validataion loss: 0.22151245176792145
+validataion loss: 0.221145898103714
+validataion loss: 0.49265894293785095
+validataion loss: 0.26662692427635193
+validataion loss: 0.31368425488471985
+validataion loss: 0.2015790194272995
+validataion loss: 0.21646781265735626
+validataion loss: 0.31856483221054077
+validataion loss: 0.3661533296108246
+validataion loss: 0.16966450214385986
+validataion loss: 0.3155063986778259
+validataion loss: 0.21236728131771088
+validataion loss: 0.3620094656944275
+validataion loss: 0.20087547600269318
+validataion loss: 0.2392490655183792
+validataion loss: 0.22242461144924164
+validataion loss: 0.22681988775730133
+validataion loss: 0.13768170773983002
+validataion loss: 0.16872459650039673
+validataion loss: 0.26473286747932434
+validataion loss: 0.1159154549241066
+validataion loss: 0.08765354752540588
+validataion loss: 0.14999376237392426
+validataion loss: 0.32850268483161926
+validataion loss: 0.22829945385456085
+validataion loss: 0.32386279106140137
+validataion loss: 0.4096861183643341
+validataion loss: 0.2191043198108673
+validataion loss: 0.19465523958206177
+validataion loss: 0.3336585760116577
+validataion loss: 0.3181438148021698
+validataion loss: 0.19037136435508728
+validataion loss: 0.26616719365119934
+validataion loss: 0.41972020268440247
+validataion loss: 0.3431733548641205
+validataion loss: 0.28185001015663147
+validataion loss: 0.30643507838249207
+validataion loss: 0.2619400918483734
+validataion loss: 0.18271677196025848
+validataion loss: 0.23410741984844208
+validataion loss: 0.19086915254592896
+validataion loss: 0.28354644775390625
+validataion loss: 0.23378896713256836
+validataion loss: 0.1914638727903366
+validataion loss: 0.19578444957733154
+validataion loss: 0.21145232021808624
+validataion loss: 0.20728148519992828
+validataion loss: 0.24642962217330933
+validataion loss: 0.3014392554759979
+validataion loss: 0.23324410617351532
+validataion loss: 0.20181474089622498
+validataion loss: 0.25408923625946045
+validataion loss: 0.2683314085006714
+validataion loss: 0.31571662425994873
+precison: 0.3290988487495038
+recall: 0.24709388971684054
+f1: 0.282260810350698
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.009567170403897762
+The train loss : 0.17809833586215973
+Epoch: 1
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 513 steps: 0.14990614354610443
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.07033715397119522
+validataion loss: 0.05576951429247856
+validataion loss: 0.12270723283290863
+validataion loss: 0.09774701297283173
+validataion loss: 0.16462677717208862
+validataion loss: 0.128863126039505
+validataion loss: 0.11385857313871384
+validataion loss: 0.11123106628656387
+validataion loss: 0.19540555775165558
+validataion loss: 0.16259557008743286
+validataion loss: 0.0823545828461647
+validataion loss: 0.1957138180732727
+validataion loss: 0.09447704255580902
+validataion loss: 0.10650654882192612
+validataion loss: 0.3780471980571747
+validataion loss: 0.1441500037908554
+validataion loss: 0.15904654562473297
+validataion loss: 0.1097777783870697
+validataion loss: 0.0903208926320076
+validataion loss: 0.2503066956996918
+validataion loss: 0.21834701299667358
+validataion loss: 0.10508110374212265
+validataion loss: 0.18033462762832642
+validataion loss: 0.09553802758455276
+validataion loss: 0.18807576596736908
+validataion loss: 0.08783424645662308
+validataion loss: 0.12797002494335175
+validataion loss: 0.12888839840888977
+validataion loss: 0.12424229085445404
+validataion loss: 0.04350048303604126
+validataion loss: 0.07620835304260254
+validataion loss: 0.1365109235048294
+validataion loss: 0.037490472197532654
+validataion loss: 0.041939523071050644
+validataion loss: 0.07737740874290466
+validataion loss: 0.2547285556793213
+validataion loss: 0.13550826907157898
+validataion loss: 0.18784868717193604
+validataion loss: 0.24694158136844635
+validataion loss: 0.1338859498500824
+validataion loss: 0.09888111799955368
+validataion loss: 0.2115548998117447
+validataion loss: 0.20581109821796417
+validataion loss: 0.11888907104730606
+validataion loss: 0.11996463686227798
+validataion loss: 0.2860361933708191
+validataion loss: 0.20423123240470886
+validataion loss: 0.18411703407764435
+validataion loss: 0.17214320600032806
+validataion loss: 0.15489810705184937
+validataion loss: 0.11666078865528107
+validataion loss: 0.16111533343791962
+validataion loss: 0.08821181952953339
+validataion loss: 0.19610124826431274
+validataion loss: 0.14274799823760986
+validataion loss: 0.10552029311656952
+validataion loss: 0.07927852869033813
+validataion loss: 0.08480624109506607
+validataion loss: 0.12466537207365036
+validataion loss: 0.10894537717103958
+validataion loss: 0.15351060032844543
+validataion loss: 0.1291060745716095
+validataion loss: 0.08611184358596802
+validataion loss: 0.16787587106227875
+validataion loss: 0.16504837572574615
+validataion loss: 0.17391544580459595
+precison: 0.6836059867734076
+recall: 0.5853949329359165
+f1: 0.6307000642260758
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.005270165391266346
+The train loss : 0.14990614354610443
+Model is 1 saving +++++++++++++++++++++++++++++++++
+best Validation Loss: 0.005270165391266346
+best Precision: 0.6836059867734076
+best Recall: 0.5853949329359165
+Epoch: 2
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 770 steps: 0.08697974681854248
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.048490576446056366
+validataion loss: 0.03793102875351906
+validataion loss: 0.1087413877248764
+validataion loss: 0.08029397577047348
+validataion loss: 0.12017789483070374
+validataion loss: 0.10074381530284882
+validataion loss: 0.09228675812482834
+validataion loss: 0.07049687951803207
+validataion loss: 0.14854933321475983
+validataion loss: 0.1402282863855362
+validataion loss: 0.06872214376926422
+validataion loss: 0.13811331987380981
+validataion loss: 0.060317810624837875
+validataion loss: 0.10045263171195984
+validataion loss: 0.297165185213089
+validataion loss: 0.1029609814286232
+validataion loss: 0.1260715126991272
+validataion loss: 0.08740438520908356
+validataion loss: 0.06703741103410721
+validataion loss: 0.2417636662721634
+validataion loss: 0.1888401359319687
+validataion loss: 0.12243349850177765
+validataion loss: 0.13709206879138947
+validataion loss: 0.07073353976011276
+validataion loss: 0.1387007087469101
+validataion loss: 0.06257890909910202
+validataion loss: 0.09782267361879349
+validataion loss: 0.08702258765697479
+validataion loss: 0.10629498958587646
+validataion loss: 0.04086829349398613
+validataion loss: 0.058501921594142914
+validataion loss: 0.09485345333814621
+validataion loss: 0.04045281186699867
+validataion loss: 0.036520421504974365
+validataion loss: 0.0643867626786232
+validataion loss: 0.20053623616695404
+validataion loss: 0.12077607959508896
+validataion loss: 0.18937046825885773
+validataion loss: 0.19777971506118774
+validataion loss: 0.11087954044342041
+validataion loss: 0.08351262658834457
+validataion loss: 0.24988090991973877
+validataion loss: 0.17207804322242737
+validataion loss: 0.11343736946582794
+validataion loss: 0.10139591991901398
+validataion loss: 0.21893733739852905
+validataion loss: 0.18036216497421265
+validataion loss: 0.1417457014322281
+validataion loss: 0.1525842845439911
+validataion loss: 0.13920211791992188
+validataion loss: 0.10569161176681519
+validataion loss: 0.13897408545017242
+validataion loss: 0.07367298007011414
+validataion loss: 0.17803363502025604
+validataion loss: 0.1271066814661026
+validataion loss: 0.08712754398584366
+validataion loss: 0.052508533000946045
+validataion loss: 0.08443061262369156
+validataion loss: 0.10999639332294464
+validataion loss: 0.06549999117851257
+validataion loss: 0.13408926129341125
+validataion loss: 0.10288321226835251
+validataion loss: 0.04636387154459953
+validataion loss: 0.12140632420778275
+validataion loss: 0.11683335155248642
+validataion loss: 0.1458287239074707
+precison: 0.6694610778443114
+recall: 0.666467958271237
+f1: 0.6679611650485436
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.004419052507728338
+The train loss : 0.08697974681854248
+Model is 2 saving +++++++++++++++++++++++++++++++++
+best Validation Loss: 0.004419052507728338
+best Precision: 0.6694610778443114
+best Recall: 0.666467958271237
+Epoch: 3
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 1027 steps: 0.05702638998627663
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.036851294338703156
+validataion loss: 0.026199134066700935
+validataion loss: 0.09975177049636841
+validataion loss: 0.06965252012014389
+validataion loss: 0.10201801359653473
+validataion loss: 0.07752932608127594
+validataion loss: 0.06697997450828552
+validataion loss: 0.058661531656980515
+validataion loss: 0.13649602234363556
+validataion loss: 0.11426254361867905
+validataion loss: 0.0619020089507103
+validataion loss: 0.16601590812206268
+validataion loss: 0.03718205913901329
+validataion loss: 0.07648039609193802
+validataion loss: 0.2712430953979492
+validataion loss: 0.09636180847883224
+validataion loss: 0.10065110772848129
+validataion loss: 0.07263780385255814
+validataion loss: 0.04938238486647606
+validataion loss: 0.238267719745636
+validataion loss: 0.1437150090932846
+validataion loss: 0.09548526257276535
+validataion loss: 0.1312478929758072
+validataion loss: 0.0407588891685009
+validataion loss: 0.1145680770277977
+validataion loss: 0.04600905999541283
+validataion loss: 0.0978570282459259
+validataion loss: 0.07368791848421097
+validataion loss: 0.0833124965429306
+validataion loss: 0.022463325411081314
+validataion loss: 0.04842013120651245
+validataion loss: 0.07380907982587814
+validataion loss: 0.024191902950406075
+validataion loss: 0.031944140791893005
+validataion loss: 0.03810920938849449
+validataion loss: 0.1510099172592163
+validataion loss: 0.08662132173776627
+validataion loss: 0.16443540155887604
+validataion loss: 0.11349186301231384
+validataion loss: 0.08662805706262589
+validataion loss: 0.07136975973844528
+validataion loss: 0.21490171551704407
+validataion loss: 0.1629427820444107
+validataion loss: 0.10850976407527924
+validataion loss: 0.0732627883553505
+validataion loss: 0.20829127728939056
+validataion loss: 0.15550929307937622
+validataion loss: 0.12947402894496918
+validataion loss: 0.11058958619832993
+validataion loss: 0.10289787501096725
+validataion loss: 0.08631882071495056
+validataion loss: 0.11904928833246231
+validataion loss: 0.058062124997377396
+validataion loss: 0.15889963507652283
+validataion loss: 0.10585485398769379
+validataion loss: 0.08425965905189514
+validataion loss: 0.03511980175971985
+validataion loss: 0.06760525703430176
+validataion loss: 0.10933689028024673
+validataion loss: 0.055122073739767075
+validataion loss: 0.1049933210015297
+validataion loss: 0.10128378868103027
+validataion loss: 0.0338975265622139
+validataion loss: 0.07504729926586151
+validataion loss: 0.10727406293153763
+validataion loss: 0.1268751621246338
+precison: 0.7698717948717949
+recall: 0.7159463487332339
+f1: 0.7419305019305019
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0038447019178420305
+The train loss : 0.05702638998627663
+Model is 3 saving +++++++++++++++++++++++++++++++++
+best Validation Loss: 0.0038447019178420305
+best Precision: 0.7698717948717949
+best Recall: 0.7159463487332339
+Epoch: 4
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 1284 steps: 0.11328693479299545
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.026092929765582085
+validataion loss: 0.018914414569735527
+validataion loss: 0.08850562572479248
+validataion loss: 0.056735560297966
+validataion loss: 0.08541688323020935
+validataion loss: 0.07595611363649368
+validataion loss: 0.0534089133143425
+validataion loss: 0.07393688708543777
+validataion loss: 0.10586006939411163
+validataion loss: 0.09362377971410751
+validataion loss: 0.04775678738951683
+validataion loss: 0.1384201943874359
+validataion loss: 0.030210314318537712
+validataion loss: 0.0462183877825737
+validataion loss: 0.28263333439826965
+validataion loss: 0.08018557727336884
+validataion loss: 0.0682239904999733
+validataion loss: 0.051135458052158356
+validataion loss: 0.04127810522913933
+validataion loss: 0.20521822571754456
+validataion loss: 0.13973240554332733
+validataion loss: 0.12623590230941772
+validataion loss: 0.09575754404067993
+validataion loss: 0.03810733184218407
+validataion loss: 0.09857375174760818
+validataion loss: 0.04466079920530319
+validataion loss: 0.08600595593452454
+validataion loss: 0.07498610019683838
+validataion loss: 0.08645989745855331
+validataion loss: 0.04065517336130142
+validataion loss: 0.046479251235723495
+validataion loss: 0.06614591181278229
+validataion loss: 0.021305570378899574
+validataion loss: 0.03638250380754471
+validataion loss: 0.03154598921537399
+validataion loss: 0.1992446631193161
+validataion loss: 0.08687663823366165
+validataion loss: 0.1800721287727356
+validataion loss: 0.16789858043193817
+validataion loss: 0.0675768330693245
+validataion loss: 0.07329373061656952
+validataion loss: 0.25017476081848145
+validataion loss: 0.10796721279621124
+validataion loss: 0.12207537144422531
+validataion loss: 0.07563378661870956
+validataion loss: 0.18859609961509705
+validataion loss: 0.14231809973716736
+validataion loss: 0.09769336134195328
+validataion loss: 0.09212179481983185
+validataion loss: 0.08982637524604797
+validataion loss: 0.08708135783672333
+validataion loss: 0.1034674271941185
+validataion loss: 0.05034720525145531
+validataion loss: 0.13397592306137085
+validataion loss: 0.12280260771512985
+validataion loss: 0.06201106309890747
+validataion loss: 0.037117425352334976
+validataion loss: 0.05096633732318878
+validataion loss: 0.0938558578491211
+validataion loss: 0.03343214467167854
+validataion loss: 0.10928715765476227
+validataion loss: 0.0801532194018364
+validataion loss: 0.0249642226845026
+validataion loss: 0.09855780750513077
+validataion loss: 0.10434740781784058
+validataion loss: 0.0993269756436348
+precison: 0.800186741363212
+recall: 0.7663189269746646
+f1: 0.7828867235079172
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.003009908366948366
+The train loss : 0.11328693479299545
+Model is 4 saving +++++++++++++++++++++++++++++++++
+best Validation Loss: 0.003009908366948366
+best Precision: 0.800186741363212
+best Recall: 0.7663189269746646
+Epoch: 5
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 1541 steps: 0.00034696466173045337
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.031202282756567
+validataion loss: 0.010793287307024002
+validataion loss: 0.09956060349941254
+validataion loss: 0.07153456658124924
+validataion loss: 0.09698648750782013
+validataion loss: 0.06476003676652908
+validataion loss: 0.06532320380210876
+validataion loss: 0.04090210795402527
+validataion loss: 0.12152227759361267
+validataion loss: 0.097317636013031
+validataion loss: 0.04433991760015488
+validataion loss: 0.1384451687335968
+validataion loss: 0.036821071058511734
+validataion loss: 0.06847625225782394
+validataion loss: 0.2588959336280823
+validataion loss: 0.08256518840789795
+validataion loss: 0.06233896315097809
+validataion loss: 0.04794134572148323
+validataion loss: 0.03454972058534622
+validataion loss: 0.20124417543411255
+validataion loss: 0.11754896491765976
+validataion loss: 0.12426654249429703
+validataion loss: 0.11084051430225372
+validataion loss: 0.05905992165207863
+validataion loss: 0.08376851677894592
+validataion loss: 0.040062252432107925
+validataion loss: 0.07701646536588669
+validataion loss: 0.08258693665266037
+validataion loss: 0.0960359126329422
+validataion loss: 0.03628635033965111
+validataion loss: 0.03785499185323715
+validataion loss: 0.0522921197116375
+validataion loss: 0.032400306314229965
+validataion loss: 0.031453993171453476
+validataion loss: 0.03823816776275635
+validataion loss: 0.16814181208610535
+validataion loss: 0.08900243788957596
+validataion loss: 0.18412081897258759
+validataion loss: 0.10767129808664322
+validataion loss: 0.04995403066277504
+validataion loss: 0.08063409477472305
+validataion loss: 0.24463145434856415
+validataion loss: 0.1323033720254898
+validataion loss: 0.1132199764251709
+validataion loss: 0.07893981039524078
+validataion loss: 0.1839514523744583
+validataion loss: 0.1442539542913437
+validataion loss: 0.10949736833572388
+validataion loss: 0.1091761589050293
+validataion loss: 0.09377294033765793
+validataion loss: 0.09124115109443665
+validataion loss: 0.10772782564163208
+validataion loss: 0.04871866852045059
+validataion loss: 0.15475496649742126
+validataion loss: 0.12878704071044922
+validataion loss: 0.0660017803311348
+validataion loss: 0.04838929697871208
+validataion loss: 0.07267587631940842
+validataion loss: 0.08944331854581833
+validataion loss: 0.03756392374634743
+validataion loss: 0.1479192078113556
+validataion loss: 0.08150364458560944
+validataion loss: 0.02579248510301113
+validataion loss: 0.06657107919454575
+validataion loss: 0.09079628437757492
+validataion loss: 0.11168771982192993
+precison: 0.7861427714457109
+recall: 0.7812220566318927
+f1: 0.7836746897892061
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.003384476527571678
+The train loss : 0.00034696466173045337
+Epoch: 6
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 1798 steps: 0.06437843292951584
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.03229685500264168
+validataion loss: 0.010017449967563152
+validataion loss: 0.09022223949432373
+validataion loss: 0.04459729790687561
+validataion loss: 0.08843941241502762
+validataion loss: 0.05674263834953308
+validataion loss: 0.050880201160907745
+validataion loss: 0.0359993651509285
+validataion loss: 0.16030429303646088
+validataion loss: 0.07885432243347168
+validataion loss: 0.05301490053534508
+validataion loss: 0.19667010009288788
+validataion loss: 0.026254160329699516
+validataion loss: 0.03802867606282234
+validataion loss: 0.2773062586784363
+validataion loss: 0.0751456618309021
+validataion loss: 0.04746730998158455
+validataion loss: 0.036324433982372284
+validataion loss: 0.02909940853714943
+validataion loss: 0.2941305935382843
+validataion loss: 0.1203417256474495
+validataion loss: 0.09158781170845032
+validataion loss: 0.0845312625169754
+validataion loss: 0.02289414219558239
+validataion loss: 0.09750168025493622
+validataion loss: 0.0335884653031826
+validataion loss: 0.06843886524438858
+validataion loss: 0.059224992990493774
+validataion loss: 0.0685066282749176
+validataion loss: 0.03179456666111946
+validataion loss: 0.05588699132204056
+validataion loss: 0.04417984560132027
+validataion loss: 0.01684155873954296
+validataion loss: 0.033149994909763336
+validataion loss: 0.030786048620939255
+validataion loss: 0.22342869639396667
+validataion loss: 0.048175834119319916
+validataion loss: 0.14815638959407806
+validataion loss: 0.04683518409729004
+validataion loss: 0.05795727297663689
+validataion loss: 0.06212211772799492
+validataion loss: 0.24004530906677246
+validataion loss: 0.15290768444538116
+validataion loss: 0.13701124489307404
+validataion loss: 0.07622922211885452
+validataion loss: 0.2049994021654129
+validataion loss: 0.14500652253627777
+validataion loss: 0.11639486998319626
+validataion loss: 0.053753115236759186
+validataion loss: 0.11209581792354584
+validataion loss: 0.06140654906630516
+validataion loss: 0.12272242456674576
+validataion loss: 0.053719453513622284
+validataion loss: 0.1733541041612625
+validataion loss: 0.12588174641132355
+validataion loss: 0.06198859214782715
+validataion loss: 0.03777496516704559
+validataion loss: 0.032405510544776917
+validataion loss: 0.16066573560237885
+validataion loss: 0.033430781215429306
+validataion loss: 0.05287107080221176
+validataion loss: 0.08976569771766663
+validataion loss: 0.02108658105134964
+validataion loss: 0.10472594946622849
+validataion loss: 0.07529399544000626
+validataion loss: 0.09847687184810638
+precison: 0.8506772381896267
+recall: 0.767511177347243
+f1: 0.8069570667502349
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0029841477517038584
+The train loss : 0.06437843292951584
+Model is 6 saving +++++++++++++++++++++++++++++++++
+best Validation Loss: 0.0029841477517038584
+best Precision: 0.8506772381896267
+best Recall: 0.767511177347243
+Epoch: 7
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 2055 steps: 0.09268984198570251
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.016433920711278915
+validataion loss: 0.015214141458272934
+validataion loss: 0.06867562979459763
+validataion loss: 0.03686444088816643
+validataion loss: 0.059693723917007446
+validataion loss: 0.04777571186423302
+validataion loss: 0.030668750405311584
+validataion loss: 0.04335585981607437
+validataion loss: 0.07284153252840042
+validataion loss: 0.06900038570165634
+validataion loss: 0.042792368680238724
+validataion loss: 0.15198788046836853
+validataion loss: 0.019384928047657013
+validataion loss: 0.03263583779335022
+validataion loss: 0.2723274230957031
+validataion loss: 0.05851943418383598
+validataion loss: 0.048726435750722885
+validataion loss: 0.03797191381454468
+validataion loss: 0.03586563095450401
+validataion loss: 0.28483033180236816
+validataion loss: 0.09410074353218079
+validataion loss: 0.10712530463933945
+validataion loss: 0.08730817586183548
+validataion loss: 0.019336041063070297
+validataion loss: 0.08812640607357025
+validataion loss: 0.029118351638317108
+validataion loss: 0.06660812348127365
+validataion loss: 0.05342552810907364
+validataion loss: 0.08965052664279938
+validataion loss: 0.06086068972945213
+validataion loss: 0.03242458775639534
+validataion loss: 0.03951367735862732
+validataion loss: 0.015733186155557632
+validataion loss: 0.04070771858096123
+validataion loss: 0.022421957924962044
+validataion loss: 0.2011968344449997
+validataion loss: 0.056173596531152725
+validataion loss: 0.1982390284538269
+validataion loss: 0.1659974753856659
+validataion loss: 0.03311188519001007
+validataion loss: 0.06445786356925964
+validataion loss: 0.286179780960083
+validataion loss: 0.08227738738059998
+validataion loss: 0.12798497080802917
+validataion loss: 0.06927163153886795
+validataion loss: 0.1570352166891098
+validataion loss: 0.14250844717025757
+validataion loss: 0.09296972304582596
+validataion loss: 0.0811152383685112
+validataion loss: 0.06124906986951828
+validataion loss: 0.10729538649320602
+validataion loss: 0.09156996011734009
+validataion loss: 0.037293169647455215
+validataion loss: 0.1311119943857193
+validataion loss: 0.10271172970533371
+validataion loss: 0.07935220748186111
+validataion loss: 0.02559726871550083
+validataion loss: 0.056942157447338104
+validataion loss: 0.08121895045042038
+validataion loss: 0.03174291551113129
+validataion loss: 0.12707965075969696
+validataion loss: 0.06282922625541687
+validataion loss: 0.017921458929777145
+validataion loss: 0.08943641185760498
+validataion loss: 0.09489526599645615
+validataion loss: 0.09137452393770218
+precison: 0.8317043372021992
+recall: 0.8116244411326379
+f1: 0.8215417106652588
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0027689251583069563
+The train loss : 0.09268984198570251
+Model is 7 saving +++++++++++++++++++++++++++++++++
+best Validation Loss: 0.0027689251583069563
+best Precision: 0.8317043372021992
+best Recall: 0.8116244411326379
+Epoch: 8
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 2312 steps: 0.01990373618900776
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.0370212160050869
+validataion loss: 0.016090573742985725
+validataion loss: 0.08032645285129547
+validataion loss: 0.04059538245201111
+validataion loss: 0.06704933941364288
+validataion loss: 0.06303725391626358
+validataion loss: 0.04794395714998245
+validataion loss: 0.04933403804898262
+validataion loss: 0.08977384120225906
+validataion loss: 0.04201176390051842
+validataion loss: 0.04137887805700302
+validataion loss: 0.12397370487451553
+validataion loss: 0.034517817199230194
+validataion loss: 0.0558069683611393
+validataion loss: 0.26778995990753174
+validataion loss: 0.07743523269891739
+validataion loss: 0.05957691743969917
+validataion loss: 0.03240218758583069
+validataion loss: 0.027672601863741875
+validataion loss: 0.3044467270374298
+validataion loss: 0.09855004400014877
+validataion loss: 0.14842836558818817
+validataion loss: 0.07051671296358109
+validataion loss: 0.03078065812587738
+validataion loss: 0.08765805512666702
+validataion loss: 0.06583593785762787
+validataion loss: 0.07051236927509308
+validataion loss: 0.07026726007461548
+validataion loss: 0.06697270274162292
+validataion loss: 0.07026892155408859
+validataion loss: 0.038469113409519196
+validataion loss: 0.03258439898490906
+validataion loss: 0.0320444330573082
+validataion loss: 0.03666124492883682
+validataion loss: 0.012115400284528732
+validataion loss: 0.16487085819244385
+validataion loss: 0.11140704154968262
+validataion loss: 0.2119169384241104
+validataion loss: 0.06681378930807114
+validataion loss: 0.045442745089530945
+validataion loss: 0.07930037379264832
+validataion loss: 0.29501208662986755
+validataion loss: 0.12141688913106918
+validataion loss: 0.09096480906009674
+validataion loss: 0.06900473684072495
+validataion loss: 0.1697985976934433
+validataion loss: 0.16385789215564728
+validataion loss: 0.09213204681873322
+validataion loss: 0.06039297208189964
+validataion loss: 0.061892978847026825
+validataion loss: 0.060815829783678055
+validataion loss: 0.10030916333198547
+validataion loss: 0.04331117495894432
+validataion loss: 0.11624543368816376
+validataion loss: 0.11188674718141556
+validataion loss: 0.05545126646757126
+validataion loss: 0.04619390517473221
+validataion loss: 0.036670759320259094
+validataion loss: 0.07807628065347672
+validataion loss: 0.028034953400492668
+validataion loss: 0.1077250987291336
+validataion loss: 0.05426192283630371
+validataion loss: 0.01804928667843342
+validataion loss: 0.10769246518611908
+validataion loss: 0.08787102997303009
+validataion loss: 0.09175828844308853
+precison: 0.8131900925096986
+recall: 0.812220566318927
+f1: 0.8127050402624516
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002780554350465536
+The train loss : 0.01990373618900776
+Epoch: 9
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 2569 steps: 0.009824368171393871
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.02719051204621792
+validataion loss: 0.0033258036710321903
+validataion loss: 0.09550212323665619
+validataion loss: 0.04393862932920456
+validataion loss: 0.06664617359638214
+validataion loss: 0.04958727955818176
+validataion loss: 0.0395561158657074
+validataion loss: 0.05532059818506241
+validataion loss: 0.077838234603405
+validataion loss: 0.03470775485038757
+validataion loss: 0.04260135442018509
+validataion loss: 0.1391405463218689
+validataion loss: 0.02527662180364132
+validataion loss: 0.035817455500364304
+validataion loss: 0.29077357053756714
+validataion loss: 0.06958330422639847
+validataion loss: 0.03536202386021614
+validataion loss: 0.016607625409960747
+validataion loss: 0.028136253356933594
+validataion loss: 0.2720772922039032
+validataion loss: 0.11387693881988525
+validataion loss: 0.16619403660297394
+validataion loss: 0.09148123115301132
+validataion loss: 0.033973924815654755
+validataion loss: 0.08150686323642731
+validataion loss: 0.0465988926589489
+validataion loss: 0.050700679421424866
+validataion loss: 0.06375545263290405
+validataion loss: 0.06216290220618248
+validataion loss: 0.052097711712121964
+validataion loss: 0.027344148606061935
+validataion loss: 0.03273899853229523
+validataion loss: 0.027737686410546303
+validataion loss: 0.026463937014341354
+validataion loss: 0.0136426892131567
+validataion loss: 0.1423766314983368
+validataion loss: 0.051778703927993774
+validataion loss: 0.1719803661108017
+validataion loss: 0.07462890446186066
+validataion loss: 0.027595341205596924
+validataion loss: 0.06580091267824173
+validataion loss: 0.2582898437976837
+validataion loss: 0.12165959179401398
+validataion loss: 0.12111833691596985
+validataion loss: 0.07746217399835587
+validataion loss: 0.15464569628238678
+validataion loss: 0.13697315752506256
+validataion loss: 0.12661820650100708
+validataion loss: 0.04173143953084946
+validataion loss: 0.07991600036621094
+validataion loss: 0.08604561537504196
+validataion loss: 0.11445662379264832
+validataion loss: 0.03580842912197113
+validataion loss: 0.10113301128149033
+validataion loss: 0.10639588534832001
+validataion loss: 0.054103028029203415
+validataion loss: 0.02575829066336155
+validataion loss: 0.020881718024611473
+validataion loss: 0.07981716096401215
+validataion loss: 0.015848269686102867
+validataion loss: 0.0958716869354248
+validataion loss: 0.05268874764442444
+validataion loss: 0.016741575673222542
+validataion loss: 0.06751985102891922
+validataion loss: 0.07913000136613846
+validataion loss: 0.0529756024479866
+precison: 0.8298192771084337
+recall: 0.8211624441132638
+f1: 0.8254681647940074
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0016053213039413095
+The train loss : 0.009824368171393871
+Model is 9 saving +++++++++++++++++++++++++++++++++
+best Validation Loss: 0.0016053213039413095
+best Precision: 0.8298192771084337
+best Recall: 0.8211624441132638
+Epoch: 10
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 2826 steps: 0.05422753840684891
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.01957717537879944
+validataion loss: 0.006856201216578484
+validataion loss: 0.08251337707042694
+validataion loss: 0.047870319336652756
+validataion loss: 0.07671727985143661
+validataion loss: 0.060460977256298065
+validataion loss: 0.0324663408100605
+validataion loss: 0.040088485926389694
+validataion loss: 0.061588287353515625
+validataion loss: 0.03784314543008804
+validataion loss: 0.058046407997608185
+validataion loss: 0.1141243427991867
+validataion loss: 0.02791445143520832
+validataion loss: 0.07394611090421677
+validataion loss: 0.33902543783187866
+validataion loss: 0.049864474684000015
+validataion loss: 0.032372258603572845
+validataion loss: 0.02057892456650734
+validataion loss: 0.0324615053832531
+validataion loss: 0.28094416856765747
+validataion loss: 0.08333716541528702
+validataion loss: 0.11623845249414444
+validataion loss: 0.06736978143453598
+validataion loss: 0.024443941190838814
+validataion loss: 0.0815301239490509
+validataion loss: 0.04893801733851433
+validataion loss: 0.0739954262971878
+validataion loss: 0.04735585302114487
+validataion loss: 0.0606200210750103
+validataion loss: 0.027505701407790184
+validataion loss: 0.04165486618876457
+validataion loss: 0.029265910387039185
+validataion loss: 0.03360435739159584
+validataion loss: 0.019393624737858772
+validataion loss: 0.006851923186331987
+validataion loss: 0.17771844565868378
+validataion loss: 0.049820054322481155
+validataion loss: 0.1791442483663559
+validataion loss: 0.13755019009113312
+validataion loss: 0.03496430814266205
+validataion loss: 0.06980393081903458
+validataion loss: 0.21274599432945251
+validataion loss: 0.13670781254768372
+validataion loss: 0.08008019626140594
+validataion loss: 0.0764285996556282
+validataion loss: 0.2469618171453476
+validataion loss: 0.09962962567806244
+validataion loss: 0.0866551622748375
+validataion loss: 0.0850575640797615
+validataion loss: 0.09340757131576538
+validataion loss: 0.10285531729459763
+validataion loss: 0.10402276366949081
+validataion loss: 0.025357430800795555
+validataion loss: 0.11624149233102798
+validataion loss: 0.12248746305704117
+validataion loss: 0.0397612638771534
+validataion loss: 0.030289245769381523
+validataion loss: 0.04997409135103226
+validataion loss: 0.08727985620498657
+validataion loss: 0.01734699122607708
+validataion loss: 0.1156996339559555
+validataion loss: 0.04507480189204216
+validataion loss: 0.017819417640566826
+validataion loss: 0.05420679599046707
+validataion loss: 0.10466417670249939
+validataion loss: 0.061686404049396515
+precison: 0.8175792507204611
+recall: 0.8456035767511177
+f1: 0.8313553113553114
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.001869285013526678
+The train loss : 0.05422753840684891
+Epoch: 11
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 3083 steps: 0.05307820066809654
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.01646706834435463
+validataion loss: 0.001864390796981752
+validataion loss: 0.10053016990423203
+validataion loss: 0.0439576581120491
+validataion loss: 0.06540261209011078
+validataion loss: 0.08372078090906143
+validataion loss: 0.04780849069356918
+validataion loss: 0.04120780527591705
+validataion loss: 0.068203866481781
+validataion loss: 0.022074634209275246
+validataion loss: 0.04661331698298454
+validataion loss: 0.12689703702926636
+validataion loss: 0.025759592652320862
+validataion loss: 0.032122109085321426
+validataion loss: 0.2840939164161682
+validataion loss: 0.0464148223400116
+validataion loss: 0.04072215035557747
+validataion loss: 0.02678627520799637
+validataion loss: 0.027229033410549164
+validataion loss: 0.2866087257862091
+validataion loss: 0.07277707010507584
+validataion loss: 0.12806424498558044
+validataion loss: 0.0866062119603157
+validataion loss: 0.021638451144099236
+validataion loss: 0.07452741265296936
+validataion loss: 0.0465523935854435
+validataion loss: 0.05415887385606766
+validataion loss: 0.0647716224193573
+validataion loss: 0.07663676887750626
+validataion loss: 0.06837784498929977
+validataion loss: 0.02597014792263508
+validataion loss: 0.019443996250629425
+validataion loss: 0.03200583532452583
+validataion loss: 0.04117416962981224
+validataion loss: 0.011041256599128246
+validataion loss: 0.1530464142560959
+validataion loss: 0.07905514538288116
+validataion loss: 0.20452117919921875
+validataion loss: 0.1837986409664154
+validataion loss: 0.024200569838285446
+validataion loss: 0.07621386647224426
+validataion loss: 0.3254246115684509
+validataion loss: 0.0941946879029274
+validataion loss: 0.1412845402956009
+validataion loss: 0.07884498685598373
+validataion loss: 0.1956251561641693
+validataion loss: 0.1539817601442337
+validataion loss: 0.05806891620159149
+validataion loss: 0.04269592463970184
+validataion loss: 0.045114412903785706
+validataion loss: 0.09639036655426025
+validataion loss: 0.11467690765857697
+validataion loss: 0.03485261648893356
+validataion loss: 0.11864671111106873
+validataion loss: 0.0909121185541153
+validataion loss: 0.06104329228401184
+validataion loss: 0.027318021282553673
+validataion loss: 0.04381188377737999
+validataion loss: 0.08587921410799026
+validataion loss: 0.024625640362501144
+validataion loss: 0.12090443074703217
+validataion loss: 0.06414780020713806
+validataion loss: 0.01765718124806881
+validataion loss: 0.09942702949047089
+validataion loss: 0.05953314155340195
+validataion loss: 0.05846584215760231
+precison: 0.8453172205438066
+recall: 0.8339791356184799
+f1: 0.8396099024756188
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0017716921865940094
+The train loss : 0.05307820066809654
+Epoch: 12
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 3340 steps: 0.0020995589438825846
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.0185049157589674
+validataion loss: 0.005698959808796644
+validataion loss: 0.06810710579156876
+validataion loss: 0.04303402453660965
+validataion loss: 0.06286221742630005
+validataion loss: 0.058064743876457214
+validataion loss: 0.04158463329076767
+validataion loss: 0.05433722212910652
+validataion loss: 0.06600496172904968
+validataion loss: 0.03500828891992569
+validataion loss: 0.04089193046092987
+validataion loss: 0.13660749793052673
+validataion loss: 0.027761317789554596
+validataion loss: 0.04299520328640938
+validataion loss: 0.3728685975074768
+validataion loss: 0.03967580571770668
+validataion loss: 0.03774059936404228
+validataion loss: 0.036788370460271835
+validataion loss: 0.0417429581284523
+validataion loss: 0.29475677013397217
+validataion loss: 0.07415931671857834
+validataion loss: 0.12979429960250854
+validataion loss: 0.08143602311611176
+validataion loss: 0.018393993377685547
+validataion loss: 0.08566217869520187
+validataion loss: 0.03589538484811783
+validataion loss: 0.07318907976150513
+validataion loss: 0.04192761704325676
+validataion loss: 0.07221149653196335
+validataion loss: 0.03362676501274109
+validataion loss: 0.051144201308488846
+validataion loss: 0.02472674287855625
+validataion loss: 0.022982869297266006
+validataion loss: 0.020709091797471046
+validataion loss: 0.006665640044957399
+validataion loss: 0.20888374745845795
+validataion loss: 0.03324728459119797
+validataion loss: 0.19171537458896637
+validataion loss: 0.152505561709404
+validataion loss: 0.016401998698711395
+validataion loss: 0.0681072324514389
+validataion loss: 0.22198091447353363
+validataion loss: 0.10985279083251953
+validataion loss: 0.18510884046554565
+validataion loss: 0.07308513671159744
+validataion loss: 0.16952179372310638
+validataion loss: 0.12779009342193604
+validataion loss: 0.07619081437587738
+validataion loss: 0.053435664623975754
+validataion loss: 0.05642851069569588
+validataion loss: 0.09606623649597168
+validataion loss: 0.11062848567962646
+validataion loss: 0.05125988647341728
+validataion loss: 0.11991721391677856
+validataion loss: 0.0796767994761467
+validataion loss: 0.05565265566110611
+validataion loss: 0.024772800505161285
+validataion loss: 0.02979729324579239
+validataion loss: 0.1073671206831932
+validataion loss: 0.029703989624977112
+validataion loss: 0.0719517394900322
+validataion loss: 0.052409712225198746
+validataion loss: 0.01765650138258934
+validataion loss: 0.10937613993883133
+validataion loss: 0.10859616100788116
+validataion loss: 0.0777871310710907
+precison: 0.8611022618668366
+recall: 0.8056631892697467
+f1: 0.8324607329842932
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0023571858182549477
+The train loss : 0.0020995589438825846
+Epoch: 13
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 3597 steps: 0.001901843585073948
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.014043407514691353
+validataion loss: 0.0018365602008998394
+validataion loss: 0.06335173547267914
+validataion loss: 0.053975336253643036
+validataion loss: 0.04213593900203705
+validataion loss: 0.06376539915800095
+validataion loss: 0.0355156846344471
+validataion loss: 0.045528996735811234
+validataion loss: 0.06928005069494247
+validataion loss: 0.033614061772823334
+validataion loss: 0.04192085936665535
+validataion loss: 0.13469557464122772
+validataion loss: 0.010033359751105309
+validataion loss: 0.03255033493041992
+validataion loss: 0.35502445697784424
+validataion loss: 0.042454611510038376
+validataion loss: 0.025798313319683075
+validataion loss: 0.011849136091768742
+validataion loss: 0.023457936942577362
+validataion loss: 0.27573537826538086
+validataion loss: 0.08692485094070435
+validataion loss: 0.13725808262825012
+validataion loss: 0.0695611983537674
+validataion loss: 0.03792591765522957
+validataion loss: 0.06793136894702911
+validataion loss: 0.03695685788989067
+validataion loss: 0.06255580484867096
+validataion loss: 0.03951184079051018
+validataion loss: 0.07536660879850388
+validataion loss: 0.03445712476968765
+validataion loss: 0.0343724749982357
+validataion loss: 0.02943580225110054
+validataion loss: 0.018059926107525826
+validataion loss: 0.028291208669543266
+validataion loss: 0.01825665310025215
+validataion loss: 0.15857578814029694
+validataion loss: 0.032377149909734726
+validataion loss: 0.1950392872095108
+validataion loss: 0.12345413863658905
+validataion loss: 0.012684053741395473
+validataion loss: 0.07003124803304672
+validataion loss: 0.2237853854894638
+validataion loss: 0.10626254975795746
+validataion loss: 0.08207808434963226
+validataion loss: 0.08160293847322464
+validataion loss: 0.17801569402217865
+validataion loss: 0.1274430900812149
+validataion loss: 0.08334212750196457
+validataion loss: 0.055717483162879944
+validataion loss: 0.054291982203722
+validataion loss: 0.0876426249742508
+validataion loss: 0.09067431092262268
+validataion loss: 0.03648034483194351
+validataion loss: 0.1151432916522026
+validataion loss: 0.12902380526065826
+validataion loss: 0.046173833310604095
+validataion loss: 0.03807719796895981
+validataion loss: 0.020671071484684944
+validataion loss: 0.08020221441984177
+validataion loss: 0.021640177816152573
+validataion loss: 0.061784688383340836
+validataion loss: 0.048028212040662766
+validataion loss: 0.01770327053964138
+validataion loss: 0.09734468162059784
+validataion loss: 0.07219044119119644
+validataion loss: 0.05788344889879227
+precison: 0.8527178864257516
+recall: 0.8369597615499255
+f1: 0.8447653429602888
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0017540439730510116
+The train loss : 0.001901843585073948
+Epoch: 14
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 3854 steps: 0.09696353226900101
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.005749658681452274
+validataion loss: 0.0009370989864692092
+validataion loss: 0.08244675397872925
+validataion loss: 0.04679577797651291
+validataion loss: 0.05556831881403923
+validataion loss: 0.04858075827360153
+validataion loss: 0.039302051067352295
+validataion loss: 0.04699604958295822
+validataion loss: 0.06234177201986313
+validataion loss: 0.038313694298267365
+validataion loss: 0.04480059817433357
+validataion loss: 0.12151812016963959
+validataion loss: 0.019036099314689636
+validataion loss: 0.03248975798487663
+validataion loss: 0.3417453169822693
+validataion loss: 0.03755125030875206
+validataion loss: 0.015532590448856354
+validataion loss: 0.012035206891596317
+validataion loss: 0.020638788118958473
+validataion loss: 0.2712782323360443
+validataion loss: 0.07622986286878586
+validataion loss: 0.12784084677696228
+validataion loss: 0.06238261237740517
+validataion loss: 0.018647456541657448
+validataion loss: 0.06085202470421791
+validataion loss: 0.034478530287742615
+validataion loss: 0.040545545518398285
+validataion loss: 0.04594913497567177
+validataion loss: 0.07337082177400589
+validataion loss: 0.05095686763525009
+validataion loss: 0.03257257863879204
+validataion loss: 0.028995949774980545
+validataion loss: 0.03150743246078491
+validataion loss: 0.029939807951450348
+validataion loss: 0.006749527994543314
+validataion loss: 0.2448285073041916
+validataion loss: 0.04620945081114769
+validataion loss: 0.23098501563072205
+validataion loss: 0.02685527130961418
+validataion loss: 0.015665682032704353
+validataion loss: 0.054391954094171524
+validataion loss: 0.25905075669288635
+validataion loss: 0.10936765372753143
+validataion loss: 0.11604809761047363
+validataion loss: 0.08464137464761734
+validataion loss: 0.17065797746181488
+validataion loss: 0.1762806624174118
+validataion loss: 0.06435924768447876
+validataion loss: 0.059460729360580444
+validataion loss: 0.06041831523180008
+validataion loss: 0.05783991888165474
+validataion loss: 0.11478237062692642
+validataion loss: 0.036185771226882935
+validataion loss: 0.12236886471509933
+validataion loss: 0.08383220434188843
+validataion loss: 0.03563649579882622
+validataion loss: 0.029650956392288208
+validataion loss: 0.026553595438599586
+validataion loss: 0.08116011321544647
+validataion loss: 0.024215929210186005
+validataion loss: 0.08918317407369614
+validataion loss: 0.04939901828765869
+validataion loss: 0.016358960419893265
+validataion loss: 0.08282648772001266
+validataion loss: 0.09646066278219223
+validataion loss: 0.0772271677851677
+precison: 0.8641521005826434
+recall: 0.8399403874813711
+f1: 0.8518742442563483
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0023402173537760973
+The train loss : 0.09696353226900101
+Epoch: 15
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 4111 steps: 0.03293338418006897
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.009092582389712334
+validataion loss: 0.001941703725606203
+validataion loss: 0.07983976602554321
+validataion loss: 0.03600354865193367
+validataion loss: 0.059390466660261154
+validataion loss: 0.05305580049753189
+validataion loss: 0.04550332948565483
+validataion loss: 0.040955591946840286
+validataion loss: 0.06551539152860641
+validataion loss: 0.04441046714782715
+validataion loss: 0.04178775101900101
+validataion loss: 0.13741423189640045
+validataion loss: 0.024992331862449646
+validataion loss: 0.02400226891040802
+validataion loss: 0.34891217947006226
+validataion loss: 0.05214408040046692
+validataion loss: 0.038903895765542984
+validataion loss: 0.022764530032873154
+validataion loss: 0.028835220262408257
+validataion loss: 0.3123517334461212
+validataion loss: 0.06377756595611572
+validataion loss: 0.10877786576747894
+validataion loss: 0.059670791029930115
+validataion loss: 0.022269943729043007
+validataion loss: 0.07070017606019974
+validataion loss: 0.029457643628120422
+validataion loss: 0.06132734194397926
+validataion loss: 0.0484015978872776
+validataion loss: 0.07696379721164703
+validataion loss: 0.04603423550724983
+validataion loss: 0.03958163782954216
+validataion loss: 0.018122557550668716
+validataion loss: 0.03319478780031204
+validataion loss: 0.0354892872273922
+validataion loss: 0.019986050203442574
+validataion loss: 0.14307934045791626
+validataion loss: 0.024156324565410614
+validataion loss: 0.22807513177394867
+validataion loss: 0.06796260178089142
+validataion loss: 0.047186728566884995
+validataion loss: 0.06328240036964417
+validataion loss: 0.21859370172023773
+validataion loss: 0.1288985162973404
+validataion loss: 0.07721373438835144
+validataion loss: 0.057444844394922256
+validataion loss: 0.20043444633483887
+validataion loss: 0.1262018233537674
+validataion loss: 0.09332504868507385
+validataion loss: 0.0620785690844059
+validataion loss: 0.09046013653278351
+validataion loss: 0.06208422780036926
+validataion loss: 0.12542469799518585
+validataion loss: 0.03241167217493057
+validataion loss: 0.0937856063246727
+validataion loss: 0.09648434072732925
+validataion loss: 0.055319204926490784
+validataion loss: 0.03244183212518692
+validataion loss: 0.0433024987578392
+validataion loss: 0.08629727363586426
+validataion loss: 0.019286904484033585
+validataion loss: 0.1020776778459549
+validataion loss: 0.0539279468357563
+validataion loss: 0.015956059098243713
+validataion loss: 0.0665859803557396
+validataion loss: 0.07255658507347107
+validataion loss: 0.08282218873500824
+precison: 0.8504196642685852
+recall: 0.8456035767511177
+f1: 0.8480047825437155
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002509763464331627
+The train loss : 0.03293338418006897
+Epoch: 16
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 4368 steps: 0.006464636418968439
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.017105096951127052
+validataion loss: 0.005028219893574715
+validataion loss: 0.09366817772388458
+validataion loss: 0.04031144082546234
+validataion loss: 0.053917959332466125
+validataion loss: 0.08098295331001282
+validataion loss: 0.039515022188425064
+validataion loss: 0.06172505393624306
+validataion loss: 0.07934749871492386
+validataion loss: 0.037861816585063934
+validataion loss: 0.03951197490096092
+validataion loss: 0.12876729667186737
+validataion loss: 0.03669626638293266
+validataion loss: 0.03045457787811756
+validataion loss: 0.3351726531982422
+validataion loss: 0.0428677499294281
+validataion loss: 0.028402678668498993
+validataion loss: 0.020998390391469002
+validataion loss: 0.03809016942977905
+validataion loss: 0.30150339007377625
+validataion loss: 0.05580166354775429
+validataion loss: 0.17314688861370087
+validataion loss: 0.06348395347595215
+validataion loss: 0.040718529373407364
+validataion loss: 0.046544913202524185
+validataion loss: 0.037369225174188614
+validataion loss: 0.0656280666589737
+validataion loss: 0.0881587415933609
+validataion loss: 0.07657094299793243
+validataion loss: 0.06566805392503738
+validataion loss: 0.03535390645265579
+validataion loss: 0.014579667709767818
+validataion loss: 0.053012117743492126
+validataion loss: 0.037348952144384384
+validataion loss: 0.0286951195448637
+validataion loss: 0.14790326356887817
+validataion loss: 0.03082958608865738
+validataion loss: 0.2251504808664322
+validataion loss: 0.16855178773403168
+validataion loss: 0.018648970872163773
+validataion loss: 0.06401845067739487
+validataion loss: 0.2047114372253418
+validataion loss: 0.14521008729934692
+validataion loss: 0.10038827359676361
+validataion loss: 0.06700414419174194
+validataion loss: 0.17436638474464417
+validataion loss: 0.13134677708148956
+validataion loss: 0.10696439445018768
+validataion loss: 0.05778062343597412
+validataion loss: 0.10528437793254852
+validataion loss: 0.0854271799325943
+validataion loss: 0.09316658228635788
+validataion loss: 0.0292628463357687
+validataion loss: 0.12170087546110153
+validataion loss: 0.1127447634935379
+validataion loss: 0.04253106936812401
+validataion loss: 0.025831053033471107
+validataion loss: 0.06451112031936646
+validataion loss: 0.09171491116285324
+validataion loss: 0.02504585310816765
+validataion loss: 0.14920249581336975
+validataion loss: 0.06931671500205994
+validataion loss: 0.012503883801400661
+validataion loss: 0.08428046107292175
+validataion loss: 0.06944599747657776
+validataion loss: 0.09883572161197662
+precison: 0.8238685500144134
+recall: 0.8518628912071535
+f1: 0.8376318874560376
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0029950218740850687
+The train loss : 0.006464636418968439
+Epoch: 17
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 4625 steps: 0.0010857994202524424
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.009448534809052944
+validataion loss: 0.0024483909364789724
+validataion loss: 0.10663141310214996
+validataion loss: 0.051368191838264465
+validataion loss: 0.061562735587358475
+validataion loss: 0.06419648975133896
+validataion loss: 0.048855606466531754
+validataion loss: 0.061512675136327744
+validataion loss: 0.08460386842489243
+validataion loss: 0.02760380133986473
+validataion loss: 0.04081198573112488
+validataion loss: 0.15261529386043549
+validataion loss: 0.029053380712866783
+validataion loss: 0.04165363311767578
+validataion loss: 0.39387229084968567
+validataion loss: 0.06460633128881454
+validataion loss: 0.04133228212594986
+validataion loss: 0.005843772552907467
+validataion loss: 0.04566085338592529
+validataion loss: 0.3986460566520691
+validataion loss: 0.07384271919727325
+validataion loss: 0.14507929980754852
+validataion loss: 0.08440426737070084
+validataion loss: 0.02528957463800907
+validataion loss: 0.1168549433350563
+validataion loss: 0.035189639776945114
+validataion loss: 0.05134161189198494
+validataion loss: 0.03654441609978676
+validataion loss: 0.10998006165027618
+validataion loss: 0.08417755365371704
+validataion loss: 0.041566066443920135
+validataion loss: 0.028200479224324226
+validataion loss: 0.0217229463160038
+validataion loss: 0.047717299312353134
+validataion loss: 0.00899589341133833
+validataion loss: 0.23531576991081238
+validataion loss: 0.030636372044682503
+validataion loss: 0.2653166949748993
+validataion loss: 0.1010778620839119
+validataion loss: 0.014352770522236824
+validataion loss: 0.08860503882169724
+validataion loss: 0.2664848864078522
+validataion loss: 0.1328461915254593
+validataion loss: 0.13501358032226562
+validataion loss: 0.09646476805210114
+validataion loss: 0.17039944231510162
+validataion loss: 0.13834841549396515
+validataion loss: 0.11270098388195038
+validataion loss: 0.049091920256614685
+validataion loss: 0.09408728778362274
+validataion loss: 0.05991189926862717
+validataion loss: 0.1405443549156189
+validataion loss: 0.030989527702331543
+validataion loss: 0.10298828035593033
+validataion loss: 0.07100270688533783
+validataion loss: 0.07445909827947617
+validataion loss: 0.036983177065849304
+validataion loss: 0.04111028462648392
+validataion loss: 0.10361208021640778
+validataion loss: 0.022380109876394272
+validataion loss: 0.16108186542987823
+validataion loss: 0.057058557868003845
+validataion loss: 0.03381853178143501
+validataion loss: 0.11977731436491013
+validataion loss: 0.0772717073559761
+validataion loss: 0.0815415233373642
+precison: 0.8550770198050928
+recall: 0.8107302533532041
+f1: 0.832313341493268
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0024709552526474
+The train loss : 0.0010857994202524424
+Epoch: 18
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 4882 steps: 0.0012292858446016908
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.012850300408899784
+validataion loss: 0.008628152310848236
+validataion loss: 0.0925181433558464
+validataion loss: 0.04425615444779396
+validataion loss: 0.05806635692715645
+validataion loss: 0.08184678852558136
+validataion loss: 0.04442782700061798
+validataion loss: 0.05258512124419212
+validataion loss: 0.08173768222332001
+validataion loss: 0.025057582184672356
+validataion loss: 0.030132146552205086
+validataion loss: 0.1188955307006836
+validataion loss: 0.03247543424367905
+validataion loss: 0.038818929344415665
+validataion loss: 0.35343948006629944
+validataion loss: 0.04056865721940994
+validataion loss: 0.02236328460276127
+validataion loss: 0.014025064185261726
+validataion loss: 0.03348374366760254
+validataion loss: 0.3375280201435089
+validataion loss: 0.0785585343837738
+validataion loss: 0.14204810559749603
+validataion loss: 0.08668353408575058
+validataion loss: 0.014233886264264584
+validataion loss: 0.08172077685594559
+validataion loss: 0.03534575179219246
+validataion loss: 0.0735919401049614
+validataion loss: 0.06188402697443962
+validataion loss: 0.1025540754199028
+validataion loss: 0.026592697948217392
+validataion loss: 0.02589251473546028
+validataion loss: 0.02190905623137951
+validataion loss: 0.034197207540273666
+validataion loss: 0.02860027365386486
+validataion loss: 0.007016425486654043
+validataion loss: 0.1445433795452118
+validataion loss: 0.037936169654130936
+validataion loss: 0.24213093519210815
+validataion loss: 0.15390239655971527
+validataion loss: 0.018947502598166466
+validataion loss: 0.08798141777515411
+validataion loss: 0.2642069458961487
+validataion loss: 0.11489018052816391
+validataion loss: 0.06214632838964462
+validataion loss: 0.06523541361093521
+validataion loss: 0.14290843904018402
+validataion loss: 0.11636093258857727
+validataion loss: 0.07269396632909775
+validataion loss: 0.03913504630327225
+validataion loss: 0.07510928809642792
+validataion loss: 0.055080339312553406
+validataion loss: 0.11857237666845322
+validataion loss: 0.03234816715121269
+validataion loss: 0.09703034162521362
+validataion loss: 0.0989791676402092
+validataion loss: 0.04261721670627594
+validataion loss: 0.030237872153520584
+validataion loss: 0.024809647351503372
+validataion loss: 0.10136957466602325
+validataion loss: 0.02005571871995926
+validataion loss: 0.15012496709823608
+validataion loss: 0.05664395913481712
+validataion loss: 0.014297313056886196
+validataion loss: 0.056798435747623444
+validataion loss: 0.08109787851572037
+validataion loss: 0.09463237971067429
+precison: 0.8379643170517695
+recall: 0.8539493293591655
+f1: 0.8458813108945971
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002867647912353277
+The train loss : 0.0012292858446016908
+Epoch: 19
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 5139 steps: 0.002032369375228882
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.02515183575451374
+validataion loss: 0.017048589885234833
+validataion loss: 0.09928280860185623
+validataion loss: 0.02747078612446785
+validataion loss: 0.07406388223171234
+validataion loss: 0.05412851274013519
+validataion loss: 0.03307967633008957
+validataion loss: 0.054105546325445175
+validataion loss: 0.1348971575498581
+validataion loss: 0.0346602164208889
+validataion loss: 0.031911108642816544
+validataion loss: 0.1498333215713501
+validataion loss: 0.012117925100028515
+validataion loss: 0.04322507604956627
+validataion loss: 0.3769932985305786
+validataion loss: 0.06313704699277878
+validataion loss: 0.022605054080486298
+validataion loss: 0.007016961928457022
+validataion loss: 0.05893908813595772
+validataion loss: 0.32415083050727844
+validataion loss: 0.09404456615447998
+validataion loss: 0.12249912321567535
+validataion loss: 0.07329511642456055
+validataion loss: 0.014156109653413296
+validataion loss: 0.06670121848583221
+validataion loss: 0.024226803332567215
+validataion loss: 0.07483206689357758
+validataion loss: 0.04680024832487106
+validataion loss: 0.09709257632493973
+validataion loss: 0.030044829472899437
+validataion loss: 0.03099007159471512
+validataion loss: 0.021821947768330574
+validataion loss: 0.025818340480327606
+validataion loss: 0.02380499057471752
+validataion loss: 0.0033511254005134106
+validataion loss: 0.249659925699234
+validataion loss: 0.020032528787851334
+validataion loss: 0.21349072456359863
+validataion loss: 0.16913552582263947
+validataion loss: 0.015381022356450558
+validataion loss: 0.0858616828918457
+validataion loss: 0.2935846447944641
+validataion loss: 0.12865489721298218
+validataion loss: 0.05401459336280823
+validataion loss: 0.10382833331823349
+validataion loss: 0.15447579324245453
+validataion loss: 0.1279396265745163
+validataion loss: 0.0881243571639061
+validataion loss: 0.05939990654587746
+validataion loss: 0.08121521770954132
+validataion loss: 0.09568995982408524
+validataion loss: 0.1312789022922516
+validataion loss: 0.03435913100838661
+validataion loss: 0.1505759209394455
+validataion loss: 0.10172269493341446
+validataion loss: 0.07363390177488327
+validataion loss: 0.04715968668460846
+validataion loss: 0.015912698581814766
+validataion loss: 0.08584137260913849
+validataion loss: 0.027717184275388718
+validataion loss: 0.0849115401506424
+validataion loss: 0.06736540794372559
+validataion loss: 0.02022172510623932
+validataion loss: 0.09273742139339447
+validataion loss: 0.051870495080947876
+validataion loss: 0.04991552233695984
+precison: 0.8585395661472655
+recall: 0.8375558867362146
+f1: 0.8479179239589618
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0015125916106626391
+The train loss : 0.002032369375228882
+Model is 19 saving +++++++++++++++++++++++++++++++++
+best Validation Loss: 0.0015125916106626391
+best Precision: 0.8585395661472655
+best Recall: 0.8375558867362146
+Epoch: 20
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 5396 steps: 0.010605080984532833
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.01795988529920578
+validataion loss: 0.0025968006812036037
+validataion loss: 0.07185617089271545
+validataion loss: 0.07409968227148056
+validataion loss: 0.06623488664627075
+validataion loss: 0.06964615732431412
+validataion loss: 0.024887239560484886
+validataion loss: 0.06268055737018585
+validataion loss: 0.09088267385959625
+validataion loss: 0.006749835330992937
+validataion loss: 0.04309576749801636
+validataion loss: 0.14376355707645416
+validataion loss: 0.025518318638205528
+validataion loss: 0.026769863441586494
+validataion loss: 0.394951730966568
+validataion loss: 0.04175552725791931
+validataion loss: 0.018100351095199585
+validataion loss: 0.005500576458871365
+validataion loss: 0.03181687369942665
+validataion loss: 0.2921178936958313
+validataion loss: 0.06589210778474808
+validataion loss: 0.13631395995616913
+validataion loss: 0.0822979211807251
+validataion loss: 0.01958380825817585
+validataion loss: 0.09395086020231247
+validataion loss: 0.03798031434416771
+validataion loss: 0.06379697471857071
+validataion loss: 0.041425928473472595
+validataion loss: 0.06541039049625397
+validataion loss: 0.04112165421247482
+validataion loss: 0.03134184703230858
+validataion loss: 0.02123500220477581
+validataion loss: 0.0294061116874218
+validataion loss: 0.03561573475599289
+validataion loss: 0.003913546912372112
+validataion loss: 0.21460922062397003
+validataion loss: 0.037244316190481186
+validataion loss: 0.2109319418668747
+validataion loss: 0.1910346895456314
+validataion loss: 0.007090274710208178
+validataion loss: 0.05753776803612709
+validataion loss: 0.2796024978160858
+validataion loss: 0.11687812954187393
+validataion loss: 0.08040858060121536
+validataion loss: 0.08799686282873154
+validataion loss: 0.16280582547187805
+validataion loss: 0.14929169416427612
+validataion loss: 0.10086583346128464
+validataion loss: 0.08374960720539093
+validataion loss: 0.07915837317705154
+validataion loss: 0.10240722447633743
+validataion loss: 0.11252439767122269
+validataion loss: 0.02284274622797966
+validataion loss: 0.12259937077760696
+validataion loss: 0.09908770769834518
+validataion loss: 0.04703487455844879
+validataion loss: 0.04040372744202614
+validataion loss: 0.026810552924871445
+validataion loss: 0.1156143844127655
+validataion loss: 0.021683502942323685
+validataion loss: 0.10355107486248016
+validataion loss: 0.058966461569070816
+validataion loss: 0.02351682260632515
+validataion loss: 0.15516653656959534
+validataion loss: 0.07055451720952988
+validataion loss: 0.03390340879559517
+precison: 0.8611530335043767
+recall: 0.8503725782414308
+f1: 0.8557288542291542
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0010273760417476296
+The train loss : 0.010605080984532833
+Model is 20 saving +++++++++++++++++++++++++++++++++
+best Validation Loss: 0.0010273760417476296
+best Precision: 0.8611530335043767
+best Recall: 0.8503725782414308
+Epoch: 21
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 5653 steps: 0.0030899993143975735
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.012646150775253773
+validataion loss: 0.0016537283081561327
+validataion loss: 0.08619440346956253
+validataion loss: 0.05044127255678177
+validataion loss: 0.06350632756948471
+validataion loss: 0.08954194188117981
+validataion loss: 0.03100169450044632
+validataion loss: 0.0942896381020546
+validataion loss: 0.07296989858150482
+validataion loss: 0.02840447798371315
+validataion loss: 0.03966422379016876
+validataion loss: 0.15738999843597412
+validataion loss: 0.02089778520166874
+validataion loss: 0.04989488795399666
+validataion loss: 0.37595611810684204
+validataion loss: 0.0623382031917572
+validataion loss: 0.018513619899749756
+validataion loss: 0.016220876947045326
+validataion loss: 0.056768108159303665
+validataion loss: 0.33691638708114624
+validataion loss: 0.08829411119222641
+validataion loss: 0.1467546969652176
+validataion loss: 0.070653535425663
+validataion loss: 0.01808338798582554
+validataion loss: 0.07061758637428284
+validataion loss: 0.05303138121962547
+validataion loss: 0.052505917847156525
+validataion loss: 0.039677683264017105
+validataion loss: 0.08383504301309586
+validataion loss: 0.03896704316139221
+validataion loss: 0.02852696180343628
+validataion loss: 0.01846388354897499
+validataion loss: 0.02642500028014183
+validataion loss: 0.031832460314035416
+validataion loss: 0.005833273753523827
+validataion loss: 0.17487266659736633
+validataion loss: 0.030966395512223244
+validataion loss: 0.26088306307792664
+validataion loss: 0.26201921701431274
+validataion loss: 0.020214727148413658
+validataion loss: 0.0660291239619255
+validataion loss: 0.2880990207195282
+validataion loss: 0.1024826243519783
+validataion loss: 0.09660707414150238
+validataion loss: 0.06721746176481247
+validataion loss: 0.1398191601037979
+validataion loss: 0.19096435606479645
+validataion loss: 0.11836203187704086
+validataion loss: 0.0757608413696289
+validataion loss: 0.06395912915468216
+validataion loss: 0.14590847492218018
+validataion loss: 0.13911227881908417
+validataion loss: 0.04739878326654434
+validataion loss: 0.10770660638809204
+validataion loss: 0.08533681184053421
+validataion loss: 0.04419667273759842
+validataion loss: 0.031094860285520554
+validataion loss: 0.021254071965813637
+validataion loss: 0.09835610538721085
+validataion loss: 0.04299771413207054
+validataion loss: 0.14779970049858093
+validataion loss: 0.061041638255119324
+validataion loss: 0.02080806903541088
+validataion loss: 0.12677361071109772
+validataion loss: 0.07556793093681335
+validataion loss: 0.0874316543340683
+precison: 0.8472263423316523
+recall: 0.8512667660208644
+f1: 0.8492417484388938
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002649444155395031
+The train loss : 0.0030899993143975735
+Epoch: 22
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 5910 steps: 3.244818071834743e-05
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.02619154192507267
+validataion loss: 0.009602608159184456
+validataion loss: 0.08954328298568726
+validataion loss: 0.03791102394461632
+validataion loss: 0.0581902414560318
+validataion loss: 0.07130733132362366
+validataion loss: 0.024435831233859062
+validataion loss: 0.06170405447483063
+validataion loss: 0.05570637062191963
+validataion loss: 0.03835853561758995
+validataion loss: 0.03895658999681473
+validataion loss: 0.11748743802309036
+validataion loss: 0.03898166865110397
+validataion loss: 0.024857837706804276
+validataion loss: 0.3150905966758728
+validataion loss: 0.05446470156311989
+validataion loss: 0.020523788407444954
+validataion loss: 0.0029686815105378628
+validataion loss: 0.027378585189580917
+validataion loss: 0.33951133489608765
+validataion loss: 0.08187638223171234
+validataion loss: 0.16242915391921997
+validataion loss: 0.05541617050766945
+validataion loss: 0.03191857039928436
+validataion loss: 0.11025827378034592
+validataion loss: 0.031836073845624924
+validataion loss: 0.0673549622297287
+validataion loss: 0.03599432855844498
+validataion loss: 0.08328675478696823
+validataion loss: 0.06939119845628738
+validataion loss: 0.03777177631855011
+validataion loss: 0.02162444032728672
+validataion loss: 0.0404943972826004
+validataion loss: 0.04307480528950691
+validataion loss: 0.007671915460377932
+validataion loss: 0.16322924196720123
+validataion loss: 0.039039283990859985
+validataion loss: 0.2535097002983093
+validataion loss: 0.11602001637220383
+validataion loss: 0.027929464355111122
+validataion loss: 0.0728846937417984
+validataion loss: 0.25268062949180603
+validataion loss: 0.1309155970811844
+validataion loss: 0.07692570984363556
+validataion loss: 0.09881111234426498
+validataion loss: 0.1947539746761322
+validataion loss: 0.21022598445415497
+validataion loss: 0.10266733914613724
+validataion loss: 0.057073067873716354
+validataion loss: 0.10509271919727325
+validataion loss: 0.05406974256038666
+validataion loss: 0.1022159531712532
+validataion loss: 0.017172355204820633
+validataion loss: 0.13346189260482788
+validataion loss: 0.10556191951036453
+validataion loss: 0.08005707710981369
+validataion loss: 0.01628989167511463
+validataion loss: 0.01838899776339531
+validataion loss: 0.0986296534538269
+validataion loss: 0.03139766305685043
+validataion loss: 0.1530156284570694
+validataion loss: 0.06184254214167595
+validataion loss: 0.029185088351368904
+validataion loss: 0.09646917879581451
+validataion loss: 0.05018020048737526
+validataion loss: 0.036901190876960754
+precison: 0.8661993294727217
+recall: 0.8470938897168405
+f1: 0.8565400843881856
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0011182179441675544
+The train loss : 3.244818071834743e-05
+Epoch: 23
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 6167 steps: 0.0036633778363466263
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.01205532904714346
+validataion loss: 0.002956262556836009
+validataion loss: 0.09419132769107819
+validataion loss: 0.03636997193098068
+validataion loss: 0.0825604796409607
+validataion loss: 0.08362419903278351
+validataion loss: 0.04411939159035683
+validataion loss: 0.07694573700428009
+validataion loss: 0.11176960170269012
+validataion loss: 0.027248987928032875
+validataion loss: 0.0342150516808033
+validataion loss: 0.10151175409555435
+validataion loss: 0.022185496985912323
+validataion loss: 0.03770407289266586
+validataion loss: 0.3279365003108978
+validataion loss: 0.04522599279880524
+validataion loss: 0.022306719794869423
+validataion loss: 0.028913697227835655
+validataion loss: 0.05275580286979675
+validataion loss: 0.30505919456481934
+validataion loss: 0.10062098503112793
+validataion loss: 0.17335250973701477
+validataion loss: 0.07277949899435043
+validataion loss: 0.021754546090960503
+validataion loss: 0.03558935597538948
+validataion loss: 0.05145891010761261
+validataion loss: 0.06997925788164139
+validataion loss: 0.05528030917048454
+validataion loss: 0.09476272016763687
+validataion loss: 0.03889869526028633
+validataion loss: 0.03426674008369446
+validataion loss: 0.0271389652043581
+validataion loss: 0.02237475849688053
+validataion loss: 0.023091616109013557
+validataion loss: 0.008552365005016327
+validataion loss: 0.14684662222862244
+validataion loss: 0.03390681743621826
+validataion loss: 0.28284457325935364
+validataion loss: 0.2107643038034439
+validataion loss: 0.029170794412493706
+validataion loss: 0.09793972969055176
+validataion loss: 0.3282366693019867
+validataion loss: 0.15684227645397186
+validataion loss: 0.08716234564781189
+validataion loss: 0.08772192895412445
+validataion loss: 0.1345270276069641
+validataion loss: 0.13468842208385468
+validataion loss: 0.10083802044391632
+validataion loss: 0.08814798295497894
+validataion loss: 0.08761585503816605
+validataion loss: 0.06798714399337769
+validataion loss: 0.12233477830886841
+validataion loss: 0.03746692091226578
+validataion loss: 0.12116065621376038
+validataion loss: 0.11339464783668518
+validataion loss: 0.03602094575762749
+validataion loss: 0.028618792071938515
+validataion loss: 0.07472746819257736
+validataion loss: 0.08991041034460068
+validataion loss: 0.017091985791921616
+validataion loss: 0.17730668187141418
+validataion loss: 0.05953694134950638
+validataion loss: 0.01936083287000656
+validataion loss: 0.16686704754829407
+validataion loss: 0.09193003922700882
+validataion loss: 0.0845482274889946
+precison: 0.8385689354275742
+recall: 0.8593144560357675
+f1: 0.8488149565729427
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0025620674714446068
+The train loss : 0.0036633778363466263
+Epoch: 24
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 6424 steps: 0.00530178751796484
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.02858644537627697
+validataion loss: 0.006202565506100655
+validataion loss: 0.10190891474485397
+validataion loss: 0.0494423434138298
+validataion loss: 0.05654848739504814
+validataion loss: 0.06471441686153412
+validataion loss: 0.029769033193588257
+validataion loss: 0.06490817666053772
+validataion loss: 0.08357895910739899
+validataion loss: 0.026028303429484367
+validataion loss: 0.04626895859837532
+validataion loss: 0.12792573869228363
+validataion loss: 0.01383251417428255
+validataion loss: 0.05116163194179535
+validataion loss: 0.45936769247055054
+validataion loss: 0.07684194296598434
+validataion loss: 0.02326641045510769
+validataion loss: 0.006261168047785759
+validataion loss: 0.053918275982141495
+validataion loss: 0.3114820420742035
+validataion loss: 0.08538815379142761
+validataion loss: 0.1810360550880432
+validataion loss: 0.07868215441703796
+validataion loss: 0.030949242413043976
+validataion loss: 0.08767149597406387
+validataion loss: 0.038276396691799164
+validataion loss: 0.045668136328458786
+validataion loss: 0.02598755434155464
+validataion loss: 0.07694379985332489
+validataion loss: 0.05075004696846008
+validataion loss: 0.02788836508989334
+validataion loss: 0.025486068800091743
+validataion loss: 0.04060099646449089
+validataion loss: 0.02229529805481434
+validataion loss: 0.014284061267971992
+validataion loss: 0.16316883265972137
+validataion loss: 0.027915500104427338
+validataion loss: 0.26295843720436096
+validataion loss: 0.17316889762878418
+validataion loss: 0.01270663645118475
+validataion loss: 0.09182894229888916
+validataion loss: 0.33628755807876587
+validataion loss: 0.14495374262332916
+validataion loss: 0.16309790313243866
+validataion loss: 0.09304020553827286
+validataion loss: 0.2218342125415802
+validataion loss: 0.14770276844501495
+validataion loss: 0.08198300004005432
+validataion loss: 0.06533997505903244
+validataion loss: 0.08079987019300461
+validataion loss: 0.05814826488494873
+validataion loss: 0.11917223781347275
+validataion loss: 0.038314517587423325
+validataion loss: 0.09179981797933578
+validataion loss: 0.14504015445709229
+validataion loss: 0.036065660417079926
+validataion loss: 0.05187392607331276
+validataion loss: 0.04057858884334564
+validataion loss: 0.11803467571735382
+validataion loss: 0.017742689698934555
+validataion loss: 0.1092323362827301
+validataion loss: 0.06603217124938965
+validataion loss: 0.01899579167366028
+validataion loss: 0.11971768736839294
+validataion loss: 0.05635068193078041
+validataion loss: 0.05065799131989479
+precison: 0.8456255598686175
+recall: 0.844113263785395
+f1: 0.8448687350835322
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0015350907342508435
+The train loss : 0.00530178751796484
+Epoch: 25
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 6681 steps: 0.004423670936375856
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.014964895322918892
+validataion loss: 0.017946675419807434
+validataion loss: 0.08371483534574509
+validataion loss: 0.05515681207180023
+validataion loss: 0.08553843200206757
+validataion loss: 0.0832485556602478
+validataion loss: 0.02441067434847355
+validataion loss: 0.07635799795389175
+validataion loss: 0.08708314597606659
+validataion loss: 0.019460901618003845
+validataion loss: 0.043178822845220566
+validataion loss: 0.12761175632476807
+validataion loss: 0.019656216725707054
+validataion loss: 0.025693479925394058
+validataion loss: 0.39539316296577454
+validataion loss: 0.08807214349508286
+validataion loss: 0.018012337386608124
+validataion loss: 0.0052742850966751575
+validataion loss: 0.07123281806707382
+validataion loss: 0.4001460075378418
+validataion loss: 0.06747037172317505
+validataion loss: 0.18186576664447784
+validataion loss: 0.07771840691566467
+validataion loss: 0.04507214203476906
+validataion loss: 0.0811498761177063
+validataion loss: 0.046270404011011124
+validataion loss: 0.05282049626111984
+validataion loss: 0.024378517642617226
+validataion loss: 0.0680517703294754
+validataion loss: 0.06489045172929764
+validataion loss: 0.023747891187667847
+validataion loss: 0.03612130507826805
+validataion loss: 0.018223483115434647
+validataion loss: 0.03491445630788803
+validataion loss: 0.005087175872176886
+validataion loss: 0.20036447048187256
+validataion loss: 0.0227125845849514
+validataion loss: 0.19780641794204712
+validataion loss: 0.11642151325941086
+validataion loss: 0.013160692527890205
+validataion loss: 0.08662226051092148
+validataion loss: 0.3509238660335541
+validataion loss: 0.17610004544258118
+validataion loss: 0.16116435825824738
+validataion loss: 0.10638262331485748
+validataion loss: 0.18076680600643158
+validataion loss: 0.1430562436580658
+validataion loss: 0.07792564481496811
+validataion loss: 0.08267770707607269
+validataion loss: 0.09472962468862534
+validataion loss: 0.060201503336429596
+validataion loss: 0.14032196998596191
+validataion loss: 0.02264641784131527
+validataion loss: 0.14613214135169983
+validataion loss: 0.10233413428068161
+validataion loss: 0.08096838742494583
+validataion loss: 0.056458014994859695
+validataion loss: 0.04844037815928459
+validataion loss: 0.09644661098718643
+validataion loss: 0.020360467955470085
+validataion loss: 0.08815890550613403
+validataion loss: 0.06044687703251839
+validataion loss: 0.02557845041155815
+validataion loss: 0.10325412452220917
+validataion loss: 0.0889260545372963
+validataion loss: 0.13732528686523438
+precison: 0.870817843866171
+recall: 0.8378539493293592
+f1: 0.8540179249582258
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.004161372315138578
+The train loss : 0.004423670936375856
+Epoch: 26
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 6938 steps: 0.0060839164070785046
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.01516030915081501
+validataion loss: 0.01075526513159275
+validataion loss: 0.11279571801424026
+validataion loss: 0.05432053655385971
+validataion loss: 0.06647610664367676
+validataion loss: 0.0658847764134407
+validataion loss: 0.02379903569817543
+validataion loss: 0.051062218844890594
+validataion loss: 0.08529066294431686
+validataion loss: 0.017071716487407684
+validataion loss: 0.048223938792943954
+validataion loss: 0.1285753846168518
+validataion loss: 0.017594151198863983
+validataion loss: 0.062315814197063446
+validataion loss: 0.40919843316078186
+validataion loss: 0.09478258341550827
+validataion loss: 0.015512542799115181
+validataion loss: 0.010830909945070744
+validataion loss: 0.04792938753962517
+validataion loss: 0.35745057463645935
+validataion loss: 0.08826810866594315
+validataion loss: 0.1562875211238861
+validataion loss: 0.04786087945103645
+validataion loss: 0.037901103496551514
+validataion loss: 0.07341453433036804
+validataion loss: 0.039931803941726685
+validataion loss: 0.04038526862859726
+validataion loss: 0.045052420347929
+validataion loss: 0.07938788831233978
+validataion loss: 0.06143578886985779
+validataion loss: 0.03553399443626404
+validataion loss: 0.01953705959022045
+validataion loss: 0.06736190617084503
+validataion loss: 0.04027339816093445
+validataion loss: 0.012568582780659199
+validataion loss: 0.18707530200481415
+validataion loss: 0.02825584076344967
+validataion loss: 0.2420804798603058
+validataion loss: 0.10526924580335617
+validataion loss: 0.028278136625885963
+validataion loss: 0.07506383955478668
+validataion loss: 0.2665279805660248
+validataion loss: 0.1326897293329239
+validataion loss: 0.15585719048976898
+validataion loss: 0.08291829377412796
+validataion loss: 0.21638953685760498
+validataion loss: 0.17094294726848602
+validataion loss: 0.07681809365749359
+validataion loss: 0.056548573076725006
+validataion loss: 0.07507824897766113
+validataion loss: 0.0643010139465332
+validataion loss: 0.12516625225543976
+validataion loss: 0.015799539163708687
+validataion loss: 0.10867137461900711
+validataion loss: 0.11267676949501038
+validataion loss: 0.048320744186639786
+validataion loss: 0.03405381739139557
+validataion loss: 0.01981664076447487
+validataion loss: 0.10555724799633026
+validataion loss: 0.03197180852293968
+validataion loss: 0.10750839114189148
+validataion loss: 0.05854618549346924
+validataion loss: 0.02055763080716133
+validataion loss: 0.14448344707489014
+validataion loss: 0.0613502599298954
+validataion loss: 0.07272932678461075
+precison: 0.862942612942613
+recall: 0.8426229508196721
+f1: 0.852661740310662
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002203918993473053
+The train loss : 0.0060839164070785046
+Epoch: 27
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 7195 steps: 0.004280391149222851
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.010043131187558174
+validataion loss: 0.016450796276330948
+validataion loss: 0.10427304357290268
+validataion loss: 0.04657667875289917
+validataion loss: 0.07349377870559692
+validataion loss: 0.07223567366600037
+validataion loss: 0.04567990452051163
+validataion loss: 0.06468116492033005
+validataion loss: 0.12444846332073212
+validataion loss: 0.01553595345467329
+validataion loss: 0.03628774359822273
+validataion loss: 0.10100393742322922
+validataion loss: 0.025967568159103394
+validataion loss: 0.05839060992002487
+validataion loss: 0.3565341532230377
+validataion loss: 0.05539488419890404
+validataion loss: 0.025726687163114548
+validataion loss: 0.011054308153688908
+validataion loss: 0.050912659615278244
+validataion loss: 0.36608150601387024
+validataion loss: 0.08325065672397614
+validataion loss: 0.15784475207328796
+validataion loss: 0.08014412969350815
+validataion loss: 0.023095017299056053
+validataion loss: 0.07575162500143051
+validataion loss: 0.04451362043619156
+validataion loss: 0.061093054711818695
+validataion loss: 0.04906671866774559
+validataion loss: 0.0885842964053154
+validataion loss: 0.06965695321559906
+validataion loss: 0.048609230667352676
+validataion loss: 0.01489381492137909
+validataion loss: 0.023415861651301384
+validataion loss: 0.043230749666690826
+validataion loss: 0.014962569810450077
+validataion loss: 0.17337805032730103
+validataion loss: 0.016411198303103447
+validataion loss: 0.24582701921463013
+validataion loss: 0.17793631553649902
+validataion loss: 0.01263186614960432
+validataion loss: 0.09280072152614594
+validataion loss: 0.31083911657333374
+validataion loss: 0.15206103026866913
+validataion loss: 0.14673632383346558
+validataion loss: 0.06892556697130203
+validataion loss: 0.14607520401477814
+validataion loss: 0.15621846914291382
+validataion loss: 0.1170288473367691
+validataion loss: 0.05046992376446724
+validataion loss: 0.08502404391765594
+validataion loss: 0.0466177836060524
+validataion loss: 0.09804023802280426
+validataion loss: 0.03429384157061577
+validataion loss: 0.1018422320485115
+validataion loss: 0.12093167752027512
+validataion loss: 0.05170362442731857
+validataion loss: 0.03510928153991699
+validataion loss: 0.058590296655893326
+validataion loss: 0.0971568301320076
+validataion loss: 0.0323481447994709
+validataion loss: 0.11782495677471161
+validataion loss: 0.0613267719745636
+validataion loss: 0.02627096138894558
+validataion loss: 0.09535103291273117
+validataion loss: 0.052499495446681976
+validataion loss: 0.0685776099562645
+precison: 0.8572730033404191
+recall: 0.8414307004470939
+f1: 0.8492779783393503
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002078109420835972
+The train loss : 0.004280391149222851
+Epoch: 28
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 7452 steps: 0.0044214753434062
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.019264988601207733
+validataion loss: 0.0029809901025146246
+validataion loss: 0.09767160564661026
+validataion loss: 0.05130689963698387
+validataion loss: 0.061987683176994324
+validataion loss: 0.0712234228849411
+validataion loss: 0.03456009924411774
+validataion loss: 0.08165083825588226
+validataion loss: 0.04585234448313713
+validataion loss: 0.016272544860839844
+validataion loss: 0.04927345737814903
+validataion loss: 0.14192497730255127
+validataion loss: 0.009310401044785976
+validataion loss: 0.09183655679225922
+validataion loss: 0.3696376085281372
+validataion loss: 0.09800208359956741
+validataion loss: 0.0286631491035223
+validataion loss: 0.03336416184902191
+validataion loss: 0.03709813579916954
+validataion loss: 0.35960397124290466
+validataion loss: 0.08707811683416367
+validataion loss: 0.1541803777217865
+validataion loss: 0.023356620222330093
+validataion loss: 0.05732814595103264
+validataion loss: 0.06614099442958832
+validataion loss: 0.06847817450761795
+validataion loss: 0.08027787506580353
+validataion loss: 0.04810437560081482
+validataion loss: 0.12166884541511536
+validataion loss: 0.05450005084276199
+validataion loss: 0.025271514430642128
+validataion loss: 0.015950018540024757
+validataion loss: 0.06471673399209976
+validataion loss: 0.04946984723210335
+validataion loss: 0.014106936752796173
+validataion loss: 0.1861737072467804
+validataion loss: 0.03690788149833679
+validataion loss: 0.22702549397945404
+validataion loss: 0.19289861619472504
+validataion loss: 0.005950745195150375
+validataion loss: 0.08731488138437271
+validataion loss: 0.2678297162055969
+validataion loss: 0.14662067592144012
+validataion loss: 0.06417099386453629
+validataion loss: 0.0475710965692997
+validataion loss: 0.19494660198688507
+validataion loss: 0.14048472046852112
+validataion loss: 0.08431880176067352
+validataion loss: 0.06735841929912567
+validataion loss: 0.09510771185159683
+validataion loss: 0.0486711747944355
+validataion loss: 0.09393442422151566
+validataion loss: 0.038066230714321136
+validataion loss: 0.11014045774936676
+validataion loss: 0.11090540140867233
+validataion loss: 0.05577611178159714
+validataion loss: 0.050844114273786545
+validataion loss: 0.043368835002183914
+validataion loss: 0.11750602722167969
+validataion loss: 0.023277105763554573
+validataion loss: 0.1680138111114502
+validataion loss: 0.06594687700271606
+validataion loss: 0.014814035966992378
+validataion loss: 0.08423526585102081
+validataion loss: 0.04403771832585335
+validataion loss: 0.10486510396003723
+precison: 0.8478964401294499
+recall: 0.8590163934426229
+f1: 0.8534201954397395
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0031777305994182825
+The train loss : 0.0044214753434062
+Epoch: 29
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 7709 steps: 0.004108980298042297
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.012529721483588219
+validataion loss: 0.0025819495785981417
+validataion loss: 0.11820720136165619
+validataion loss: 0.048082947731018066
+validataion loss: 0.06128857657313347
+validataion loss: 0.08359365910291672
+validataion loss: 0.03826833516359329
+validataion loss: 0.07432238012552261
+validataion loss: 0.09557436406612396
+validataion loss: 0.02483254112303257
+validataion loss: 0.03167317435145378
+validataion loss: 0.13158920407295227
+validataion loss: 0.01506898831576109
+validataion loss: 0.07667148113250732
+validataion loss: 0.35422584414482117
+validataion loss: 0.04143688082695007
+validataion loss: 0.013023583218455315
+validataion loss: 0.01762322522699833
+validataion loss: 0.0622900053858757
+validataion loss: 0.3902857005596161
+validataion loss: 0.08270455151796341
+validataion loss: 0.14793305099010468
+validataion loss: 0.061056867241859436
+validataion loss: 0.031339216977357864
+validataion loss: 0.06302525848150253
+validataion loss: 0.05863877758383751
+validataion loss: 0.048425741493701935
+validataion loss: 0.04932621866464615
+validataion loss: 0.07292567193508148
+validataion loss: 0.054112888872623444
+validataion loss: 0.032332099974155426
+validataion loss: 0.03387792780995369
+validataion loss: 0.042590416967868805
+validataion loss: 0.042070191353559494
+validataion loss: 0.005343377590179443
+validataion loss: 0.19270962476730347
+validataion loss: 0.03555937856435776
+validataion loss: 0.28357404470443726
+validataion loss: 0.18064312636852264
+validataion loss: 0.0015836453530937433
+validataion loss: 0.08543642610311508
+validataion loss: 0.2697340250015259
+validataion loss: 0.12360218167304993
+validataion loss: 0.10315962880849838
+validataion loss: 0.05897844210267067
+validataion loss: 0.211859792470932
+validataion loss: 0.1498771458864212
+validataion loss: 0.09719326347112656
+validataion loss: 0.06265784054994583
+validataion loss: 0.08584485948085785
+validataion loss: 0.04818239435553551
+validataion loss: 0.12300733476877213
+validataion loss: 0.02914215438067913
+validataion loss: 0.10789480060338974
+validataion loss: 0.08323641121387482
+validataion loss: 0.0618584044277668
+validataion loss: 0.046599309891462326
+validataion loss: 0.04678710550069809
+validataion loss: 0.10609196126461029
+validataion loss: 0.034671030938625336
+validataion loss: 0.16510438919067383
+validataion loss: 0.08218945562839508
+validataion loss: 0.02615823596715927
+validataion loss: 0.07858271896839142
+validataion loss: 0.09068907052278519
+validataion loss: 0.09888099879026413
+precison: 0.8425219941348974
+recall: 0.856333830104322
+f1: 0.8493717664449372
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002996393945068121
+The train loss : 0.004108980298042297
+Epoch: 30
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 7966 steps: 0.011625460349023342
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.020048202946782112
+validataion loss: 0.0005966605967842042
+validataion loss: 0.10978863388299942
+validataion loss: 0.042076438665390015
+validataion loss: 0.07713837921619415
+validataion loss: 0.031856831163167953
+validataion loss: 0.044738590717315674
+validataion loss: 0.08820059895515442
+validataion loss: 0.0835007056593895
+validataion loss: 0.02545861527323723
+validataion loss: 0.03250623494386673
+validataion loss: 0.14569497108459473
+validataion loss: 0.04281705245375633
+validataion loss: 0.07598689943552017
+validataion loss: 0.30345454812049866
+validataion loss: 0.06509129703044891
+validataion loss: 0.029835792258381844
+validataion loss: 0.00677185133099556
+validataion loss: 0.06231209263205528
+validataion loss: 0.3955354690551758
+validataion loss: 0.09622779488563538
+validataion loss: 0.1348363757133484
+validataion loss: 0.07267437875270844
+validataion loss: 0.03010237030684948
+validataion loss: 0.04543730244040489
+validataion loss: 0.043418001383543015
+validataion loss: 0.06629954278469086
+validataion loss: 0.044672682881355286
+validataion loss: 0.07137155532836914
+validataion loss: 0.06202142313122749
+validataion loss: 0.030835483223199844
+validataion loss: 0.029530825093388557
+validataion loss: 0.03791157156229019
+validataion loss: 0.04114695265889168
+validataion loss: 0.011548503302037716
+validataion loss: 0.1814776062965393
+validataion loss: 0.006816201843321323
+validataion loss: 0.2861548364162445
+validataion loss: 0.20776258409023285
+validataion loss: 0.0091450996696949
+validataion loss: 0.0990668535232544
+validataion loss: 0.29213327169418335
+validataion loss: 0.14294852316379547
+validataion loss: 0.06878479570150375
+validataion loss: 0.06039699167013168
+validataion loss: 0.24348445236682892
+validataion loss: 0.15071864426136017
+validataion loss: 0.11606839299201965
+validataion loss: 0.07817897945642471
+validataion loss: 0.07382842898368835
+validataion loss: 0.08511994779109955
+validataion loss: 0.1745569109916687
+validataion loss: 0.05281047150492668
+validataion loss: 0.1332101672887802
+validataion loss: 0.12981267273426056
+validataion loss: 0.0806955099105835
+validataion loss: 0.041896335780620575
+validataion loss: 0.028329307213425636
+validataion loss: 0.14769232273101807
+validataion loss: 0.04334186390042305
+validataion loss: 0.19717533886432648
+validataion loss: 0.0643802359700203
+validataion loss: 0.014211050234735012
+validataion loss: 0.06739181280136108
+validataion loss: 0.06194203346967697
+validataion loss: 0.08590058982372284
+precison: 0.8388429752066116
+recall: 0.8470938897168405
+f1: 0.8429482426219783
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002603048225864768
+The train loss : 0.011625460349023342
+Epoch: 31
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 8223 steps: 5.3779949666932225e-05
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.0207960344851017
+validataion loss: 0.0036121439188718796
+validataion loss: 0.07927543669939041
+validataion loss: 0.04815820977091789
+validataion loss: 0.09715215116739273
+validataion loss: 0.07913362234830856
+validataion loss: 0.03345512971282005
+validataion loss: 0.07253745198249817
+validataion loss: 0.15341290831565857
+validataion loss: 0.009033292531967163
+validataion loss: 0.04889630153775215
+validataion loss: 0.15802723169326782
+validataion loss: 0.01308983750641346
+validataion loss: 0.05198606476187706
+validataion loss: 0.2926645576953888
+validataion loss: 0.09830259531736374
+validataion loss: 0.025489358231425285
+validataion loss: 0.004755349364131689
+validataion loss: 0.03167956322431564
+validataion loss: 0.3993598520755768
+validataion loss: 0.06540854275226593
+validataion loss: 0.1456216424703598
+validataion loss: 0.06877732276916504
+validataion loss: 0.014688806608319283
+validataion loss: 0.07699360698461533
+validataion loss: 0.059518326073884964
+validataion loss: 0.05422498285770416
+validataion loss: 0.06809116899967194
+validataion loss: 0.07721646875143051
+validataion loss: 0.057599347084760666
+validataion loss: 0.027721920982003212
+validataion loss: 0.01873519830405712
+validataion loss: 0.02748270332813263
+validataion loss: 0.044137462973594666
+validataion loss: 0.00675184978172183
+validataion loss: 0.2518123388290405
+validataion loss: 0.03442894294857979
+validataion loss: 0.2599951922893524
+validataion loss: 0.17093417048454285
+validataion loss: 0.02243100479245186
+validataion loss: 0.08500169217586517
+validataion loss: 0.3267171382904053
+validataion loss: 0.14715217053890228
+validataion loss: 0.11196751147508621
+validataion loss: 0.09287942200899124
+validataion loss: 0.17782878875732422
+validataion loss: 0.13118328154087067
+validataion loss: 0.13991482555866241
+validataion loss: 0.08303128927946091
+validataion loss: 0.05912056937813759
+validataion loss: 0.08510258793830872
+validataion loss: 0.11433134227991104
+validataion loss: 0.024034015834331512
+validataion loss: 0.12140776962041855
+validataion loss: 0.15285469591617584
+validataion loss: 0.04118376597762108
+validataion loss: 0.03514787182211876
+validataion loss: 0.03811749443411827
+validataion loss: 0.14339858293533325
+validataion loss: 0.03808921203017235
+validataion loss: 0.17678329348564148
+validataion loss: 0.057632774114608765
+validataion loss: 0.018210794776678085
+validataion loss: 0.025830399245023727
+validataion loss: 0.06654463708400726
+validataion loss: 0.10504169017076492
+precison: 0.8610354223433242
+recall: 0.8476900149031297
+f1: 0.8543106037849203
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0031830815132707357
+The train loss : 5.3779949666932225e-05
+Epoch: 32
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 8480 steps: 0.0005292479763738811
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.016130737960338593
+validataion loss: 0.0011982828145846725
+validataion loss: 0.12611790001392365
+validataion loss: 0.05108751356601715
+validataion loss: 0.09589612483978271
+validataion loss: 0.05070802941918373
+validataion loss: 0.05678742378950119
+validataion loss: 0.0969468429684639
+validataion loss: 0.051734767854213715
+validataion loss: 0.041664719581604004
+validataion loss: 0.04710687696933746
+validataion loss: 0.1374746859073639
+validataion loss: 0.022962357848882675
+validataion loss: 0.0448995977640152
+validataion loss: 0.3865881562232971
+validataion loss: 0.0667605921626091
+validataion loss: 0.03828895092010498
+validataion loss: 0.021745730191469193
+validataion loss: 0.03206188231706619
+validataion loss: 0.4416614770889282
+validataion loss: 0.07996167242527008
+validataion loss: 0.1622602939605713
+validataion loss: 0.049341391772031784
+validataion loss: 0.020652251318097115
+validataion loss: 0.06177728623151779
+validataion loss: 0.05423066020011902
+validataion loss: 0.06573662906885147
+validataion loss: 0.041411012411117554
+validataion loss: 0.1032339558005333
+validataion loss: 0.06914740055799484
+validataion loss: 0.030688798055052757
+validataion loss: 0.011286046355962753
+validataion loss: 0.0408313013613224
+validataion loss: 0.04805426672101021
+validataion loss: 0.01094950083643198
+validataion loss: 0.14717577397823334
+validataion loss: 0.02881219983100891
+validataion loss: 0.296823114156723
+validataion loss: 0.1438794881105423
+validataion loss: 0.01915561780333519
+validataion loss: 0.09365317225456238
+validataion loss: 0.35187000036239624
+validataion loss: 0.17533399164676666
+validataion loss: 0.05125430226325989
+validataion loss: 0.060654427856206894
+validataion loss: 0.22419393062591553
+validataion loss: 0.1467546969652176
+validataion loss: 0.11089794337749481
+validataion loss: 0.09540868550539017
+validataion loss: 0.06771863996982574
+validataion loss: 0.09777072817087173
+validataion loss: 0.15600991249084473
+validataion loss: 0.06201256066560745
+validataion loss: 0.12424548715353012
+validataion loss: 0.13131554424762726
+validataion loss: 0.05580131337046623
+validataion loss: 0.04320748895406723
+validataion loss: 0.02213129587471485
+validataion loss: 0.12799334526062012
+validataion loss: 0.032296597957611084
+validataion loss: 0.16082414984703064
+validataion loss: 0.0728365108370781
+validataion loss: 0.02282998524606228
+validataion loss: 0.0729251503944397
+validataion loss: 0.08585958182811737
+validataion loss: 0.10935455560684204
+precison: 0.8481383758428613
+recall: 0.8622950819672132
+f1: 0.8551581436594738
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.003313774475827813
+The train loss : 0.0005292479763738811
+Epoch: 33
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 8737 steps: 0.00036462716525420547
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.011405609548091888
+validataion loss: 0.002450222847983241
+validataion loss: 0.08751746267080307
+validataion loss: 0.04464299976825714
+validataion loss: 0.07952196896076202
+validataion loss: 0.06675880402326584
+validataion loss: 0.04571755230426788
+validataion loss: 0.0817524865269661
+validataion loss: 0.09258245676755905
+validataion loss: 0.04129969701170921
+validataion loss: 0.04903128743171692
+validataion loss: 0.151606023311615
+validataion loss: 0.017742954194545746
+validataion loss: 0.043769460171461105
+validataion loss: 0.42279675602912903
+validataion loss: 0.047666553407907486
+validataion loss: 0.03398127853870392
+validataion loss: 0.010540996678173542
+validataion loss: 0.03763497620820999
+validataion loss: 0.378062903881073
+validataion loss: 0.08661066740751266
+validataion loss: 0.16279564797878265
+validataion loss: 0.08836262673139572
+validataion loss: 0.028500013053417206
+validataion loss: 0.06619653850793839
+validataion loss: 0.0713326707482338
+validataion loss: 0.05874187499284744
+validataion loss: 0.030908601358532906
+validataion loss: 0.10631749033927917
+validataion loss: 0.059751395136117935
+validataion loss: 0.02264750748872757
+validataion loss: 0.007070622406899929
+validataion loss: 0.04036414995789528
+validataion loss: 0.02984221652150154
+validataion loss: 0.0036400561220943928
+validataion loss: 0.1531347930431366
+validataion loss: 0.017273589968681335
+validataion loss: 0.24438880383968353
+validataion loss: 0.14488054811954498
+validataion loss: 0.008210580796003342
+validataion loss: 0.07070545852184296
+validataion loss: 0.329248309135437
+validataion loss: 0.14448480308055878
+validataion loss: 0.17202134430408478
+validataion loss: 0.10447580367326736
+validataion loss: 0.22490136325359344
+validataion loss: 0.13756056129932404
+validataion loss: 0.11741204559803009
+validataion loss: 0.055346131324768066
+validataion loss: 0.10451952368021011
+validataion loss: 0.1016983836889267
+validataion loss: 0.09634573757648468
+validataion loss: 0.04556373506784439
+validataion loss: 0.10811102390289307
+validataion loss: 0.13834668695926666
+validataion loss: 0.05143348500132561
+validataion loss: 0.034765150398015976
+validataion loss: 0.010850116610527039
+validataion loss: 0.12601444125175476
+validataion loss: 0.027630792930722237
+validataion loss: 0.19889850914478302
+validataion loss: 0.07050126791000366
+validataion loss: 0.018571646884083748
+validataion loss: 0.04439673200249672
+validataion loss: 0.035152412950992584
+validataion loss: 0.10111413896083832
+precison: 0.857486470234516
+recall: 0.8500745156482862
+f1: 0.8537644065259692
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0030640650074929
+The train loss : 0.00036462716525420547
+Epoch: 34
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 8994 steps: 2.6696317945607007e-05
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.006910591386258602
+validataion loss: 0.02605961263179779
+validataion loss: 0.07519214600324631
+validataion loss: 0.04741688817739487
+validataion loss: 0.07251596450805664
+validataion loss: 0.06751894950866699
+validataion loss: 0.0508861318230629
+validataion loss: 0.07784552127122879
+validataion loss: 0.0782458707690239
+validataion loss: 0.014180602505803108
+validataion loss: 0.05245319381356239
+validataion loss: 0.16004648804664612
+validataion loss: 0.029994400218129158
+validataion loss: 0.029499715194106102
+validataion loss: 0.423128217458725
+validataion loss: 0.11240842193365097
+validataion loss: 0.01655563712120056
+validataion loss: 0.019807057455182076
+validataion loss: 0.07185487449169159
+validataion loss: 0.38867491483688354
+validataion loss: 0.07074343413114548
+validataion loss: 0.15211910009384155
+validataion loss: 0.07492644339799881
+validataion loss: 0.01546386070549488
+validataion loss: 0.09784286469221115
+validataion loss: 0.054374340921640396
+validataion loss: 0.05555053427815437
+validataion loss: 0.052991487085819244
+validataion loss: 0.09471884369850159
+validataion loss: 0.06487099081277847
+validataion loss: 0.03159984573721886
+validataion loss: 0.014733576215803623
+validataion loss: 0.04869210347533226
+validataion loss: 0.03727289289236069
+validataion loss: 0.021391237154603004
+validataion loss: 0.14088256657123566
+validataion loss: 0.020583979785442352
+validataion loss: 0.23415066301822662
+validataion loss: 0.03416537865996361
+validataion loss: 0.0034202691167593002
+validataion loss: 0.07890249788761139
+validataion loss: 0.26751020550727844
+validataion loss: 0.13029149174690247
+validataion loss: 0.10257390886545181
+validataion loss: 0.05870776250958443
+validataion loss: 0.1733047366142273
+validataion loss: 0.15740709006786346
+validataion loss: 0.09258820116519928
+validataion loss: 0.038899682462215424
+validataion loss: 0.07021764665842056
+validataion loss: 0.11051207035779953
+validataion loss: 0.08935916423797607
+validataion loss: 0.027645254507660866
+validataion loss: 0.12767936289310455
+validataion loss: 0.10933219641447067
+validataion loss: 0.04121595248579979
+validataion loss: 0.022321011871099472
+validataion loss: 0.018084106966853142
+validataion loss: 0.11372339725494385
+validataion loss: 0.029837656766176224
+validataion loss: 0.15026971697807312
+validataion loss: 0.07652124017477036
+validataion loss: 0.015015755780041218
+validataion loss: 0.02551698125898838
+validataion loss: 0.05702495947480202
+validataion loss: 0.09230216592550278
+precison: 0.860702491744221
+recall: 0.8545454545454545
+f1: 0.8576129225246784
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002797035500407219
+The train loss : 2.6696317945607007e-05
+Epoch: 35
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 9251 steps: 0.011405892670154572
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.017297523096203804
+validataion loss: 0.0022956794127821922
+validataion loss: 0.11439947783946991
+validataion loss: 0.04894858971238136
+validataion loss: 0.06998302787542343
+validataion loss: 0.06952571123838425
+validataion loss: 0.039317786693573
+validataion loss: 0.06883946061134338
+validataion loss: 0.06156236305832863
+validataion loss: 0.018756525591015816
+validataion loss: 0.04279138520359993
+validataion loss: 0.11924435943365097
+validataion loss: 0.023993099108338356
+validataion loss: 0.04253290966153145
+validataion loss: 0.26998093724250793
+validataion loss: 0.05614306405186653
+validataion loss: 0.026907818391919136
+validataion loss: 0.011957405135035515
+validataion loss: 0.05588769167661667
+validataion loss: 0.4075821042060852
+validataion loss: 0.08194847404956818
+validataion loss: 0.15753191709518433
+validataion loss: 0.07307370752096176
+validataion loss: 0.038249723613262177
+validataion loss: 0.0655178651213646
+validataion loss: 0.053182829171419144
+validataion loss: 0.09648612141609192
+validataion loss: 0.059714965522289276
+validataion loss: 0.08132987469434738
+validataion loss: 0.06733971834182739
+validataion loss: 0.025924937799572945
+validataion loss: 0.0172897856682539
+validataion loss: 0.031295448541641235
+validataion loss: 0.060551680624485016
+validataion loss: 0.001637156936340034
+validataion loss: 0.14306773245334625
+validataion loss: 0.014843296259641647
+validataion loss: 0.24121564626693726
+validataion loss: 0.15789975225925446
+validataion loss: 0.002784254727885127
+validataion loss: 0.08112046867609024
+validataion loss: 0.36026862263679504
+validataion loss: 0.1433395892381668
+validataion loss: 0.06881532818078995
+validataion loss: 0.0762622132897377
+validataion loss: 0.20718435943126678
+validataion loss: 0.222137913107872
+validataion loss: 0.11060480028390884
+validataion loss: 0.06447361409664154
+validataion loss: 0.05965547263622284
+validataion loss: 0.06104665994644165
+validataion loss: 0.09639546275138855
+validataion loss: 0.0363667830824852
+validataion loss: 0.11748570203781128
+validataion loss: 0.09747665375471115
+validataion loss: 0.09167475998401642
+validataion loss: 0.03776558116078377
+validataion loss: 0.08186282962560654
+validataion loss: 0.09094181656837463
+validataion loss: 0.023234080523252487
+validataion loss: 0.17086763679981232
+validataion loss: 0.10520816594362259
+validataion loss: 0.018721727654337883
+validataion loss: 0.04969288036227226
+validataion loss: 0.09299420565366745
+validataion loss: 0.13340383768081665
+precison: 0.8522760646108664
+recall: 0.8649776453055141
+f1: 0.8585798816568047
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.004042540676891804
+The train loss : 0.011405892670154572
+Epoch: 36
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 9508 steps: 0.007493502926081419
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.011008714325726032
+validataion loss: 0.001537321018986404
+validataion loss: 0.09623534232378006
+validataion loss: 0.03940732404589653
+validataion loss: 0.07955331355333328
+validataion loss: 0.08133441209793091
+validataion loss: 0.02836206927895546
+validataion loss: 0.08824113756418228
+validataion loss: 0.08817470073699951
+validataion loss: 0.016287973150610924
+validataion loss: 0.04087793827056885
+validataion loss: 0.1541803777217865
+validataion loss: 0.024291805922985077
+validataion loss: 0.03005589358508587
+validataion loss: 0.3843410313129425
+validataion loss: 0.06448090076446533
+validataion loss: 0.02224515937268734
+validataion loss: 0.015910988673567772
+validataion loss: 0.05352859944105148
+validataion loss: 0.38783878087997437
+validataion loss: 0.07789396494626999
+validataion loss: 0.13108430802822113
+validataion loss: 0.09251154959201813
+validataion loss: 0.03040078841149807
+validataion loss: 0.07366033643484116
+validataion loss: 0.04653795063495636
+validataion loss: 0.05981478840112686
+validataion loss: 0.050884559750556946
+validataion loss: 0.08110962063074112
+validataion loss: 0.08608103543519974
+validataion loss: 0.0247242022305727
+validataion loss: 0.017456654459238052
+validataion loss: 0.012127021327614784
+validataion loss: 0.06480535119771957
+validataion loss: 0.013304529711604118
+validataion loss: 0.17620772123336792
+validataion loss: 0.016116967424750328
+validataion loss: 0.249873086810112
+validataion loss: 0.07319381088018417
+validataion loss: 0.0028424267657101154
+validataion loss: 0.0873328372836113
+validataion loss: 0.3972523808479309
+validataion loss: 0.1755734384059906
+validataion loss: 0.11595357209444046
+validataion loss: 0.07532253861427307
+validataion loss: 0.16306321322917938
+validataion loss: 0.17996735870838165
+validataion loss: 0.10559484362602234
+validataion loss: 0.029824580997228622
+validataion loss: 0.09281017631292343
+validataion loss: 0.1391666680574417
+validataion loss: 0.09542058408260345
+validataion loss: 0.03649642691016197
+validataion loss: 0.11034904420375824
+validataion loss: 0.07641007006168365
+validataion loss: 0.07533787935972214
+validataion loss: 0.02888115495443344
+validataion loss: 0.019482523202896118
+validataion loss: 0.10097946971654892
+validataion loss: 0.030911363661289215
+validataion loss: 0.136818066239357
+validataion loss: 0.07561852782964706
+validataion loss: 0.02546773850917816
+validataion loss: 0.02046782150864601
+validataion loss: 0.08762474358081818
+validataion loss: 0.09131041914224625
+precison: 0.8722627737226277
+recall: 0.8548435171385991
+f1: 0.8634653018214662
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0027669824194163084
+The train loss : 0.007493502926081419
+Epoch: 37
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 9765 steps: 0.02267085202038288
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.010980644263327122
+validataion loss: 0.004316533450037241
+validataion loss: 0.10114302486181259
+validataion loss: 0.05575796589255333
+validataion loss: 0.07051453739404678
+validataion loss: 0.07410930097103119
+validataion loss: 0.06096062436699867
+validataion loss: 0.08575507998466492
+validataion loss: 0.06177576258778572
+validataion loss: 0.09536029398441315
+validataion loss: 0.056966498494148254
+validataion loss: 0.140316903591156
+validataion loss: 0.011339371092617512
+validataion loss: 0.03334429860115051
+validataion loss: 0.4326939284801483
+validataion loss: 0.06427028030157089
+validataion loss: 0.022114139050245285
+validataion loss: 0.010750267654657364
+validataion loss: 0.04433213174343109
+validataion loss: 0.40273112058639526
+validataion loss: 0.1114448606967926
+validataion loss: 0.1630677729845047
+validataion loss: 0.08509622514247894
+validataion loss: 0.05608314275741577
+validataion loss: 0.07181742787361145
+validataion loss: 0.050030894577503204
+validataion loss: 0.07710392028093338
+validataion loss: 0.07252374291419983
+validataion loss: 0.0750160813331604
+validataion loss: 0.06982564926147461
+validataion loss: 0.022963332012295723
+validataion loss: 0.03315906971693039
+validataion loss: 0.056955862790346146
+validataion loss: 0.04454980045557022
+validataion loss: 0.005914819426834583
+validataion loss: 0.1728273332118988
+validataion loss: 0.03063766285777092
+validataion loss: 0.26666733622550964
+validataion loss: 0.07270459830760956
+validataion loss: 0.04171639308333397
+validataion loss: 0.09573651850223541
+validataion loss: 0.34878918528556824
+validataion loss: 0.14984403550624847
+validataion loss: 0.118167944252491
+validataion loss: 0.08848592638969421
+validataion loss: 0.22372160851955414
+validataion loss: 0.2076105773448944
+validataion loss: 0.10600002855062485
+validataion loss: 0.03252501040697098
+validataion loss: 0.09446600824594498
+validataion loss: 0.07999356836080551
+validataion loss: 0.1404869556427002
+validataion loss: 0.032675620168447495
+validataion loss: 0.17516854405403137
+validataion loss: 0.11820920556783676
+validataion loss: 0.06928492337465286
+validataion loss: 0.03344271332025528
+validataion loss: 0.035991471260786057
+validataion loss: 0.13343945145606995
+validataion loss: 0.0436258465051651
+validataion loss: 0.1698160171508789
+validataion loss: 0.04373546317219734
+validataion loss: 0.032059237360954285
+validataion loss: 0.0421319343149662
+validataion loss: 0.0888465940952301
+validataion loss: 0.11133614927530289
+precison: 0.8427201917315758
+recall: 0.8384500745156482
+f1: 0.8405797101449274
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.003373822895810008
+The train loss : 0.02267085202038288
+Epoch: 38
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 10022 steps: 0.00040147724212147295
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.01234146673232317
+validataion loss: 0.004435272421687841
+validataion loss: 0.0948336198925972
+validataion loss: 0.06426532566547394
+validataion loss: 0.04905508831143379
+validataion loss: 0.0692954882979393
+validataion loss: 0.049188606441020966
+validataion loss: 0.09427357465028763
+validataion loss: 0.06607389450073242
+validataion loss: 0.04527708515524864
+validataion loss: 0.052992355078458786
+validataion loss: 0.10707546025514603
+validataion loss: 0.042330432683229446
+validataion loss: 0.03985660523176193
+validataion loss: 0.3955226242542267
+validataion loss: 0.05031337961554527
+validataion loss: 0.022781675681471825
+validataion loss: 0.006533458828926086
+validataion loss: 0.029625307768583298
+validataion loss: 0.3675179183483124
+validataion loss: 0.09756428003311157
+validataion loss: 0.15530605614185333
+validataion loss: 0.07088953256607056
+validataion loss: 0.04091440141201019
+validataion loss: 0.0633116140961647
+validataion loss: 0.048284001648426056
+validataion loss: 0.07166057825088501
+validataion loss: 0.0687141865491867
+validataion loss: 0.09721005707979202
+validataion loss: 0.0480315238237381
+validataion loss: 0.030928131192922592
+validataion loss: 0.015732983127236366
+validataion loss: 0.03261621668934822
+validataion loss: 0.039648380130529404
+validataion loss: 0.011076780036091805
+validataion loss: 0.1355680674314499
+validataion loss: 0.009810272604227066
+validataion loss: 0.24876771867275238
+validataion loss: 0.13975608348846436
+validataion loss: 0.0020774989388883114
+validataion loss: 0.08805761486291885
+validataion loss: 0.3529466986656189
+validataion loss: 0.13592009246349335
+validataion loss: 0.08024507761001587
+validataion loss: 0.054513465613126755
+validataion loss: 0.20237457752227783
+validataion loss: 0.20683152973651886
+validataion loss: 0.09430627524852753
+validataion loss: 0.06220008432865143
+validataion loss: 0.08512140065431595
+validataion loss: 0.11794398725032806
+validataion loss: 0.1083698570728302
+validataion loss: 0.03261683136224747
+validataion loss: 0.1023617535829544
+validataion loss: 0.11369448900222778
+validataion loss: 0.04043210297822952
+validataion loss: 0.036128658801317215
+validataion loss: 0.055967237800359726
+validataion loss: 0.11414024978876114
+validataion loss: 0.030801987275481224
+validataion loss: 0.1983395516872406
+validataion loss: 0.06089608371257782
+validataion loss: 0.029369940981268883
+validataion loss: 0.09446822851896286
+validataion loss: 0.09922657907009125
+validataion loss: 0.1028190404176712
+precison: 0.8513794126371996
+recall: 0.8554396423248882
+f1: 0.8534046981861433
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.003115728497505188
+The train loss : 0.00040147724212147295
+Epoch: 39
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 10279 steps: 0.0006261119269765913
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.01618955098092556
+validataion loss: 0.0055796303786337376
+validataion loss: 0.11168943345546722
+validataion loss: 0.07060465961694717
+validataion loss: 0.06288495659828186
+validataion loss: 0.06686099618673325
+validataion loss: 0.03640478849411011
+validataion loss: 0.08198212087154388
+validataion loss: 0.11353549361228943
+validataion loss: 0.03021327778697014
+validataion loss: 0.037001870572566986
+validataion loss: 0.12640531361103058
+validataion loss: 0.01141392346471548
+validataion loss: 0.03687961772084236
+validataion loss: 0.4144878387451172
+validataion loss: 0.07715053856372833
+validataion loss: 0.012110313400626183
+validataion loss: 0.005666461307555437
+validataion loss: 0.03652924299240112
+validataion loss: 0.4514942765235901
+validataion loss: 0.08975350856781006
+validataion loss: 0.16664454340934753
+validataion loss: 0.0841481015086174
+validataion loss: 0.043020255863666534
+validataion loss: 0.09820949286222458
+validataion loss: 0.046512261033058167
+validataion loss: 0.05598708614706993
+validataion loss: 0.05205061286687851
+validataion loss: 0.11925114691257477
+validataion loss: 0.06054136902093887
+validataion loss: 0.028331227600574493
+validataion loss: 0.027907291427254677
+validataion loss: 0.025399688631296158
+validataion loss: 0.04024842381477356
+validataion loss: 0.021799704059958458
+validataion loss: 0.20627866685390472
+validataion loss: 0.02176055870950222
+validataion loss: 0.25629228353500366
+validataion loss: 0.23065824806690216
+validataion loss: 0.015449034050107002
+validataion loss: 0.0779460072517395
+validataion loss: 0.372074693441391
+validataion loss: 0.11575057357549667
+validataion loss: 0.1366266906261444
+validataion loss: 0.05078377202153206
+validataion loss: 0.2103288769721985
+validataion loss: 0.20131367444992065
+validataion loss: 0.12934838235378265
+validataion loss: 0.07128779590129852
+validataion loss: 0.0849982351064682
+validataion loss: 0.11553113907575607
+validataion loss: 0.10164033621549606
+validataion loss: 0.04180704057216644
+validataion loss: 0.1173631027340889
+validataion loss: 0.10795450955629349
+validataion loss: 0.03672773018479347
+validataion loss: 0.04126972332596779
+validataion loss: 0.045959532260894775
+validataion loss: 0.12501583993434906
+validataion loss: 0.03279990330338478
+validataion loss: 0.20726041495800018
+validataion loss: 0.09655243158340454
+validataion loss: 0.02457917481660843
+validataion loss: 0.12049970030784607
+validataion loss: 0.08375340700149536
+validataion loss: 0.08590660989284515
+precison: 0.8644888082274652
+recall: 0.8518628912071535
+f1: 0.8581294099984988
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0026032307650893927
+The train loss : 0.0006261119269765913
+Epoch: 40
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 10536 steps: 0.0011794655583798885
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.0028851472306996584
+validataion loss: 0.002304323483258486
+validataion loss: 0.08440151065587997
+validataion loss: 0.05413435027003288
+validataion loss: 0.08410894125699997
+validataion loss: 0.07913558185100555
+validataion loss: 0.042492322623729706
+validataion loss: 0.07328352332115173
+validataion loss: 0.07650034129619598
+validataion loss: 0.033553965389728546
+validataion loss: 0.05249309167265892
+validataion loss: 0.12050493061542511
+validataion loss: 0.019989168271422386
+validataion loss: 0.07143134623765945
+validataion loss: 0.3466772735118866
+validataion loss: 0.050001271069049835
+validataion loss: 0.032646164298057556
+validataion loss: 0.01780734583735466
+validataion loss: 0.0721205398440361
+validataion loss: 0.3890216052532196
+validataion loss: 0.0947660580277443
+validataion loss: 0.160017728805542
+validataion loss: 0.0666733980178833
+validataion loss: 0.019858166575431824
+validataion loss: 0.0975879579782486
+validataion loss: 0.06183246523141861
+validataion loss: 0.10720893740653992
+validataion loss: 0.09850824624300003
+validataion loss: 0.08506336808204651
+validataion loss: 0.06356897950172424
+validataion loss: 0.045436326414346695
+validataion loss: 0.02698325552046299
+validataion loss: 0.03453327715396881
+validataion loss: 0.030912799760699272
+validataion loss: 0.00533483549952507
+validataion loss: 0.14735981822013855
+validataion loss: 0.03405468165874481
+validataion loss: 0.20951829850673676
+validataion loss: 0.28346672654151917
+validataion loss: 0.015738701447844505
+validataion loss: 0.07429023832082748
+validataion loss: 0.36382535099983215
+validataion loss: 0.17768710851669312
+validataion loss: 0.05277738720178604
+validataion loss: 0.10728251188993454
+validataion loss: 0.19140265882015228
+validataion loss: 0.23683969676494598
+validataion loss: 0.09567196667194366
+validataion loss: 0.11342423409223557
+validataion loss: 0.092038094997406
+validataion loss: 0.08350463211536407
+validataion loss: 0.12791414558887482
+validataion loss: 0.030947992578148842
+validataion loss: 0.10422886908054352
+validataion loss: 0.17556296288967133
+validataion loss: 0.06473003327846527
+validataion loss: 0.029727548360824585
+validataion loss: 0.08239973336458206
+validataion loss: 0.12193445861339569
+validataion loss: 0.029453450813889503
+validataion loss: 0.18508771061897278
+validataion loss: 0.06966569274663925
+validataion loss: 0.04371226206421852
+validataion loss: 0.0803115963935852
+validataion loss: 0.04823571816086769
+validataion loss: 0.10695798695087433
+precison: 0.8236639039725636
+recall: 0.8590163934426229
+f1: 0.8409687773562883
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0032411511056125164
+The train loss : 0.0011794655583798885
+Epoch: 41
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 10793 steps: 0.00042272632708773017
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.010385191068053246
+validataion loss: 0.016535364091396332
+validataion loss: 0.07799921929836273
+validataion loss: 0.059209056198596954
+validataion loss: 0.09492236375808716
+validataion loss: 0.07960351556539536
+validataion loss: 0.04495266452431679
+validataion loss: 0.08015897125005722
+validataion loss: 0.08148376643657684
+validataion loss: 0.010229812003672123
+validataion loss: 0.049719925969839096
+validataion loss: 0.12210996448993683
+validataion loss: 0.024927262216806412
+validataion loss: 0.047605253756046295
+validataion loss: 0.34591060876846313
+validataion loss: 0.0644158124923706
+validataion loss: 0.017860695719718933
+validataion loss: 0.010492931120097637
+validataion loss: 0.090396448969841
+validataion loss: 0.4174453318119049
+validataion loss: 0.09338634461164474
+validataion loss: 0.17218592762947083
+validataion loss: 0.06285376846790314
+validataion loss: 0.04401858150959015
+validataion loss: 0.06555546820163727
+validataion loss: 0.058234792202711105
+validataion loss: 0.06527099758386612
+validataion loss: 0.04995553940534592
+validataion loss: 0.06843177229166031
+validataion loss: 0.06416108459234238
+validataion loss: 0.0342925600707531
+validataion loss: 0.017388319596648216
+validataion loss: 0.04243207350373268
+validataion loss: 0.060805968940258026
+validataion loss: 0.005801128689199686
+validataion loss: 0.17139805853366852
+validataion loss: 0.05048074945807457
+validataion loss: 0.26678523421287537
+validataion loss: 0.1626448631286621
+validataion loss: 0.004313057288527489
+validataion loss: 0.08931302279233932
+validataion loss: 0.39439114928245544
+validataion loss: 0.15585222840309143
+validataion loss: 0.10636204481124878
+validataion loss: 0.1017627939581871
+validataion loss: 0.2353258728981018
+validataion loss: 0.18667779862880707
+validataion loss: 0.07165858894586563
+validataion loss: 0.11801270395517349
+validataion loss: 0.09699022769927979
+validataion loss: 0.059205733239650726
+validataion loss: 0.13193146884441376
+validataion loss: 0.02684297040104866
+validataion loss: 0.13611088693141937
+validataion loss: 0.12839259207248688
+validataion loss: 0.08383385837078094
+validataion loss: 0.02720378153026104
+validataion loss: 0.022597016766667366
+validataion loss: 0.1292315125465393
+validataion loss: 0.02903946302831173
+validataion loss: 0.17905297875404358
+validataion loss: 0.07622554898262024
+validataion loss: 0.04389055073261261
+validataion loss: 0.07916610687971115
+validataion loss: 0.08374472707509995
+validataion loss: 0.08154600113630295
+precison: 0.8535714285714285
+recall: 0.8548435171385991
+f1: 0.8542069992553983
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.00247109099291265
+The train loss : 0.00042272632708773017
+Epoch: 42
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 11050 steps: 0.0007503355154767632
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.011276266537606716
+validataion loss: 0.0022163402754813433
+validataion loss: 0.08404867351055145
+validataion loss: 0.04058172181248665
+validataion loss: 0.09766414016485214
+validataion loss: 0.07786361873149872
+validataion loss: 0.05054573714733124
+validataion loss: 0.0891600102186203
+validataion loss: 0.08793049305677414
+validataion loss: 0.010157797485589981
+validataion loss: 0.042739156633615494
+validataion loss: 0.11288125813007355
+validataion loss: 0.015149930492043495
+validataion loss: 0.05768267810344696
+validataion loss: 0.37873926758766174
+validataion loss: 0.05153676122426987
+validataion loss: 0.022796420380473137
+validataion loss: 0.013355623930692673
+validataion loss: 0.07182403653860092
+validataion loss: 0.41982871294021606
+validataion loss: 0.13312681019306183
+validataion loss: 0.14332257211208344
+validataion loss: 0.08245539665222168
+validataion loss: 0.0279157105833292
+validataion loss: 0.09712109714746475
+validataion loss: 0.051023270934820175
+validataion loss: 0.056995242834091187
+validataion loss: 0.05003936216235161
+validataion loss: 0.08243212103843689
+validataion loss: 0.06779918819665909
+validataion loss: 0.029433228075504303
+validataion loss: 0.02051154337823391
+validataion loss: 0.05087084323167801
+validataion loss: 0.04019240662455559
+validataion loss: 0.006734561640769243
+validataion loss: 0.1685723513364792
+validataion loss: 0.02631397359073162
+validataion loss: 0.2070692628622055
+validataion loss: 0.1685459166765213
+validataion loss: 0.006480795796960592
+validataion loss: 0.0836910605430603
+validataion loss: 0.35662418603897095
+validataion loss: 0.16240473091602325
+validataion loss: 0.10331568866968155
+validataion loss: 0.10512727499008179
+validataion loss: 0.18306085467338562
+validataion loss: 0.14612580835819244
+validataion loss: 0.12844409048557281
+validataion loss: 0.0491422675549984
+validataion loss: 0.12108271569013596
+validataion loss: 0.08646397292613983
+validataion loss: 0.1348162293434143
+validataion loss: 0.03388946130871773
+validataion loss: 0.10838495194911957
+validataion loss: 0.12029038369655609
+validataion loss: 0.050405409187078476
+validataion loss: 0.038866207003593445
+validataion loss: 0.02142784371972084
+validataion loss: 0.11177850514650345
+validataion loss: 0.01808392070233822
+validataion loss: 0.17547549307346344
+validataion loss: 0.07518626004457474
+validataion loss: 0.024210043251514435
+validataion loss: 0.05706826597452164
+validataion loss: 0.03939508646726608
+validataion loss: 0.10857357084751129
+precison: 0.847148736037625
+recall: 0.8590163934426229
+f1: 0.8530412905135416
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0032901084050536156
+The train loss : 0.0007503355154767632
+Epoch: 43
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 11307 steps: 0.0015280975494533777
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.011785820126533508
+validataion loss: 0.007122871000319719
+validataion loss: 0.10878659784793854
+validataion loss: 0.04849245399236679
+validataion loss: 0.11606109142303467
+validataion loss: 0.07656040787696838
+validataion loss: 0.06760749965906143
+validataion loss: 0.08272920548915863
+validataion loss: 0.1582556962966919
+validataion loss: 0.022133806720376015
+validataion loss: 0.05400577187538147
+validataion loss: 0.16102717816829681
+validataion loss: 0.05577417463064194
+validataion loss: 0.037915367633104324
+validataion loss: 0.39519935846328735
+validataion loss: 0.09130410104990005
+validataion loss: 0.027164002880454063
+validataion loss: 0.01767059788107872
+validataion loss: 0.07020530104637146
+validataion loss: 0.4676952064037323
+validataion loss: 0.08515455573797226
+validataion loss: 0.13836799561977386
+validataion loss: 0.08325470238924026
+validataion loss: 0.05227900668978691
+validataion loss: 0.07594799250364304
+validataion loss: 0.043407268822193146
+validataion loss: 0.09624750167131424
+validataion loss: 0.07138928025960922
+validataion loss: 0.0829273983836174
+validataion loss: 0.08595414459705353
+validataion loss: 0.04106445610523224
+validataion loss: 0.02424151450395584
+validataion loss: 0.05429384112358093
+validataion loss: 0.04714742302894592
+validataion loss: 0.004979167599231005
+validataion loss: 0.18529151380062103
+validataion loss: 0.01919153891503811
+validataion loss: 0.25159022212028503
+validataion loss: 0.04913190379738808
+validataion loss: 0.02430078759789467
+validataion loss: 0.10240183770656586
+validataion loss: 0.34404972195625305
+validataion loss: 0.14577074348926544
+validataion loss: 0.13462889194488525
+validataion loss: 0.11943376809358597
+validataion loss: 0.2026856690645218
+validataion loss: 0.23955826461315155
+validataion loss: 0.13385190069675446
+validataion loss: 0.05121799558401108
+validataion loss: 0.1224343553185463
+validataion loss: 0.057584889233112335
+validataion loss: 0.1595383882522583
+validataion loss: 0.041910670697689056
+validataion loss: 0.11876323819160461
+validataion loss: 0.11623278260231018
+validataion loss: 0.055186279118061066
+validataion loss: 0.045049503445625305
+validataion loss: 0.04143224656581879
+validataion loss: 0.10933233052492142
+validataion loss: 0.032131534069776535
+validataion loss: 0.16367776691913605
+validataion loss: 0.07534799724817276
+validataion loss: 0.022251978516578674
+validataion loss: 0.1257902979850769
+validataion loss: 0.06469164788722992
+validataion loss: 0.10038463026285172
+precison: 0.8620583717357911
+recall: 0.8363636363636363
+f1: 0.8490166414523449
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0030419586692005396
+The train loss : 0.0015280975494533777
+Epoch: 44
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 11564 steps: 0.004777759313583374
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.012589888647198677
+validataion loss: 0.0037111355923116207
+validataion loss: 0.09259995073080063
+validataion loss: 0.04396770894527435
+validataion loss: 0.09308508783578873
+validataion loss: 0.07869645953178406
+validataion loss: 0.0538482666015625
+validataion loss: 0.09245683252811432
+validataion loss: 0.0763181820511818
+validataion loss: 0.019047211855649948
+validataion loss: 0.04260473698377609
+validataion loss: 0.167921245098114
+validataion loss: 0.021967066451907158
+validataion loss: 0.06655881553888321
+validataion loss: 0.3951301574707031
+validataion loss: 0.067058265209198
+validataion loss: 0.05428266525268555
+validataion loss: 0.00045054408838041127
+validataion loss: 0.06961864233016968
+validataion loss: 0.45934367179870605
+validataion loss: 0.09115666896104813
+validataion loss: 0.20880620181560516
+validataion loss: 0.10992157459259033
+validataion loss: 0.05911725386977196
+validataion loss: 0.06742601096630096
+validataion loss: 0.04074586555361748
+validataion loss: 0.050179533660411835
+validataion loss: 0.056144289672374725
+validataion loss: 0.08834359049797058
+validataion loss: 0.0788533017039299
+validataion loss: 0.025075268000364304
+validataion loss: 0.027491362765431404
+validataion loss: 0.07576415687799454
+validataion loss: 0.05138767883181572
+validataion loss: 0.0021140272729098797
+validataion loss: 0.20659230649471283
+validataion loss: 0.032562486827373505
+validataion loss: 0.241391122341156
+validataion loss: 0.221206933259964
+validataion loss: 0.03457534685730934
+validataion loss: 0.10031969845294952
+validataion loss: 0.3579207956790924
+validataion loss: 0.15590883791446686
+validataion loss: 0.07495151460170746
+validataion loss: 0.09572283923625946
+validataion loss: 0.20978659391403198
+validataion loss: 0.1654147505760193
+validataion loss: 0.09081941097974777
+validataion loss: 0.10853121429681778
+validataion loss: 0.1255284994840622
+validataion loss: 0.10405350476503372
+validataion loss: 0.1825263500213623
+validataion loss: 0.027246376499533653
+validataion loss: 0.14942936599254608
+validataion loss: 0.1379333883523941
+validataion loss: 0.08028435707092285
+validataion loss: 0.033954739570617676
+validataion loss: 0.03847198560833931
+validataion loss: 0.1257868856191635
+validataion loss: 0.047139331698417664
+validataion loss: 0.2138456106185913
+validataion loss: 0.06707499921321869
+validataion loss: 0.02848472259938717
+validataion loss: 0.07554733753204346
+validataion loss: 0.06770066916942596
+validataion loss: 0.08486054837703705
+precison: 0.8367702584954981
+recall: 0.8587183308494784
+f1: 0.8476022359517504
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002571531804278493
+The train loss : 0.004777759313583374
+Epoch: 45
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 11821 steps: 0.0037525861989706755
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.013627896085381508
+validataion loss: 0.003412557067349553
+validataion loss: 0.09828324615955353
+validataion loss: 0.06394679099321365
+validataion loss: 0.12797291576862335
+validataion loss: 0.06697382032871246
+validataion loss: 0.049477312713861465
+validataion loss: 0.10044687986373901
+validataion loss: 0.06867664307355881
+validataion loss: 0.030014662072062492
+validataion loss: 0.04788775369524956
+validataion loss: 0.14438699185848236
+validataion loss: 0.013595016673207283
+validataion loss: 0.07209237664937973
+validataion loss: 0.4443930387496948
+validataion loss: 0.07664036750793457
+validataion loss: 0.02334708161652088
+validataion loss: 0.009665898978710175
+validataion loss: 0.0575680248439312
+validataion loss: 0.3932163119316101
+validataion loss: 0.07265026867389679
+validataion loss: 0.13477639853954315
+validataion loss: 0.03829800337553024
+validataion loss: 0.04723367840051651
+validataion loss: 0.08249206840991974
+validataion loss: 0.041510891169309616
+validataion loss: 0.10409631580114365
+validataion loss: 0.052807312458753586
+validataion loss: 0.053817540407180786
+validataion loss: 0.06395421177148819
+validataion loss: 0.030032850801944733
+validataion loss: 0.02985682338476181
+validataion loss: 0.03914360702037811
+validataion loss: 0.027760451659560204
+validataion loss: 0.012237652204930782
+validataion loss: 0.18165655434131622
+validataion loss: 0.024157067760825157
+validataion loss: 0.19453707337379456
+validataion loss: 0.16250988841056824
+validataion loss: 0.009118515066802502
+validataion loss: 0.0930660218000412
+validataion loss: 0.34182509779930115
+validataion loss: 0.1502550095319748
+validataion loss: 0.08237294852733612
+validataion loss: 0.09850931167602539
+validataion loss: 0.17362205684185028
+validataion loss: 0.1500721126794815
+validataion loss: 0.06944700330495834
+validataion loss: 0.08098136633634567
+validataion loss: 0.060283415019512177
+validataion loss: 0.06844056397676468
+validataion loss: 0.14227858185768127
+validataion loss: 0.017850711941719055
+validataion loss: 0.12090469896793365
+validataion loss: 0.12950506806373596
+validataion loss: 0.07565244287252426
+validataion loss: 0.042845793068408966
+validataion loss: 0.03972233459353447
+validataion loss: 0.13394257426261902
+validataion loss: 0.036138709634542465
+validataion loss: 0.15081219375133514
+validataion loss: 0.07710875570774078
+validataion loss: 0.03076373040676117
+validataion loss: 0.0395149402320385
+validataion loss: 0.07379211485385895
+validataion loss: 0.08748472481966019
+precison: 0.8679129635304934
+recall: 0.844113263785395
+f1: 0.8558476881233001
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0026510523166507483
+The train loss : 0.0037525861989706755
+Epoch: 46
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 12078 steps: 0.0001487260014982894
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.009066605940461159
+validataion loss: 0.00132983538787812
+validataion loss: 0.09887246042490005
+validataion loss: 0.040447499603033066
+validataion loss: 0.11112666130065918
+validataion loss: 0.059918034821748734
+validataion loss: 0.055609650909900665
+validataion loss: 0.08938293159008026
+validataion loss: 0.09017838537693024
+validataion loss: 0.02805936522781849
+validataion loss: 0.04591671749949455
+validataion loss: 0.13736572861671448
+validataion loss: 0.06991271674633026
+validataion loss: 0.04783274978399277
+validataion loss: 0.4309587776660919
+validataion loss: 0.058350834995508194
+validataion loss: 0.02682260423898697
+validataion loss: 0.019109491258859634
+validataion loss: 0.09212024509906769
+validataion loss: 0.389396995306015
+validataion loss: 0.07695381343364716
+validataion loss: 0.1741124391555786
+validataion loss: 0.08863785862922668
+validataion loss: 0.060347288846969604
+validataion loss: 0.0999409481883049
+validataion loss: 0.05484861880540848
+validataion loss: 0.08694040775299072
+validataion loss: 0.06201096624135971
+validataion loss: 0.09453883022069931
+validataion loss: 0.062452588230371475
+validataion loss: 0.034175533801317215
+validataion loss: 0.02060353383421898
+validataion loss: 0.046410512179136276
+validataion loss: 0.050605498254299164
+validataion loss: 0.010955842211842537
+validataion loss: 0.19375182688236237
+validataion loss: 0.020272599533200264
+validataion loss: 0.2136468142271042
+validataion loss: 0.24880604445934296
+validataion loss: 0.00807990599423647
+validataion loss: 0.08693035691976547
+validataion loss: 0.38716983795166016
+validataion loss: 0.12815256416797638
+validataion loss: 0.09192103892564774
+validataion loss: 0.07614657282829285
+validataion loss: 0.1995919793844223
+validataion loss: 0.20976771414279938
+validataion loss: 0.11795219779014587
+validataion loss: 0.046925123780965805
+validataion loss: 0.09745384752750397
+validataion loss: 0.09468276798725128
+validataion loss: 0.11963406950235367
+validataion loss: 0.02852603606879711
+validataion loss: 0.11556308716535568
+validataion loss: 0.1593283712863922
+validataion loss: 0.059468962252140045
+validataion loss: 0.04075773060321808
+validataion loss: 0.03391331806778908
+validataion loss: 0.13298428058624268
+validataion loss: 0.027088522911071777
+validataion loss: 0.16776737570762634
+validataion loss: 0.06149599328637123
+validataion loss: 0.030201615765690804
+validataion loss: 0.09538636356592178
+validataion loss: 0.07353954017162323
+validataion loss: 0.10632354766130447
+precison: 0.836940409131337
+recall: 0.8414307004470939
+f1: 0.839179548156956
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.003221925813704729
+The train loss : 0.0001487260014982894
+Epoch: 47
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 12335 steps: 0.0001785523199941963
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.00727465096861124
+validataion loss: 0.006712841801345348
+validataion loss: 0.08772709220647812
+validataion loss: 0.04614439234137535
+validataion loss: 0.09541057050228119
+validataion loss: 0.08342637121677399
+validataion loss: 0.04192609339952469
+validataion loss: 0.07819412648677826
+validataion loss: 0.11640126258134842
+validataion loss: 0.028613820672035217
+validataion loss: 0.04339443892240524
+validataion loss: 0.13707208633422852
+validataion loss: 0.016058113425970078
+validataion loss: 0.02946864254772663
+validataion loss: 0.4057683050632477
+validataion loss: 0.052939023822546005
+validataion loss: 0.016519663855433464
+validataion loss: 0.011734317988157272
+validataion loss: 0.0532316118478775
+validataion loss: 0.44195693731307983
+validataion loss: 0.08393193781375885
+validataion loss: 0.13622164726257324
+validataion loss: 0.07535899430513382
+validataion loss: 0.029246985912322998
+validataion loss: 0.08312024176120758
+validataion loss: 0.049437444657087326
+validataion loss: 0.0846223533153534
+validataion loss: 0.04555973410606384
+validataion loss: 0.09551423788070679
+validataion loss: 0.08513829112052917
+validataion loss: 0.039120323956012726
+validataion loss: 0.03811303898692131
+validataion loss: 0.06315940618515015
+validataion loss: 0.03915612772107124
+validataion loss: 0.01238672062754631
+validataion loss: 0.19014866650104523
+validataion loss: 0.03283542022109032
+validataion loss: 0.2209078073501587
+validataion loss: 0.18247944116592407
+validataion loss: 0.012414366006851196
+validataion loss: 0.08779233694076538
+validataion loss: 0.3812885582447052
+validataion loss: 0.14468158781528473
+validataion loss: 0.11805585771799088
+validataion loss: 0.09093336760997772
+validataion loss: 0.18745270371437073
+validataion loss: 0.21158215403556824
+validataion loss: 0.10666569322347641
+validataion loss: 0.055596381425857544
+validataion loss: 0.10436972230672836
+validataion loss: 0.09739208221435547
+validataion loss: 0.14405657351016998
+validataion loss: 0.018426649272441864
+validataion loss: 0.13785408437252045
+validataion loss: 0.12084389477968216
+validataion loss: 0.05002341791987419
+validataion loss: 0.03590298444032669
+validataion loss: 0.0330931656062603
+validataion loss: 0.12128011882305145
+validataion loss: 0.03274385631084442
+validataion loss: 0.17366257309913635
+validataion loss: 0.08023334294557571
+validataion loss: 0.02683834172785282
+validataion loss: 0.05905536189675331
+validataion loss: 0.09961996972560883
+validataion loss: 0.09470474720001221
+precison: 0.8546494131808606
+recall: 0.8464977645305514
+f1: 0.8505540581012279
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002869840944185853
+The train loss : 0.0001785523199941963
+Epoch: 48
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 12592 steps: 0.0006506917998194695
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.008688756264746189
+validataion loss: 0.008126764558255672
+validataion loss: 0.10067476332187653
+validataion loss: 0.0547967404127121
+validataion loss: 0.07578328996896744
+validataion loss: 0.07918815314769745
+validataion loss: 0.040334321558475494
+validataion loss: 0.08505354076623917
+validataion loss: 0.06724932789802551
+validataion loss: 0.015561194159090519
+validataion loss: 0.06448305398225784
+validataion loss: 0.14014668762683868
+validataion loss: 0.02961704321205616
+validataion loss: 0.04470760002732277
+validataion loss: 0.4784071445465088
+validataion loss: 0.061579614877700806
+validataion loss: 0.033672455698251724
+validataion loss: 0.012689617462456226
+validataion loss: 0.046934179961681366
+validataion loss: 0.38611647486686707
+validataion loss: 0.0868508368730545
+validataion loss: 0.1770779937505722
+validataion loss: 0.06268398463726044
+validataion loss: 0.0460691899061203
+validataion loss: 0.05717964842915535
+validataion loss: 0.05081113427877426
+validataion loss: 0.07009510695934296
+validataion loss: 0.07291790843009949
+validataion loss: 0.08558735996484756
+validataion loss: 0.08474956452846527
+validataion loss: 0.02424454875290394
+validataion loss: 0.028649872168898582
+validataion loss: 0.056826114654541016
+validataion loss: 0.03842826560139656
+validataion loss: 0.0008450393215753138
+validataion loss: 0.17707763612270355
+validataion loss: 0.01309221237897873
+validataion loss: 0.18688011169433594
+validataion loss: 0.24240130186080933
+validataion loss: 0.017758725211024284
+validataion loss: 0.09254927188158035
+validataion loss: 0.36334818601608276
+validataion loss: 0.16126666963100433
+validataion loss: 0.07779843360185623
+validataion loss: 0.07902642339468002
+validataion loss: 0.2594257891178131
+validataion loss: 0.18343095481395721
+validataion loss: 0.09315473586320877
+validataion loss: 0.057508017867803574
+validataion loss: 0.06288129091262817
+validataion loss: 0.08363057672977448
+validataion loss: 0.13042356073856354
+validataion loss: 0.038767002522945404
+validataion loss: 0.10571494698524475
+validataion loss: 0.1470654308795929
+validataion loss: 0.07448607683181763
+validataion loss: 0.03181280940771103
+validataion loss: 0.037341415882110596
+validataion loss: 0.12109071761369705
+validataion loss: 0.033858828246593475
+validataion loss: 0.1664656400680542
+validataion loss: 0.06182478740811348
+validataion loss: 0.031046822667121887
+validataion loss: 0.059999771416187286
+validataion loss: 0.05231451243162155
+validataion loss: 0.10943152755498886
+precison: 0.85592221567472
+recall: 0.8658718330849479
+f1: 0.8608682767817455
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.0033161069732159376
+The train loss : 0.0006506917998194695
+Epoch: 49
+  0%|          | 0/257 [00:00<?, ?it/s]
+Loss after 12849 steps: 0.00028641746030189097
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+validataion loss: 0.011744226329028606
+validataion loss: 0.0009481681045144796
+validataion loss: 0.09563653916120529
+validataion loss: 0.05637402459979057
+validataion loss: 0.09526722878217697
+validataion loss: 0.07837621867656708
+validataion loss: 0.07593942433595657
+validataion loss: 0.08361592143774033
+validataion loss: 0.14371861517429352
+validataion loss: 0.020305128768086433
+validataion loss: 0.06016256660223007
+validataion loss: 0.1406209021806717
+validataion loss: 0.01808277703821659
+validataion loss: 0.03119516186416149
+validataion loss: 0.42152878642082214
+validataion loss: 0.05970914661884308
+validataion loss: 0.013959832489490509
+validataion loss: 0.013172987848520279
+validataion loss: 0.0830695629119873
+validataion loss: 0.3730012774467468
+validataion loss: 0.0911138579249382
+validataion loss: 0.12984614074230194
+validataion loss: 0.07111483812332153
+validataion loss: 0.021393166854977608
+validataion loss: 0.08194451034069061
+validataion loss: 0.047828953713178635
+validataion loss: 0.03837078437209129
+validataion loss: 0.06962358206510544
+validataion loss: 0.1106739342212677
+validataion loss: 0.08680225908756256
+validataion loss: 0.03861428052186966
+validataion loss: 0.05665843188762665
+validataion loss: 0.03830163925886154
+validataion loss: 0.04252011701464653
+validataion loss: 0.002421719953417778
+validataion loss: 0.2067108303308487
+validataion loss: 0.02069549635052681
+validataion loss: 0.24477338790893555
+validataion loss: 0.10988349467515945
+validataion loss: 0.03372890129685402
+validataion loss: 0.08194468170404434
+validataion loss: 0.3688080608844757
+validataion loss: 0.15875156223773956
+validataion loss: 0.10664166510105133
+validataion loss: 0.08641215413808823
+validataion loss: 0.25329840183258057
+validataion loss: 0.21420474350452423
+validataion loss: 0.15013422071933746
+validataion loss: 0.07232052087783813
+validataion loss: 0.10349109768867493
+validataion loss: 0.06143838167190552
+validataion loss: 0.14258362352848053
+validataion loss: 0.03510180860757828
+validataion loss: 0.09733442962169647
+validataion loss: 0.13937166333198547
+validataion loss: 0.05054333433508873
+validataion loss: 0.03358158469200134
+validataion loss: 0.04784302040934563
+validataion loss: 0.1325501799583435
+validataion loss: 0.03550456091761589
+validataion loss: 0.19725410640239716
+validataion loss: 0.07417302578687668
+validataion loss: 0.028959892690181732
+validataion loss: 0.03199205920100212
+validataion loss: 0.03554374352097511
+validataion loss: 0.08449385315179825
+precison: 0.870781392520523
+recall: 0.8536512667660209
+f1: 0.8621312462372065
++++++++++++++++++++++++++++++++++++++++++++
+final validation loss:0.002560419961810112
+The train loss : 0.00028641746030189097
+{0: tensor(0.0096, device='cuda:0'), 1: tensor(0.0053, device='cuda:0'), 2: tensor(0.0044, device='cuda:0'), 3: tensor(0.0038, device='cuda:0'), 4: tensor(0.0030, device='cuda:0'), 5: tensor(0.0034, device='cuda:0'), 6: tensor(0.0030, device='cuda:0'), 7: tensor(0.0028, device='cuda:0'), 8: tensor(0.0028, device='cuda:0'), 9: tensor(0.0016, device='cuda:0'), 10: tensor(0.0019, device='cuda:0'), 11: tensor(0.0018, device='cuda:0'), 12: tensor(0.0024, device='cuda:0'), 13: tensor(0.0018, device='cuda:0'), 14: tensor(0.0023, device='cuda:0'), 15: tensor(0.0025, device='cuda:0'), 16: tensor(0.0030, device='cuda:0'), 17: tensor(0.0025, device='cuda:0'), 18: tensor(0.0029, device='cuda:0'), 19: tensor(0.0015, device='cuda:0'), 20: tensor(0.0010, device='cuda:0'), 21: tensor(0.0026, device='cuda:0'), 22: tensor(0.0011, device='cuda:0'), 23: tensor(0.0026, device='cuda:0'), 24: tensor(0.0015, device='cuda:0'), 25: tensor(0.0042, device='cuda:0'), 26: tensor(0.0022, device='cuda:0'), 27: tensor(0.0021, device='cuda:0'), 28: tensor(0.0032, device='cuda:0'), 29: tensor(0.0030, device='cuda:0'), 30: tensor(0.0026, device='cuda:0'), 31: tensor(0.0032, device='cuda:0'), 32: tensor(0.0033, device='cuda:0'), 33: tensor(0.0031, device='cuda:0'), 34: tensor(0.0028, device='cuda:0'), 35: tensor(0.0040, device='cuda:0'), 36: tensor(0.0028, device='cuda:0'), 37: tensor(0.0034, device='cuda:0'), 38: tensor(0.0031, device='cuda:0'), 39: tensor(0.0026, device='cuda:0'), 40: tensor(0.0032, device='cuda:0'), 41: tensor(0.0025, device='cuda:0'), 42: tensor(0.0033, device='cuda:0'), 43: tensor(0.0030, device='cuda:0'), 44: tensor(0.0026, device='cuda:0'), 45: tensor(0.0027, device='cuda:0'), 46: tensor(0.0032, device='cuda:0'), 47: tensor(0.0029, device='cuda:0'), 48: tensor(0.0033, device='cuda:0'), 49: tensor(0.0026, device='cuda:0')}
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-commercial_invoice_document', 'S-draft_document', 'S-commercial_invoice_document', 'S-packing_list_document', 'S-packing_list_document', 'S-packing_list_document', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-insurance_policy', 'S-bill_of_ladding_document', 'S-bill_of_ladding_document', 'S-bill_of_ladding_document', 'S-insurance_policy', 'S-certificate_of_origin_document', 'S-certificate_of_origin_document', 'S-certificate_of_origin_document', 'S-bill_of_ladding_document_1st', 'S-bill_of_ladding_document_1st', 'S-bill_of_ladding_document_1st', 'S-bill_of_ladding_document_1st', 'S-bill_of_ladding_document_1st', 'S-insurance_policy_1st', 'S-certificate_of_origin_document_1st', 'S-certificate_of_origin_document_1st', 'S-certificate_of_origin_document_1st', 'O', 'O', 'S-draft_document_1st', 'S-commercial_invoice_document_1st', 'S-packing_list_document_1st', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+Evaluating:   0%|          | 0/66 [00:00<?, ?it/s]
+Overall results: {'precision': 0.8621813870776527, 'recall': 0.8670640834575261, 'f1': 0.8646158418784367}
+                                      precision    recall  f1-score   support
+
+                         airway_bill       0.94      0.87      0.90        87
+                     airway_bill_1st       0.55      0.23      0.32        26
+                     airway_bill_2nd       0.14      0.25      0.18         4
+             beneficiary_certificate       0.76      0.89      0.82        28
+         beneficiary_certificate_1st       0.59      0.68      0.63        25
+         beneficiary_certificate_2nd       0.00      0.00      0.00         5
+           bill_of_exchange_document       0.91      0.83      0.87        35
+       bill_of_exchange_document_1st       0.56      0.71      0.63         7
+       bill_of_exchange_document_2nd       0.00      0.00      0.00         1
+            bill_of_ladding_document       0.94      0.93      0.94       597
+        bill_of_ladding_document_1st       0.76      0.93      0.84       282
+        bill_of_ladding_document_2nd       0.33      0.33      0.33         9
+    certificate_of_analysis_document       0.81      0.88      0.84        58
+certificate_of_analysis_document_1st       0.79      0.58      0.67        38
+certificate_of_analysis_document_2nd       0.14      0.50      0.22         2
+      certificate_of_origin_document       0.97      0.96      0.96       353
+  certificate_of_origin_document_1st       0.80      0.80      0.80       146
+  certificate_of_origin_document_2nd       0.42      0.45      0.43        11
+      certificate_of_weight_document       0.80      0.90      0.85        31
+  certificate_of_weight_document_1st       0.56      0.50      0.53        10
+         commercial_invoice_document       0.95      0.97      0.96       204
+     commercial_invoice_document_1st       0.85      0.82      0.83       158
+     commercial_invoice_document_2nd       0.42      0.50      0.45        10
+                  custom_certificate       0.94      0.89      0.91        18
+              custom_certificate_1st       0.00      0.00      0.00         2
+                     customs_invoice       0.85      0.90      0.87        50
+                 customs_invoice_1st       0.00      0.00      0.00         4
+                      draft_document       0.97      0.92      0.94       101
+                  draft_document_1st       0.89      0.91      0.90        79
+                  draft_document_2nd       0.50      0.50      0.50         4
+              fumigation_certificate       1.00      0.56      0.71         9
+          fumigation_certificate_1st       1.00      0.25      0.40         4
+          fumigation_certificate_2nd       0.00      0.00      0.00         1
+         health_certificate_document       1.00      1.00      1.00         2
+     health_certificate_document_1st       1.00      1.00      1.00         1
+              inspection_certificate       0.72      0.91      0.80        64
+          inspection_certificate_1st       0.53      0.50      0.52        16
+          inspection_certificate_2nd       0.00      0.00      0.00         3
+      insurance_certificate_document       0.84      0.78      0.81        63
+  insurance_certificate_document_1st       0.82      0.59      0.69        76
+  insurance_certificate_document_2nd       0.67      0.29      0.40         7
+                    insurance_policy       0.90      0.82      0.86       138
+                insurance_policy_1st       0.69      0.78      0.73        73
+                insurance_policy_2nd       0.50      0.17      0.25         6
+               packing_list_document       0.96      0.98      0.97       273
+           packing_list_document_1st       0.86      0.92      0.89       145
+           packing_list_document_2nd       0.43      0.30      0.35        10
+           phytosanitary_certificate       1.00      0.75      0.86         8
+       phytosanitary_certificate_1st       1.00      1.00      1.00         7
+                 quality_certificate       0.74      0.88      0.80        16
+             quality_certificate_1st       0.67      0.55      0.60        11
+             quality_certificate_2nd       0.50      1.00      0.67         4
+        shipping_company_certificate       0.65      0.76      0.70        17
+    shipping_company_certificate_1st       0.38      0.55      0.44        11
+    shipping_company_certificate_2nd       0.00      0.00      0.00         5
+
+                           micro avg       0.86      0.87      0.86      3355
+                           macro avg       0.64      0.62      0.61      3355
+                        weighted avg       0.86      0.87      0.86      3355
+
+Evaluating:   0%|          | 0/257 [00:00<?, ?it/s]
+Overall results: {'precision': 0.9754984020697002, 'recall': 0.977432143946325, 'f1': 0.9764643156371392}
+                                      precision    recall  f1-score   support
+
+                         airway_bill       1.00      0.98      0.99       328
+                     airway_bill_1st       0.94      0.89      0.91        84
+                     airway_bill_2nd       1.00      0.61      0.76        18
+             beneficiary_certificate       0.99      0.98      0.99       118
+         beneficiary_certificate_1st       0.90      0.98      0.94        64
+         beneficiary_certificate_2nd       1.00      0.80      0.89         5
+           bill_of_exchange_document       1.00      0.98      0.99       166
+       bill_of_exchange_document_1st       0.98      0.98      0.98        53
+       bill_of_exchange_document_2nd       0.67      0.33      0.44         6
+            bill_of_ladding_document       0.99      1.00      0.99      2365
+        bill_of_ladding_document_1st       0.97      0.99      0.98      1115
+        bill_of_ladding_document_2nd       0.90      0.88      0.89        96
+    certificate_of_analysis_document       0.98      0.98      0.98       185
+certificate_of_analysis_document_1st       0.94      0.90      0.92       143
+certificate_of_analysis_document_2nd       0.71      0.91      0.80        22
+      certificate_of_origin_document       0.99      1.00      0.99      1329
+  certificate_of_origin_document_1st       0.99      0.96      0.97       617
+  certificate_of_origin_document_2nd       0.95      0.85      0.90        61
+      certificate_of_weight_document       0.98      0.95      0.97       110
+  certificate_of_weight_document_1st       0.86      0.91      0.89        35
+  certificate_of_weight_document_2nd       0.00      0.00      0.00         5
+         commercial_invoice_document       0.99      0.99      0.99       869
+     commercial_invoice_document_1st       0.98      0.98      0.98       609
+     commercial_invoice_document_2nd       0.75      0.99      0.85        78
+      covering_schedule_document_1st       0.00      0.00      0.00         1
+                  custom_certificate       1.00      0.79      0.88        77
+                     customs_invoice       0.88      1.00      0.93       154
+                 customs_invoice_1st       1.00      1.00      1.00         6
+                      draft_document       0.99      0.99      0.99       372
+                  draft_document_1st       0.98      0.99      0.98       284
+                  draft_document_2nd       0.93      0.84      0.88        45
+              fumigation_certificate       1.00      1.00      1.00        18
+          fumigation_certificate_1st       1.00      0.85      0.92        13
+          fumigation_certificate_2nd       1.00      0.50      0.67         2
+         health_certificate_document       0.93      1.00      0.97        14
+     health_certificate_document_1st       1.00      0.95      0.97        19
+              inspection_certificate       0.98      1.00      0.99       219
+          inspection_certificate_1st       0.88      0.90      0.89        40
+          inspection_certificate_2nd       1.00      0.12      0.22         8
+      insurance_certificate_document       0.99      0.95      0.97       227
+  insurance_certificate_document_1st       0.97      0.94      0.95       216
+  insurance_certificate_document_2nd       0.71      0.59      0.65        17
+                    insurance_policy       0.98      0.98      0.98       517
+                insurance_policy_1st       0.95      0.97      0.96       327
+                insurance_policy_2nd       0.93      0.82      0.87        34
+               packing_list_document       1.00      0.99      0.99      1096
+           packing_list_document_1st       0.97      0.99      0.98       534
+           packing_list_document_2nd       0.82      0.86      0.84        58
+           phytosanitary_certificate       0.96      0.96      0.96        26
+       phytosanitary_certificate_1st       0.88      0.92      0.90        24
+       phytosanitary_certificate_2nd       0.00      0.00      0.00         3
+                 quality_certificate       0.94      1.00      0.97        77
+             quality_certificate_1st       0.96      0.84      0.89        61
+             quality_certificate_2nd       0.67      0.95      0.78        21
+        shipping_company_certificate       0.95      1.00      0.98        83
+    shipping_company_certificate_1st       0.82      0.97      0.89        38
+    shipping_company_certificate_2nd       1.00      0.50      0.67         4
+
+                           micro avg       0.98      0.98      0.98     13116
+                           macro avg       0.89      0.84      0.85     13116
+                        weighted avg       0.98      0.98      0.98     13116
+
+woo!,Model Training has done successfully

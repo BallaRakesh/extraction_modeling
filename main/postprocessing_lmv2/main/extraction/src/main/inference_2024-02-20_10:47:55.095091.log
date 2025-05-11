@@ -1,0 +1,39 @@
+2024-02-20 10:47:55,095 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-02-20 10:47:55,096 start time: 2024-02-20 10:47:55.096881
+2024-02-20 10:47:59,866 Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2024-02-20 10:47:59,995 Creating converter from 7 to 5
+2024-02-20 10:47:59,995 Creating converter from 5 to 7
+2024-02-20 10:47:59,995 Creating converter from 7 to 5
+2024-02-20 10:47:59,995 Creating converter from 5 to 7
+2024-02-20 10:48:00,701 Starting new HTTPS connection (1): huggingface.co:443
+2024-02-20 10:48:01,068 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-02-20 10:48:01,693 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-02-20 10:48:01,944 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-02-20 10:48:02,001 RAM memory for Model loading used: 47.4
+2024-02-20 10:48:02,001 cpu_utilization % for Model Loading:19.8
+2024-02-20 10:48:02,002 memory_consumption in bytes for Loading Model:1150308352
+2024-02-20 10:48:02,002 Loaded Model successfully
+2024-02-20 10:48:02,002 file name is:Packing_List_52_page_3.png
+2024-02-20 10:48:02,002 folder path :Images
+2024-02-20 10:48:02,002 Calling Image result
+2024-02-20 10:48:02,002 is all_page_result is instance of dict? True
+2024-02-20 10:48:02,007 STREAM b'IHDR' 16 13
+2024-02-20 10:48:02,007 STREAM b'IDAT' 41 65536
+2024-02-20 10:48:02,159 is words is instance of list? True
+2024-02-20 10:48:02,159 is bboxes is instance of list? True
+2024-02-20 10:48:02,159 is bounding_boxes is instance of list? True
+2024-02-20 10:48:03,506 is input_id_chunks is instance of list? True
+2024-02-20 10:48:03,506 is mask_chunks is instance of list? True
+2024-02-20 10:48:03,506 is bbox_chunks is instance of list? True
+2024-02-20 10:48:03,506 is image_chunks is instance of list? True
+2024-02-20 10:48:03,510 is input_dict is instance of dict? True
+2024-02-20 10:48:06,129 Model Called
+2024-02-20 10:48:06,129 RAM memory 61.2 used for Packing_List_52_page_3.png:
+2024-02-20 10:48:06,129 is all_predictions is instance of list? True
+2024-02-20 10:48:06,129 is all_boxes is instance of list? True
+2024-02-20 10:48:06,129 is all_confidences is instance of list? True
+2024-02-20 10:48:06,129 is all_text is instance of list? True
+2024-02-20 10:48:06,130 is label2id is instance of dict? True
+2024-02-20 10:48:06,130 is id2label is instance of dict? True
+2024-02-20 10:48:06,130 is label2color is instance of dict? True
+2024-02-20 10:48:06,130 label2color : {'track_reference': '#394182', 'vessel_name': '#EC881B', 'transaction_amount_value': '#F2658B', 'lc_ref_no': '#8F64DE', 'invoice_currency': '#A33C80', 'bill_of_lading_date': '#1FC72F', 'net_weight': '#6E8394', 'awb_date': '#2BD533', 'date_of_invoice': '#279B4A', 'port_of_discharge': '#FE33D3', 'original_copy': '#B035DB', 'shipper_address': '#E3AB2A', 'rate_per_unit': '#6B1AEB', 'invoice_no': '#2540AF', 'signature': '#1EBD43', 'consignee_address': '#568917', 'incoterm': '#DBA4C2', 'country_of_final_destination': '#91FE6E', 'description_of_goods': '#E1A8E4', 'total_quantity_of_goods': '#6898D5', 'shipper_name': '#3D839F', 'bill_of_lading_number': '#8F7999', 'transaction_currency': '#B822C4', 'iec_no': '#F563EE', 'gross_weight': '#F32228', 'vessel_flight_no': '#D7DD24', 'transaction_date': '#43C941', 'lc_date': '#F7302A', 'consignee_name': '#0365C4', 'stamp': '#D2D0E1', 'invoice_amount': '#48E136', 'dimension': '#91AF07', 'O': '#89EBB8', 'consignor_name': '#30A50F', 'notify_party_name': '#D274EB', 'beneficiary_drawer_exporter_seller_supplier_name': '#8EE38F', 'pre_carriage_by': '#708167', 'consignor_address': '#8214A1', 'declaration': '#DE76F0', 'beneficiary_drawer_exporter_seller_supplier_tin_no': '#C21D44', 'country_of_origin_origin_of_goods': '#CB820E', 'awb_number': '#F18CE3', 'beneficiary_address': '#FD78D1', 'remitter_address': '#394D9D', 'page_no': '#266EFF', 'remitter_drawee_applicant_importer_buyer_name': '#00E659', 'port_of_loading': '#B3C4AB', 'notify_party_address': '#BAE6EB', 'payment_terms_terms_of_delivery_&_payment': '#62D359'}

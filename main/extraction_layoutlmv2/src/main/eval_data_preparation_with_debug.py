@@ -63,6 +63,7 @@ import utility as tu
 from configparser import ConfigParser
 from utility import set_basic_config_for_logging, get_logger_object_and_setting_the_loglevel
 from agumentation_utility import label_data_preparation, image_rotation
+from distutils.util import strtobool
 
 zoom = 300/72
 
@@ -301,8 +302,9 @@ def train_test_split(split_file,flag, img_files, labelled_files):
                                 tu.normalize([l_d['x1'], l_d['y1'], l_d['x2'], l_d['y2']], w, h))
                             final_labelled_data["labels"].append(l_d['label'])
                         annotation_data.append(final_labelled_data)
-                        df = pd.DataFrame(final_labelled_data)
-                        df.to_csv(f'{SEGREGATION_path}/{file}.csv')                       
+                        if bool(strtobool(configur['debug_mode']['debug_flag'])):
+                            df = pd.DataFrame(final_labelled_data)
+                            df.to_csv(f'{SEGREGATION_path}/{file}.csv')                       
                     else:
                         concat_final_label = []
                         final_labelled_data = {
@@ -336,8 +338,10 @@ def train_test_split(split_file,flag, img_files, labelled_files):
                                                                                                 pdf_text) / thresh) + 1) + ".png"))
                             annotation_data.append(final_labelled_data)
                             concat_final_label.append(pd.DataFrame(final_labelled_data))
-                        result = pd.concat(concat_final_label, axis=1)
-                        result.to_csv(f'{SEGREGATION_path}/{file}.csv')   
+                        
+                        if bool(strtobool(configur['debug_mode']['debug_flag'])):
+                            result = pd.concat(concat_final_label, axis=1)
+                            result.to_csv(f'{SEGREGATION_path}/{file}.csv')   
                     #print(final_labelled_data["labels"])
             else:
                 try:
@@ -450,27 +454,33 @@ if __name__== "__main__":
     
         images_path = os.path.join(folder_path, "Images")
         labels_path = os.path.join(folder_path, "Labels")
+        ocr_path = os.path.join(folder_path, "OCR")
+        labels_file = os.path.join(folder_path, "label.txt")
+        with open(labels_file, "r") as f:
+            classes = (f.read())
+            classes = classes.split("\n")
+        ###############################################################
+        folder_path = os.path.join(folder_path, "temp_folder")
+        ###############################################################
         master_path = os.path.join(folder_path, "Master_Data")
         master_labels_path= os.path.join(folder_path, 'Master_Labels')
-        ocr_path = os.path.join(folder_path, "OCR")
-        iou_path = os.path.join(folder_path, 'Iou_check')
-        SEGREGATION_path = os.path.join(folder_path, 'Segregation_Check')
-        
+        if bool(strtobool(configur['debug_mode']['debug_flag'])):
+            iou_path = os.path.join(folder_path, 'Iou_check')
+            SEGREGATION_path = os.path.join(folder_path, 'Segregation_Check')
+            if not os.path.exists(iou_path):
+                os.makedirs(iou_path)
+            if not os.path.exists(SEGREGATION_path):
+                os.makedirs(SEGREGATION_path)
+            
         if not os.path.exists(master_path):
             os.makedirs(master_path)
         if not os.path.exists(ocr_path):
             os.makedirs(ocr_path)
         if not os.path.exists(master_labels_path):
             os.makedirs(master_labels_path)
-        if not os.path.exists(iou_path):
-            os.makedirs(iou_path)
-        if not os.path.exists(SEGREGATION_path):
-            os.makedirs(SEGREGATION_path)
 
 
-        with open(os.path.join(folder_path, "label.txt"), "r") as f:
-            classes = (f.read())
-            classes = classes.split("\n")
+
         
         print(f"classes in this document \n: {classes}")
         print("Checkpoint 2 =>  right folder creation whatever required in data preparation")
@@ -729,11 +739,12 @@ if __name__== "__main__":
                     "Length of word coordinate data:", len(word_cordinate_data), "\n",
                     "Length of the IOU value:", len(IOU_value), "\n")
                 # exit("++++++++++")
-                try:
-                    df = pd.DataFrame(csv_data)
-                    df.to_csv(f'{iou_path}/{file}.csv', index = False)
-                except:
-                    pass
+                if bool(strtobool(configur['debug_mode']['debug_flag'])):
+                    try:
+                        df = pd.DataFrame(csv_data)
+                        df.to_csv(f'{iou_path}/{file}.csv', index = False)
+                    except:
+                        pass
             else:
                 print("No") 
             
@@ -756,7 +767,7 @@ if __name__== "__main__":
         problematic_images.to_csv(f'{master_path}/probelmatic_images.csv', index=False)
         image_having_no_text.to_csv(f"images_having_no_text.csv", index=False)
 
-        with open(os.path.join(folder_path, "label.txt"), "r") as file:
+        with open(labels_file, "r") as file:
             class_names: List = file.readlines()
             class_names = list(map(lambda x: x.strip(), class_names))
             logger.info("is class_names is a instance of list? %s", isinstance(class_names, list))

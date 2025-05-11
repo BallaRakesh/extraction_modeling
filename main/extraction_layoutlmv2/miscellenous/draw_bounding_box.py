@@ -80,10 +80,10 @@ if __name__=="__main__":
     # folder_path = "Credit Note"
     # folder_path = "Credit Note updated"
     #folder_path = "Invoices combined"
-    folder_path = "/home/ntlpt19/Downloads/Final_Delivery_Training_itter_2/Bill_of_exchange_153/Bill_of_exchange_153"
+    folder_path = "/media/ntlpt19/5250315B5031474F/finance_data_modeling/Classification/benchmark_images/table_data/set_data/train_master_data"
     #pdf_path = os.path.join(folder_path, "1_page_pdfs")
-    images_path = os.path.join(folder_path, "Images")
-    labels_path = os.path.join(folder_path, "Labels")
+    images_path = os.path.join(folder_path, "images")
+    labels_path = os.path.join(folder_path, "labels")
     #master_path = os.path.join(folder_path, "Master_Data")
     #ocr_path = os.path.join(folder_path, "OCR")
     bounding_box_path= os.path.join(folder_path,"bounding_box")

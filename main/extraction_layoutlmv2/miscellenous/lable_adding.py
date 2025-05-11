@@ -2,7 +2,7 @@ import os
 
 
 
-labels_folder = '/home/ntlpt19/Downloads/Final_Delivery_Training_itter_2/verified_tarun/po_org_472/Labels'
+labels_folder = ''
 all_labels = os.listdir(labels_folder)
 pi_mapping = {}
 

@@ -1,0 +1,40 @@
+2024-04-27 02:40:43,995 checkpoint 1 => setting basis cofiguration for logging purposes
+2024-04-27 02:40:43,996 start time: 2024-04-27 02:40:43.996542
+2024-04-27 02:40:46,703 Starting new HTTPS connection (1): huggingface.co:443
+2024-04-27 02:40:47,608 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2024-04-27 02:40:48,423 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2024-04-27 02:40:48,731 https://huggingface.co:443 "HEAD /microsoft/layoutlmv2-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2024-04-27 02:40:48,781 RAM memory for Model loading used: 63.3
+2024-04-27 02:40:48,781 cpu_utilization % for Model Loading:14.0
+2024-04-27 02:40:48,781 memory_consumption in bytes for Loading Model:911368192
+2024-04-27 02:40:48,781 Loaded Model successfully
+2024-04-27 02:40:48,781 file name is:Bill_Of_Landing_16_page_4.png
+2024-04-27 02:40:48,781 folder path :Images
+2024-04-27 02:40:48,781 Calling Image result
+2024-04-27 02:40:48,781 is all_page_result is instance of dict? True
+2024-04-27 02:40:48,787 STREAM b'IHDR' 16 13
+2024-04-27 02:40:48,787 STREAM b'IDAT' 41 58233
+2024-04-27 02:40:48,816 is words is instance of list? True
+2024-04-27 02:40:48,816 is bboxes is instance of list? True
+2024-04-27 02:40:48,816 is bounding_boxes is instance of list? True
+2024-04-27 02:40:49,058 is input_id_chunks is instance of list? True
+2024-04-27 02:40:49,058 is mask_chunks is instance of list? True
+2024-04-27 02:40:49,059 is bbox_chunks is instance of list? True
+2024-04-27 02:40:49,059 is image_chunks is instance of list? True
+2024-04-27 02:40:49,059 is input_dict is instance of dict? True
+2024-04-27 02:40:51,615 Model Called
+2024-04-27 02:40:51,615 RAM memory 82.5 used for Bill_Of_Landing_16_page_4.png:
+2024-04-27 02:40:51,615 is all_predictions is instance of list? True
+2024-04-27 02:40:51,615 is all_boxes is instance of list? True
+2024-04-27 02:40:51,615 is all_confidences is instance of list? True
+2024-04-27 02:40:51,615 is all_text is instance of list? True
+2024-04-27 02:40:51,616 is label2id is instance of dict? True
+2024-04-27 02:40:51,616 is id2label is instance of dict? True
+2024-04-27 02:40:51,616 is label2color is instance of dict? True
+2024-04-27 02:40:51,616 label2color : {'stamp': '#5B1CC3', 'bol_original_or_copy': '#1C42C3', 'vessel_name': '#70D185', 'shipped_onboard_date': '#0A63BE', 'final_destination': '#BBEF9C', 'measurement': '#BBF4D3', 'country_of_origin': '#61EA15', 'bol_original_number': '#406EE6', 'net_weight': '#8E56E7', 'signed_by_carrier': '#FE9586', 'gross_weight': '#C300AD', 'carrier_country': '#B88116', 'port_of_discharge': '#C76FCD', 'goods_quantity': '#F0E5E6', 'notify_party_name': '#AFC46A', 'port_of_loading': '#9C3EB1', 'shipper_address': '#AC3583', 'place_of_issue': '#55763E', 'agent_country': '#B298FA', 'freight_collect_at': '#B07097', 'place_of_receipt': '#7C3440', 'voyage_number': '#65934A', 'signature': '#4AC7DE', 'consignee_name': '#4BBB19', 'consignee_address': '#01CB0A', 'bill_of_lading_issue_date': '#06B572', 'mode_of_transport': '#1A185D', 'shipper_name': '#94E132', 'signed_By_agent': '#117D9C', 'container_number': '#672773', 'transaction_date': '#553634', 'notify_party_address': '#B4929B', 'goods_marks_and_nos': '#F3E59F', 'goods_description': '#016B43', 'lc_date': '#16FDF6', 'dimension': '#5F88CB', 'agent_name': '#DD5670', 'carrier_name': '#190C95', 'O': '#DE4466', 'lc_ref_number': '#9D83B0', 'pre_carriage_by': '#C73AB8', 'page_no': '#11D3C8', 'total_original_no': '#96F4FD', 'freight_collect_or_prepaid': '#C6D129', 'signed_by_master': '#A87014', 'bill_of_lading_number': '#8A5A63'}
+2024-04-27 02:40:51,872 is result_set is instance of dict? True
+2024-04-27 02:40:51,873 is final_result_set is instance of dict? True
+2024-04-27 02:40:51,939 Time taken for page 1 of Bill_Of_Landing_16_page_4.png:0:00:03.152009
+2024-04-27 02:40:52,058 *****Generated All Pages****** for Bill_Of_Landing_16_page_4.png
+2024-04-27 02:40:52,058 RAM memory 82.7 used for Bill_Of_Landing_16_page_4.png Generating All Pages:
+2024-04-27 02:40:52,058 Processing time taken for all pages of Bill_Of_Landing_16_page_4.png1:0:00:03.276910
