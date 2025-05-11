@@ -1,0 +1,92 @@
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:01.655880
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:00.968071
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:03.715030
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.108135
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.097410
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.095549
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.100207
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.104156
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.050406
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.057160
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.092336
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.062687
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:03.802390
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:03.860636
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.599132
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.619910
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:33.227291
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.493577
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.434833
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.275654
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.314958
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.615985
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.332642
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.304114
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.422038
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.255777
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.400776
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.276168
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:00.384557
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:29.478660
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:04.325011
+File Name: handling_bottom_values.py
+Total Execution Time: 0:00:01.111734
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:29.001830
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:49.302375
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:50.064971
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:56.139221
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:54.409658
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:53.748542
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:31.111283
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:46.075024
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:46.510104
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:46.389105
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:47.177005
+File Name: accuracy_generation_script_3.py
+Total Execution Time: 0:00:48.909095
+File Name: final_IC_accuracy_gen.py
+Total Execution Time: 0:00:28.839976
+File Name: final_IC_accuracy_gen.py
+Total Execution Time: 0:00:13.107833

@@ -1,0 +1,6 @@
+# Run file for omnirun for all products
+
+# omni inference
+python -m src.main.extraction.OmniCode.single_inference
+
+# 
