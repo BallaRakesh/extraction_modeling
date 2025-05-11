@@ -1,0 +1,32 @@
+{
+  "os": "Linux-5.15.0-82-generic-x86_64-with-glibc2.31",
+  "python": "CPython 3.11.9",
+  "startedAt": "2024-12-12T19:16:54.520646Z",
+  "program": "/home/ntlpt19/Desktop/TF_release/docformer/DocFormer_final_sequence_classification.ipynb",
+  "codePath": "DocFormer_final_sequence_classification.ipynb",
+  "git": {
+    "remote": "https://github.com/shabie/docformer.git",
+    "commit": "c7fcfdf71fb174784c3dba932b0f0daa6f05a92f"
+  },
+  "email": "rakiballa5@gmail.com",
+  "root": "/home/ntlpt19/Desktop/TF_release/docformer",
+  "host": "NTLPT19",
+  "username": "ntlpt19",
+  "executable": "/home/ntlpt19/myenv311/bin/python",
+  "codePathLocal": "DocFormer_final_sequence_classification.ipynb",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "502392610816",
+      "used": "472096395264"
+    }
+  },
+  "memory": {
+    "total": "16497811456"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  }
+}
